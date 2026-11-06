@@ -15,7 +15,7 @@ namespace UPCH.Enfermeria.Editor
         private const float Depth = 19.72f;
         private const float Storey = 3.90f;
         private const int Storeys = 6;
-        private const float CoreStart = 8.30f;
+        private const float CoreStart = 4.40f;
 
         private static Material white;
         private static Material glass;
@@ -29,6 +29,28 @@ namespace UPCH.Enfermeria.Editor
         private static float Front => -Depth / 2f;
         private static float Rear => Depth / 2f;
         private static float Height => Storeys * Storey;
+
+        public static void ValidateOrientation()
+        {
+            var root = PrefabUtility.LoadPrefabContents(PrefabPath);
+            try
+            {
+                var oriented = root.transform.Find("Orientacion_entrada_este");
+                var facade = oriented != null ? oriented.Find("02_Fachada_principal") : null;
+                var core = oriented != null ? oriented.Find("01_Estructura/Nucleo_escaleras_ascensores") : null;
+                if (oriented == null || facade == null || core == null || oriented.childCount != 6)
+                    throw new InvalidOperationException("UPCH D: falta la fachada, el nucleo o alguno de los seis grupos.");
+                if (Vector3.Dot(oriented.TransformDirection(Vector3.back), Vector3.right) < 0.99f)
+                    throw new InvalidOperationException("UPCH D: la fachada principal no mira hacia la derecha (+X).");
+                if (core.position.z <= root.transform.position.z)
+                    throw new InvalidOperationException("UPCH D: el nucleo blanco no queda a la derecha del acceso.");
+                Debug.Log("UPCH D: orientacion verificada. Fachada e ingreso hacia +X, nucleo a la derecha del vidrio.");
+            }
+            finally
+            {
+                PrefabUtility.UnloadPrefabContents(root);
+            }
+        }
 
         [MenuItem("Tools/UPCH/Ver pabellon D - Enfermeria")]
         public static void ViewInCampus()
@@ -72,12 +94,18 @@ namespace UPCH.Enfermeria.Editor
                 DestroyIfPresent<MeshRenderer>(root);
                 DestroyIfPresent<MeshFilter>(root);
 
-                var structure = Group(root.transform, "01_Estructura");
-                var front = Group(root.transform, "02_Fachada_principal");
-                var sides = Group(root.transform, "03_Fachadas_laterales");
-                var interior = Group(root.transform, "04_Interiores");
-                var access = Group(root.transform, "05_Acceso");
-                var roof = Group(root.transform, "06_Azotea");
+                // A-01 places the public entrance on the right edge of block D.
+                // Turn the photographed glass face toward +X while retaining the existing
+                // 26.08 x 19.72 m Campus footprint and the prefab instance position.
+                var oriented = Group(root.transform, "Orientacion_entrada_este");
+                oriented.localRotation = Quaternion.Euler(0f, -90f, 0f);
+                oriented.localScale = new Vector3(Depth / Width, 1f, Width / Depth);
+                var structure = Group(oriented, "01_Estructura");
+                var front = Group(oriented, "02_Fachada_principal");
+                var sides = Group(oriented, "03_Fachadas_laterales");
+                var interior = Group(oriented, "04_Interiores");
+                var access = Group(oriented, "05_Acceso");
+                var roof = Group(oriented, "06_Azotea");
 
                 Structure(structure);
                 FrontFacade(front);
