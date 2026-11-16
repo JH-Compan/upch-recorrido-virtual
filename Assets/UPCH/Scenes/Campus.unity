@@ -990528,6 +990528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: L - Laboratorios de Investigacion y Desarrollo
       objectReference: {fileID: 0}
+    - target: {fileID: 4943384079057351321, guid: 57e7d07b1633e884483630cf973699ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8983542443428494581, guid: 57e7d07b1633e884483630cf973699ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 113.91901
@@ -996136,6 +996140,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 431744161}
     m_Modifications:
+    - target: {fileID: 2247996393035941958, guid: afe85050833531f419492be9b9e0dc45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247996393035941958, guid: afe85050833531f419492be9b9e0dc45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.76
+      objectReference: {fileID: 0}
     - target: {fileID: 2864080495474622693, guid: afe85050833531f419492be9b9e0dc45, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.045336
