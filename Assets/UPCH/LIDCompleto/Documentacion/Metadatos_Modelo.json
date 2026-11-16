@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "name": "Edificio_LID",
+  "mainDimensions": [
+    65.1,
+    34.61
+  ],
+  "grade": 1.2,
+  "levels": [
+    {
+      "name": "Sotano",
+      "elevation": 0.0
+    },
+    {
+      "name": "Piso_01",
+      "elevation": 3.2
+    },
+    {
+      "name": "Piso_02",
+      "elevation": 6.4
+    },
+    {
+      "name": "Piso_03",
+      "elevation": 9.6
+    },
+    {
+      "name": "Piso_04",
+      "elevation": 12.8
+    },
+    {
+      "name": "Azotea",
+      "elevation": 16.8
+    }
+  ],
+  "notes": [
+    "Huella, posicion horizontal y niveles documentados conservados.",
+    "Alturas de vanos, espesores, cota de terreno y detalles de equipos estimados y registrados para el avance.",
+    "La entrega contiene arquitectura y mobiliario esquematico; no constituye levantamiento estructural."
+  ]
+}

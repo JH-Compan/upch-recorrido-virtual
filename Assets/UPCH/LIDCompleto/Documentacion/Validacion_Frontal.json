@@ -1,0 +1,495 @@
+{
+  "sourceWallRepairs": [
+    {
+      "level": "Sotano",
+      "cadHandle": "10BBF4",
+      "originalEndpointGapM": 0.10065931899233022,
+      "sourceFootprintM2": 9.494768786399998,
+      "modelFootprintM2": 9.494768786399984,
+      "symmetricDifferenceM2": 0.0,
+      "ok": true
+    }
+  ],
+  "frontCoverage": [
+    {
+      "level": "Sotano",
+      "zone": "Ala oeste",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Sotano",
+      "zone": "Ala este",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Sotano",
+      "zone": "Oficina frontal oeste",
+      "samples": 161,
+      "passed": 161
+    },
+    {
+      "level": "Sotano",
+      "zone": "Oficina frontal este",
+      "samples": 154,
+      "passed": 154
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Ala oeste",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Ala este",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Oficina frontal oeste",
+      "samples": 161,
+      "passed": 161
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Oficina frontal este",
+      "samples": 154,
+      "passed": 154
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Ala oeste",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Ala este",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Oficina frontal oeste",
+      "samples": 161,
+      "passed": 161
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Oficina frontal este",
+      "samples": 154,
+      "passed": 154
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Vidriera retranqueada",
+      "samples": 406,
+      "passed": 406
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Ala oeste",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Ala este",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Oficina frontal oeste",
+      "samples": 161,
+      "passed": 161
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Oficina frontal este",
+      "samples": 154,
+      "passed": 154
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Voladizo cerrado",
+      "samples": 420,
+      "passed": 420
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Ala oeste",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Ala este",
+      "samples": 840,
+      "passed": 840
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Oficina frontal oeste",
+      "samples": 161,
+      "passed": 161
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Oficina frontal este",
+      "samples": 154,
+      "passed": 154
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Voladizo cerrado",
+      "samples": 420,
+      "passed": 420
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Cerramiento acristalado de ingreso",
+      "samples": 355,
+      "passed": 355
+    }
+  ],
+  "passageChecks": [
+    {
+      "planX": 33.99,
+      "height": 4.55,
+      "firstSurfacePlanY": null,
+      "ok": true
+    },
+    {
+      "planX": 34.2,
+      "height": 4.55,
+      "firstSurfacePlanY": null,
+      "ok": true
+    },
+    {
+      "planX": 34.410000000000004,
+      "height": 4.55,
+      "firstSurfacePlanY": null,
+      "ok": true
+    }
+  ],
+  "runtimeUnityTested": false,
+  "unexpectedFrontGaps": [],
+  "continuousCoverage": [
+    {
+      "level": "Sotano",
+      "zone": "Ala oeste",
+      "planXRange": [
+        0.15,
+        23.949999999999996
+      ],
+      "checkedAreaM2": 73.30399999999999,
+      "missingAreaM2": 1.9223838076953825e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "zone": "Ala este",
+      "planXRange": [
+        41.15,
+        64.95000000000033
+      ],
+      "checkedAreaM2": 73.30400000000103,
+      "missingAreaM2": 0.0,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "zone": "Oficina frontal oeste",
+      "planXRange": [
+        24.45,
+        27.749999999999968
+      ],
+      "checkedAreaM2": 10.163999999999904,
+      "missingAreaM2": 2.3920421199363103e-16,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "zone": "Oficina frontal este",
+      "planXRange": [
+        37.35,
+        40.49999999999997
+      ],
+      "checkedAreaM2": 9.701999999999908,
+      "missingAreaM2": 1.9655388427963654e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Ala oeste",
+      "planXRange": [
+        0.15,
+        23.949999999999996
+      ],
+      "checkedAreaM2": 73.304,
+      "missingAreaM2": 2.7464274188204766e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Ala este",
+      "planXRange": [
+        41.15,
+        64.95000000000033
+      ],
+      "checkedAreaM2": 73.30400000000103,
+      "missingAreaM2": 3.7163158937253015e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Oficina frontal oeste",
+      "planXRange": [
+        24.45,
+        27.749999999999968
+      ],
+      "checkedAreaM2": 10.163999999999906,
+      "missingAreaM2": 2.9309887850103855e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Oficina frontal este",
+      "planXRange": [
+        37.35,
+        40.49999999999997
+      ],
+      "checkedAreaM2": 9.70199999999991,
+      "missingAreaM2": 2.797762022055368e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Ala oeste",
+      "planXRange": [
+        0.15,
+        23.949999999999996
+      ],
+      "checkedAreaM2": 73.30399999999997,
+      "missingAreaM2": 2.5338836029398246e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Ala este",
+      "planXRange": [
+        41.15,
+        64.95000000000033
+      ],
+      "checkedAreaM2": 73.304000000001,
+      "missingAreaM2": 3.952310922983313e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Oficina frontal oeste",
+      "planXRange": [
+        24.45,
+        27.749999999999968
+      ],
+      "checkedAreaM2": 10.1639999999999,
+      "missingAreaM2": 2.142073185495967e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Oficina frontal este",
+      "planXRange": [
+        37.35,
+        40.49999999999997
+      ],
+      "checkedAreaM2": 9.701999999999906,
+      "missingAreaM2": 2.1420731854959876e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "zone": "Vidriera retranqueada",
+      "planXRange": [
+        28.25,
+        36.79999999999992
+      ],
+      "checkedAreaM2": 26.333999999999744,
+      "missingAreaM2": 1.5187850976871998e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Ala oeste",
+      "planXRange": [
+        0.15,
+        23.949999999999996
+      ],
+      "checkedAreaM2": 73.30399999999999,
+      "missingAreaM2": 3.634205464342341e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Ala este",
+      "planXRange": [
+        41.15,
+        64.95000000000033
+      ],
+      "checkedAreaM2": 73.30400000000103,
+      "missingAreaM2": 4.9957965542191064e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Oficina frontal oeste",
+      "planXRange": [
+        24.45,
+        27.749999999999968
+      ],
+      "checkedAreaM2": 10.163999999999904,
+      "missingAreaM2": 3.584901264730376e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Oficina frontal este",
+      "planXRange": [
+        37.35,
+        40.49999999999997
+      ],
+      "checkedAreaM2": 9.701999999999908,
+      "missingAreaM2": 3.318447738820341e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "zone": "Voladizo cerrado",
+      "planXRange": [
+        28.15,
+        36.999999999999915
+      ],
+      "checkedAreaM2": 27.257999999999743,
+      "missingAreaM2": 0.0,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Ala oeste",
+      "planXRange": [
+        0.15,
+        23.949999999999996
+      ],
+      "checkedAreaM2": 92.34400000000001,
+      "missingAreaM2": 3.1494765684314527e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Ala este",
+      "planXRange": [
+        41.15,
+        64.95000000000033
+      ],
+      "checkedAreaM2": 92.3440000000013,
+      "missingAreaM2": 6.068776037260188e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Oficina frontal oeste",
+      "planXRange": [
+        24.45,
+        27.749999999999968
+      ],
+      "checkedAreaM2": 12.803999999999881,
+      "missingAreaM2": 2.269970877932798e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Oficina frontal este",
+      "planXRange": [
+        37.35,
+        40.49999999999997
+      ],
+      "checkedAreaM2": 12.221999999999886,
+      "missingAreaM2": 2.277076305290395e-15,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "zone": "Voladizo cerrado",
+      "planXRange": [
+        28.15,
+        36.999999999999915
+      ],
+      "checkedAreaM2": 34.33799999999968,
+      "missingAreaM2": 1.5489831639570043e-14,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Cerramiento acristalado de ingreso",
+      "planXRange": [
+        28.25,
+        29.15
+      ],
+      "checkedAreaM2": 2.7719999999999962,
+      "missingAreaM2": 0.0,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Cerramiento acristalado de ingreso",
+      "planXRange": [
+        29.4,
+        33.5
+      ],
+      "checkedAreaM2": 12.628000000000007,
+      "missingAreaM2": 0.0,
+      "gaps": [],
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "zone": "Cerramiento acristalado de ingreso",
+      "planXRange": [
+        34.9,
+        36.9
+      ],
+      "checkedAreaM2": 6.160000000000001,
+      "missingAreaM2": 1.8474111129762612e-14,
+      "gaps": [],
+      "ok": true
+    }
+  ]
+}
