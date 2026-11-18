@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1faf744155bf9b3786e5f3c603bb9c3, type: 3}
+  m_Name: Estado_Recorte_H
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::UPCH.Veterinaria.Editor.VeterinariaTerrenoEstado
+  source: {fileID: 4300000, guid: 4fced69a92003994689b99c1483c67eb, type: 2}
+  result: {fileID: 4300000, guid: a27cfabc38946aed872a56ad9120b537, type: 2}
+  targetGlobalId: GlobalObjectId_V1-2-510ef084864c54e99101f46161700c9b-357576549-0

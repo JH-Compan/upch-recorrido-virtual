@@ -171271,7 +171271,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 4fced69a92003994689b99c1483c67eb, type: 2}
+  m_Mesh: {fileID: 4300000, guid: a27cfabc38946aed872a56ad9120b537, type: 2}
 --- !u!23 &357576548
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -171328,7 +171328,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357576544}
-  m_Mesh: {fileID: 4300000, guid: 4fced69a92003994689b99c1483c67eb, type: 2}
+  m_Mesh: {fileID: 4300000, guid: a27cfabc38946aed872a56ad9120b537, type: 2}
 --- !u!1 &358024426
 GameObject:
   m_ObjectHideFlags: 0
@@ -551155,6 +551155,7 @@ Transform:
   - {fileID: 2092111998}
   - {fileID: 1135141625}
   - {fileID: 1913007593}
+  - {fileID: 1760397415}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1237993492
@@ -762096,6 +762097,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759822458}
   m_Mesh: {fileID: 4300000, guid: 7cdd1f24feb283146bd63a25274e29be, type: 2}
+--- !u!1001 &1760397414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1237960108}
+    m_Modifications:
+    - target: {fileID: 1001, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_Name
+      value: Pabellon_H_Veterinaria
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.720671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 144.78705
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a665473778f7173182c25491431e4f11, type: 3}
+--- !u!4 &1760397415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1002, guid: a665473778f7173182c25491431e4f11, type: 3}
+  m_PrefabInstance: {fileID: 1760397414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1760762416
 GameObject:
   m_ObjectHideFlags: 0
@@ -995931,6 +995994,10 @@ PrefabInstance:
     - target: {fileID: 8276203377166504232, guid: 60f4547a70a5cf941b993934d2a70ea9, type: 3}
       propertyPath: m_Name
       value: H - Medicina Veterinaria y Zootecnia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276203377166504232, guid: 60f4547a70a5cf941b993934d2a70ea9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
