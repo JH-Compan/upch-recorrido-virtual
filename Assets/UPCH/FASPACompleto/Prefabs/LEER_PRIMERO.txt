@@ -1,0 +1,46 @@
+FASPA COMPLETO — paquete independiente para Unity
+
+No necesitas CREA ni el antiguo Pabellon_J_FASPA.
+
+1. Copia la carpeta FASPACompleto del ZIP en:
+C:\Proyectos\upch-recorrido-virtual\Assets\UPCH\FASPACompleto
+2. Espera a que Unity importe el FBX y compile los scripts.
+3. Abre el menú superior UPCH > FASPA completo > 1. Generar Meshes Materials y Prefab.
+   No necesitas seleccionar ningún edificio. Puede tardar: hay 3544 piezas.
+4. Se crean archivos reales en Meshes (.asset), Materials (.mat), Prefabs (Edificio_FASPA.prefab) y sus .meta, escritos por tu propia versión de Unity.
+5. Ejecuta UPCH > FASPA completo > 2. Insertar prefab en escena.
+   La nueva instancia se inserta en el origen, NO alineada automáticamente al campus.
+   Mueve y gira solamente Edificio_FASPA para colocarla. No restablezcas transformaciones de sus hijos.
+6. Para editar libremente: selecciona Edificio_FASPA y ejecuta la opción 3 del mismo menú.
+7. Despliega FASPA_Geometria > Nivel > categoría > pieza. Cada objeto tiene su malla y pivote propios.
+8. Guarda la escena con Ctrl+S.
+
+El generador no borra edificios ni modifica CREA. Si insertas otra instancia, debes evitar superponerlas.
+Si generaste ya el prefab, la opción 1 lo conserva para no sobrescribir tus cambios.
+Para reutilizar tu versión editada, arrastra su raíz desde Hierarchy a Prefabs con otro nombre.
+No borres los .meta después de que Unity los cree: mantienen las referencias.
+
+CARPETAS
+Documentacion: instrucciones y controles de geometría.
+Editor: FASPAIntegracion.cs y FASPARevisionSectorial.cs (menús de Unity).
+Materials: se llena al ejecutar la opción 1.
+Meshes: se llena al ejecutar la opción 1.
+Prefabs: se llena al ejecutar la opción 1.
+Referencias: FBX separado con geometría V2.
+Runtime: FASPANiveles.cs opcional para mostrar/ocultar niveles durante revisiones.
+Scenes: reserva para guardar tu escena de revisión; este paquete no contiene otra copia de Campus.
+
+ALCANCE
+Los archivos nativos .asset y .prefab no vienen preescritos en el ZIP: Unity los genera con el comando 1. Se incluye todo lo necesario sin depender del conjunto anterior.
+Puedes mover, girar, escalar, borrar o reasignar materiales por pieza. Los materiales compartidos afectan varias piezas: duplica uno para cambiar solo una.
+No cada fragmento equivale a un muro completo: existen fragmentos de encuentros booleanos. Algunas piezas soldadas conservan elementos unidos.
+Cambiar vértices o abrir nuevos huecos requiere una herramienta de edición de mallas. Transform solo cambia ubicación, giro y escala.
+Los colliders de arquitectura se generan excepto en puertas; las hojas de puerta no incluyen animación ni interacción.
+Los vidrios usan material opaco de referencia; no se presentan como transparencia física.
+3544 objetos, 577308 triángulos: versión para editar, requiere optimización y pruebas para Quest.
+
+VALIDACIÓN
+FBX reimportado en Blender: 3544 mallas; raíz solo FASPA; diferencia máxima de límites 0.00000134 m.
+Bordes no manifold en las piezas fuente: 0. Los controles de separación respecto a V2 se incluyen en esta carpeta.
+Los scripts C# no se han ejecutado en una instalación de Unity en este entorno; verifica Console tras importar.
+No se ha hecho un nuevo rediseño arquitectónico. Se conserva FASPA V2, sus SUPUESTOS y la escalera triangular larga provisional como rampa.
