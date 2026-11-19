@@ -213,6 +213,17 @@ def make_slabs():
 
 def load_sections(trace):
  for i,l in enumerate(trace['levels']):
+  # Clear teaching rooms checked against A-03/A-04. Some black 0.72 pt chair
+  # profiles polygonize as tiny structural sections. These are furniture,
+  # not repeated columns. Preserve the actual perimeter and its jambs.
+  clear_rooms=[]
+  if i in (2,3):
+   front=508 if i==2 else 443
+   clear_rooms=[[(141,front),(425,front),(425,230),(209,219)],
+                [(435,front),(717,front),(717,243),(435,230)],
+                [(999 if i==2 else 849,443),(1214,443),(1214,267),(999 if i==2 else 849,252)],
+                [(1227,443),(1513,443),(1513,282),(1227,267)]]
+  furniture_exclusion=unary_union([poly(q,i).buffer(-.18) for q in clear_rooms])
   structurals=[metric(Polygon(q['outline'],q['holes']),i) for key in ['structural','structuralRepaired'] for q in l.get(key,[])]
   # Recover open interior wall profiles; outer thin profiles remain windows.
   recovered=unary_union([metric(Polygon(q['outline'],q['holes']),i) for q in l.get('pairedRecovery',[])]).intersection(envelope(i).buffer(-.45))
@@ -223,7 +234,7 @@ def load_sections(trace):
    if p.area<.055 or p.buffer(-.035).is_empty:continue
    if not p.buffer(-.18).is_empty and p.area>.30:continue
    thin.append((j,p))
-  W=unary_union(structurals+[recovered]).intersection(envelope(i).buffer(.012))
+  W=unary_union(structurals+[recovered]).intersection(envelope(i).buffer(.012)).difference(furniture_exclusion)
   W=W.difference(metric(WEST_SLAB,2).buffer(.005))
   # A-05 section pen weights differ: its perimeter is a single 0.60 pt path.
   if i==4:W=Polygon()
@@ -243,7 +254,7 @@ def load_sections(trace):
     rail.append(p);continue
    if p.area>.23:drywall.append(p)
   W=W.difference(unary_union(low_dividers+glass_partitions+rail))
-  D=unary_union(drywall).difference(W)
+  D=unary_union(drywall).difference(W).difference(furniture_exclusion)
   for j,p in enumerate(low_dividers):
    fixed_prism(p,NPT[i],NPT[i]+1.60,LEVEL_NAMES[i]+'/Divisorios_1_60',f'Divisorio_bajo_{j+1}','wall',True,i,f'A-0{i+1}: DIVISORIO H=1.60 m')
   for j,p in enumerate(glass_partitions):
@@ -390,7 +401,7 @@ def east_stair():
  land,arc=east_landing()
  for i in range(3):
   y0=NPT[i];y1=NPT[i+1];mid=(y0+y1)/2
-  for name,sections,low,high in [('tramo_1',EAST_LOWER,y0,mid),('tramo_2',EAST_UPPER[::-1],mid,y1)]:
+  for name,sections,low,high in [('tramo_1',EAST_UPPER,y0,mid),('tramo_2',EAST_LOWER[::-1],mid,y1)]:
    for k,(a,b) in enumerate(zip(sections,sections[1:])):
     q=poly([a[0],a[1],b[1],b[0]],2);lo=low+(high-low)*k/11;hi=low+(high-low)*(k+1)/11
     fixed_prism(q,lo-.18,hi,group,f'Este_{i}_{name}_peldaño_{k+1}','floor',True,i,'A-03: extremos de huellas vectoriales; alturas entre NPT estimadas')
@@ -521,7 +532,10 @@ def write_mesh_asset(path,part):
  if not np.all(valid):
   v=v.reshape(-1,3,3)[valid].reshape(-1,3);uv=uv.reshape(-1,3,2)[valid].reshape(-1,2);ns=ns[valid];length=length[valid]
  n=np.repeat(ns/length[:,None],3,axis=0);count=len(v)
- arr=np.c_[v,n,uv].astype('<f4');indices=np.arange(count,dtype='<u4')
+ arr=np.c_[v,n,uv].astype('<f4');indices=np.arange(count,dtype='<u4');subcounts=[count]
+ if part.get('triangleMaterials') is not None:
+  mask=np.array(part['triangleMaterials']);assert len(mask)==count//3
+  groups=[indices.reshape(-1,3)[mask==k].flatten() for k in range(len(part['materialGuids']))];subcounts=[len(g) for g in groups];indices=np.concatenate(groups)
  mn=v.min(axis=0);mx=v.max(axis=0);center=(mn+mx)/2;extent=(mx-mn)/2
  template=(ROOT/'Assets/UPCH/Campus/Generated/Meshes/BuildingH.asset').read_text()
  template=template.replace('m_Name: BuildingH','m_Name: '+part['id'])
@@ -535,6 +549,11 @@ def write_mesh_asset(path,part):
  def vec(q):return '{x: '+format(q[0],'.9g')+', y: '+format(q[1],'.9g')+', z: '+format(q[2],'.9g')+'}'
  template=re.sub(r'm_Center: \{[^}]+\}','m_Center: '+vec(center),template)
  template=re.sub(r'm_Extent: \{[^}]+\}','m_Extent: '+vec(extent),template)
+ if len(subcounts)>1:
+  a=template.index('  m_SubMeshes:');z=template.index('  m_Shapes:',a);block=template[a:z].split('  m_SubMeshes:\n',1)[1];blocks=[];offset=0
+  for amount in subcounts:
+   entry=re.sub(r'firstByte: \d+',f'firstByte: {offset}',block);entry=re.sub(r'indexCount: \d+',f'indexCount: {amount}',entry);blocks.append(entry);offset+=amount*4
+  template=template[:a]+'  m_SubMeshes:\n'+''.join(blocks)+template[z:]
  path.write_text(template);meta(path);return uid(path.relative_to(ROOT))
 
 
@@ -598,6 +617,9 @@ Transform:
    for typ,num in [(33,node['mf']),(23,node['mr']),(64,node['mc'])]:
     if num is None:continue
     b=tpl[typ];old=re.search(r'&(\d+)',b)[1];b=b.replace('&'+old,'&'+str(num),1).replace('8276203377166504232',str(node['go'])).replace('e2ad8b7bc742f0745ae9ac0cfb901cd0',meshguid).replace('4429b74ef5a83f947acf9bd470d19a9b',p['materialGuid'])
+    if typ==23 and p.get('materialGuids'):
+     materialblock='  m_Materials:\n'+''.join('  - {fileID: 2100000, guid: '+g+', type: 2}\n' for g in p['materialGuids'])
+     b=re.sub(r'  m_Materials:\n(?:  - [^\n]+\n)+',materialblock,b)
     if typ==23 and p['hidden']:b=b.replace('m_Enabled: 1','m_Enabled: 0',1)
     if typ==23 and p['material']=='glass':b=b.replace('m_CastShadows: 1','m_CastShadows: 0')
     out.append(b)
@@ -615,6 +637,9 @@ Transform:
 
 def write_data(trace,excavation):
  model={'schema':1,'sourcePdfSha256':trace['sourceSha256'],'baseCommit':'98e8d8030f6ea5e9bee3360b28c86395f0abf28e','rootName':'Pabellon_H_Veterinaria','anchor':ANCHOR,'yaw':0,'npt':NPT,'parameters':PARAMS,'items':PARTS,'excavationArea':excavation.area,'limitations':['Alturas libres, antepechos, dinteles y espesores no definidos en plantas: parametros estimados.','Rampa posterior: pendiente 8% explicita, extremos y continuidad vertical inferidos.','Geometria de escaleras requiere validacion de recorrido y cotejo en Unity.','No se ejecutaron Unity ni pruebas Play en el entorno de generacion.']}
+ cad_path=Path(__file__).parent/'Fuentes/CAD_H.json'
+ if cad_path.exists():
+  cad=json.loads(cad_path.read_text());model['sourceDWG_SHA256']=cad['sourceSHA256'];model['horizontalSource']='Capas CAD nativas registradas; contornos de losas y circulaciones conservan trazado PDF documentado.'
  DATA.mkdir(parents=True,exist_ok=True);path=DATA/'Modelo_H.json';path.write_text(json.dumps(model,ensure_ascii=False,separators=(',',':')));meta(path)
  (DATA/'Parametros_H.json').write_text(json.dumps(PARAMS,indent=2));meta(DATA/'Parametros_H.json')
  (BASE/'Documentacion/Puertas_y_Niveles.json').write_text(json.dumps({'NPT':NPT,'doors':DOORS,'steps':STEPS,'observations':EVIDENCE},ensure_ascii=False,indent=2));meta(BASE/'Documentacion/Puertas_y_Niveles.json')
@@ -694,10 +719,18 @@ Transform:
 
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--trace',type=Path,default=Path(__file__).parent/'Fuentes/Trazado_Vectorial.json');ap.add_argument('--doors',type=Path,default=Path(__file__).parent/'Fuentes');ap.add_argument('--no-scene',action='store_true');args=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--trace',type=Path,default=Path(__file__).parent/'Fuentes/Trazado_Vectorial.json');ap.add_argument('--doors',type=Path,default=Path(__file__).parent/'Fuentes');ap.add_argument('--no-scene',action='store_true');ap.add_argument('--building-only',action='store_true',help='Regenera solo H; conserva Campus y el terreno ya validado');args=ap.parse_args()
  trace=json.loads(args.trace.read_text())
  for i in range(5):DOORS.append(json.loads((args.doors/f'doors_{i+1}.json').read_text()))
- make_slabs();load_sections(trace);make_doors();west_stair();east_stair();central_stairs();technical_access();exterior_access();architecture_complements()
+ cad_path=Path(__file__).parent/'Fuentes/CAD_H.json'
+ cad=json.loads(cad_path.read_text()) if cad_path.exists() else None
+ if cad:
+  from cad_h import merge_doors,build_sections
+  merge_doors(sys.modules[__name__],cad)
+ make_slabs()
+ if cad:build_sections(sys.modules[__name__],cad,trace)
+ else:load_sections(trace)
+ make_doors();west_stair();east_stair();central_stairs();technical_access();exterior_access();architecture_complements()
  excavation=unary_union([p for g in [envelope(0),envelope(1),metric(WEST_HALL.union(WEST_SLAB),2)]+GROUND_PATCHES for p in polygons(g)])
  # The actual excavation model excludes the adjacent campus and follows H only.
  add_mesh(merge_meshes([section(p) for p in polygons(excavation)]),'00_Estructura_General','Excavacion_H_Verificada','floor',False,'fixed',0,-3.57,-3.55,source='A-01/A-02: envolvente completa',note='Malla auxiliar solo Editor; no renderiza ni colisiona.',active=False,hidden=True)
@@ -708,13 +741,19 @@ def main():
   key=(p['materialGuid'],p['collider'],p['active'],hashlib.sha256(repr(canonical).encode()).hexdigest())
   if key not in seen:seen.add(key);unique.append(p)
  PARTS[:]=unique
+ from acabados_h import material_assets,apply as apply_finishes
+ finishes=material_assets(ROOT,BASE,uid);apply_finishes(PARTS,[envelope(i) for i in range(5)],materialize_vertices,finishes)
  active_ids={p['id'] for p in PARTS}
  for old in (BASE/'Generado/Mallas').glob('H_*.asset'):
   if old.stem not in active_ids:
    old.unlink();old.with_name(old.name+'.meta').unlink(missing_ok=True)
  for p in PARTS:write_mesh_asset(BASE/'Generado/Mallas'/f"{p['id']}.asset",p)
- create_prefab(PARTS);write_data(trace,excavation);terrain=terrain_mesh(excavation)
- if not args.no_scene:integrate_scene(terrain)
+ create_prefab(PARTS);write_data(trace,excavation)
+ if args.building_only:
+  previous=BASE/'Documentacion/Construccion.json'
+  terrain={'excavatedIntersectionArea':json.loads(previous.read_text())['terrainAreaRemoved'] if previous.exists() else None,'preservedExistingAsset':True}
+ else:terrain=terrain_mesh(excavation)
+ if not args.no_scene and not args.building_only:integrate_scene(terrain)
  for d in sorted([BASE]+[q for q in BASE.rglob('*') if q.is_dir()],key=lambda p:len(p.parts)):meta(d)
  summary={'parts':len(PARTS),'byGroup':dict(COUNTS),'NPT':NPT,'anchor':ANCHOR,'excavationArea':excavation.area,'terrainAreaRemoved':terrain['excavatedIntersectionArea'],'roofVoidArea':OPENINGS[4].area,'stairRisers':len(STEPS),'doors':list(map(len,DOORS))}
  (BASE/'Documentacion/Construccion.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False));meta(BASE/'Documentacion/Construccion.json')

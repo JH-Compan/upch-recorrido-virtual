@@ -1,49 +1,49 @@
 ﻿Elemento,Lamina,Medida o posicion,Resultado,Evidencia y limites
 Niveles,A-01,NPT -3.55 m local / -2.38 m global,Conforme,Comparacion numerica de caras superiores de losas con NPT; Y global usa inferencia de vereda.
-Muros,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Perfiles vectoriales y recuperacion de discontinuidades; cotejo visual realizado. No se verificaron exhaustivamente todas las cadenas numericas.
-Columnas,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Secciones en posiciones vectoriales de cada planta; alineacion derivada del registro entre laminas.
+Muros,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
+Columnas,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
 Corredores,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Distribucion y vanos construidos; falta recorrer todas las rutas entre ambientes con CharacterController.
-Fachadas,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Vanos de las plantas; alturas de antepechos y dinteles estimadas. Sin alzados para confirmar apariencia.
+Fachadas,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Posiciones de vanos CAD/PDF; alturas estimadas. Materiales locales orientados por fotografias, no medidos. Faltan alzados."
 Losas y vacios,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Contornos independientes y aberturas construidas; espesor 0.24 m estimado. Revisar cada borde en Unity.
-Puertas,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Vanos reales y hojas abiertas; altura 2.15 m estimada, requiere cotejo exhaustivo de cada acceso."
+Puertas,A-01,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Arcos CAD conciliados con PDF; vanos reales. Altura 2.15 m estimada; giro y cada acceso pendientes de cotejo individual.
 Niveles,A-02,NPT +0.00 m local / +1.17 m global,Conforme,Comparacion numerica de caras superiores de losas con NPT; Y global usa inferencia de vereda.
-Muros,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Perfiles vectoriales y recuperacion de discontinuidades; cotejo visual realizado. No se verificaron exhaustivamente todas las cadenas numericas.
-Columnas,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Secciones en posiciones vectoriales de cada planta; alineacion derivada del registro entre laminas.
+Muros,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
+Columnas,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
 Corredores,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Distribucion y vanos construidos; falta recorrer todas las rutas entre ambientes con CharacterController.
-Fachadas,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Vanos de las plantas; alturas de antepechos y dinteles estimadas. Sin alzados para confirmar apariencia.
+Fachadas,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Posiciones de vanos CAD/PDF; alturas estimadas. Materiales locales orientados por fotografias, no medidos. Faltan alzados."
 Losas y vacios,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Contornos independientes y aberturas construidas; espesor 0.24 m estimado. Revisar cada borde en Unity.
-Puertas,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Vanos reales y hojas abiertas; altura 2.15 m estimada, requiere cotejo exhaustivo de cada acceso."
+Puertas,A-02,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Arcos CAD conciliados con PDF; vanos reales. Altura 2.15 m estimada; giro y cada acceso pendientes de cotejo individual.
 Niveles,A-03,NPT +3.55 m local / +4.72 m global,Conforme,Comparacion numerica de caras superiores de losas con NPT; Y global usa inferencia de vereda.
-Muros,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Perfiles vectoriales y recuperacion de discontinuidades; cotejo visual realizado. No se verificaron exhaustivamente todas las cadenas numericas.
-Columnas,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Secciones en posiciones vectoriales de cada planta; alineacion derivada del registro entre laminas.
+Muros,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
+Columnas,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
 Corredores,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Distribucion y vanos construidos; falta recorrer todas las rutas entre ambientes con CharacterController.
-Fachadas,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Vanos de las plantas; alturas de antepechos y dinteles estimadas. Sin alzados para confirmar apariencia.
+Fachadas,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Posiciones de vanos CAD/PDF; alturas estimadas. Materiales locales orientados por fotografias, no medidos. Faltan alzados."
 Losas y vacios,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Contornos independientes y aberturas construidas; espesor 0.24 m estimado. Revisar cada borde en Unity.
-Puertas,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Vanos reales y hojas abiertas; altura 2.15 m estimada, requiere cotejo exhaustivo de cada acceso."
+Puertas,A-03,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Arcos CAD conciliados con PDF; vanos reales. Altura 2.15 m estimada; giro y cada acceso pendientes de cotejo individual.
 Niveles,A-04,NPT +7.10 m local / +8.27 m global,Conforme,Comparacion numerica de caras superiores de losas con NPT; Y global usa inferencia de vereda.
-Muros,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Perfiles vectoriales y recuperacion de discontinuidades; cotejo visual realizado. No se verificaron exhaustivamente todas las cadenas numericas.
-Columnas,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Secciones en posiciones vectoriales de cada planta; alineacion derivada del registro entre laminas.
+Muros,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
+Columnas,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
 Corredores,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Distribucion y vanos construidos; falta recorrer todas las rutas entre ambientes con CharacterController.
-Fachadas,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Vanos de las plantas; alturas de antepechos y dinteles estimadas. Sin alzados para confirmar apariencia.
+Fachadas,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Posiciones de vanos CAD/PDF; alturas estimadas. Materiales locales orientados por fotografias, no medidos. Faltan alzados."
 Losas y vacios,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Contornos independientes y aberturas construidas; espesor 0.24 m estimado. Revisar cada borde en Unity.
-Puertas,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Vanos reales y hojas abiertas; altura 2.15 m estimada, requiere cotejo exhaustivo de cada acceso."
+Puertas,A-04,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Arcos CAD conciliados con PDF; vanos reales. Altura 2.15 m estimada; giro y cada acceso pendientes de cotejo individual.
 Niveles,A-05,NPT +10.70 m local / +11.87 m global,Conforme,Comparacion numerica de caras superiores de losas con NPT; Y global usa inferencia de vereda.
-Muros,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Perfiles vectoriales y recuperacion de discontinuidades; cotejo visual realizado. No se verificaron exhaustivamente todas las cadenas numericas.
-Columnas,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Secciones en posiciones vectoriales de cada planta; alineacion derivada del registro entre laminas.
+Muros,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
+Columnas,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Capas CAD registradas y perfiles abiertos recuperados por pares de caras; sin mobiliario. Cotejo individual y asignacion de alturas pendientes. A-05 conserva trazado PDF.
 Corredores,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Distribucion y vanos construidos; falta recorrer todas las rutas entre ambientes con CharacterController.
-Fachadas,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Vanos de las plantas; alturas de antepechos y dinteles estimadas. Sin alzados para confirmar apariencia.
+Fachadas,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Posiciones de vanos CAD/PDF; alturas estimadas. Materiales locales orientados por fotografias, no medidos. Faltan alzados."
 Losas y vacios,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Contornos independientes y aberturas construidas; espesor 0.24 m estimado. Revisar cada borde en Unity.
-Puertas,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,"Vanos reales y hojas abiertas; altura 2.15 m estimada, requiere cotejo exhaustivo de cada acceso."
+Puertas,A-05,Posiciones en planta registradas; 1 unidad = 1 m,Observado,Arcos CAD conciliados con PDF; vanos reales. Altura 2.15 m estimada; giro y cada acceso pendientes de cotejo individual.
 Emplazamiento X/Z,Campus.unity,"(-8.720671,144.78705), giro 0, escala 1",Conforme,Ancla de la reserva H inspeccionada; no ajuste artificial de escala.
 Emplazamiento Y,A-02 / Campus.unity,Raiz +1.17; vereda -1.17 local = 0 global,Observado,Inferencia de integracion; falta levantamiento o comprobacion de rutas exteriores.
 Escalera 03,A-01 a A-05,Sotano a azotea; primeros peldaños del sotano trazados de A-01,Observado,"Empalme bajo proyeccion, retorno y alzado inferidos; falta seccion e inspeccion."
-Escalera 02,A-01 a A-04,Sotano a tercer piso; extremos de huellas A-03; caja 45 grados,Observado,"Construida, sin candidatos de obstaculo en control de centros; reparto de contrahuellas y recorrido por verificar."
+Escalera 02,A-01 a A-04,Sotano a tercer piso; extremos de huellas A-03; caja 45 grados,Observado,Sentido ascenso/retorno corregido por numeracion de huellas; llegada por tramo inferior izquierdo mantiene drywall A-04. Conteos y alzados inferidos; falta recorrido Unity.
 Escalera 01,A-02 a A-04,"Dos posiciones de tramos centrales, 1-2 y 2-3",Observado,Huella y descansos construidos; contrahuellas entre NPT estimadas.
 Rampa,A-01/A-02,8%; 29.75 m de recorrido; -3.55 a -1.17,Observado,"Pendiente explicita; longitud, ancho y extremos verticales inferidos."
 Sectores tecnicos,A-01,Piso -4.50 m; seis escalones de conexion,Observado,NPT explicito; geometria de conexion inferida.
 Barandas y parapetos,A-03 a A-05,Generales 1.10 m; sectores rotulados 0.80/0.85/1.20/1.25/1.30 m,Observado,Construidos; alturas generales y asignacion exacta de cada borde requieren cotejo y Play.
-Terreno y collider,Campus.unity,Recorte local 981.40 m2 de la malla Site,Conforme,Comprobacion matematica del recorte preparado; Site original intacto. Reaplicacion de herramienta Unity no ejecutada.
-Mallas,Assets serializados,"Indices finitos, normales y cierre; sin duplicados geometricos exactos",Conforme,Solo controles estaticos descritos en Verificacion_Estatica.json. No certifica ausencia de todo solape parcial o Z-fighting.
+Terreno y collider,Campus.unity,Recorte local 981.40 m2 de la malla Site,Conforme,"Campus, Terreno_Recortado_H y Estado_Recorte_H byte por byte iguales a base 38a6b89. Se conserva el recorte probado por el usuario."
+Mallas,Assets serializados,"Indices finitos, normales y cierre; sin duplicados geometricos exactos",Conforme,"Mallas serializadas: cierre, normales, indices, submallas/materiales y GUID. No certifica ausencia de todo solape parcial o Z-fighting."
 Vecinos,Campus.unity,G: 3.806 m; I: 6.860 m entre huellas,Conforme,Solo frente a reservas generadas; faltan otras ampliaciones y comprobacion visual en escena.
 Compilacion e importacion Unity,Unity 6000.3.10f1,No ejecutada,Observado,Unity no esta disponible en el entorno. Analisis sintactico no equivale a compilacion.
 Recorrido y colisiones Play,Jugador existente,No ejecutado,Observado,"Comprobar ingresos, todos los ambientes, descansos, rampa, techos bajos y bordes."

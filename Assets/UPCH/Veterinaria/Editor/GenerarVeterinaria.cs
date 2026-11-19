@@ -23,6 +23,8 @@ namespace UPCH.Veterinaria.Editor
         [Serializable] public class Part
         {
             public string id, name, group, materialGuid, material, role, source, note;
+            public string[] materialGuids;
+            public int[] triangleMaterials;
             public bool collider, active, hidden;
             public int level;
             public float bottom, top;
@@ -90,6 +92,20 @@ namespace UPCH.Veterinaria.Editor
             }
             var mesh = new Mesh { name = part.id, indexFormat = IndexFormat.UInt32 };
             mesh.vertices = vertices; mesh.uv = uv; mesh.triangles = triangles;
+            if (part.materialGuids != null && part.materialGuids.Length > 0 && part.triangleMaterials != null)
+            {
+                if (part.triangleMaterials.Length != count / 3) throw new InvalidDataException("Submallas incompletas: " + part.id);
+                mesh.subMeshCount = part.materialGuids.Length;
+                var indices = new List<int>[mesh.subMeshCount];
+                for (int k = 0; k < indices.Length; k++) indices[k] = new List<int>();
+                for (int k = 0; k < count / 3; k++)
+                {
+                    int slot = part.triangleMaterials[k];
+                    if (slot < 0 || slot >= indices.Length) throw new InvalidDataException("Material fuera de rango: " + part.id);
+                    indices[slot].Add(k * 3); indices[slot].Add(k * 3 + 1); indices[slot].Add(k * 3 + 2);
+                }
+                for (int k = 0; k < indices.Length; k++) mesh.SetTriangles(indices[k], k);
+            }
             mesh.RecalculateNormals(); mesh.RecalculateBounds();
             return mesh;
         }
@@ -111,11 +127,12 @@ namespace UPCH.Veterinaria.Editor
             AssetDatabase.Refresh();
             var materials = new Dictionary<string, Material>();
             foreach (var part in model.items)
-                if (!materials.ContainsKey(part.materialGuid))
+              foreach (var guid in part.materialGuids != null && part.materialGuids.Length > 0 ? part.materialGuids : new[] { part.materialGuid })
+                if (!materials.ContainsKey(guid))
                 {
-                    var material = AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(part.materialGuid));
-                    if (!material) throw new InvalidDataException("Material del proyecto ausente: " + part.materialGuid);
-                    materials.Add(part.materialGuid, material);
+                    var material = AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(guid));
+                    if (!material) throw new InvalidDataException("Material del proyecto ausente: " + guid);
+                    materials.Add(guid, material);
                 }
             // Existing root identity is retained, so scene instances keep their anchor.
             bool existing = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabPath);
@@ -145,7 +162,9 @@ namespace UPCH.Veterinaria.Editor
                     var obj = new GameObject(part.id + "_" + part.name);
                     obj.transform.SetParent(Group(root.transform, groups, part.group), false);
                     obj.AddComponent<MeshFilter>().sharedMesh = saved;
-                    var renderer = obj.AddComponent<MeshRenderer>(); renderer.sharedMaterial = materials[part.materialGuid];
+                    var renderer = obj.AddComponent<MeshRenderer>(); renderer.sharedMaterial = materials[part.materialGuids != null && part.materialGuids.Length > 0 ? part.materialGuids[0] : part.materialGuid];
+                    if (part.materialGuids != null && part.materialGuids.Length > 0)
+                        renderer.sharedMaterials = Array.ConvertAll(part.materialGuids, guid => materials[guid]);
                     renderer.enabled = !part.hidden;
                     if (part.hidden) obj.tag = "EditorOnly";
                     if (part.material == "glass") renderer.shadowCastingMode = ShadowCastingMode.Off;

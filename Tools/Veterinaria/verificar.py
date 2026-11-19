@@ -23,6 +23,15 @@ def main():
   tris=v[t,:3].astype(float);norm=np.cross(tris[:,1]-tris[:,0],tris[:,2]-tris[:,0]);a=np.linalg.norm(norm,axis=1)
   if np.any(a<1e-10):observed.append([p['id'],'triangulos_de_area_muy_pequena',int(np.sum(a<1e-10))])
   if np.any((np.linalg.norm(v[:,3:6],axis=1)<.98)|(np.linalg.norm(v[:,3:6],axis=1)>1.02)):errors.append([p['id'],'normals'])
+  # Validate the on-disk submesh index ranges, not only source JSON masks.
+  serialized=path.read_text();ranges=re.findall(r'firstByte: (\d+)\n\s+indexCount: (\d+)',serialized)
+  slots=p.get('materialGuids',[p['materialGuid']]);indexSize=4 if 'm_IndexFormat: 1' in serialized else 2
+  if len(ranges)!=len(slots):errors.append([p['id'],'submesh_material_count'])
+  cursor=0
+  for first,count in ranges:
+   if int(first)!=cursor*indexSize or int(count)%3:errors.append([p['id'],'submesh_index_range'])
+   cursor+=int(count)
+  if cursor!=t.size:errors.append([p['id'],'submesh_index_total'])
   m=trimesh.Trimesh(vertices=v[:,:3],faces=t,process=True)
   watertight=m.is_watertight
   if not watertight:observed.append([p['id'],'no_manifold_despues_de_soldadura_float32'])
@@ -55,6 +64,16 @@ def main():
  localGuids={re.search(r'^guid: (\w+)',p.read_text(),re.M)[1] for p in BASE.rglob('*.meta')}
  for g in re.findall(r'm_Mesh: \{fileID: 4300000, guid: (\w+)',prefab):
   if g not in localGuids:errors.append(['prefab','missing_mesh_guid',g])
+ allGuids={re.search(r'^guid: (\w+)',p.read_text(),re.M)[1] for p in (ROOT/'Assets').rglob('*.meta') if re.search(r'^guid: (\w+)',p.read_text(),re.M)}
+ for p in model['items']:
+  for materialGuid in p.get('materialGuids',[p['materialGuid']]):
+   if materialGuid not in allGuids:errors.append([p['id'],'unresolved_material_guid',materialGuid])
+ protected=['Assets/UPCH/Scenes/Campus.unity','Assets/UPCH/Veterinaria/Generado/Terreno_Recortado_H.asset','Assets/UPCH/Veterinaria/Generado/Estado_Recorte_H.asset']
+ preserved={}
+ for rel in protected:
+  original=subprocess.check_output(['git','show','38a6b895e22e6a94eefedf66065cd0cd7260e70c:'+rel],cwd=ROOT)
+  preserved[rel]=(ROOT/rel).read_bytes()==original
+  if not preserved[rel]:errors.append([rel,'modified_outside_building_revision'])
  circulationData=json.loads((BASE/'Documentacion/Puertas_y_Niveles.json').read_text());steps=circulationData['steps']
  circulation=[]
  for step in steps:
@@ -73,7 +92,7 @@ def main():
    body=Point(center).buffer(.25)
    for ident,g,lo,hi in walls:
     if lo<y+1.75 and hi>y+.21 and g.intersects(body):doorCandidates.append([level,j,ident])
- result={'baseCommit':model['baseCommit'],'sourcePdfSha256':model['sourcePdfSha256'],'root':model['rootName'],'anchor':model['anchor'],'npt':model['npt'],'parts':len(model['items']),'staticErrors':errors,'staticObservations':observed,'circulationStaticCandidates':circulation,'doorCenterStaticCandidates':doorCandidates,'circulationScope':'Centros representativos de huellas; capsula radio 0.25 / altura 1.75. No es simulacion fisica ni comprobacion de todas las rutas entre ambientes.','sceneChangedOriginalFileIDs':changed,'sceneAddedFileIDs':sorted(set(new)-set(old)),'UnityCompilation':'NOT_RUN','UnityEditModeTests':'NOT_RUN','UnityWalkthrough':'NOT_RUN','architecturalStatus':'Construido a partir de plantas; alturas estimadas y conexiones inferidas requieren validacion. No equivale a un levantamiento BIM certificado.','meshes':summaries}
+ result={'baseCommit':model['baseCommit'],'sourcePdfSha256':model['sourcePdfSha256'],'sourceDWG_SHA256':model.get('sourceDWG_SHA256'),'updateBaseCommit':'38a6b895e22e6a94eefedf66065cd0cd7260e70c','preservedFromUpdateBase':preserved,'root':model['rootName'],'anchor':model['anchor'],'npt':model['npt'],'parts':len(model['items']),'staticErrors':errors,'staticObservations':observed,'circulationStaticCandidates':circulation,'doorCenterStaticCandidates':doorCandidates,'circulationScope':'Centros representativos de huellas; capsula radio 0.25 / altura 1.75. No es simulacion fisica ni comprobacion de todas las rutas entre ambientes.','sceneChangedOriginalFileIDs':changed,'sceneAddedFileIDs':sorted(set(new)-set(old)),'UnityCompilation':'NOT_RUN','UnityEditModeTests':'NOT_RUN','UnityWalkthrough':'NOT_RUN','architecturalStatus':'Construido a partir de plantas; alturas estimadas y conexiones inferidas requieren validacion. No equivale a un levantamiento BIM certificado.','meshes':summaries}
  (BASE/'Documentacion/Verificacion_Estatica.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
  print(json.dumps({k:v for k,v in result.items() if k not in ['meshes','staticObservations']},ensure_ascii=False,indent=2))
  print('Observations',len(observed),collections.Counter(q[1] for q in observed))

@@ -11,7 +11,17 @@ Mesh:
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 36
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 36
+    localAABB:
+      m_Center: {x: -25.0211, y: 7.725, z: -3.14535}
+      m_Extent: {x: 0.7458, y: 0.625, z: 2.53045}
+  - serializedVersion: 2
+    firstByte: 96
+    indexCount: 12
     topology: 0
     baseVertex: 0
     firstVertex: 0
