@@ -35,6 +35,9 @@
   "notes": [
     "Huella, posicion horizontal y niveles documentados conservados.",
     "Alturas de vanos, espesores, cota de terreno y detalles de equipos estimados y registrados para el avance.",
-    "La entrega contiene arquitectura y mobiliario esquematico; no constituye levantamiento estructural."
-  ]
+    "La entrega contiene arquitectura y mobiliario esquematico; no constituye levantamiento estructural.",
+    "Revision 2026-11-20: computadoras y asientos retirados; mesones conservados. Ver docs/lid/VALIDACION_ACTUAL.md."
+  ],
+  "validationRevision": "2026-11-20",
+  "gradeStatus": "1.20 es el datum provisional del modelo; entrada alineada a terreno Campus Y=0 mediante raiz Y=-1.20. No es una cota de terreno levantada."
 }
