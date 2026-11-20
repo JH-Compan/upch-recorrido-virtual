@@ -8,7 +8,7 @@ namespace UPCH.Campus.Editor
     /// <summary>
     /// Reconstruye el volumen exterior de E (Víctor Alzamora) y F (Wu) a partir
     /// de las cotas indicadas en las láminas A-01..A-03. Los dos prefabs conservan
-    /// su ubicación georreferenciada; un corredor acristalado salva el intervalo.
+    /// su ubicación georreferenciada; una junta maciza resuelve el encuentro en esquina.
     /// </summary>
     public static class ReconstruirPabellonesEF
     {
@@ -42,24 +42,19 @@ namespace UPCH.Campus.Editor
                 float dx = fPosition.x - ePosition.x;
                 float sharedLeft = Mathf.Max(-24.30f / 2, dx - 11.85f / 2);
                 float sharedRight = Mathf.Min(24.30f / 2, dx + 11.85f / 2);
-                float sharedCenterX = (sharedLeft + sharedRight) / 2;
-                float eBay = 24.30f / Mathf.Clamp(Mathf.RoundToInt(24.30f / 2.25f), 5, 12);
-                int eBayIndex = Mathf.Clamp(Mathf.RoundToInt((sharedCenterX + 24.30f / 2) / eBay - .5f), 0,
-                    Mathf.Clamp(Mathf.RoundToInt(24.30f / 2.25f), 5, 12) - 1);
-                float corridorCenterX = -24.30f / 2 + eBay * (eBayIndex + .5f);
 
                 // Cotas de planta: E = 24.30 x 9.76 m; F/Wu = 11.85 x 22.91 m.
                 BuildPavilion(e.transform, "E - Víctor Alzamora", 24.30f, 9.76f, 3, cream,
-                    facadeLongitudinal: true, connectorDoorX: corridorCenterX);
+                    facadeLongitudinal: true, connectorDoorX: float.NaN);
                 BuildPavilion(f.transform, "F - Wu", 11.85f, 22.91f, 2, creamF,
-                    facadeLongitudinal: false, connectorDoorX: corridorCenterX - dx);
-                BuildConnector(e.transform, ePosition, fPosition);
+                    facadeLongitudinal: false, connectorDoorX: float.NaN);
+                BuildConnector(e.transform, ePosition, fPosition, sharedLeft, sharedRight, creamF);
 
                 PrefabUtility.SaveAsPrefabAsset(e, EPath);
                 PrefabUtility.SaveAsPrefabAsset(f, FPath);
                 AssetDatabase.SaveAssets();
                 EditorSceneManager.MarkAllScenesDirty();
-                Debug.Log("PABELLONES_EF_RECONSTRUIDOS: E 24.30x9.76 m / 3 niveles; F 11.85x22.91 m / 2 niveles; corredor acristalado E-F.");
+                Debug.Log("PABELLONES_EF_RECONSTRUIDOS: E 24.30x9.76 m / 3 niveles; F 11.85x22.91 m / 2 niveles; encuentro macizo E-F.");
             }
             finally
             {
@@ -202,44 +197,26 @@ namespace UPCH.Campus.Editor
             }
         }
 
-        static void BuildConnector(Transform eRoot, Vector3 ePosition, Vector3 fPosition)
+        static void BuildConnector(Transform eRoot, Vector3 ePosition, Vector3 fPosition,
+            float sharedLeft, float sharedRight, Material jointMaterial)
         {
-            float dx = fPosition.x - ePosition.x;
             float dz = fPosition.z - ePosition.z;
             float eDepth = 9.76f, fDepth = 22.91f;
             float gap = dz - eDepth / 2 - fDepth / 2;
             if (gap <= .15f || gap > 5f)
             {
-                Debug.LogWarning("No se añadió el corredor E-F: revisa la separación de los prefabs (" + gap.ToString("F2") + " m).");
+                Debug.LogWarning("No se añadió la junta E-F: revisa la separación de los prefabs (" + gap.ToString("F2") + " m).");
                 return;
             }
-            // The footprints overlap in X; center the 4.4 m glazed hall on their shared area.
-            float left = Mathf.Max(-24.30f / 2, dx - 11.85f / 2);
-            float right = Mathf.Min(24.30f / 2, dx + 11.85f / 2);
-            float sharedCenter = (left + right) / 2;
-            float eBay = 24.30f / Mathf.Clamp(Mathf.RoundToInt(24.30f / 2.25f), 5, 12);
-            int eBayIndex = Mathf.Clamp(Mathf.RoundToInt((sharedCenter + 24.30f / 2) / eBay - .5f), 0,
-                Mathf.Clamp(Mathf.RoundToInt(24.30f / 2.25f), 5, 12) - 1);
-            float cx = -24.30f / 2 + eBay * (eBayIndex + .5f);
-            float corridorWidth = Mathf.Min(1.8f, right - left - .4f);
-            if (corridorWidth < 1.5f) return;
-            var hall = Group(eRoot, "Corredor_acristalado_E-F");
+            // In the reference photo the lower wing meets the taller block directly
+            // at a right-angle corner; there is no separate glazed tube between them.
+            var joint = Group(eRoot, "Encuentro_en_esquina_E-F");
             float z0 = eDepth / 2, z1 = dz - fDepth / 2;
-            float len = z1 - z0;
-            Box(hall, "Piso_pasaje", new Vector3(cx, .06f, (z0 + z1) / 2), new Vector3(corridorWidth, .12f, len), paving, true);
-            Box(hall, "Techo_pasaje", new Vector3(cx, Storey - .10f, (z0 + z1) / 2), new Vector3(corridorWidth, .20f, len), cream, true);
-            foreach (int s in new[] { -1, 1 })
-            {
-                Box(hall, "Paño_vidriado_pasaje", new Vector3(cx + s * corridorWidth / 2, Storey / 2, (z0 + z1) / 2),
-                    new Vector3(.06f, Storey - .2f, len), glass, false);
-                int frames = Mathf.Max(1, Mathf.RoundToInt(len / 1.1f));
-                for (int i = 0; i <= frames; i++)
-                {
-                    float z = Mathf.Lerp(z0, z1, (float)i / frames);
-                    Box(hall, "Montante_pasaje", new Vector3(cx + s * corridorWidth / 2, Storey / 2, z),
-                        new Vector3(.09f, Storey, .06f), metal, false);
-                }
-            }
+            float width = sharedRight - sharedLeft;
+            float height = Storey * 2;
+            Box(joint, "Volumen_de_union_sin_pasillo_expuesto",
+                new Vector3((sharedLeft + sharedRight) / 2, height / 2, (z0 + z1) / 2),
+                new Vector3(width + .04f, height, gap + .04f), jointMaterial, true);
         }
 
         static Transform Group(Transform parent, string name)
