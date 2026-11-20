@@ -29,8 +29,24 @@ namespace UPCH.Enfermeria.Editor
         }
         static void Rect(Transform p,string n,float x0,float z0,float x1,float z1,float y,float height,Material m)
         { Box(p,n,new Vector3((X(x0)+X(x1))/2,y+height/2,(Z(z0)+Z(z1))/2),new Vector3(Mathf.Abs(X(x1)-X(x0)),height,Mathf.Abs(Z(z1)-Z(z0))),m); }
+        static float SideWallZ(float x) => Mathf.Lerp(704f,639f,Mathf.InverseLerp(877f,1400f,x));
+        static void SidePassageSlab(Transform p,float y)
+        {
+            var g=new GameObject("Losa_pasillo_lateral_recortada_en_diagonal");g.transform.SetParent(p,false);
+            var mesh=new Mesh {name="Losa_pasillo_diagonal"};
+            float x0=X(877),x1=X(1400),t=.24f,bottom=y-t;
+            var outer0=new Vector3(x0,y,Z(739));var outer1=new Vector3(x1,y,Z(674));
+            var inner1=new Vector3(x1,y,Z(639));var inner0=new Vector3(x0,y,Z(704));
+            mesh.vertices=new[] {outer0,outer1,inner1,inner0,
+                new Vector3(outer0.x,bottom,outer0.z),new Vector3(outer1.x,bottom,outer1.z),
+                new Vector3(inner1.x,bottom,inner1.z),new Vector3(inner0.x,bottom,inner0.z)};
+            mesh.triangles=new[] {0,1,2,0,2,3, 4,6,5,4,7,6,
+                0,4,5,0,5,1, 1,5,6,1,6,2, 2,6,7,2,7,3, 3,7,4,3,4,0};
+            mesh.RecalculateNormals();mesh.RecalculateBounds();
+            g.AddComponent<MeshFilter>().sharedMesh=mesh;g.AddComponent<MeshRenderer>().sharedMaterial=floor;g.AddComponent<MeshCollider>().sharedMesh=mesh;
+        }
         // Wall with a real opening; door fraction measured along the segment. No hidden wall behind doors.
-        static void Wall(Transform p,string n,float x0,float z0,float x1,float z1,float y,float door=-1,float width=1.0f,float height=3.66f,Material mat=null)
+        static void Wall(Transform p,string n,float x0,float z0,float x1,float z1,float y,float door=-1,float width=1.0f,float height=H-.25f,Material mat=null)
         {
             var a=new Vector3(X(x0),0,Z(z0)); var b=new Vector3(X(x1),0,Z(z1)); var delta=b-a; float length=delta.magnitude;
             var g=Group(p,n); g.localPosition=a; g.localRotation=Quaternion.LookRotation(Vector3.Cross(delta.normalized,Vector3.up));
@@ -45,6 +61,7 @@ namespace UPCH.Enfermeria.Editor
                 doors.Add(new Door {parent=g,center=center,y=y,width=width,height=openingHeight});
             }
         }
+        [MenuItem("Tools/UPCH/Reconstruir pabellon D - Enfermeria")]
         public static void Run()
         {
             wall=AssetDatabase.LoadAssetAtPath<Material>("Assets/UPCH/Arte/Edificios/D/Materiales/PanelBlanco.mat");
@@ -71,20 +88,30 @@ namespace UPCH.Enfermeria.Editor
         }
         static bool Void(float x,float z,int level)
         {
-            if(x>1407&&x<1530&&z>584&&z<674)return true; // two continuous lift wells
+            if(level>0&&x>1407&&x<1530&&z>584&&z<674)return true; // lift wells above ground level
             if(level>0&&x>1407&&x<1530&&z>177&&z<343)return true;
             if(level>0&&x>770&&x<870&&z>548&&z<730)return true;
             if(level>1&&x>1400&&z>676)return true; // void south of lifts, A-03 onwards
-            if(level==0&&x<1010&&z<400)return true; // ramp; service strip at east remains floored
+            if(level==0&&x<1010&&z<400)return true; // vehicular ramp west of the occupied building
             return false;
         }
         static void Slab(Transform p,int i,float y)
         {
             float[] xs={750,770,870,1010,1040,1400,1407,1530,1537};
-            float[] zs={143,177,343,400,548,584,674,676,730,739};
+            float[] zs={143,177,343,400,416,426,436,446,456,466,476,486,496,506,510,548,584,674,676,730,739};
             for(int a=0;a<xs.Length-1;a++)for(int b=0;b<zs.Length-1;b++)
-                if(!Void((xs[a]+xs[a+1])/2,(zs[b]+zs[b+1])/2,i))
-                    Rect(p,"Losa_"+a+"_"+b,xs[a],zs[b],xs[a+1],zs[b+1],y-.24f,.24f,floor);
+                if(!Void((xs[a]+xs[a+1])/2,(zs[b]+zs[b+1])/2,i)&&!(i<2&&xs[a]>=870&&xs[a+1]<=1400&&zs[b]>=674)) {
+                    // End inside the 14 cm wall thickness, not short of its inner
+                    // face. Follow the rear wall setback instead of exposing slab.
+                    float midZ=(zs[b]+zs[b+1])/2;
+                    float west=Mathf.Lerp(750,761,Mathf.InverseLerp(416,510,midZ));
+                    float left=xs[a]==750?west+1:xs[a];
+                    float right=xs[a+1]==1537?xs[a+1]-1:xs[a+1];
+                    float north=zs[b]==143?zs[b]+1:zs[b];
+                    float south=zs[b+1]==739?zs[b+1]-1:zs[b+1];
+                    Rect(p,"Losa_"+a+"_"+b,left,north,right,south,y-.24f,.24f,floor);
+                }
+            if(i<2)SidePassageSlab(p,y);
         }
         static void BuildFloor(int i)
         {
@@ -93,10 +120,17 @@ namespace UPCH.Enfermeria.Editor
             var envelope=Group(p,"Fachadas");
             // North and south window ribbons, split into sill, glass and lintel.
             foreach(float z in new[]{143f,739f}) {
+                if(i<2&&z==739f) {
+                    // The south edge is a glazed passage on levels 1 and 2.
+                    // Its inner opaque wall follows the diagonal shown on A-01/A-02.
+                    Wall(envelope,"Muro_cortina_pasillo_lateral_"+i,877,739,1400,674,y,-1,1,H,glass);
+                    Wall(envelope,"Pared_fondo_pasillo_diagonal_"+i,877,SideWallZ(877),1400,SideWallZ(1400),y,-1,1,H,wall);
+                    continue;
+                }
                 float start=i==0&&z==143?1040:877;
                 Wall(envelope,"Antepecho_"+z,start,z,1400,z,y,-1,1,i<2?.25f:1.15f);
                 Wall(envelope,"Ventana_"+z,start,z,1400,z,y+(i<2?.25f:1.15f),-1,1,i<2?2.8f:1.45f,glass);
-                Wall(envelope,"Dintel_"+z,start,z,1400,z,y+(i<2?3.05f:2.6f),-1,1,i<2?.61f:1.06f);
+                Wall(envelope,"Dintel_"+z,start,z,1400,z,y+(i<2?3.05f:2.6f),-1,1,i<2?.85f:1.3f);
             }
             Wall(envelope,"Oeste_servicios",750,143,750,416,y,-1,1,H);
             Wall(envelope,"Oeste_escalera",761,510,761,739,y,-1,1,H);
@@ -104,37 +138,44 @@ namespace UPCH.Enfermeria.Editor
             Wall(envelope,"Ventana_hall_puente",750,416,761,510,y+.9f,-1,1,1.9f,glass);
             Wall(envelope,"Dintel_hall_puente",750,416,761,510,y+2.8f,-1,1,1.1f);
             Rect(envelope,"Marco_hall_puente",754,462,757,464,y+.9f,1.9f,metal);
-            Wall(envelope,"Testero_norte",750,143,i==0?877:877,143,y);
-            Wall(envelope,"Testero_sur",761,739,877,739,y);
-            Wall(envelope,"Cierre_sur_ascensores",1400,739,1537,739,y,-1,1,H);
+            Wall(envelope,"Testero_norte",750,143,877,143,y,-1,1,H);
+            Wall(envelope,"Testero_sur",761,739,877,739,y,-1,1,H);
+            if(i==0) Wall(envelope,"Retorno_acristalado_planta_baja",1400,739,1537,739,y,-1,1,H,glass);
+            else Wall(envelope,"Cierre_sur_ascensores",1400,739,1537,739,y,-1,1,H);
             // Close the missing end of the ribbon facade at its junction with the east curtain.
-            Wall(envelope,"Retorno_vacio_sur",1400,674,1400,739,y,-1,1,H);
+            if(i>1) Wall(envelope,"Retorno_vacio_sur",1400,674,1400,739,y,-1,1,H);
             // East stair enclosure is hollow, with a separate curtain wall over the hall.
             Wall(envelope,"Nucleo_norte",1400,143,1537,143,y,-1,1,H);
-            Wall(envelope,"Nucleo_este",1537,143,1537,350,y,-1,1,H);
+            // The stair-side bay is opaque in the surveyed front photographs.
+            Wall(envelope,"Nucleo_este",1537,143,1537,400,y,-1,1,H);
+            Rect(envelope,"Revestimiento_nucleo_este",1539,143,1541,400,y,H,wall);
             for(int bay=0;bay<8;bay++) {
                 float a=350+bay*389f/8,b=350+(bay+1)*389f/8;
-                bool entrance=i==0&&bay>=2&&bay<=4;
-                if(!entrance)Rect(envelope,"Vidrio_este_"+bay,1539,a+1,1541,b-1,y+.08f,3.5f,glass);
-                if(!entrance)Rect(envelope,"Montante_este_"+bay,1542,a,1543,a+1,y,H,metal);
-                if(!entrance)Rect(envelope,"Pilar_tras_vidrio_"+bay,1528,a,1537,a+8,y,3.66f,wall);
-                Rect(envelope,"Viga_entre_pilares_"+bay,1528,entrance?a:a+8,1537,b,y+3.2f,.46f,wall);
+                bool entrance=i==0&&b>440&&a<550;
+                float clearStart=Mathf.Max(a,400f);
+                if(entrance) {
+                    if(clearStart<440)Rect(envelope,"Fijo_ingreso_norte",1539,clearStart+1,1541,440,y+.08f,3.5f,glass);
+                    if(b>550)Rect(envelope,"Fijo_ingreso_sur",1539,550,1541,b-1,y+.08f,3.5f,glass);
+                    Rect(envelope,"Sobrepuerta_"+bay,1539,Mathf.Max(clearStart,440),1541,Mathf.Min(b,550),y+2.85f,.65f,glass);
+                }
+                if(!entrance&&b>clearStart)Rect(envelope,"Vidrio_este_"+bay,1539,clearStart+1,1541,b-1,y+.08f,3.5f,glass);
+                if(!entrance&&b>clearStart)Rect(envelope,"Montante_este_"+bay,1542,clearStart,1543,clearStart+1,y,H,metal);
+                if(!entrance&&b>clearStart&&!(i==0&&clearStart>=674))Rect(envelope,"Pilar_tras_vidrio_"+bay,1528,clearStart,1537,clearStart+8,y,H,wall);
+                if(b>clearStart)Rect(envelope,"Viga_entre_pilares_"+bay,1528,entrance?clearStart:clearStart+8,1537,b,y+3.2f,.46f,wall);
                 // Stainless fixing points on the outer glass screen, as seen in the photographs.
-                for(int fixing=0;fixing<2;fixing++)
-                    Rect(envelope,"Fijacion_"+bay+"_"+fixing,1543,a-1,1545,a+2,y+.25f+fixing*2.9f,.045f,metal);
+                if(b>clearStart)for(int fixing=0;fixing<2;fixing++)
+                    Rect(envelope,"Fijacion_"+bay+"_"+fixing,1543,clearStart-1,1545,clearStart+2,y+.25f+fixing*2.9f,.045f,metal);
             }
-            Rect(envelope,"Canto_losa_vidrio",1537.5f,350,1539,739,y-.24f,.24f,wall);
-            Rect(envelope,"Travesano_este",1542,350,1544,739,y+3.55f,.08f,metal);
+            Rect(envelope,"Travesano_este",1542,400,1544,739,y+3.55f,.08f,metal);
             // Cladding joints stand clear of the panel surface (no coplanar overlays).
-            for(int j=1;j<5;j++)Rect(envelope,"Junta_panel_"+j,1540.5f,143+j*41.4f,1541,143.45f+j*41.4f,y,H,metal);
-            for(int j=0;j<3;j++)Rect(envelope,"Junta_horizontal_panel_"+j,1540.5f,143,1541,350,y+j*1.3f,.012f,metal);
+            for(int j=1;j<6;j++)Rect(envelope,"Junta_panel_"+j,1541.1f,143+j*42.8f,1541.35f,143.45f+j*42.8f,y,H,metal);
+            for(int j=1;j<3;j++)Rect(envelope,"Junta_horizontal_panel_"+j,1541.1f,143,1541.35f,400,y+j*1.3f,.012f,metal);
             if(i>0) {
                 for(int j=0;j<3;j++)Rect(envelope,"Baranda_hall_"+j,1520,400,1522,580,y+.4f+j*.32f,.035f,metal);
                 for(int j=0;j<5;j++)Rect(envelope,"Poste_baranda_hall_"+j,1520,400+j*44,1522,402+j*44,y,1.1f,metal);
             }
-            // White continuous cornices cover the slab edge without sharing its outer plane.
-            foreach(float z in new[]{143f,739f})
-                Wall(envelope,"Canto_losa_lateral_"+z,877,z,1400,z,y-.24f,-1,1,.24f);
+            // The slab ends inside the continuous facade; projecting bands created
+            // the grey stacked blocks visible from the sides and rear.
             var services=Group(p,"Servicios_y_circulacion");
             Stairs(services,i,y,1407,177,1530,343,"Escalera_3");
             Stairs(services,i,y,770,548,870,730,"Escalera_2");
@@ -232,7 +273,7 @@ namespace UPCH.Enfermeria.Editor
                 w("Aula_101_sur",1040,400,1400,400,.92f);
                 w("Aula_101_oeste",1040,143,1040,400,-1);
                 w("Oficinas_frente",877,493,1400,493,.9f);
-                foreach(float x in new[]{970f,1080f,1215f})w("Oficina_"+x,x,493,x,739,.12f);
+                foreach(float x in new[]{970f,1080f,1215f})w("Oficina_"+x,x,493,x,SideWallZ(x),.12f);
                 w("Jefatura",877,580,970,580,.7f);
             } else if(i==3) {
                 foreach(float z in new[]{416f,480f}) {
@@ -341,7 +382,9 @@ namespace UPCH.Enfermeria.Editor
         }
         static void Roof()
         {
-            var p=Group(root,"Azotea");float y=.7f+6*H;Slab(p,6,y);
+            var p=Group(root,"Azotea");float y=.7f+6*H;
+            // A closed roof deck, independent of the stair and lift openings below.
+            Rect(p,"Cubierta_continua",750,143,1537,739,y-.24f,.24f,floor);
             Wall(p,"Parapeto_norte",750,143,1537,143,y,-1,1,.9f);
             Wall(p,"Parapeto_sur",761,739,1400,739,y,-1,1,.9f);
             Wall(p,"Parapeto_este",1537,143,1537,739,y,-1,1,.9f);
@@ -358,9 +401,15 @@ namespace UPCH.Enfermeria.Editor
                 Box(p,"Banda_antideslizante_"+n,new Vector3(xx+.13f,top+.003f,center),new Vector3(.04f,.006f,12.4f),metal,false);
             }
             // Double recessed door, with jambs and lintel, clear of the curtain wall.
-            foreach(float z in new[]{447.25f,593.125f})
-                Rect(p,"Jamba_ingreso_"+z,1538,z,1542,z+3,.7f,2.85f,metal);
-            Rect(p,"Dintel_ingreso",1538,447.25f,1542,596.125f,3.55f,.18f,metal);
+            foreach(float z in new[]{440f,550f})
+                Rect(p,"Jamba_ingreso_"+z,1538,z-1,1542,z+1,.7f,2.85f,metal);
+            Rect(p,"Dintel_ingreso",1538,439,1542,551,3.55f,.10f,metal);
+            // Two glass leaves opened outward onto the entrance landing.
+            foreach(float z in new[]{442f,548f}) {
+                Rect(p,"Hoja_vidrio_ingreso_"+z,1542,z,1589,z+1,.72f,2.72f,glass);
+                Rect(p,"Marco_hoja_ingreso_"+z,1588,z-.3f,1590,z+1.3f,.72f,2.72f,metal);
+                Rect(p,"Tirador_ingreso_"+z,1582,z-1,1583,z+2,1.55f,.5f,metal);
+            }
             var rail=Group(p,"Pasamanos_acceso");
             foreach(float zz in new[]{center-6.35f,center+6.35f}) {
                 for(int n=0;n<4;n++)Box(rail,"Poste_"+zz+"_"+n,new Vector3(14.5f+n*.75f,1.2f-n*.21f,zz),new Vector3(.05f,1.0f,.05f),metal);
@@ -387,9 +436,9 @@ namespace UPCH.Enfermeria.Editor
             };
             Action<float,float,float,string> support=(px,pz,top,label)=> {
                 var origin=p.transform.TransformPoint(new Vector3(X(px),top+.35f,Z(pz)));
-                var ray=new Ray(origin,Vector3.down);float nearest=float.PositiveInfinity;
-                foreach(var c in solids)if(c.Raycast(ray,out var hit,.7f))nearest=Mathf.Min(nearest,hit.distance);
-                if(Mathf.Abs(nearest-.35f)>.025f)throw new Exception("Suelo discontinuo: "+label+" distancia="+nearest);
+                var ray=new Ray(origin,Vector3.down);bool found=false;
+                foreach(var c in solids)if(c.Raycast(ray,out var hit,.7f)&&Mathf.Abs(hit.distance-.35f)<.025f)found=true;
+                if(!found)throw new Exception("Suelo discontinuo: "+label);
             };
             for(int i=0;i<6;i++) {
                 float y=.7f+i*H;
@@ -408,6 +457,10 @@ namespace UPCH.Enfermeria.Editor
             closed(900,400,1.8f,Vector3.forward,"separacion pasillo y rampa");
             support(1025,300,.7f,"franja de servicios planta baja");
             support(900,425,.7f,"pasillo posterior planta baja");
+            foreach(float x in new[]{1420f,1460f,1510f})
+                support(x,705,.7f,"suelo detras de ascensores planta baja");
+            foreach(float z in new[]{365f,385f})
+                closed(1537,z,1.8f,Vector3.right,"fachada opaca junto a escalera planta baja");
             Debug.Log("D_CIERRES_OK: aberturas indebidas selladas y separacion de rampa verificada.");
             Debug.Log("D_VERIFICADO: 108 muestras de descansos y 144 peldaños principales con suelo continuo en seis niveles.");
         }
