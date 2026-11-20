@@ -10,15 +10,35 @@ namespace UPCH.Campus.Editor
     /// A-01, A-02 and A-03. All dimensions in this file are metres in plan coordinates.
     /// Floors are single, non-moving static slabs; openings are actual gaps in walls.
     /// </summary>
+    [InitializeOnLoad]
     public static class ReconstruirPabellonesEF
     {
         const string EPath = "Assets/UPCH/Campus/Generated/Buildings/E.prefab";
         const string FPath = "Assets/UPCH/Campus/Generated/Buildings/F.prefab";
+        const string ClosedAngleRebuildKey = "UPCH.EF.ClosedAngleConnector.Rebuilt";
         const float Storey = 3.45f;
         const float Wall = .18f;
         const float DoorHeight = 2.12f;
 
         static Material creamE, creamF, glass, darkGlass, metal, paving;
+
+        static ReconstruirPabellonesEF()
+        {
+            EditorApplication.delayCall += () =>
+            {
+                if (EditorPrefs.GetBool(ClosedAngleRebuildKey, false)) return;
+                try
+                {
+                    Run();
+                    EditorPrefs.SetBool(ClosedAngleRebuildKey, true);
+                    Debug.Log("E/F closed-angle connector rebuilt once from the editor startup.");
+                }
+                catch (Exception e)
+                {
+                    Debug.LogException(e);
+                }
+            };
+        }
 
         [MenuItem("Tools/UPCH/Rebuild Pabellones E y F - Alzamora y Wu")]
         public static void Run()
@@ -149,7 +169,7 @@ namespace UPCH.Campus.Editor
             Vector2 a = new Vector2(-w / 2, d / 2), b = new Vector2(w / 2, d / 2);
             if (floor == 0)
                 WallRun(parent, "Acceso_diagonal_E", a, b, y, Storey, Wall, creamE,
-                    (-11.60f + w / 2) / w, .98f, DoorHeight, true, glass, metal);
+                    (-7.0f + w / 2) / w, .98f, DoorHeight, true, glass, metal);
             else
                 WindowWall(parent, "Ventanas_traseras_E", a, b, y, w, floor, creamE, darkGlass, metal);
         }
@@ -215,10 +235,12 @@ namespace UPCH.Campus.Editor
                 float x = -w / 2 + bay * (i + .5f);
                 float paneW = bay - .24f;
                 bool entry = level == 0 && i == 2;
-                if (entry)
+                bool diagonalAccess = level == 0 && i == 4;
+                if (entry || diagonalAccess)
                 {
-                    DoorOpening(p, "Puerta_principal_Wu", new Vector2(x, z), Vector2.right,
-                        y, paneW, DoorHeight, Wall, creamF, glass, metal);
+                    DoorOpening(p, diagonalAccess ? "Puerta_diagonal_acceso_Wu" : "Puerta_principal_Wu",
+                        new Vector2(x, z), Vector2.right, y, diagonalAccess ? 1.0f : paneW,
+                        DoorHeight, Wall, creamF, glass, metal);
                 }
                 else
                 {
@@ -264,8 +286,7 @@ namespace UPCH.Campus.Editor
             if (glassSide)
             {
                 Vector2 a = new Vector2(x, -d / 2), b = new Vector2(x, d / 2);
-                WindowWall(p, "Fachada_lateral_ritmada_Wu", a, b, y, d, floor, creamF, darkGlass, metal,
-                    connectorDoor: floor == 0);
+                WindowWall(p, "Fachada_lateral_ritmada_Wu", a, b, y, d, floor, creamF, darkGlass, metal);
             }
             else
             {
@@ -302,10 +323,10 @@ namespace UPCH.Campus.Editor
         static void BuildDiagonalWalk(Transform eRoot, Vector3 fInE)
         {
             const float eW = 24.30f, eD = 9.76f, fW = 11.85f, fD = 22.91f;
-            // A-01 places the stair/corridor at the diagonal junction of the
-            // Alzamora end and Wu's left return. These endpoints keep the route visible.
-            Vector2 eDoor = new Vector2(-11.60f, eD / 2);
-            Vector2 fDoor = new Vector2(fInE.x - fW / 2, fInE.z - fD / 2 + .755f);
+            // A-01 locates the stair/corridor in the closed inside angle between
+            // the north face of E and the south face of F. Keep both buildings in place.
+            Vector2 eDoor = new Vector2(-7.0f, eD / 2);
+            Vector2 fDoor = new Vector2(fInE.x + 4.74f, fInE.z - fD / 2);
             Vector2 axis = fDoor - eDoor;
             float length = axis.magnitude;
             if (length < .15f || length > 6f)
