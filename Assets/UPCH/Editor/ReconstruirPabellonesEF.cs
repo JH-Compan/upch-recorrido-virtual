@@ -149,7 +149,7 @@ namespace UPCH.Campus.Editor
             Vector2 a = new Vector2(-w / 2, d / 2), b = new Vector2(w / 2, d / 2);
             if (floor == 0)
                 WallRun(parent, "Acceso_diagonal_E", a, b, y, Storey, Wall, creamE,
-                    (-10.30f + w / 2) / w, .98f, DoorHeight, true, glass, metal);
+                    (-11.60f + w / 2) / w, .98f, DoorHeight, true, glass, metal);
             else
                 WindowWall(parent, "Ventanas_traseras_E", a, b, y, w, floor, creamE, darkGlass, metal);
         }
@@ -264,7 +264,8 @@ namespace UPCH.Campus.Editor
             if (glassSide)
             {
                 Vector2 a = new Vector2(x, -d / 2), b = new Vector2(x, d / 2);
-                WindowWall(p, "Fachada_lateral_ritmada_Wu", a, b, y, d, floor, creamF, darkGlass, metal);
+                WindowWall(p, "Fachada_lateral_ritmada_Wu", a, b, y, d, floor, creamF, darkGlass, metal,
+                    connectorDoor: floor == 0);
             }
             else
             {
@@ -301,8 +302,10 @@ namespace UPCH.Campus.Editor
         static void BuildDiagonalWalk(Transform eRoot, Vector3 fInE)
         {
             const float eW = 24.30f, eD = 9.76f, fW = 11.85f, fD = 22.91f;
-            Vector2 eDoor = new Vector2(-10.30f, eD / 2);
-            Vector2 fDoor = new Vector2(fInE.x, fInE.z - fD / 2);
+            // A-01 places the stair/corridor at the diagonal junction of the
+            // Alzamora end and Wu's left return. These endpoints keep the route visible.
+            Vector2 eDoor = new Vector2(-11.60f, eD / 2);
+            Vector2 fDoor = new Vector2(fInE.x - fW / 2, fInE.z - fD / 2 + .755f);
             Vector2 axis = fDoor - eDoor;
             float length = axis.magnitude;
             if (length < .15f || length > 6f)
@@ -334,13 +337,35 @@ namespace UPCH.Campus.Editor
         }
 
         static void WindowWall(Transform p, string name, Vector2 a, Vector2 b, float y, float span,
-            int level, Material wall, Material glazing, Material frame)
+            int level, Material wall, Material glazing, Material frame, bool connectorDoor = false)
         {
             const float sill = .94f, head = 2.55f;
+            Vector2 fullDir = (b - a).normalized;
+            float fullLength = Vector2.Distance(a, b);
+            if (connectorDoor && level == 0 && fullLength > 2.2f)
+            {
+                const float centerFromStart = .755f, doorWidth = 1.0f;
+                float leftLength = centerFromStart - doorWidth / 2;
+                float rightStart = centerFromStart + doorWidth / 2;
+                WindowWall(p, name + "_antes_puerta", a, a + fullDir * leftLength, y,
+                    leftLength, level, wall, glazing, frame);
+                WindowWall(p, name + "_despues_puerta", a + fullDir * rightStart, b, y,
+                    fullLength - rightStart, level, wall, glazing, frame);
+                DoorOpening(p, "Puerta_diagonal_acceso_Wu", a + fullDir * centerFromStart,
+                    fullDir, y, doorWidth, DoorHeight, Wall, wall, glass, frame);
+                return;
+            }
             int bays = Mathf.Clamp(Mathf.RoundToInt(span / 2.3f), 4, 12);
             float len = Vector2.Distance(a, b);
             Vector2 direction = (b - a).normalized;
             float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+            if (len < .85f)
+            {
+                Vector2 c = (a + b) * .5f;
+                Box(p, name + "_machon_extremo", new Vector3(c.x, y + Storey / 2, c.y),
+                    new Vector3(Wall, Storey, len), wall, true, angle);
+                return;
+            }
             for (int i = 0; i < bays; i++)
             {
                 float centerT = (i + .5f) / bays;
