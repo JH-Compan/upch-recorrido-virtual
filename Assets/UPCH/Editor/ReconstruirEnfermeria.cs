@@ -45,6 +45,26 @@ namespace UPCH.Enfermeria.Editor
             mesh.RecalculateNormals();mesh.RecalculateBounds();
             g.AddComponent<MeshFilter>().sharedMesh=mesh;g.AddComponent<MeshRenderer>().sharedMaterial=floor;g.AddComponent<MeshCollider>().sharedMesh=mesh;
         }
+        static void SideCurtainFacade(Transform p,int level,float y)
+        {
+            const float x0=877,x1=1400;
+            const int bays=10;
+            float OuterZ(float x)=>Mathf.Lerp(739f,674f,Mathf.InverseLerp(x0,x1,x));
+            for(int bay=0;bay<bays;bay++) {
+                float a=Mathf.Lerp(x0,x1,(float)bay/bays),b=Mathf.Lerp(x0,x1,(float)(bay+1)/bays);
+                Wall(p,"Vidrio_pasillo_lateral_"+level+"_"+bay,a,OuterZ(a),b,OuterZ(b),y+.08f,-1,1,H-.16f,glass);
+            }
+            Wall(p,"Travesano_inferior_pasillo_"+level,x0,OuterZ(x0),x1,OuterZ(x1),y+.03f,-1,1,.07f,metal);
+            Wall(p,"Travesano_superior_pasillo_"+level,x0,OuterZ(x0),x1,OuterZ(x1),y+H-.10f,-1,1,.07f,metal);
+            Vector3 axis=new Vector3(X(x1)-X(x0),0,Z(OuterZ(x1))-Z(OuterZ(x0))).normalized;
+            Quaternion rotation=Quaternion.LookRotation(Vector3.Cross(axis,Vector3.up));
+            for(int post=0;post<=bays;post++) {
+                float x=Mathf.Lerp(x0,x1,(float)post/bays);
+                var frame=Group(p,"Montante_cortina_pasillo_"+level+"_"+post);
+                frame.localPosition=new Vector3(X(x),0,Z(OuterZ(x)));frame.localRotation=rotation;
+                Box(frame,"Perfil_vertical",new Vector3(0,y+H/2,0),new Vector3(.055f,H,.12f),metal);
+            }
+        }
         // Wall with a real opening; door fraction measured along the segment. No hidden wall behind doors.
         static void Wall(Transform p,string n,float x0,float z0,float x1,float z1,float y,float door=-1,float width=1.0f,float height=H-.25f,Material mat=null)
         {
@@ -123,7 +143,7 @@ namespace UPCH.Enfermeria.Editor
                 if(i<2&&z==739f) {
                     // The south edge is a glazed passage on levels 1 and 2.
                     // Its inner opaque wall follows the diagonal shown on A-01/A-02.
-                    Wall(envelope,"Muro_cortina_pasillo_lateral_"+i,877,739,1400,674,y,-1,1,H,glass);
+                    SideCurtainFacade(envelope,i,y);
                     Wall(envelope,"Pared_fondo_pasillo_diagonal_"+i,877,SideWallZ(877),1400,SideWallZ(1400),y,-1,1,H,wall);
                     continue;
                 }
