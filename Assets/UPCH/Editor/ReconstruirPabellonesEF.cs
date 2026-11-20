@@ -9,35 +9,15 @@ namespace UPCH.Campus.Editor
     /// A-01, A-02 and A-03. All dimensions in this file are metres in plan coordinates.
     /// Floors are single, non-moving static slabs; openings are actual gaps in walls.
     /// </summary>
-    [InitializeOnLoad]
     public static class ReconstruirPabellonesEF
     {
         const string EPath = "Assets/UPCH/Campus/Generated/Buildings/E.prefab";
         const string FPath = "Assets/UPCH/Campus/Generated/Buildings/F.prefab";
-        const string ClosedAngleRebuildKey = "UPCH.EF.FrontOrientationInterior.Rebuilt";
         const float Storey = 3.45f;
         const float Wall = .18f;
         const float DoorHeight = 2.12f;
 
         static Material creamE, creamF, glass, darkGlass, metal, paving;
-
-        static ReconstruirPabellonesEF()
-        {
-            EditorApplication.delayCall += () =>
-            {
-                if (EditorPrefs.GetBool(ClosedAngleRebuildKey, false)) return;
-                try
-                {
-                    Run();
-                    EditorPrefs.SetBool(ClosedAngleRebuildKey, true);
-                    Debug.Log("E/F closed-angle connector rebuilt once from the editor startup.");
-                }
-                catch (Exception e)
-                {
-                    Debug.LogException(e);
-                }
-            };
-        }
 
         [MenuItem("Tools/UPCH/Rebuild Pabellones E y F - Alzamora y Wu")]
         public static void Run()
@@ -59,12 +39,12 @@ namespace UPCH.Campus.Editor
 
                 BuildAlzamora(e.transform);
                 BuildWu(f.transform);
-                BuildDiagonalWalk(e.transform, fLocalInE);
+                BuildAlzamoraLobby(e.transform, fLocalInE);
 
                 PrefabUtility.SaveAsPrefabAsset(e, EPath);
                 PrefabUtility.SaveAsPrefabAsset(f, FPath);
                 AssetDatabase.SaveAssets();
-                Debug.Log("EF_REBUILT_FROM_A01_A03: Alzamora 24.30 x 9.76 m / 3 levels; Wu roof footprint 11.85 x 22.91 m / 2 levels; diagonal glazed connector and room doors added.");
+                Debug.Log("EF_INTEGRATED_LOBBY: E entrance belongs to its oblique two-storey vestibule; recessed ground floor, aligned doors, independent Wu courtyard entrance and furnished interiors saved.");
             }
             finally
             {
@@ -122,17 +102,18 @@ namespace UPCH.Campus.Editor
         {
             // The photographed elevation is a continuous cream frame around broad,
             // dark horizontal glazing. Openings have glass only in the opening.
-            const float z = -4.88f;
+            float z = floor == 0 ? -4.18f : -4.88f;
             float sill = floor == 0 ? .55f : .92f;
             float head = floor == 0 ? 2.75f : 2.62f;
-            float entryX = -10.30f;
             int bays = 10;
             float bay = w / bays;
             for (int b = 0; b < bays; b++)
             {
                 float x = -w / 2 + bay * (b + .5f);
-                bool entry = floor == 0 && Mathf.Abs(x - entryX) < bay * .55f;
-                bool diagonalAccess = floor == 0 && b == 7;
+                // The open hall connects directly to E's integrated oblique vestibule.
+                if (floor < 2 && b >= 5 && b <= 7) continue;
+                bool entry = false;
+                bool diagonalAccess = false;
                 float opening = bay - .38f;
                 if (entry || diagonalAccess)
                 {
@@ -150,9 +131,9 @@ namespace UPCH.Campus.Editor
                     Box(parent, "Dintel_fachada_E", new Vector3(x, y + (head + Storey) / 2, z),
                         new Vector3(opening, Storey - head, Wall), creamE, true);
                 }
-                if (b > 0)
+                if (b > 0 && floor == 0)
                     Box(parent, "Pilastra_fachada_E", new Vector3(-w / 2 + bay * b, y + Storey / 2, z),
-                        new Vector3(.18f, Storey, .28f), creamE, true);
+                        new Vector3(.18f, Storey, .18f), creamE, true);
                 if (!entry && !diagonalAccess)
                 {
                     Box(parent, "Perfil_horizontal_E", new Vector3(x, y + sill, z - .055f),
@@ -160,6 +141,9 @@ namespace UPCH.Campus.Editor
                     Box(parent, "Perfil_superior_E", new Vector3(x, y + head, z - .055f),
                         new Vector3(opening, .045f, .06f), metal, false);
                 }
+                if (!entry && !diagonalAccess)
+                    Box(parent, "Marco_vertical_ventana_E", new Vector3(x, y + (sill + head) / 2, z - .06f),
+                        new Vector3(.04f, head - sill, .065f), metal, false);
             }
         }
 
@@ -183,27 +167,42 @@ namespace UPCH.Campus.Editor
 
         static void AlzamoraPartitions(Transform p, float y, int floor, float w, float d)
         {
-            // Cross walls create the classrooms/offices and the corridor visible in
-            // each plan. The angled end partition follows the diagonal hall/stair joint.
-            float corridorZ = -1.15f;
-            WallRun(p, "Tabique_pasillo_E", new Vector2(-w / 2 + .20f, corridorZ),
-                new Vector2(w / 2 - .20f, corridorZ), y, Storey - .08f, .12f, creamE,
-                    .18f, .95f, DoorHeight, true, darkGlass, metal);
-            float[] divisions = floor == 2
-                ? new[] { -8.85f, -4.65f, -.65f, 3.10f, 7.00f }
-                : new[] { -8.85f, -4.65f, -.65f, 3.10f, 7.00f };
-            for (int i = 0; i < divisions.Length; i++)
+            // A-01/A-02: two classrooms to one side of the public hall, offices
+            // along the opposite side and a continuous rear corridor. A-03 has labs.
+            float front = floor == 0 ? -4.02f : -4.72f;
+            const float corridor = 1.0f;
+            foreach (float x in new[] { -3.25f, .40f, 7.40f })
+                WallRun(p, "E_Division_hall_ambientes", new Vector2(x, front), new Vector2(x, corridor),
+                    y, Storey - .10f, .12f, creamE, .84f, .95f, DoorHeight, true, creamE, metal);
+            // Keep the hall open behind the diagonal entrance.
+            float[] xs = { -12.0f, -7.5f, -3.25f, .40f, 3.0f, 5.15f, 7.40f };
+            for (int i = 0; i < xs.Length - 1; i++)
+                WallRun(p, "E_Puerta_al_corredor", new Vector2(xs[i], corridor), new Vector2(xs[i + 1], corridor),
+                    y, Storey - .10f, .12f, creamE, .52f, .90f, DoorHeight, true, creamE, metal);
+            WallRun(p, "E_Pared_posterior_pasillo", new Vector2(-12, 2.50f), new Vector2(7.40f, 2.50f),
+                y, Storey - .10f, .12f, creamE, .80f, .90f, DoorHeight, true, creamE, metal);
+            for (int i = 1; i < xs.Length - 1; i++)
+                WallRun(p, "E_Tabique_oficinas", new Vector2(xs[i], 2.50f), new Vector2(xs[i], 4.65f),
+                    y, Storey - .10f, .12f, creamE, .5f, .90f, DoorHeight, false, creamE, metal);
+            if (floor == 2)
+                for (int i = 0; i < 3; i++)
+                    Desk(p, "E_Mesa_laboratorio", -10.3f + i * 2.5f, -2.6f, y);
+            if (floor != 2)
             {
-                float x = divisions[i];
-                float t = Mathf.Clamp01((corridorZ + d / 2) / d);
-                WallRun(p, "Division_aula_E_" + (i + 1), new Vector2(x, -d / 2 + .10f),
-                    new Vector2(x, d / 2 - .10f), y, Storey - .08f, .12f, creamE,
-                    t, .90f, DoorHeight, true, darkGlass, metal);
+                for (int row = 0; row < 2; row++)
+                    for (int col = 0; col < 4; col++)
+                        Desk(p, "E_Puesto_aula", -10.6f + col * 1.65f, -2.6f + row * 1.6f, y);
             }
-            if (floor == 1 || floor == 2)
-                WallRun(p, "Muro_diagonal_de_circulacion_E", new Vector2(-1.1f, -d / 2 + .2f),
-                    new Vector2(1.25f, d / 2 - .2f), y, Storey - .08f, .14f, creamE,
-                    .72f, .95f, DoorHeight, true, darkGlass, metal);
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                    Box(p, "E_Meson_laboratorio", new Vector3(1.2f + i * 1.7f, y + .86f, 3.5f),
+                        new Vector3(1.3f, .12f, .70f), paving, true);
+            }
+            for (int i = 0; i < xs.Length - 1; i++)
+                Desk(p, "E_Oficina", (xs[i] + xs[i + 1]) / 2, 3.70f, y);
+            Box(p, "E_Pizarra_aula", new Vector3(-3.34f, y + 1.65f, -1.6f),
+                new Vector3(.04f, 1.15f, 2.0f), creamE, false);
         }
 
         // Wu's roof plan A-03 gives 11.85 x 22.91 m and +6.35 NPT. A-01/A-02
@@ -286,7 +285,7 @@ namespace UPCH.Campus.Editor
             {
                 // Door for the glass diagonal connector at the facing end of Wu.
                 WallRun(p, "Muro_norte_con_acceso_Wu", new Vector2(-w / 2, z), new Vector2(w / 2, z),
-                    y, Storey, Wall, creamF, .10f, .92f, DoorHeight, true, creamF, metal);
+                    y, Storey, Wall, creamF, .10f, .92f, DoorHeight, false, creamF, metal);
             }
             else
             {
@@ -306,7 +305,7 @@ namespace UPCH.Campus.Editor
             if (glassSide)
             {
                 Vector2 a = new Vector2(x, -d / 2), b = new Vector2(x, d / 2);
-                WindowWall(p, "Fachada_lateral_ritmada_Wu", a, b, y, d, floor, creamF, darkGlass, metal);
+                WindowWall(p, "Fachada_lateral_ritmada_Wu", a, b, y, d, floor, creamF, darkGlass, metal, connectorDoor: floor == 0);
             }
             else
             {
@@ -318,63 +317,129 @@ namespace UPCH.Campus.Editor
 
         static void WuPartitions(Transform p, float y, int level, float w, float d)
         {
-            // A-01/A-02 show the central circulation spine, rooms on both sides,
-            // toilets/service cores and the diagonal hall wall at the stair junction.
-                WallRun(p, "Pasillo_longitudinal_Wu", new Vector2(-w / 2 + .15f, -2.65f),
-                new Vector2(w / 2 - .15f, -2.65f), y, Storey - .08f, .14f, creamF,
-                .24f, .95f, DoorHeight, true, darkGlass, metal);
-            float[] cross = level == 0
-                ? new[] { -7.2f, -3.0f, 1.2f, 5.6f, 9.0f }
-                : new[] { -7.2f, -3.0f, 1.2f, 5.6f, 9.0f };
-            for (int i = 0; i < cross.Length; i++)
+            // A-01: study hall and student centres; A-02: open activity hall and
+            // student associations. Keep the courtyard entrance and central hall clear.
+            const float spine = -.55f;
+            for (int i = 0; i < 3; i++)
             {
-                float z = cross[i];
-                WallRun(p, "Tabique_de_ambientes_Wu_" + (i + 1), new Vector2(-w / 2 + .1f, z),
-                    new Vector2(w / 2 - .1f, z), y, Storey - .08f, .12f, creamF,
-                    .40f, .90f, DoorHeight, true, darkGlass, metal);
+                float z0 = -10.9f + i * 3.60f, z1 = z0 + 3.60f;
+                Vector2 a = new Vector2(spine + (level == 1 ? i * .32f : 0), z0);
+                Vector2 b = new Vector2(spine + (level == 1 ? (i + 1) * .32f : 0), z1);
+                WallRun(p, "Wu_Corredor_centros_estudiantes", a, b, y, Storey - .10f,
+                    .12f, creamF, .5f, 1.0f, DoorHeight, true, creamF, metal);
+                WallRun(p, "Wu_Division_centro_estudiantes", new Vector2(spine, z0),
+                    new Vector2(5.72f, z0), y, Storey - .10f, .12f,
+                    creamF, .5f, .90f, DoorHeight, false, creamF, metal);
+                Desk(p, "Wu_Mesa_centro_estudiantes", 2.7f, z0 + 1.5f, y);
+                Box(p, "Wu_Armario", new Vector3(5.15f, y + .85f, z0 + 1.6f),
+                    new Vector3(.55f, 1.7f, 1.6f), creamF, true);
             }
-            WallRun(p, "Muro_diagonal_nucleo_Wu", new Vector2(-1.0f, -1.6f),
-                new Vector2(1.8f, 4.2f), y, Storey - .08f, .14f, creamF,
-                .43f, .95f, DoorHeight, true, darkGlass, metal);
+            if (level == 0)
+            {
+                for (int row = 0; row < 2; row++)
+                    for (int col = 0; col < 2; col++)
+                        Desk(p, "Wu_Sala_estudio", -2.5f + col * 4.8f, 3.0f + row * 2.2f, y);
+                Box(p, "Wu_Informes", new Vector3(-3.5f, y + .52f, .9f),
+                    new Vector3(1.7f, 1.04f, .65f), creamF, true);
+            }
+            else
+            {
+                for (int i = 0; i < 5; i++)
+                    Box(p, "Wu_Banca_actividades", new Vector3(-3.2f, y + .24f, 1.5f + i * 1.4f),
+                        new Vector3(1.2f, .48f, .48f), creamF, true);
+            }
         }
 
-        // Separate covered route: its direction is set by the two prefab positions,
-        // not an axis-aligned filler box. The glazed sides leave the circulation visible.
-        static void BuildDiagonalWalk(Transform eRoot, Vector3 fInE)
+        static void Desk(Transform p, string name, float x, float z, float y)
         {
-            const float eW = 24.30f, eD = 9.76f, fW = 11.85f, fD = 22.91f;
-            // Both prefab roots are rotated 180 degrees in the campus scene. These
-            // coordinates place the connector between their opposing inner ends.
-            Vector2 eDoor = new Vector2(6.075f, -eD / 2);
-            Vector2 fDoor = new Vector2(-fInE.x - 4.74f, -fInE.z + fD / 2);
-            Vector2 axis = fDoor - eDoor;
-            float length = axis.magnitude;
-            if (length < .15f || length > 6f)
-            {
-                Debug.LogWarning("E-F diagonal route skipped: endpoints are not adjacent (" + length.ToString("F2") + " m).");
-                return;
-            }
-            Vector2 direction = axis / length;
-            Vector2 normal = new Vector2(-direction.y, direction.x);
-            Vector2 center = (eDoor + fDoor) * .5f;
-            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
-            Transform link = Group(eRoot, "Union_diagonal_transitable_E_F");
-            float width = 2.05f;
-            float walkY = -.05f;
-            Box(link, "Piso_diagonal_sin_solape", new Vector3(center.x, walkY, center.y),
-                new Vector3(width, .12f, length + .06f), paving, true, angle);
+            Box(p, name + "_tablero", new Vector3(x, y + .76f, z), new Vector3(1.25f, .06f, .65f), paving, true);
+            foreach (int sx in new[] { -1, 1 })
+                foreach (int sz in new[] { -1, 1 })
+                    Box(p, name + "_pata", new Vector3(x + sx * .51f, y + .36f, z + sz * .23f),
+                        new Vector3(.045f, .72f, .045f), metal, false);
+            Box(p, name + "_silla_asiento", new Vector3(x, y + .45f, z + .68f),
+                new Vector3(.43f, .06f, .43f), creamE, true);
+            Box(p, name + "_silla_respaldo", new Vector3(x, y + .72f, z + .87f),
+                new Vector3(.43f, .54f, .055f), creamE, false);
+        }
+
+        // This entrance is part of E, not a passage with a door at either end.
+        // The shallow polygon closes the inside angle and stops at Wu's facing wall.
+        static void BuildAlzamoraLobby(Transform root, Vector3 fInE)
+        {
+            Transform lobby = Group(root, "E_Vestibulo_integrado_entrada_oblicua");
+            float junctionZ = -fInE.z + 11.455f;
+            float junctionX = -fInE.x - 5.925f;
+            Vector2 a = new Vector2(0, -4.88f);
+            Vector2 b = new Vector2(junctionX, junctionZ);
+            Vector2 c = new Vector2(7.29f, junctionZ);
+            Vector2 d = new Vector2(7.29f, -4.18f);
+            Vector2 e = new Vector2(0, -4.18f);
+            Vector2[] footprint = { a, b, c, d, e };
+            PolygonSlab(lobby, "Piso_vestibulo_E", footprint, -.18f, 0, paving);
+            PolygonSlab(lobby, "Entrepiso_vestibulo_E", footprint, Storey - .18f, Storey, creamE);
+            PolygonSlab(lobby, "Cubierta_vestibulo_E", footprint, 2 * Storey - .18f, 2 * Storey, creamE);
+            // The stone-clad entrance pier and glazed double leaf lie on the oblique face.
+            WallRun(lobby, "E_Entrada_principal_diagonal", a, b, 0, Storey, .22f,
+                creamE, .53f, 1.60f, 2.45f, true, darkGlass, metal);
+            WindowWall(lobby, "E_Ventanal_superior_oblicuo", a, b, Storey,
+                Vector2.Distance(a, b), 1, creamE, darkGlass, metal);
+            WindowWall(lobby, "E_Retorno_superior_ventanal", b, c, Storey,
+                Vector2.Distance(b, c), 1, creamE, darkGlass, metal);
+            // Ground-level return is recessed to leave the entrance under the upper volume.
+            WallRun(lobby, "E_Retorno_inferior", b, c, 0, Storey, Wall,
+                creamE, .5f, 1.0f, DoorHeight, false, creamE, metal);
+            WallRun(lobby, "E_Cierre_lateral_vestibulo", c, d, 0, Storey * 2, Wall,
+                creamE, .5f, 1.0f, DoorHeight, false, creamE, metal);
+            Vector2 dir = (b - a).normalized;
+            Vector2 normal = new Vector2(-dir.y, dir.x);
+            Vector2 dc = Vector2.Lerp(a, b, .53f);
+            // Two pull handles and a threshold make the entrance readable from the court.
             for (int side = -1; side <= 1; side += 2)
             {
-                Vector2 rail = center + normal * side * (width / 2);
-                Box(link, "Vidrio_lateral_ruta_diagonal", new Vector3(rail.x, 1.25f, rail.y),
-                    new Vector3(.045f, 2.48f, length - .06f), glass, false, angle);
-                Box(link, "Pasamanos_diagonal", new Vector3(rail.x, 2.56f, rail.y),
-                    new Vector3(.075f, .08f, length - .06f), metal, false, angle);
+                Vector2 h = dc + dir * side * .16f + normal * .15f;
+                Box(lobby, "E_Tirador_puerta_principal", new Vector3(h.x, 1.10f, h.y),
+                    new Vector3(.045f, .55f, .045f), metal, false);
             }
-            Box(link, "Dintel_ligero_union_diagonal", new Vector3(center.x, 3.28f, center.y),
-                new Vector3(width, .18f, length + .10f), creamF, false, angle);
-            // The door leaves at both ends sit in the wall openings generated above.
-            Debug.Log("Diagonal E-F route: " + length.ToString("F2") + " m at " + angle.ToString("F1") + " degrees.");
+            Box(lobby, "E_Mostrador_recepcion", new Vector3(4.8f, .52f, -4.85f),
+                new Vector3(1.6f, 1.04f, .58f), creamE, true);
+        }
+
+        static void PolygonSlab(Transform parent, string name, Vector2[] points,
+            float bottom, float top, Material material)
+        {
+            int n = points.Length;
+            var vertices = new Vector3[n * 2];
+            for (int i = 0; i < n; i++)
+            {
+                vertices[i] = new Vector3(points[i].x, bottom, points[i].y);
+                vertices[i + n] = new Vector3(points[i].x, top, points[i].y);
+            }
+            var indices = new System.Collections.Generic.List<int>();
+            for (int i = 1; i < n - 1; i++)
+            {
+                indices.AddRange(new[] { 0, i, i + 1, n, n + i + 1, n + i });
+            }
+            for (int i = 0; i < n; i++)
+            {
+                int j = (i + 1) % n;
+                indices.AddRange(new[] { i, n + i, j, j, n + i, n + j });
+            }
+            var mesh = new Mesh { name = name };
+            mesh.vertices = vertices;
+            mesh.triangles = indices.ToArray();
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+            const string folder = "Assets/UPCH/Campus/Generated/Buildings";
+            string path = folder + "/" + name + ".asset";
+            var existing = AssetDatabase.LoadAssetAtPath<Mesh>(path);
+            if (existing) { EditorUtility.CopySerialized(mesh, existing); UnityEngine.Object.DestroyImmediate(mesh); mesh = existing; }
+            else AssetDatabase.CreateAsset(mesh, path);
+            var go = new GameObject(name, typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
+            go.transform.SetParent(parent, false);
+            go.GetComponent<MeshFilter>().sharedMesh = mesh;
+            go.GetComponent<MeshRenderer>().sharedMaterial = material;
+            go.GetComponent<MeshCollider>().sharedMesh = mesh;
         }
 
         static void WindowWall(Transform p, string name, Vector2 a, Vector2 b, float y, float span,
@@ -385,14 +450,14 @@ namespace UPCH.Campus.Editor
             float fullLength = Vector2.Distance(a, b);
             if (connectorDoor && level == 0 && fullLength > 2.2f)
             {
-                const float centerFromStart = .755f, doorWidth = 1.0f;
+                float centerFromStart = fullLength * .52f; const float doorWidth = 1.40f;
                 float leftLength = centerFromStart - doorWidth / 2;
                 float rightStart = centerFromStart + doorWidth / 2;
                 WindowWall(p, name + "_antes_puerta", a, a + fullDir * leftLength, y,
                     leftLength, level, wall, glazing, frame);
                 WindowWall(p, name + "_despues_puerta", a + fullDir * rightStart, b, y,
                     fullLength - rightStart, level, wall, glazing, frame);
-                DoorOpening(p, "Puerta_diagonal_acceso_Wu", a + fullDir * centerFromStart,
+                DoorOpening(p, "Puerta_principal_Wu_hacia_patio", a + fullDir * centerFromStart,
                     fullDir, y, doorWidth, DoorHeight, Wall, wall, glass, frame);
                 return;
             }
@@ -499,19 +564,19 @@ namespace UPCH.Campus.Editor
             float lintelH = height - doorH;
             if (lintelH > .03f)
                 Box(p, name + "_dintel", new Vector3((a + dir * openingCenter).x, y + doorH + lintelH / 2,
-                    (a + dir * openingCenter).y), new Vector3(doorWidth, lintelH, thickness), wall, true, angle);
+                    (a + dir * openingCenter).y), new Vector3(thickness, lintelH, doorWidth), wall, true, angle);
             Vector2 dc = a + dir * openingCenter;
             Box(p, name + "_marco_superior", new Vector3(dc.x, y + doorH + .015f, dc.y),
-                new Vector3(doorWidth, .045f, .075f), hardware, false, angle);
+                new Vector3(.075f, .045f, doorWidth), hardware, false, angle);
             Vector2 normal = new Vector2(-dir.y, dir.x);
             foreach (int side in new[] { -1, 1 })
             {
-                Vector2 jamb = dc + normal * side * (doorWidth / 2);
+                Vector2 jamb = dc + dir * side * (doorWidth / 2);
                 Box(p, name + "_jamba_metalica", new Vector3(jamb.x, y + doorH / 2, jamb.y),
                     new Vector3(.045f, doorH, .075f), hardware, false, angle);
             }
             Box(p, name + "_hoja", new Vector3(dc.x, y + doorH / 2, dc.y),
-                new Vector3(doorWidth - .07f, doorH - .04f, .045f), doorMat, false, angle);
+                new Vector3(.045f, doorH - .04f, doorWidth - .07f), doorMat, false, angle);
             Box(p, name + "_manija", new Vector3(dc.x + dir.x * (doorWidth * .34f), y + 1.02f,
                 dc.y + dir.y * (doorWidth * .34f)), new Vector3(.035f, .24f, .045f), hardware, false, angle);
         }
@@ -531,19 +596,19 @@ namespace UPCH.Campus.Editor
             Vector2 side = new Vector2(-direction.y, direction.x);
             foreach (int s in new[] { -1, 1 })
             {
-                Vector2 jamb = center + side * s * (width / 2 + thickness / 2);
+                Vector2 jamb = center + direction * s * (width / 2 + thickness / 2);
                 Box(p, name + "_jamba", new Vector3(jamb.x, y + height / 2, jamb.y),
                     new Vector3(thickness, height, thickness), wall, true, angle);
             }
             Box(p, name + "_dintel", new Vector3(center.x, y + Storey - (Storey - height) / 2, center.y),
-                new Vector3(width + thickness * 2, Storey - height, thickness), wall, true, angle);
+                new Vector3(thickness, Storey - height, width + thickness * 2), wall, true, angle);
             Box(p, name + "_hoja_vidriada", new Vector3(center.x, y + height / 2, center.y),
-                new Vector3(width, height, .055f), door, false, angle);
+                new Vector3(.055f, height, width), door, false, angle);
             Box(p, name + "_marco_superior", new Vector3(center.x, y + height, center.y),
-                new Vector3(width + .08f, .045f, .08f), hardware, false, angle);
+                new Vector3(.08f, .045f, width + .08f), hardware, false, angle);
             foreach (int s in new[] { -1, 1 })
             {
-                Vector2 jamb = center + side * s * (width / 2);
+                Vector2 jamb = center + direction * s * (width / 2);
                 Box(p, name + "_perfil_jamba", new Vector3(jamb.x, y + height / 2, jamb.y),
                     new Vector3(.045f, height, .08f), hardware, false, angle);
             }
