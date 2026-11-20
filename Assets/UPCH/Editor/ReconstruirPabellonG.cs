@@ -17,10 +17,10 @@ namespace UPCH.Campus.Editor
         [MenuItem("Tools/UPCH/Construir G - aulas y auditorio")]
         public static void Run()
         {
-            concrete = Material("G_Concreto", new Color(.76f,.73f,.66f), "Concreto_G.png");
+            concrete = Material("G_Concreto", new Color(.86f,.86f,.84f), "Concreto_G.png");
             brick = Material("G_Ladrillo", Color.white, "Ladrillo_G.png");
-            glass = Material("G_Vidrio",new Color(.25f,.36f,.39f));
-            dark = Material("G_Vidrio_oscuro",new Color(.075f,.11f,.12f));
+            glass = Material("G_Vidrio",new Color(.36f,.43f,.43f));
+            dark = Material("G_Vidrio_oscuro",new Color(.11f,.14f,.15f));
             metal = Material("G_Acero",new Color(.48f,.50f,.49f));
             wood = Material("G_Carpinteria",new Color(.37f,.17f,.075f));
             floor = Material("G_Pavimento",new Color(.53f,.53f,.49f));
@@ -43,7 +43,7 @@ namespace UPCH.Campus.Editor
                 BuildExterior(root);
                 PrefabUtility.SaveAsPrefabAsset(asset,PathG);
                 AssetDatabase.SaveAssets();
-                Debug.Log("G_SAVED_A01_A04: basement -2.88, classrooms 0/3.55/7.10, polygonal auditorium, independent stairs/lifts, entrance facing campus centre (+X).");
+                Debug.Log("G_SAVED_A01_A04: no basement; classrooms 0/3.55/7.10, polygonal auditorium, independent stairs/lifts, entrance facing campus centre (+X).");
                 var inst=GameObject.Find("G - Aulas y auditorio");
                 if(inst && SceneView.lastActiveSceneView)
                 {
@@ -59,36 +59,36 @@ namespace UPCH.Campus.Editor
         {
             string path=Art+name+".mat";
             var m=AssetDatabase.LoadAssetAtPath<Material>(path);
-            if(!m)
+            bool created = !m;
+            if(created) m=new Material(Shader.Find("Universal Render Pipeline/Lit")){name=name};
+            m.SetColor("_BaseColor",color);
+            m.SetFloat("_Smoothness",name.Contains("Vidrio")?.86f:.13f);
+            m.SetFloat("_Metallic",name.Contains("Vidrio")?.22f:0);
+            if(texture!=null)
             {
-                m=new Material(Shader.Find("Universal Render Pipeline/Lit")){name=name};
-                m.SetColor("_BaseColor",color);
-                m.SetFloat("_Smoothness",name.Contains("Vidrio")?.74f:.13f);
-                if(texture!=null)
-                {
-                    m.SetTexture("_BaseMap",AssetDatabase.LoadAssetAtPath<Texture2D>(Art+texture));
-                    m.SetTextureScale("_BaseMap",texture.Contains("Ladrillo")?new Vector2(4,2):new Vector2(2,2));
-                }
-                AssetDatabase.CreateAsset(m,path);
+                m.SetTexture("_BaseMap",AssetDatabase.LoadAssetAtPath<Texture2D>(Art+texture));
+                m.SetTextureScale("_BaseMap",texture.Contains("Ladrillo")?new Vector2(4,2):new Vector2(2,2));
             }
+            if(created)AssetDatabase.CreateAsset(m,path); else EditorUtility.SetDirty(m);
             return m;
         }
 
         static void BuildClassrooms(Transform root)
         {
-            float[] levels={-2.88f,0,H,2*H};
+            float[] levels={0,H,2*H};
             for(int n=0;n<levels.Length;n++)
             {
-                float y=levels[n], height=n==0?2.88f:H;
-                Transform p=Group(root,n==0?"Sotano_A01":"Piso_"+n+"_NPT_"+y.ToString("F2"));
+                float y=levels[n], height=H;
+                Transform p=Group(root,"Piso_"+(n+1)+"_NPT_"+y.ToString("F2"));
                 // Three non-overlapping strips form the slab and leave the stair/lift core open.
-                if(n==0) Box(p,"Losa_sotano",new Vector3(ClassroomWidth/2,y-.10f,0),new Vector3(ClassroomWidth,.20f,Depth),floor,true);
+                if(n==0) Box(p,"Losa_planta_baja_cerrada",new Vector3(ClassroomWidth/2,y-.10f,0),new Vector3(ClassroomWidth,.20f,Depth),floor,true);
                 else FloorWithCore(p,y);
                 Facade(p,y,height,-Depth/2,n);
                 Facade(p,y,height,Depth/2,n);
                 EndElevation(p,y,height,n);
-                if(n==0) BasementRooms(p,y);
-                else ClassroomRooms(p,y,n);
+                ClassroomRooms(p,y,n+1);
+                Wall(p,"Cierre_lateral_aulas_norte",new Vector2(0,-Depth/2),new Vector2(0,-2),y,H,concrete);
+                Wall(p,"Cierre_lateral_aulas_sur",new Vector2(0,2),new Vector2(0,Depth/2),y,H,concrete);
             }
             Box(root,"Cubierta_aulas_cerrada",new Vector3(ClassroomWidth/2,3*H-.10f,0),new Vector3(ClassroomWidth,.20f,Depth),concrete,true);
             RoofRails(root,new Vector2(0,-Depth/2),new Vector2(ClassroomWidth,-Depth/2),3*H);
@@ -120,7 +120,10 @@ namespace UPCH.Campus.Editor
                 foreach(float v in new[]{.76f,1.64f,height-.81f,height-.25f})
                     Box(p,"Marco_horizontal",new Vector3(x,y+v,z),new Vector3(width,.035f,.23f),metal,false);
                 for(int j=1;j<5;j++)
+                {
                     Box(p,"Montante_ventanas",new Vector3(bay*i+.125f+width*j/5,y+1.20f,z),new Vector3(.035f,.88f,.24f),metal,false);
+                    Box(p,"Montante_ventanas_altas",new Vector3(bay*i+.125f+width*j/5,y+height-.53f,z),new Vector3(.035f,.56f,.24f),metal,false);
+                }
             }
             for(int i=0;i<=4;i++)
                 Box(p,"Pilar_concreto_visto",new Vector3(i*bay,y+height/2,z),new Vector3(.25f,height,.44f),concrete,true);
@@ -174,55 +177,63 @@ namespace UPCH.Campus.Editor
             }
         }
 
-        static void BasementRooms(Transform p,float y)
-        {
-            float[] north={0,4.90f,16.10f,19.56f};
-            for(int i=1;i<north.Length-1;i++) Wall(p,"Almacen_patrimonio",new Vector2(north[i],-10.25f),new Vector2(north[i],-2),y,2.88f,concrete);
-            Wall(p,"Corredor_almacen",new Vector2(0,-2),new Vector2(19.56f,-2),y,2.88f,concrete,.63f,1.80f);
-            float[] south={0,4.90f,16.35f,19.56f};
-            for(int i=1;i<south.Length-1;i++) Wall(p,"Oficinas_sotano",new Vector2(south[i],2),new Vector2(south[i],10.25f),y,2.88f,concrete);
-            Wall(p,"Acceso_coworking",new Vector2(0,2),new Vector2(19.56f,2),y,2.88f,concrete,.50f,1.80f);
-            for(int i=0;i<7;i++)
-                Box(p,"Estanteria_almacen",new Vector3(1.5f+i*2.15f,y+1.0f,-6.3f),new Vector3(.55f,2.0f,5.8f),metal,true);
-            for(int i=0;i<5;i++)
-                Box(p,"Mesa_coworking",new Vector3(6.6f+i*1.7f,y+.75f,5.5f),new Vector3(1.25f,.07f,.65f),wood,true);
-            Stair(p,"Escalera_1_sotano",17.2f,0,y,2.88f,1.08f,2.90f);
-            Lift(p,"Ascensor_sotano",18.72f,-2.65f,y,2.88f);
-        }
-
         static void BuildCirculation(Transform root)
         {
-            for(int l=0;l<4;l++)
+            for(int l=0;l<3;l++)
             {
-                float y=l==0?-2.88f:(l-1)*H,h=l==0?2.88f:H;
-                Transform p=Group(root,"Nucleo_hall_nivel_"+l);
-                // Continuous circulation around a single stair opening. The upper
-                // landing at z=-6.43 joins this slab along its edge.
-                Box(p,"Suelo_hall",new Vector3(-2.825f,y-.10f,(-2.07f+7.40f)/2),new Vector3(5.65f,.20f,9.47f),floor,true);
-                Box(p,"Suelo_descanso_norte",new Vector3(-2.825f,y-.10f,(-8.975f-6.43f)/2),new Vector3(5.65f,.20f,2.545f),floor,true);
-                Box(p,"Suelo_lateral_oeste_escalera",new Vector3(-5.54f,y-.10f,-4.25f),new Vector3(.22f,.20f,4.36f),floor,true);
-                Box(p,"Suelo_lateral_este_escalera",new Vector3(-.385f,y-.10f,-4.25f),new Vector3(.77f,.20f,4.36f),floor,true);
-                Box(p,"Suelo_servicios",new Vector3(-2.825f,y-.10f,-11.8f),new Vector3(5.65f,.20f,5.65f),floor,true);
-                Wall(p,"Fondo_servicios",new Vector2(-5.65f,-14.625f),new Vector2(0,-14.625f),y,h,concrete);
-                Wall(p,"Lateral_servicios",new Vector2(0,-14.625f),new Vector2(0,-4.8f),y,h,concrete);
-                Wall(p,"Cierre_nucleo",new Vector2(-5.65f,-14.625f),new Vector2(-5.65f,-4.8f),y,h,concrete);
-                if(l<3) Stair(p,"Escalera_2_hall",-3.1f,-4.25f,y,l==0?2.88f:H,2.20f,3.8f);
-                Toilets(p,y,h);
-                if(l>0)
+                float y=l*H;
+                Transform p=Group(root,"Nucleo_hall_nivel_"+(l+1));
+                if(l==0)
+                    Box(p,"Suelo_hall_planta_baja_cerrado",new Vector3(-2.825f,-.10f,(-8.975f+7.4f)/2),new Vector3(5.65f,.20f,16.375f),floor,true);
+                else
                 {
-                    // Tall glazing of the principal hall above the recessed entry.
-                    if(l==1)
-                    {
-                        Wall(p,"Frente_entrada_principal_G",new Vector2(-5.65f,7.40f),new Vector2(0,7.40f),y,h,concrete,.50f,2.0f);
-                        Box(p,"Marquesina_entrada",new Vector3(-2.825f,y+3.15f,8.05f),new Vector3(5.65f,.25f,1.30f),concrete,true);
-                    }
-                    else Box(p,"Vidrio_hall_doble_altura",new Vector3(-2.825f,y+h/2,7.4f),new Vector3(5.2f,h-.22f,.12f),dark,false);
-                    foreach(float x in new[]{-5.65f,0}) Box(p,"Pilar_hall",new Vector3(x,y+h/2,7.4f),new Vector3(.30f,h,.45f),concrete,true);
+                    Box(p,"Suelo_hall",new Vector3(-2.825f,y-.10f,(-2.07f+7.40f)/2),new Vector3(5.65f,.20f,9.47f),floor,true);
+                    Box(p,"Suelo_descanso_norte",new Vector3(-2.825f,y-.10f,(-8.975f-6.43f)/2),new Vector3(5.65f,.20f,2.545f),floor,true);
+                    Box(p,"Suelo_lateral_oeste_escalera",new Vector3(-5.54f,y-.10f,-4.25f),new Vector3(.22f,.20f,4.36f),floor,true);
+                    Box(p,"Suelo_lateral_este_escalera",new Vector3(-.385f,y-.10f,-4.25f),new Vector3(.77f,.20f,4.36f),floor,true);
                 }
+                Wall(p,"Cierre_hall_oeste_norte",new Vector2(-5.65f,-4.8f),new Vector2(-5.65f,-2),y,H,concrete);
+                Wall(p,"Cierre_hall_oeste_sur",new Vector2(-5.65f,2),new Vector2(-5.65f,7.4f),y,H,concrete);
+                if(l<2)
+                {
+                    Box(p,"Suelo_servicios",new Vector3(-2.825f,y-.10f,-11.8f),new Vector3(5.65f,.20f,5.65f),floor,true);
+                    Wall(p,"Fondo_servicios",new Vector2(-5.65f,-14.625f),new Vector2(0,-14.625f),y,H,concrete);
+                    Wall(p,"Lateral_servicios",new Vector2(0,-14.625f),new Vector2(0,-4.8f),y,H,concrete);
+                    Wall(p,"Cierre_nucleo",new Vector2(-5.65f,-14.625f),new Vector2(-5.65f,-4.8f),y,H,concrete);
+                    Stair(p,"Escalera_2_hall",-3.1f,-4.25f,y,H,2.20f,3.8f);
+                    Toilets(p,y,H);
+                }
+                else Wall(p,"Cierre_superior_nucleo",new Vector2(-5.65f,-8.975f),new Vector2(0,-8.975f),y,H,concrete);
+                if(l==0)
+                {
+                    // Photograph: open porch under the glazed volume; the double
+                    // door is recessed 2.25 m behind the outer columns.
+                    Wall(p,"Puerta_principal_retranqueada",new Vector2(-5.65f,5.15f),new Vector2(0,5.15f),0,3.15f,concrete,.5f,3.6f);
+                    UnityEngine.Object.DestroyImmediate(p.Find("Puerta_principal_retranqueada_hoja").gameObject);
+                    foreach(float x in new[]{-4.60f,-1.05f})
+                        Box(p,"Hoja_vidrio_acceso_abierta",new Vector3(x,1.15f,4.70f),new Vector3(.045f,2.3f,.85f),dark,false);
+                    Box(p,"Viga_frontal_portico",new Vector3(-2.825f,3.35f,7.4f),new Vector3(5.65f,.40f,.42f),concrete,true);
+                    Box(p,"Techo_portico",new Vector3(-2.825f,3.10f,6.275f),new Vector3(5.35f,.10f,2.25f),concrete,true);
+                }
+                else HallGlazing(p,y);
+                foreach(float x in new[]{-5.65f,0})
+                    Box(p,"Pilar_hall",new Vector3(x,y+H/2,7.4f),new Vector3(.30f,H,.45f),concrete,true);
             }
-            Box(root,"Cubierta_hall",new Vector3(-2.825f,3*H-.10f,3.3f),new Vector3(5.65f,.20f,8.20f),concrete,true);
+            Box(root,"Cubierta_hall",new Vector3(-2.825f,3*H-.10f,(-8.975f+7.4f)/2),new Vector3(5.65f,.20f,16.375f),concrete,true);
             Box(root,"Techo_servicios_NTT_7.10",new Vector3(-2.825f,7.0f,-11.8f),new Vector3(5.65f,.20f,5.65f),concrete,true);
             RoofRails(root,new Vector2(-5.65f,7.4f),new Vector2(0,7.4f),3*H);
+        }
+
+        static void HallGlazing(Transform p,float y)
+        {
+            const float width=5.35f, bottom=.45f, top=H-.25f;
+            Box(p,"Antepecho_concreto_hall",new Vector3(-2.825f,y+bottom/2,7.4f),new Vector3(width,bottom,.24f),concrete,true);
+            Box(p,"Dintel_concreto_hall",new Vector3(-2.825f,y+(top+H)/2,7.4f),new Vector3(width,H-top,.24f),concrete,true);
+            Box(p,"Vidrio_hall_enmarcado",new Vector3(-2.825f,y+(bottom+top)/2,7.4f),new Vector3(width,top-bottom,.10f),dark,false);
+            foreach(float x in new[]{-5.48f,-2.825f,-.17f})
+                Box(p,"Marco_vertical_hall",new Vector3(x,y+(bottom+top)/2,7.465f),new Vector3(.045f,top-bottom,.045f),metal,false);
+            foreach(float h in new[]{bottom,top})
+                Box(p,"Marco_horizontal_hall",new Vector3(-2.825f,y+h,7.465f),new Vector3(width,.045f,.045f),metal,false);
         }
 
         static void Toilets(Transform p,float y,float h)
@@ -242,29 +253,29 @@ namespace UPCH.Campus.Editor
         static void BuildAuditorium(Transform root)
         {
             Transform p=Group(root,"Auditorio_y_anfiteatros_poligonales");
-            Polygon(p,"Suelo_anfiteatros",Theatre,-1.62f,-1.44f,floor);
+            Polygon(p,"Suelo_anfiteatros",Theatre,-.20f,0,floor);
             Polygon(p,"Entrepiso_auditorio",Theatre,3.35f,3.55f,floor);
             Polygon(p,"Cubierta_auditorio",Theatre,10.45f,10.65f,concrete);
             for(int i=0;i<Theatre.Length;i++)
             {
                 Vector2 a=Theatre[i],b=Theatre[(i+1)%Theatre.Length];
                 bool entry=i==4;
-                Wall(p,"Cerramiento_concreto_auditorio",a,b,-1.44f,entry?4.99f:12.09f,concrete,entry?.5f:-1,2.0f);
+                Wall(p,"Cerramiento_concreto_auditorio",a,b,0,entry?H:3*H,concrete,entry?.5f:-1,2.0f);
                 if(entry) Wall(p,"Acceso_auditorio_segundo",a,b,3.55f,7.10f,concrete,.5f,2.0f);
-                if(!entry) ConcreteJoints(p,a,b,-1.44f,12.09f);
+                if(!entry) ConcreteJoints(p,a,b,0,3*H);
                 RoofRails(p,a,b,10.65f);
             }
-            Wall(p,"Separacion_anfiteatros_1_2",new Vector2(-23.3f,0),new Vector2(-7.9f,0),-1.44f,4.99f,concrete);
+            Wall(p,"Separacion_anfiteatros_1_2",new Vector2(-23.3f,0),new Vector2(-7.9f,0),0,H,concrete);
             for(int half=-1;half<=1;half+=2)
             {
                 for(int row=0;row<7;row++)
                 {
-                    float x=-19.8f+row*1.55f,top=-1.44f+row*.12f;
+                    float x=-19.8f+row*1.55f,top=row*.12f;
                     if(row>0)Box(p,"Grada_anfiteatro",new Vector3(x,top-.10f,half*3.4f),new Vector3(1.55f,.20f,5.5f),floor,true);
                     for(int col=0;col<6;col++) Seat(p,new Vector3(x,top,half*3.4f-2.15f+col*.85f),false,90);
                 }
             }
-            Box(p,"Estrado_anfiteatros",new Vector3(-22.6f,-1.26f,0),new Vector3(2.0f,.36f,7.2f),wood,true);
+            Box(p,"Estrado_anfiteatros",new Vector3(-22.6f,.18f,0),new Vector3(2.0f,.36f,7.2f),wood,true);
             Box(p,"Estrado_auditorio_NPT_4.27",new Vector3(-24.3f,3.91f,0),new Vector3(4.5f,.72f,7.9f),wood,true);
             for(int row=0;row<9;row++)
                 for(int col=0;col<12;col++) Seat(p,new Vector3(-20.9f+row*1.25f,3.55f,-4.9f+col*.88f),false,90);
@@ -285,8 +296,9 @@ namespace UPCH.Campus.Editor
             for(int i=0;i<steps;i++)
             {
                 float top=-.9f+(i+1)*.15f,z=9.32f-(i+.5f)*run;
-                Box(p,"Escalinata_entrada_G",new Vector3(-2.825f,top-.10f,z),new Vector3(5.2f,.20f,run),concrete,true);
-                Box(p,"Banda_antideslizante_amarilla",new Vector3(-2.825f,top+.003f,z+run/2-.025f),new Vector3(5.1f,.006f,.035f),wood,false);
+                float solidHeight=top+.9f;
+                Box(p,"Escalinata_entrada_G",new Vector3(-2.825f,-.9f+solidHeight/2,z),new Vector3(5.2f,solidHeight,run),concrete,true);
+                Box(p,"Banda_antideslizante_amarilla",new Vector3(-2.825f,top+.003f,z+run/2-.025f),new Vector3(5.1f,.006f,.06f),Material("G_Nariz_escalon_ocre",new Color(.86f,.37f,.08f)),false);
             }
             Ramp(p,new Vector3(-6.275f,-.90f,13.7f),new Vector3(-6.275f,0,7.4f),1.25f);
             Box(p,"Descanso_rampa_acceso",new Vector3(-6.275f,-.10f,6.775f),new Vector3(1.25f,.20f,1.25f),concrete,true);
@@ -295,21 +307,23 @@ namespace UPCH.Campus.Editor
             Lift(p,"Ascensor_exterior_accesible",-10.35f,11.0f,-.9f,11.55f);
             foreach(float x in new[]{3,8,13,18})
                 Box(p,"Seto_frente_aulas",new Vector3(x,-.48f,11.8f),new Vector3(3.6f,.72f,.70f),leaf,false);
-            Sign(p,"PABELLON G",new Vector3(-.30f,1.9f,7.66f),.18f);
-            Sign(p,"AUDITORIO\nHERNAN SILVA DIAZ",new Vector3(-4.8f,.65f,8.1f),.105f);
+            Box(p,"Placa_pabellon_G",new Vector3(-.12f,1.9f,7.66f),new Vector3(.24f,.33f,.035f),leaf,false);
+            Sign(p,"G",new Vector3(-.12f,1.9f,7.69f),.12f);
+            Box(p,"Monolito_nombre_auditorio",new Vector3(.90f,-.55f,10.9f),new Vector3(1.5f,.60f,.20f),concrete,true);
+            Sign(p,"AUDITORIO\nHERNAN SILVA DIAZ",new Vector3(.9f,-.55f,11.015f),.055f);
         }
 
         static void ConcreteJoints(Transform p,Vector2 a,Vector2 b,float y,float height)
         {
             Vector2 delta=b-a,dir=delta.normalized,outward=new Vector2(dir.y,-dir.x);
-            Material seam=Material("G_Juntas_concreto",new Color(.43f,.42f,.38f));
+            Material seam=Material("G_Juntas_concreto",new Color(.58f,.58f,.54f));
             for(float t=1.2f;t<delta.magnitude;t+=1.2f)
             {
-                Vector2 q=a+dir*t+outward*.105f;
-                Box(p,"Junta_vertical_encofrado",new Vector3(q.x,y+height/2,q.y),new Vector3(.008f,height,.008f),seam,false);
+                Vector2 q=a+dir*t+outward*.12f;
+                Box(p,"Junta_vertical_encofrado",new Vector3(q.x,y+height/2,q.y),new Vector3(.012f,height,.012f),seam,false);
             }
             for(float h=1.2f;h<height;h+=1.2f)
-                Piece(p,"Junta_horizontal_encofrado",(a+b)/2+outward*.105f,y+h,.008f,delta.magnitude,.008f,seam,Mathf.Atan2(dir.x,dir.y)*Mathf.Rad2Deg,false);
+                Piece(p,"Junta_horizontal_encofrado",(a+b)/2+outward*.12f,y+h,.012f,delta.magnitude,.012f,seam,Mathf.Atan2(dir.x,dir.y)*Mathf.Rad2Deg,false);
         }
 
         static void Wall(Transform p,string name,Vector2 a,Vector2 b,float y,float height,Material mat,float doorT=-1,float doorWidth=1.0f)
@@ -397,8 +411,8 @@ namespace UPCH.Campus.Editor
         { for(float x=x0+2;x<x1;x+=3.5f) Box(p,"Luminaria_corredor",new Vector3(x,y+H-.23f,z),new Vector3(.24f,.05f,1.1f),concrete,false); }
         static void Sign(Transform p,string text,Vector3 at,float size)
         {
-            var go=new GameObject(text);go.transform.SetParent(p,false);go.transform.localPosition=new Vector3(at.x,at.y,-at.z);go.transform.localRotation=Quaternion.Euler(0,180,0);
-            var t=go.AddComponent<TextMesh>();t.text=text;t.characterSize=size;t.fontSize=48;t.anchor=TextAnchor.MiddleCenter;t.color=new Color(.1f,.12f,.10f);
+            var go=new GameObject(text);go.transform.SetParent(p,false);go.transform.localPosition=new Vector3(at.x,at.y,-at.z);go.transform.localRotation=Quaternion.identity;
+            var t=go.AddComponent<TextMesh>();t.text=text;t.characterSize=size;t.fontSize=48;t.anchor=TextAnchor.MiddleCenter;t.color=text=="G"?Color.white:new Color(.1f,.12f,.10f);
             t.font=Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");go.GetComponent<Renderer>().sharedMaterial=t.font.material;
         }
 
