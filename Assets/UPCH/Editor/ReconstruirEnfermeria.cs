@@ -142,9 +142,9 @@ namespace UPCH.Enfermeria.Editor
             foreach(float z in new[]{143f,739f}) {
                 if(i<2&&z==739f) {
                     // The south edge is a glazed passage on levels 1 and 2.
-                    // Its inner opaque wall follows the diagonal shown on A-01/A-02.
+                    // Keep the route itself open; the opaque wall closes only its far end.
                     SideCurtainFacade(envelope,i,y);
-                    Wall(envelope,"Pared_fondo_pasillo_diagonal_"+i,877,SideWallZ(877),1400,SideWallZ(1400),y,-1,1,H,wall);
+                    Wall(envelope,"Muro_terminal_pasillo_diagonal_"+i,1400,674,1400,SideWallZ(1400),y,-1,1,H,wall);
                     continue;
                 }
                 float start=i==0&&z==143?1040:877;
