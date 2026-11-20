@@ -22,12 +22,7 @@ namespace UPCH.Campus.Editor
         [MenuItem("Tools/UPCH/Rebuild Pabellones E y F - Alzamora y Wu")]
         public static void Run()
         {
-            creamE = Load("Assets/UPCH/Campus/Generated/Materials/Pabellon E.mat");
-            creamF = Load("Assets/UPCH/Campus/Generated/Materials/Pabellon F.mat");
-            glass = Load("Assets/UPCH/Arte/Edificios/D/Materiales/VidrioFachadaClara.mat");
-            darkGlass = Load("Assets/UPCH/Arte/Edificios/D/Materiales/VidrioOscuro.mat");
-            metal = Load("Assets/UPCH/Arte/Edificios/D/Materiales/Aluminio.mat");
-            paving = Load("Assets/UPCH/Arte/Edificios/D/Materiales/PiedraGris.mat");
+            LoadMaterials();
 
             GameObject e = PrefabUtility.LoadPrefabContents(EPath);
             GameObject f = PrefabUtility.LoadPrefabContents(FPath);
@@ -51,6 +46,33 @@ namespace UPCH.Campus.Editor
                 PrefabUtility.UnloadPrefabContents(e);
                 PrefabUtility.UnloadPrefabContents(f);
             }
+        }
+
+        static void LoadMaterials()
+        {
+            creamE = Load("Assets/UPCH/Campus/Generated/Materials/Pabellon E.mat");
+            creamF = Load("Assets/UPCH/Campus/Generated/Materials/Pabellon F.mat");
+            glass = Load("Assets/UPCH/Arte/Edificios/D/Materiales/VidrioFachadaClara.mat");
+            darkGlass = Load("Assets/UPCH/Arte/Edificios/D/Materiales/VidrioOscuro.mat");
+            metal = Load("Assets/UPCH/Arte/Edificios/D/Materiales/Aluminio.mat");
+            paving = Load("Assets/UPCH/Arte/Edificios/D/Materiales/PiedraGris.mat");
+
+        }
+
+        [MenuItem("Tools/UPCH/Corregir solo Wu - entrada principal al frente")]
+        public static void RebuildWuOnly()
+        {
+            LoadMaterials();
+            GameObject f = PrefabUtility.LoadPrefabContents(FPath);
+            try
+            {
+                ClearGeneratedChildren(f.transform);
+                BuildWu(f.transform);
+                PrefabUtility.SaveAsPrefabAsset(f, FPath);
+                AssetDatabase.SaveAssets();
+                Debug.Log("WU_FRONT_DOOR_SAVED: short side has windows only; one principal entrance on the long courtyard front.");
+            }
+            finally { PrefabUtility.UnloadPrefabContents(f); }
         }
 
         static Material Load(string path)
@@ -227,29 +249,13 @@ namespace UPCH.Campus.Editor
             {
                 float x = -w / 2 + bay * (i + .5f);
                 float paneW = bay - .24f;
-                bool entry = level == 0 && i == 2;
-                if (entry)
-                {
-                    DoorOpening(p, "Puerta_principal_Wu", new Vector2(x, z), Vector2.right,
-                        y, paneW, DoorHeight, Wall, creamF, glass, metal);
-                    Box(p, "Portal_principal_Wu_pilastra_izquierda", new Vector3(x - 1.30f, y + 1.38f, z - .16f),
-                        new Vector3(.16f, 2.76f, .18f), creamF, true);
-                    Box(p, "Portal_principal_Wu_pilastra_derecha", new Vector3(x + 1.30f, y + 1.38f, z - .16f),
-                        new Vector3(.16f, 2.76f, .18f), creamF, true);
-                    Box(p, "Portal_principal_Wu_dintel", new Vector3(x, y + 2.82f, z - .16f),
-                        new Vector3(2.78f, .16f, .32f), creamF, true);
-                    Box(p, "Umbral_principal_Wu", new Vector3(x, y + .025f, z - .24f),
-                        new Vector3(2.40f, .05f, .42f), paving, true);
-                }
-                else
-                {
-                    Box(p, "Antepecho_vidriado_Wu", new Vector3(x, y + sill / 2, z),
-                        new Vector3(paneW, sill, Wall), creamF, true);
-                    Box(p, "PaÃ±o_traslucido_Wu", new Vector3(x, y + (sill + head) / 2, z - .025f),
-                        new Vector3(paneW, head - sill, .055f), glass, false);
-                    Box(p, "Dintel_vidriado_Wu", new Vector3(x, y + (head + Storey) / 2, z),
-                        new Vector3(paneW, Storey - head, Wall), creamF, true);
-                }
+                // This short elevation is a lateral wall: it has windows only.
+                Box(p, "Antepecho_vidriado_Wu", new Vector3(x, y + sill / 2, z),
+                    new Vector3(paneW, sill, Wall), creamF, true);
+                Box(p, "Paño_traslucido_Wu", new Vector3(x, y + (sill + head) / 2, z - .025f),
+                    new Vector3(paneW, head - sill, .055f), glass, false);
+                Box(p, "Dintel_vidriado_Wu", new Vector3(x, y + (head + Storey) / 2, z),
+                    new Vector3(paneW, Storey - head, Wall), creamF, true);
                 if (i > 0)
                     Box(p, "Montante_fachada_Wu", new Vector3(-w / 2 + bay * i, y + Storey / 2, z),
                         new Vector3(.24f, Storey, Wall), creamF, true);
@@ -286,6 +292,18 @@ namespace UPCH.Campus.Editor
             {
                 Vector2 a = new Vector2(x, -d / 2), b = new Vector2(x, d / 2);
                 WindowWall(p, "Fachada_lateral_ritmada_Wu", a, b, y, d, floor, creamF, darkGlass, metal, connectorDoor: floor == 0);
+                if (floor == 0)
+                {
+                    float entryZ = -d / 2 + d * .52f;
+                    foreach (int sideOfDoor in new[] { -1, 1 })
+                        Box(p, "Portal_principal_Wu_frente_jamba", new Vector3(x - .16f, 1.38f, entryZ + sideOfDoor * .82f),
+                            new Vector3(.18f, 2.76f, .14f), creamF, true);
+                    Box(p, "Portal_principal_Wu_frente_dintel", new Vector3(x - .16f, 2.82f, entryZ),
+                        new Vector3(.32f, .16f, 1.78f), creamF, true);
+                    Box(p, "Umbral_principal_Wu_frente", new Vector3(x - .24f, .065f, entryZ),
+                        new Vector3(.42f, .04f, 1.65f), paving, true);
+                }
+
             }
             else
             {
