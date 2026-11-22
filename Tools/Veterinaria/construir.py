@@ -23,8 +23,14 @@ ORIGIN=(824.76,498.36)
 NPT=[-3.55,0.,3.55,7.1,10.7]
 LEVEL_NAMES=['01_Sotano','02_Primer_Piso','03_Segundo_Piso','04_Tercer_Piso','05_Azotea']
 ANCHOR=[-8.720671,1.17,144.78705]
-PARAMS={'slabThickness':.24,'doorHeight':2.15,'windowSill':.95,'windowHead':2.50,'roofWallHeight':2.60,'beamDepth':.40,'railingHeight':1.10,'sourceWallLowHeight':2.20}
+PARAMS={'slabThickness':.24,'doorHeight':2.15,'windowSill':.70,'windowHead':2.90,'roofWallHeight':2.60,'beamDepth':.40,'railingHeight':1.10,'sourceWallLowHeight':2.20,'stairSlabThickness':.20}
 MATS={'wall':'08662882bf39bd747b7f698c5562ad94','floor':'1598c48964f6bec48b597f568adaf921','metal':'012d18913d3db4640b7467fcd7917545','glass':'d1b9e06e823bed44f869d425de7da733'}
+EAST_CASES=[]
+ARCH_REVIEW={}
+NATIVE_BEAMS=[]
+ROOF_NATIVE=False
+ROOF_VOID_PROFILES=[]
+ROOF_SUPPORT_PROFILE=Polygon()
 PARTS=[];STEPS=[];DOORS=[];FLOORS=[];WALLS=[];OPENINGS=[];GROUND_PATCHES=[];LINTELS=[[] for _ in range(5)];EVIDENCE=[];COUNTS=collections.Counter()
 
 def uid(path):return hashlib.sha256(('UPCH-H-20261118:'+str(path).replace('\\','/')).encode()).hexdigest()[:32]
@@ -95,6 +101,9 @@ def y_range(role,level,lo=0,hi=1):
  if role=='slab':return y-PARAMS['slabThickness'],y
  if role=='sill':return y,y+PARAMS['windowSill']
  if role=='glass':return y+PARAMS['windowSill'],y+PARAMS['windowHead']
+ if role=='windowFrameVertical':return y+PARAMS['windowSill']+.045,y+PARAMS['windowHead']-.045
+ if role=='windowFrameBottom':return y+PARAMS['windowSill'],y+PARAMS['windowSill']+.045
+ if role=='windowFrameTop':return y+PARAMS['windowHead']-.045,y+PARAMS['windowHead']
  if role=='windowLintel':return y+PARAMS['windowHead'],y+h
  if role=='doorLintel':return y+PARAMS['doorHeight'],y+h
  if role=='door':return y+.025,y+PARAMS['doorHeight']-.025
@@ -110,11 +119,12 @@ def add_mesh(mesh,group,name,mat='wall',collider=True,role='fixed',level=0,lo=0,
  # Geometry is kept indexed in memory; JSON and .asset use hard face normals.
  v=mesh.vertices[mesh.faces].reshape(-1,3)
  n=np.repeat(mesh.face_normals,3,axis=0)
- keep=np.linalg.norm(np.cross(v[1::3]-v[::3],v[2::3]-v[::3]),axis=1)>1e-10
+ keep=np.linalg.norm(np.cross(v[1::3]-v[::3],v[2::3]-v[::3]),axis=1)>1e-18 if name in ['Marcos_puertas_consolidados','HV_Marcos_consolidados','Celosias_horizontales_concreto'] else np.linalg.norm(np.cross(v[1::3]-v[::3],v[2::3]-v[::3]),axis=1)>1e-10
  v=v.reshape(-1,3,3)[keep].reshape(-1,3);n=n.reshape(-1,3,3)[keep].reshape(-1,3)
  if len(v)==0:return
  uv=np.c_[v[:,0]/3,v[:,2]/3]
  p={'id':ident,'name':name,'group':group,'materialGuid':MATS[mat],'material':mat,'collider':collider,'role':role,'level':level,'bottom':lo,'top':hi,'active':active,'hidden':hidden,'source':source,'note':note,'vertices':np.round(v,7).flatten().tolist(),'normals':np.round(n,7).flatten().tolist(),'uv':np.round(uv,7).flatten().tolist()}
+ if name in ['Marcos_puertas_consolidados','HV_Marcos_consolidados','Celosias_horizontales_concreto']:p['vertices']=v.flatten().tolist()
  PARTS.append(p)
 
 def add_poly(g,group,name,mat='wall',collider=True,role='wall',level=0,lo=0,hi=1,source='',note='',**kw):
@@ -166,14 +176,17 @@ def east_landing():
  a=np.array(EAST_LOWER[-1][0]);b=np.array(EAST_UPPER[-1][1]);c=(a+b)/2;v=(a-c);normal=np.array([v[1],-v[0]])
  arc=[c+v*math.cos(t)+normal*math.sin(t) for t in np.linspace(0,math.pi,49)]
  return Polygon([tuple(q) for q in arc]+[EAST_UPPER[-1][0],EAST_LOWER[-1][1]]),arc
-def east_opening():
+def east_opening(floor=None):
+ if EAST_CASES:
+  cases=[c for c in EAST_CASES if floor is None and c['fromLevel']==1 or floor is not None and (c['fromLevel']==floor or c['toLevel']==floor)]
+  return unary_union([unary_union([flight_footprint(c['up']),flight_footprint(c['return']),Polygon(c['landingOutline'])]) for c in cases]).buffer(.025)
  land,_=east_landing()
  return metric(unary_union([flight_footprint(EAST_LOWER),flight_footprint(EAST_UPPER),land]).buffer(.10),2)
 
 HOLE_DATA={
  0:[[(1410.72,273.24),(1522.8,278.88),(1522.8,521.52),(1410.72,521.52)],[(1410.72,528.6),(1524.12,528.6),(1524.12,606.24),(1410.72,606.24)]],
  1:[[(827.28,721.68),(876.84,721.68),(876.84,776.88),(827.28,776.88)]],
- 2:[[(848.64,516.24),(1142,516.24),(1142,634.2),(848.64,634.2)],[(1150,516.24),(1290,516.24),(1290,634.2),(1150,634.2)],[(1149,642),(1291,642),(1429.92,784.56),(1149,784.56)],[(848.64,722.16),(898.2,722.16),(898.2,777.48),(848.64,777.48)],[(728,250),(841,256),(841,267),(728,261)]],
+ 2:[[(848.64,516.24),(1142,516.24),(1142,634.2),(848.64,634.2)],[(1147.80,516.60),(1170.48,516.60),(1288.08,634.20),(1147.80,634.20)],[(1149,642),(1291,642),(1429.92,784.56),(1149,784.56)],[(848.64,722.16),(898.2,722.16),(898.2,777.48),(848.64,777.48)],[(728,250),(841,256),(841,267),(728,261)]],
  3:[[(430,516.24),(716,516.24),(716,634.2),(430,634.2)],[(848.64,516.24),(1142,516.24),(1142,634.2),(848.64,634.2)],[(848.64,722.16),(898.2,722.16),(898.2,777.48),(848.64,777.48)],[(728,250),(841,256),(841,267),(728,261)]],
  4:[[(430,516.24),(570,516.24),(570,634.2),(430,634.2)],[(848.64,516.24),(992,516.24),(992,634.2),(848.64,634.2)],[(848.64,722.16),(898.2,722.16),(898.2,777.48),(848.64,777.48)],[(728,250),(841,256),(841,267),(728,261)]]
 }
@@ -189,20 +202,30 @@ def envelope(i):
 def make_slabs():
  for i in range(5):
   p=envelope(i)
+  if i==4 and not ROOF_SUPPORT_PROFILE.is_empty:p=p.union(ROOF_SUPPORT_PROFILE)
   if i==1:
    p=p.union(unary_union([poly(q,0) for q in HOLE_DATA[0]]))
+   if ARCH_REVIEW.get('entryPlatform'):p=p.union(Polygon(ARCH_REVIEW['entryPlatform']['outline']))
   holes=[poly(q,i) for q in HOLE_DATA.get(i,[])]
+  if i==4 and ROOF_VOID_PROFILES:holes=list(ROOF_VOID_PROFILES)
   if i>=1:holes.append(metric(WEST_SLAB,2).buffer(-.012))
   # Diagonal stair 02 has its own landings, never a horizontal infill slab.
-  if i in (1,2,3):holes.append(east_opening())
+  if i in (1,2,3):holes.append(east_opening(i))
   if i==1:
-   clinic=flight_footprint(CLINIC_SECTIONS)
+   clinic=flight_footprint(CLINIC_SECTIONS[:-1])
    a,b=np.array(CLINIC_SECTIONS[0]);c,d=np.array(CLINIC_SECTIONS[1])
    approach=Polygon([a-(c-a),b-(d-b),b,a])
    holes.append(metric(clinic.union(approach),1))
-   a=pt(550,203,0);u=np.array([1.,-.0504]);u/=np.linalg.norm(u);b=a+u*29.75;n=np.array([-u[1],u[0]])*.60
-   holes.append(Polygon([a-n,a+n,b+n,b-n]))
+   if ARCH_REVIEW.get('posteriorRamp'):holes.append(Polygon(ARCH_REVIEW['posteriorRamp']['outline']))
+   else:
+    a=pt(550,203,0);u=np.array([1.,-.0504]);u/=np.linalg.norm(u);b=a+u*29.75;n=np.array([-u[1],u[0]])*.60
+    holes.append(Polygon([a-n,a+n,b+n,b-n]))
   p=p.difference(unary_union(holes))
+  for c in EAST_CASES:
+   if c['fromLevel']!=i:continue
+   a,b=np.array(c['up'][0]);direction=np.mean(c['up'][1],axis=0)-np.mean(c['up'][0],axis=0);direction/=np.linalg.norm(direction)
+   p=p.union(Polygon([a,b,b-direction*.20,a-direction*.20]))
+
   if i==0:
    # The two explicit technical floors use -4.50, not basement -3.55.
    for j,h in enumerate(holes):fixed_prism(h,-4.50-.24,-4.50,LEVEL_NAMES[i]+'/Losas',f'Tecnico_NPT_menos_4_50_{j+1}',level=i,source='A-01 NPT=-4.50')
@@ -295,22 +318,107 @@ def load_sections(trace):
   WALLS.append(unary_union([W,D]))
 
 
+def part_footprint(part):
+ vertices=materialize_vertices(part).reshape(-1,3,3)
+ normal=np.cross(vertices[:,1]-vertices[:,0],vertices[:,2]-vertices[:,0])
+ return unary_union([Polygon(t[:,[0,2]]) for t in vertices[normal[:,1]>1e-9]])
+
+
+def fit_slabs_to_enclosures():
+ # Native wall faces define the edge of a slab at their common junction.
+ # Add only their footprint, never an infill across a courtyard or stairwell.
+ supports=[[] for _ in NPT]
+ for part in PARTS:
+  if part['hidden'] or not part['collider'] or part['material']=='floor':continue
+  vertices=materialize_vertices(part);lo,hi=vertices[:,1].min(),vertices[:,1].max()
+  footprint=part_footprint(part)
+  for i,y in enumerate(NPT):
+   if abs(lo-y)<.00002 or i>0 and abs(hi-(y-PARAMS['slabThickness']))<.00002:supports[i].append(footprint)
+ for i,items in enumerate(supports):
+  if not items:continue
+  original=FLOORS[i];FLOORS[i]=set_precision(make_valid(original.union(unary_union(items))),.0001)
+  group=LEVEL_NAMES[i]+'/Losas'
+  PARTS[:]=[p for p in PARTS if not(p['level']==i and p['role']=='slab')]
+  COUNTS[group]=max([int(p['id'].split('_')[-1]) for p in PARTS if p['group']==group]+[0])
+  add_poly(FLOORS[i],group,'Losa_contorno_y_vacios','floor',True,'slab',i,source=f'A-0{i+1}; encuentros con perfiles CAD de cerramientos',note='NPT conservado. Se completan solo huellas de cerramientos en sus encuentros, sin rellenar vacios libres ni recortar cotas.')
+  EVIDENCE.append({'element':f'Encuentros losa nivel {i}','sheet':f'A-0{i+1}','confirmed':'Huella de los cerramientos CAD ya construidos','estimated':'Espesor de losa 0.24 m; detalle de encuentro no acotado','addedFootprintArea':float(FLOORS[i].difference(original).area),'status':'Comprobacion de continuidad geometrica; no calculo estructural'})
+
+
+def rear_containment():
+ if not ARCH_REVIEW.get('posteriorRamp'):return
+ # Continue the actual rear boundary below level zero, not an invisible
+ # movement blocker. Basement windows and existing walls remain untouched.
+ rear=envelope(1).boundary.buffer(.65).intersection(box(-1.7,6.0,22.3,10.5));faces=[];existing=[]
+ for part in PARTS:
+  if part['hidden'] or not part['collider'] or part['material'] not in ['wall','glass']:continue
+  if part['level']==1 and part['material']=='wall' and part['role'] in ['wall','sill','fixed']:faces.append(part_footprint(part))
+  if part['level']==0:existing.append(part_footprint(part))
+ g=set_precision(unary_union(faces).intersection(rear).difference(unary_union(existing).buffer(.0001)),.0001)
+ fixed_prism(g,NPT[0],NPT[1]-PARAMS['slabThickness'],'00_Estructura_General','Cierre_inferior_del_limite_posterior_CAD','wall',True,0,'A-01/A-02: perfiles del cerramiento posterior','Continuidad inferior del cerramiento adaptada; altura inferida entre NPT. No se anade una reja ni un acceso sin evidencia. Se conserva toda ventana existente del sotano.')
+ WALLS[0]=WALLS[0].union(g)
+
+
+def exterior_annex_roof():
+ review=ARCH_REVIEW.get('exteriorAnnexRoof')
+ if not review:return
+ entry=poly([(1114.80,829.32),(1276.92,991.32),(1276.92,893.16),(1212.96,829.32)],1)
+ # GEOS fixed-grid buffers at one grid unit can close an entire narrow-boundary
+ # opening. Drop the precision model before the buffer and verify its area.
+ basement=set_precision(FLOORS[0],0);upper=set_precision(FLOORS[1],0)
+ expanded=upper.buffer(.0001)
+ if expanded.area-upper.area>upper.length*.0002+.001:
+  raise ValueError('El buffer de encuentro cerro una abertura arquitectonica.')
+ roof=set_precision(basement.difference(expanded).intersection(box(*review['bounds'])).difference(set_precision(OPENINGS[1],0)).difference(entry.buffer(.005)),.0001)
+ fixed_prism(roof,review['NPTEstimated']-PARAMS['slabThickness'],review['NPTEstimated'],'02_Primer_Piso/Losas','Cubierta_exterior_sobre_laboratorio_sotano','floor',True,1,review['source'],review['limitation'])
+ paths=review.get('guardEdges')
+ if paths:
+  for k,points in enumerate(paths):
+   rail_path(points,review['NPTEstimated'],PARAMS['railingHeight'],'02_Primer_Piso/Barandas',f'Anexo_ingreso_borde_exterior_{k+1}',1,'Fotografia del ingreso: barandas sobre los dos bordes expuestos del zocalo rojo; traza en borde de huella de cubierta, altura 1.10 m estimada')
+ else:
+  free_edge=roof.boundary.difference(upper.buffer(.08)).difference(entry.buffer(.08))
+  lines=[free_edge] if isinstance(free_edge,LineString) else list(getattr(free_edge,'geoms',[]))
+  for k,line in enumerate(lines):
+   if not isinstance(line,LineString) or line.length<.25:continue
+   rail_path(list(line.simplify(.01,preserve_topology=True).coords),review['NPTEstimated'],PARAMS['railingHeight'],'02_Primer_Piso/Barandas',f'Plataforma_exterior_sotano_borde_{k+1}',1,'Fotografias del ingreso y borde de la huella CAD del sotano; nivel +0.00 y altura 1.10 m estimados')
+ if abs(review['NPTEstimated']-NPT[1])<.0001:FLOORS[1]=FLOORS[1].union(roof)
+ EVIDENCE.append({'element':'Cubierta exterior sobre laboratorio de sotano','sheet':'A-01/A-02','area':float(roof.area),'confirmed':'Huella horizontal del sotano y ausencia de rotulo VACIO en A-02 sobre el sector','estimated':'Cota +0.00 por continuidad con hall y fotografias; espesor 0.24 y baranda 1.10','status':'Adaptacion arquitectonica; confirmar cota por corte/inspeccion'})
+
+
 def make_doors():
+ frames={}
  for i,doors in enumerate(DOORS):
   for j,q in enumerate(doors):
    a=np.array(q['hinge']);b=np.array(q['closed']);e=np.array(q['opened']);width=np.linalg.norm(b-a)
    if width<.50:continue
    group=LEVEL_NAMES[i]+'/Puertas'
-   # Open 90 degrees, as the plan swing. No full-width invisible collider.
-   leaf=LineString([a,e]).buffer(.018,cap_style='flat')
-   add_poly(leaf,group,f'Puerta_{j+1}_abierta','wall',False,'door',i,source=f'A-0{i+1}: arco de giro',note='Altura de hoja estimada; hoja abierta sin collider para recorrido.')
+   # Resting pose is closed. Unity opens on approach around the CAD hinge;
+   # the leaf no longer stands permanently across the circulation.
+   u=(b-a)/width
+   leaf=LineString([a+u*.025,b-u*.025]).buffer(.018,cap_style='flat')
+   add_poly(leaf,group,f'Puerta_{j+1}_cerrada','wall',True,'door',i,source=f'A-0{i+1}: arco de giro',note='Hoja cerrada en reposo; apertura de proximidad en Unity, con colision. Altura y espesor estimados.')
+   opened=e-a;angle=-math.degrees(math.atan2(u[0]*opened[1]-u[1]*opened[0],u@opened))
+   PARTS[-1]['doorHinge']=[float(a[0]),NPT[i],float(a[1])];PARTS[-1]['doorOpenDegrees']=angle
    lintel=LineString([a,b]).buffer(.075,cap_style='flat')
    LINTELS[i].append(lintel)
-   for k,p in enumerate([a,b]):
-    fixed_prism(Point(p).buffer(.022,resolution=2),NPT[i],NPT[i]+PARAMS['doorHeight'],group,f'Jamba_{j+1}_{k+1}','metal',False,i,source=f'A-0{i+1}')
+   normal=np.array([-u[1],u[0]])
+   frame_parts=[(Polygon([p-u*.0225-normal*.065,p+u*.0225-normal*.065,p+u*.0225+normal*.065,p-u*.0225+normal*.065]),NPT[i],NPT[i]+PARAMS['doorHeight']) for p in [a,b]]
+   frame_parts.append((LineString([a,b]).buffer(.065,cap_style='flat'),NPT[i]+PARAMS['doorHeight']-.045,NPT[i]+PARAMS['doorHeight']))
+   for shape,lo,hi in frame_parts:
+    mesh=section(shape,hi-lo);mesh.vertices[:,1]+=lo;frames.setdefault(i,[]).append(mesh)
+   COUNTS[group]+=2 # retain the original leaf IDs while consolidating the old jamb files.
+ for i,meshes in frames.items():
+  import manifold3d as mf
+  bodies=[mf.Manifold(mf.Mesh(np.asarray(x.vertices,dtype=np.float32),np.asarray(x.faces,dtype=np.uint32))) for x in meshes]
+  out=mf.Manifold.batch_boolean(bodies,mf.OpType.Add).simplify(.0001).to_mesh();mesh=trimesh.Trimesh(vertices=np.asarray(out.vert_properties[:,:3]),faces=np.asarray(out.tri_verts),process=False);mesh.fix_normals()
+  add_mesh(mesh,LEVEL_NAMES[i]+'/Marcos_Puertas','Marcos_puertas_consolidados','metal',False,'fixed',i,0,1,'Vanos registrados del plano','Marcos rectangulares completos; 45 x 130 mm estimados. Una malla por nivel.')
 
  for i in range(5):
-  add_poly(unary_union(LINTELS[i]),LEVEL_NAMES[i]+'/Dinteles','Dinteles_unificados_sin_solape','wall',True,'doorLintel',i,source=f'A-0{i+1}',note='Altura de vano configurable; secciones unidas para evitar caras superpuestas.')
+  full_walls=[]
+  for part in PARTS:
+   if part['level']==i and part['role']=='wall' and part['material']=='wall':
+    triangles=np.array(part['vertices']).reshape(-1,3,3);norm=np.cross(triangles[:,1]-triangles[:,0],triangles[:,2]-triangles[:,0]);full_walls.extend(Polygon(t[:,[0,2]]) for t in triangles[norm[:,1]>1e-9])
+  lintels=set_precision(unary_union(LINTELS[i]),.0001).difference(set_precision(unary_union(full_walls),.0001))
+  add_poly(lintels,LEVEL_NAMES[i]+'/Dinteles','Dinteles_unificados_sin_solape','wall',True,'doorLintel',i,source=f'A-0{i+1}',note='Altura de vano configurable; secciones unidas para evitar caras superpuestas.')
 
 
 def merge_meshes(meshes):
@@ -371,7 +479,7 @@ def west_stair():
   count=len(sections)-1
   for k,(lo,hi) in enumerate(zip(sections,sections[1:])):
    q=poly([lo[0],lo[1],hi[1],hi[0]],2);a=y0+(y1-y0)*k/count;b=y0+(y1-y0)*(k+1)/count
-   fixed_prism(q,a-.18,b,group,name+f'_peldaño_{k+1:02}','floor',True,level,'A-03: vertices de huellas; NPT A-01..A-05','Distribucion de contrahuellas entre NPT; caja repetida registrada.')
+   fixed_prism(q,max(y0,a-.18),b,group,name+f'_peldaño_{k+1:02}','floor',True,level,'A-03: vertices de huellas; NPT A-01..A-05','Distribucion de contrahuellas entre NPT; caja repetida registrada.')
    STEPS.append({'stair':name,'level':level,'index':k+1,'tread':q.wkt,'lower':a,'upper':b,'riser':b-a})
  for i in range(4):
   y0=NPT[i];y1=NPT[i+1];mid=y0+(y1-y0)*11/21
@@ -386,32 +494,48 @@ def west_stair():
    transfer=poly([current[-1][0],current[-1][1],right[-1][1],right[-1][0]],2).difference(metric(landing,2))
    fixed_prism(transfer,mid-.18,mid,group,'Oeste_sotano_empalme_inferido','floor',True,0,'A-01 huellas visibles / A-02 proyeccion','Empalme sin seccion de escalera: observacion arquitectonica pendiente.')
    EVIDENCE.append({'element':'Escalera 03 sotano','sheet':'A-01/A-02','confirmed':'Primeras diez huellas rectas trazadas en A-01','estimated':'Continuacion bajo proyeccion y empalme con retorno y descanso superior; requiere seccion o inspeccion','status':'Observado'})
-  for edge in [0,1]:
-   stair_rail(pt(*current[0][edge],2),pt(*current[-1][edge],2),y0,mid,group,f'Oeste_{i}_derecho',i,'A-01/A-05',height=1.20 if i==3 else 1.10)
-   stair_rail(pt(*left[0][edge],2),pt(*left[-1][edge],2),mid,y1,group,f'Oeste_{i}_izquierdo',i,'A-03/A-05',height=1.20 if i==3 else 1.10)
-  rail_path([pt(x,y,2) for x,y in arc[ia:ib+1]],mid,1.20 if i==3 else 1.10,group,f'Oeste_{i}_baranda_curva',i,'A-03 curva exterior; A-05 altura 1.20')
+  if ARCH_REVIEW.get('photoRevision'):
+   from fotografias_h import stair_outer_guard
+   # The street photographs show solid concrete outside the stair. Retain
+   # metal rails at the well. Do not project the roof annotation onto the
+   # intermediate curved landing, which would suspend a rail over the void.
+   stair_rail(pt(*current[0][0],2),pt(*current[-1][0],2),y0,mid,group,f'Oeste_{i}_interior_derecho',i,'A-01/A-05')
+   stair_rail(pt(*left[0][1],2),pt(*left[-1][1],2),mid,y1,group,f'Oeste_{i}_interior_izquierdo',i,'A-01/A-05')
+   stair_outer_guard(sys.modules[__name__],current,y0,mid,1,group,f'Oeste_{i}_antepecho_subida',i)
+   stair_outer_guard(sys.modules[__name__],left,mid,y1,0,group,f'Oeste_{i}_antepecho_retorno',i)
+   strip=LineString([pt(x,y,2) for x,y in arc[ia:ib+1]]).buffer(.12,cap_style='flat').intersection(metric(landing,2))
+   fixed_prism(strip,mid-.18,mid+1.10,group,f'Oeste_{i}_antepecho_curvo','wall',True,i,'Fotografias 21/11/2026; arco A-03','Antepecho exterior macizo confirmado visualmente; espesor 0.12 y altura 1.10 m estimados.')
+  else:
+   for edge in [0,1]:
+    stair_rail(pt(*current[0][edge],2),pt(*current[-1][edge],2),y0,mid,group,f'Oeste_{i}_derecho',i,'A-01/A-05',height=1.20 if i==3 else 1.10)
+    stair_rail(pt(*left[0][edge],2),pt(*left[-1][edge],2),mid,y1,group,f'Oeste_{i}_izquierdo',i,'A-03/A-05',height=1.20 if i==3 else 1.10)
+   rail_path([pt(x,y,2) for x,y in arc[ia:ib+1]],mid,1.20 if i==3 else 1.10,group,f'Oeste_{i}_baranda_curva',i,'A-03 curva exterior; A-05 altura 1.20')
   platform=rect(96,637.68,194,658.80,2).difference(FLOORS[i+1])
   fixed_prism(platform,y1-.24,y1,group,f'Oeste_llegada_{i+1}','floor',True,i,'A-02..A-05')
 
 
 def east_stair():
+ if not EAST_CASES:raise ValueError('Falta trazado de escalera 02 registrado por nivel.')
  group='06_Escaleras_Rampas/Escalera_02_Diagonal'
- # Positions in A-03, common longitudinal bearing 45 degrees. The two widths
- # follow the indicated 1.20 m, with a curved landing at the outer end.
- land,arc=east_landing()
- for i in range(3):
-  y0=NPT[i];y1=NPT[i+1];mid=(y0+y1)/2
-  for name,sections,low,high in [('tramo_1',EAST_UPPER,y0,mid),('tramo_2',EAST_LOWER[::-1],mid,y1)]:
-   for k,(a,b) in enumerate(zip(sections,sections[1:])):
-    q=poly([a[0],a[1],b[1],b[0]],2);lo=low+(high-low)*k/11;hi=low+(high-low)*(k+1)/11
-    fixed_prism(q,lo-.18,hi,group,f'Este_{i}_{name}_peldaño_{k+1}','floor',True,i,'A-03: extremos de huellas vectoriales; alturas entre NPT estimadas')
-    STEPS.append({'stair':f'Este_{i}_{name}','level':i,'index':k+1,'tread':q.wkt,'lower':lo,'upper':hi,'riser':hi-lo})
-   for side in [0,1]:stair_rail(pt(*sections[0][side],2),pt(*sections[-1][side],2),low,high,group,f'Este_{i}_{name}_baranda',i,'A-03: limites de huellas')
-  fixed_prism(metric(land,2),mid-.18,mid,group,f'Este_{i}_descanso_curvo','floor',True,i,'A-03 R1.48; llegada ajustada a extremos de huellas','Revisar continuidad vertical en Unity.')
-  rail_path([pt(*q,2) for q in arc],mid,1.10,group,f'Este_{i}_baranda_curva',i,'A-03')
-  a=np.array(EAST_LOWER[0][0]);b=np.array(EAST_UPPER[0][1]);offset=np.array([-14.,-14.])
-  arrival=poly([a+offset,b+offset,b,a],2).difference(FLOORS[i+1])
-  fixed_prism(arrival,y1-.24,y1,group,f'Este_llegada_{i+1}','floor',True,i,'A-01..A-04')
+ for c in EAST_CASES:
+  i=c['fromLevel'];y0=NPT[i];y1=NPT[i+1];rise=(y1-y0)/c['riserCount'];mid=y0+c['upRisers']*rise
+  for name,lines,start in [('tramo_1',c['up'],y0),('tramo_2',c['return'],mid)]:
+   for k,(a,b) in enumerate(zip(lines,lines[1:])):
+    q=Polygon([a[0],a[1],b[1],b[0]]);lo=start+k*rise;hi=lo+rise
+    fixed_prism(q,max(start,lo-PARAMS['stairSlabThickness']),hi,group,f'Este_{i}_{name}_peldaño_{k+1}','floor',True,i,c['evidence'],c['verticalRule'])
+    STEPS.append({'stair':f'Este_{i}_{name}','level':i,'index':k+1,'tread':q.wkt,'lower':lo,'upper':hi,'riser':rise})
+   for side in [0,1]:
+    a=np.array(lines[0][side]);z=np.array(lines[-1][side]);da=np.array(lines[0][1-side])-a;dz=np.array(lines[-1][1-side])-z
+    a+=da/np.linalg.norm(da)*.045;z+=dz/np.linalg.norm(dz)*.045
+    stair_rail(a,z,start+rise,start+(len(lines)-1)*rise,group,f'Este_{i}_{name}_baranda',i,c['evidence']+'; separacion de marco 45 mm estimada')
+  fixed_prism(Polygon(c['landingOutline']),mid-PARAMS['stairSlabThickness'],mid,group,f'Este_{i}_descanso_curvo','floor',True,i,'DWG: arco R1.48 de planta de llegada; encaje con extremos reales de huellas','Altura de descanso derivada de numeracion de contrahuellas y NPT; intrados 0.20 m estimado.')
+  rail_path(c['outerArc'],mid,1.10,group,f'Este_{i}_baranda_curva',i,'DWG A-02/A-03 R1.48; altura de baranda estimada')
+  # Riser at the landing and at the next floor is supplied by the real slab
+  # edge. There is no extra overlapping tread on either interface.
+  a,b=np.array(c['return'][-1]);u=(np.mean(c['return'][-1],axis=0)-np.mean(c['return'][-2],axis=0));u/=np.linalg.norm(u)
+  arrival=Polygon([a,b,b+u*.45,a+u*.45]).difference(FLOORS[i+1])
+  fixed_prism(arrival,y1-.24,y1,group,f'Este_llegada_{i+1}','floor',True,i,c['evidence'],'Empalme de llegada 0.45 m hacia hall; continuidad con losa verificada por apoyo.')
+
 
 
 def central_stairs():
@@ -431,8 +555,7 @@ def central_stairs():
   arrival=rect(left-84.36,ytop,left,ybottom,2).difference(FLOORS[i+1])
   fixed_prism(arrival,NPT[i+1]-.24,NPT[i+1],group,'Central_descanso_llegada','floor',True,i,'A-03/A-04')
   # Last rise is the edge of the actual arrival floor, not a duplicated tread.
-  last=rect(left-.018,ytop,left+.018,ybottom,2).difference(FLOORS[i+1]).difference(arrival)
-  fixed_prism(last,NPT[i+1]-.24,NPT[i+1],group,'Central_ultimo_contrapaso','floor',True,i,'A-03/A-04: contrahuella 21')
+  # The arrival slab edge supplies rise 21. No extra overlapping riser solid.
 
 
 def technical_access():
@@ -452,25 +575,29 @@ def exterior_access():
   low=-1.17+1.17*k/7;top=-1.17+1.17*(k+1)/7
   fixed_prism(q,low-.20,top,group,f'Ingreso_7_contrahuellas_{k+1}','floor',True,1,'A-02: huellas vectoriales, NPT -1.17 / +0.00')
   STEPS.append({'stair':'Ingreso_principal','level':1,'index':k+1,'tread':q.wkt,'lower':low,'upper':top,'riser':top-low})
+ # Photographs show steel handrails beside the main entrance flight.
+ # Their plan paths follow the real two side boundaries, not the riser diagonal.
+ for side,a,z in [('izquierdo',(xs[0],829.32),(xs[-1],829.32)),('derecho',(1276.92,ys[0]),(1276.92,ys[-1]))]:
+  stair_rail(pt(*a,1),pt(*z,1),-1.17,0,group,'Ingreso_pasamanos_'+side,1,'A-02: bordes de tramo + fotografias; altura 1.10 y secciones estimadas')
  # Exterior pavement remains at the plan's -1.17, not a second floating slab.
  bottom=poly([(1098,829.32),(1114.80,829.32),(1276.92,991.32),(1300,1015),(1276.92,1038),(1098,858)],1)
  fixed_prism(bottom,-1.33,-1.17,group,'Descanso_vereda_NPT_menos_1_17','floor',True,1,'A-02 NPT=-1.17')
  # North-west clinic access has its own seven source steps.
  for k,(a,b) in enumerate(zip(CLINIC_SECTIONS,CLINIC_SECTIONS[1:])):
   q=poly([a[0],a[1],b[1],b[0]],1);lo=-1.17+1.17*k/7;hi=-1.17+1.17*(k+1)/7
-  fixed_prism(q,lo-.18,hi,'06_Escaleras_Rampas/Acceso_Clinica',f'Clinica_peldaño_{k+1}','floor',True,1,'A-02: siete huellas vectoriales; vereda -1.17 a ingreso 0.00')
+  geometry=q.difference(FLOORS[1]) if abs(hi-NPT[1])<1e-6 else q
+  fixed_prism(geometry,lo-.18,hi,'06_Escaleras_Rampas/Acceso_Clinica',f'Clinica_peldaño_{k+1}','floor',True,1,'A-02: siete huellas vectoriales; vereda -1.17 a ingreso 0.00')
   STEPS.append({'stair':'Ingreso_clinica','level':1,'index':k+1,'tread':q.wkt,'lower':lo,'upper':hi,'riser':hi-lo})
- # Accessible rear strip: 8% is explicit, terminal NPTs are an inference.
- # Position/width follow the rear service strip; run is made configurable in data.
- start=pt(550,203,0);direction=np.array([1.,-.0504]);direction/=np.linalg.norm(direction);end=start+direction*29.75;side=np.array([.0504,1.]);side=side/np.linalg.norm(side)*.60
- ramp=Polygon([start-side,start+side,end+side,end-side]);m=section(ramp,.18)
- # A wedge with lower edge following the same 8% rise, not an angled cube.
- along=end-start;length=np.linalg.norm(along);den=np.dot(along,along)
- for v in m.vertices:
-  t=np.clip(np.dot(v[[0,2]]-start,along)/den,0,1);v[1]+=-3.55+2.38*t-.18
- GROUND_PATCHES.append(ramp)
- add_mesh(m,'06_Escaleras_Rampas/Rampa_Posterior','Rampa_posterior_8_por_ciento','floor',True,source='A-01/A-02 RAMPA PENDIENTE 8%',note='Extremos -3.55/-1.17 y recorrido de 29.75 m son inferencia; revisar antes de declarar conformidad.')
- EVIDENCE.append({'element':'Rampa posterior','sheet':'A-01/A-02','confirmed':'Pendiente 8%','estimated':'Extremos y recorrido vertical por ausencia de seccion longitudinal','status':'Observado'})
+ # A-02 native ramp footprint; the vertical anchor remains an estimate.
+ review=ARCH_REVIEW.get('posteriorRamp')
+ if review:
+  points=np.array(review['outline']);ramp=Polygon(points);start=(points[1]+points[-2])/2;end=(points[0]+points[-1])/2;direction=end-start;length=np.linalg.norm(direction);direction/=length
+  m=section(ramp,.18)
+  for vertex in m.vertices:vertex[1]+=review['upperNPTEstimated']+review['slope']*((vertex[[0,2]]-end)@direction)-.18
+  GROUND_PATCHES.append(ramp)
+  add_mesh(m,'06_Escaleras_Rampas/Rampa_Posterior','Rampa_posterior_perfil_CAD_8_por_ciento','floor',True,source=review['source'],note=review['limitation'])
+  EVIDENCE.append({'element':'Rampa posterior','sheet':'A-01/A-02','confirmed':'Huella A-PISO 45E57 y pendiente 8%','estimated':f"Anclaje superior -1.17 m; extremo inferior calculado {review['upperNPTEstimated']-review['slope']*length:.4f} m, sin enlace confirmado al sotano -3.55.",'status':'Observado; no certifica itinerario publico ni continuidad al sotano'})
+
 
 
 def architecture_complements():
@@ -478,14 +605,22 @@ def architecture_complements():
  grid=[277.80,426.48,576.24,723.72,845.76,994.56,1143.24,1291.92,1440.60]
  for i in range(4):
   group=LEVEL_NAMES[i]+'/Vigas'
-  for y in [510.0,641.4]:
-   for a,b in zip(grid,grid[1:]):
-    # omit over the unbuilt east external void when the plan has no grid bay.
-    if a>1292:continue
-    pa=pt(a,y,2);pb=pt(b,y,2)
-    add_poly(LineString([pa,pb]).buffer(.225,cap_style='flat').difference(east_opening()),group,'Viga_eje_'+str(round(a))+'_'+str(round(y)),'wall',True,'beam',i,source=f'A-0{i+1}: PROY. VIGA',note='Peralte 0.40 m estimado; posiciones del eje registradas entre plantas.')
-  if i in [2,3]:
-   wall_line(pt(135,516.24,2),pt(96,658.8,2),.12,LEVEL_NAMES[i]+'/Parapetos','Parapeto_hall_oeste_1_25',i,height=1.25,source=f'A-0{i+1} PARAPETO h=1.25m')
+  headers=[]
+  for part in PARTS:
+   if part['level']==i and part['role'] in ['windowLintel','doorLintel']:
+    tris=np.array(part['vertices']).reshape(-1,3,3);norm=np.cross(tris[:,1]-tris[:,0],tris[:,2]-tris[:,0]);headers.extend(Polygon(t[:,[0,2]]) for t in tris[norm[:,1]>1e-9])
+  beam_blockers=unary_union([WALLS[i]]+headers)
+  if NATIVE_BEAMS:
+   stair_footprints=[part_footprint(p) for p in PARTS if p['level']==i and p['material']=='floor' and p['group'].startswith('06_Escaleras_Rampas/Escalera')]
+   shafts=unary_union(stair_footprints+[metric(WEST_SLAB,2),east_opening(i+1)]).buffer(.015)
+   native=NATIVE_BEAMS[i].intersection(envelope(i+1)).difference(shafts).difference(beam_blockers)
+   add_poly(native,group,'Vigas_caras_CAD_A_VIGAS','wall',True,'beam',i,source=f'DWG/A-0{i+1}/A- VIGAS; caras paralelas nativas',note='Se conserva separacion entre caras del CAD; peralte 0.40 m y elevacion al intrados estimados.')
+  else:
+   for y in [510.0,641.4]:
+    for a,b in zip(grid,grid[1:]):
+     if a>1292:continue
+     pa=pt(a,y,2);pb=pt(b,y,2)
+     add_poly(LineString([pa,pb]).buffer(.225,cap_style='flat').difference(east_opening(i+1)).difference(beam_blockers),group,'Viga_eje_'+str(round(a))+'_'+str(round(y)),'wall',True,'beam',i,source=f'A-0{i+1}: PROY. VIGA',note='Peralte 0.40 m estimado; posiciones del eje registradas entre plantas.')
   # Transparent hall partitions explicitly labelled VIDRIO TEMPLADO.
   for xa,xb,yy in [(729,840,717)]:
    if i==0:continue
@@ -497,7 +632,10 @@ def architecture_complements():
  for i in [2,3]:
   for j,pts in enumerate([[(430,516.24),(716,516.24)],[(430,516.24),(430,591)],[(716,516.24),(716,634.2)],[(848.64,516.24),(1142,516.24)],[(1142,516.24),(1142,634.2)]]):
    if i==2 and j<3:continue # A-03 corridor under the projected upper void.
+   if j==4:continue # A-03 joins two voids; A-04 is the council-room wall/window, not a free guard edge.
    rail_path([pt(x,y,2) for x,y in pts],NPT[i],1.10,LEVEL_NAMES[i]+'/Barandas',f'Vacio_{j+1}',i,f'A-0{i+1} BARANDA; altura estimada')
+ rail_path([pt(1171.32,514.50,2),pt(1291.08,634.20,2)],NPT[2],PARAMS['railingHeight'],LEVEL_NAMES[2]+'/Barandas','Baranda_diagonal_vacio_hall02_A03',2,'A-03: dos bordes vectoriales de baranda; altura 1.10 m estimada')
+ if ROOF_NATIVE:return
  # Azotea parapets: actual stated varying heights, no duplicate full walls.
  outer=envelope(4).buffer(-.12)
  parapet=envelope(4).difference(outer)
@@ -514,7 +652,7 @@ def architecture_complements():
   # Door opening on the sheet's lower-facing edge.
   opening=unary_union([LineString([q['hinge'],q['closed']]).buffer(.50,cap_style='flat') for q in DOORS[4]])
   add_poly(shell.difference(opening),'05_Azotea/Comedor_y_Cerramientos',('Comedor' if j==0 else f'Estructura_temporal_{j}')+'_muros','wall',True,'wall',4,source='A-05: DRYWALL / MADERA PREFABRICADA',note='Altura de cerramiento de azotea 2.60 m estimada.')
-  add_poly(shell.intersection(opening),'05_Azotea/Comedor_y_Cerramientos',f'Azotea_dintel_{j}','wall',True,'doorLintel',4,source='A-05')
+  # The unified door lintel already spans this opening; do not add a duplicate.
   add_poly(rect(x0,y0,x1,y1,4),'05_Azotea/Cubiertas',f'Cubierta_comedor_temporal_{j}','floor',True,'roofCover',4,source='A-05',note='Altura configurable estimada; cubierta de 0.14 m estimada.')
  # Explicit taller rear parapet span, replaces rather than overlays base strip.
  # It is represented as the additional 0.50 m above the 0.80 m common body.
@@ -522,19 +660,163 @@ def architecture_complements():
  fixed_prism(extra,11.50,12.00,'05_Azotea/Parapetos','Parapeto_1_30_tramo_posterior','wall',True,4,'A-05 h=1.30 m')
 
 
+def union_railing_components():
+ """Make a railing assembly, not overlapping posts/bars or one asset per rod."""
+ import manifold3d as mf
+ groups=collections.defaultdict(list);retained=[]
+ for p in PARTS:
+  if p['material']=='metal' and p['role']=='fixed' and p['collider'] and ('/Barandas' in p['group'] or p['group'].startswith('06_Escaleras_Rampas/')):groups[(p['group'],p['level'])].append(p)
+  else:retained.append(p)
+ for (group,level),pieces in groups.items():
+  solids=[]
+  for part in pieces:
+   v=materialize_vertices(part);mesh=trimesh.Trimesh(vertices=v,faces=np.arange(len(v)).reshape(-1,3),process=True);mesh.fix_normals();body=mf.Manifold(mf.Mesh(np.asarray(mesh.vertices,dtype=np.float32),np.asarray(mesh.faces,dtype=np.uint32)))
+   if body.status()!=mf.Error.NoError:raise ValueError('Baranda no cerrada antes de unir: '+part['id'])
+   solids.append(body)
+  result=mf.Manifold.batch_boolean(solids,mf.OpType.Add).simplify(.0001)
+  if result.status()!=mf.Error.NoError:raise ValueError('Union de baranda no valida: '+group)
+  out=result.to_mesh();mesh=trimesh.Trimesh(vertices=np.asarray(out.vert_properties[:,:3]),faces=np.asarray(out.tri_verts),process=False);vv=mesh.vertices[mesh.faces].reshape(-1,3);nn=np.repeat(mesh.face_normals,3,axis=0);part=dict(pieces[0]);part.update(name='Barandas_y_pasamanos_continuos',role='fixed',bottom=0,top=1,vertices=vv.flatten().tolist(),normals=nn.flatten().tolist(),uv=np.c_[vv[:,0]/3,vv[:,2]/3].flatten().tolist(),source=f'{len(pieces)} piezas de barandas del tramo; referencias originales CAD/PDF y parametros de seccion',note='Postes y travesanos unidos en una malla cerrada; alturas y secciones estimadas. Regenerar desde fuentes para cambiar sus parametros.')
+  retained.append(part)
+ PARTS[:]=retained
+
+
+def repair_float32_topology():
+ """Split zero-area T junctions after final float32 quantization.
+
+ No architectural openings are filled: a boundary vertex is only inserted
+ into a collinear existing edge (maximum residual 2 micrometres).
+ """
+ result=[];repairs=0;splits=0
+ for part in PARTS:
+  if part['hidden']:result.append(part);continue
+  vertices=np.asarray(materialize_vertices(part),dtype=np.float32).astype(float);faces=np.arange(len(vertices)).reshape(-1,3);mesh=trimesh.Trimesh(vertices=vertices,faces=faces,process=True)
+  triangles=mesh.vertices[mesh.faces];areas=np.linalg.norm(np.cross(triangles[:,1]-triangles[:,0],triangles[:,2]-triangles[:,0]),axis=1);removed_zero=bool(np.any(areas<=1e-18));original_mesh=mesh.copy()
+  mesh.update_faces(areas>1e-18);mesh.remove_unreferenced_vertices()
+  if mesh.is_watertight and not removed_zero:result.append(part);continue
+  # Quantization may collapse a zero-width Boolean sliver onto an existing
+  # edge. Re-regularize the serialized coordinates before joining T edges.
+  if np.any(np.bincount(mesh.edges_unique_inverse)>2):
+   import manifold3d as mf
+   body=mf.Manifold(mf.Mesh(np.asarray(original_mesh.vertices,dtype=np.float32),np.asarray(original_mesh.faces,dtype=np.uint32)))
+   if body.status()==mf.Error.NoError:
+    out=body.simplify(.0001).to_mesh()
+    candidate=trimesh.Trimesh(vertices=np.asarray(out.vert_properties[:,:3]),faces=np.asarray(out.tri_verts),process=True)
+    if candidate.is_watertight and abs(candidate.volume-mesh.volume)<1e-6:mesh=candidate
+  for _ in range(64):
+   counts=np.bincount(mesh.edges_unique_inverse);boundary=mesh.edges_unique[counts==1]
+   if not len(boundary):break
+   candidates=np.unique(boundary);changed=False
+   for a,c in boundary:
+    delta=mesh.vertices[c]-mesh.vertices[a];den=float(delta@delta)
+    if den<1e-16:continue
+    for b in candidates:
+     if b in (a,c):continue
+     t=float((mesh.vertices[b]-mesh.vertices[a])@delta/den)
+     if not 1e-6<t<1-1e-6 or np.linalg.norm(mesh.vertices[b]-(mesh.vertices[a]+t*delta))>2e-6:continue
+     found=np.where(np.sum(np.isin(mesh.faces,[a,c]),axis=1)==2)[0]
+     if len(found)!=1:continue
+     face=mesh.faces[found[0]];aa,cc=int(a),int(c)
+     if not any(face[k]==aa and face[(k+1)%3]==cc for k in range(3)):aa,cc=cc,aa
+     d=next(int(v) for v in face if v not in (aa,cc));new=np.array([[aa,int(b),d],[int(b),cc,d]])
+     mesh.faces=np.vstack([np.delete(mesh.faces,found[0],axis=0),new]);changed=True;repairs+=1;break
+    if changed:break
+   if not changed:break
+  pieces=[mesh] if mesh.is_watertight else list(mesh.split(only_watertight=False,repair=False))
+  if not pieces or any(not p.is_watertight for p in pieces):raise ValueError('Topologia float32 pendiente: '+part['id'])
+  lo,hi=y_range(part['role'],part['level'],part['bottom'],part['top'])
+  for k,piece in enumerate(pieces):
+   if abs(piece.volume)<1e-9:continue
+   piece.fix_normals();v=piece.vertices.copy();v[:,1]=(v[:,1]-lo)/(hi-lo);vv=v[piece.faces].reshape(-1,3);nn=np.repeat(trimesh.Trimesh(vertices=v,faces=piece.faces,process=False).face_normals,3,axis=0);p=dict(part)
+   if k:p['id']=part['id']+f'_C{k+1:02}';p['name']=part['name']+f'_cuerpo_{k+1}';splits+=1
+   p['vertices']=vv.flatten().tolist();p['normals']=nn.flatten().tolist();p['uv']=np.c_[vv[:,0]/3,vv[:,2]/3].flatten().tolist();result.append(p)
+ PARTS[:]=result;EVIDENCE.append({'element':'Topologia serializada float32','collinearBoundaryRepairs':repairs,'separateClosedBodies':splits,'status':'Se conserva la superficie; no se rellenan huecos arquitectonicos'})
+
+
+def resolve_solid_junctions():
+ """Boolean differences give shared faces a single owner without hiding gaps.
+
+ The offline preparation uses manifold3d; Unity receives ordinary closed mesh
+ assets and needs no extra package. Parameters/roles remain on each part.
+ """
+ import manifold3d as mf
+ from shapely.strtree import STRtree
+ bounds=[];volumes={};cutters={};changed=0;removed=[]
+ def solid(k):
+  if k not in volumes:
+   p=PARTS[k];v=materialize_vertices(p);faces=np.arange(len(v)).reshape(-1,3)
+   if p['name'] in ['Marcos_puertas_consolidados','HV_Marcos_consolidados','Celosias_horizontales_concreto']:
+    unique,inverse=np.unique(np.asarray(v,dtype=np.float32),axis=0,return_inverse=True);mesh=trimesh.Trimesh(vertices=unique,faces=inverse.reshape(-1,3),process=False)
+   else:mesh=trimesh.Trimesh(vertices=v,faces=faces,process=True);mesh.fix_normals()
+   result=mf.Manifold(mf.Mesh(np.asarray(mesh.vertices,dtype=np.float32),np.asarray(mesh.faces,dtype=np.uint32)))
+   if result.status()!=mf.Error.NoError:raise ValueError(f"Malla no valida para resolver encuentros: {p['id']} / {result.status()}")
+   result=mf.Manifold.batch_boolean(result.decompose(),mf.OpType.Add)
+   volumes[k]=result
+  return volumes[k]
+ def cutter(k):
+  if k not in cutters:
+   p=PARTS[k];v=materialize_vertices(p);lo,hi=v[:,1].min(),v[:,1].max();eps=.00015
+   if np.all((np.abs(v[:,1]-lo)<1e-6)|(np.abs(v[:,1]-hi)<1e-6)):
+    g=part_footprint(p).buffer(eps,join_style='mitre');pieces=[]
+    for q in polygons(g):
+     mesh=section(q,hi-lo+2*eps);mesh.vertices[:,1]+=lo-eps;pieces.append(mesh)
+    mesh=merge_meshes(pieces);mesh.merge_vertices();mesh.fix_normals();cutters[k]=mf.Manifold(mf.Mesh(np.asarray(mesh.vertices,dtype=np.float32),np.asarray(mesh.faces,dtype=np.uint32)))
+   else:
+    body=solid(k);center=(bounds[k][0]+bounds[k][1])/2;extent=np.maximum(bounds[k][1]-bounds[k][0],.001);cutters[k]=body.translate(-center).scale((1+2*eps/extent).tolist()).translate(center)
+   if cutters[k].status()!=mf.Error.NoError:raise ValueError(f"Cortador no valido: {p['id']}")
+  return cutters[k]
+ def rank(k):
+  p=PARTS[k]
+  if p['hidden']:return 99
+  if p['material']=='wall' and '/Escalera_03_Oeste' in p['group'] and '_antepecho_' in p['name']:return 5.75
+  if p['material']=='glass':return 8
+  if p['role']=='door':return 7
+  if p['material']=='metal':return 6
+  if p['role']=='slab':return 4
+  if p['material']=='floor':return 5 if 'descanso' in p['name'].lower() else 5.5
+  if p['role']=='wall':return 0 if '/Columnas' in p['group'] else 1
+  if p['role'] in ['doorLintel','windowLintel','beam']:return 3
+  return 2
+ for p in PARTS:
+  v=materialize_vertices(p);bounds.append(np.array([v.min(axis=0),v.max(axis=0)]))
+ tree=STRtree([box(q[0,0],q[0,2],q[1,0],q[1,2]) for q in bounds]);done=set()
+ for k in sorted(range(len(PARTS)),key=lambda k:(rank(k),k)):
+  p=PARTS[k]
+  if p['hidden']:continue
+  q=bounds[k];near=[]
+  for j in tree.query(box(q[0,0],q[0,2],q[1,0],q[1,2])):
+   j=int(j)
+   if j not in done or j in removed:continue
+   if PARTS[j]['material']=='glass':continue
+   if np.all(np.minimum(q[1],bounds[j][1])-np.maximum(q[0],bounds[j][0])>1e-6):near.append(j)
+  if near:
+   stair_guard=p['material']=='wall' and '/Escalera_03_Oeste' in p['group'] and '_antepecho_' in p['name']
+   body=solid(k);result=mf.Manifold.batch_boolean([body]+[solid(j) if not stair_guard and (p['material']=='floor' or PARTS[j]['material']=='floor') else cutter(j) for j in near],mf.OpType.Subtract)
+   if result.status()!=mf.Error.NoError:raise ValueError(f"Encuentro no valido: {p['id']} / {result.status()}")
+   result=result.simplify(.00002 if p['material']=='floor' else .0001)
+   if result.is_empty() or result.volume()<1e-9:removed.append(k);done.add(k);continue
+   if abs(body.volume()-result.volume())>1e-9:
+    out=result.to_mesh();vertices=np.array(out.vert_properties[:,:3],dtype=float);lo,hi=y_range(p['role'],p['level'],p['bottom'],p['top']);vertices[:,1]=(vertices[:,1]-lo)/(hi-lo)
+    mesh=trimesh.Trimesh(vertices=vertices,faces=np.asarray(out.tri_verts),process=True);mesh.fix_normals();vv=mesh.vertices[mesh.faces].reshape(-1,3);nn=np.repeat(mesh.face_normals,3,axis=0)
+    p['vertices']=vv.flatten().tolist();p['normals']=nn.flatten().tolist();p['uv']=np.round(np.c_[vv[:,0]/3,vv[:,2]/3],7).flatten().tolist()
+    p['note']+=' Encuentros volumetricos regularizados; se conserva la referencia del perfil.';volumes.pop(k,None);changed+=1
+  done.add(k)
+ PARTS[:]=[p for k,p in enumerate(PARTS) if k not in removed]
+ EVIDENCE.append({'element':'Encuentros volumetricos','sheet':'A-01 a A-05','changedParts':changed,'removedCoveredParts':len(removed),'confirmed':'Se evita superponer caras de las piezas construidas','estimated':'Criterio de propiedad de superficies: cerramientos, losas, circulaciones y carpinterias; no altera las cotas de referencia','status':'Validar mallas serializadas y recorrido despues de regularizar'})
+
+
 def materialize_vertices(part):
  v=np.array(part['vertices'],float).reshape(-1,3).copy();lo,hi=y_range(part['role'],part['level'],part['bottom'],part['top']);v[:,1]=lo+(hi-lo)*v[:,1];return v
 
 def write_mesh_asset(path,part):
- path.parent.mkdir(parents=True,exist_ok=True);v=materialize_vertices(part);n=np.array(part['normals']).reshape(-1,3);uv=np.array(part['uv']).reshape(-1,2)
+ path.parent.mkdir(parents=True,exist_ok=True);v=np.asarray(materialize_vertices(part),dtype=np.float32).astype(float);n=np.array(part['normals']).reshape(-1,3);uv=np.array(part['uv']).reshape(-1,2)
  # Recompute normals after applying a vertical profile.
- ns=np.cross(v[1::3]-v[::3],v[2::3]-v[::3]);length=np.linalg.norm(ns,axis=1);valid=length>1e-10
+ ns=np.cross(v[1::3]-v[::3],v[2::3]-v[::3]);length=np.linalg.norm(ns,axis=1);valid=length>1e-18
  if not np.all(valid):
   v=v.reshape(-1,3,3)[valid].reshape(-1,3);uv=uv.reshape(-1,3,2)[valid].reshape(-1,2);ns=ns[valid];length=length[valid]
  n=np.repeat(ns/length[:,None],3,axis=0);count=len(v)
  arr=np.c_[v,n,uv].astype('<f4');indices=np.arange(count,dtype='<u4');subcounts=[count]
  if part.get('triangleMaterials') is not None:
-  mask=np.array(part['triangleMaterials']);assert len(mask)==count//3
+  mask=np.array(part['triangleMaterials'])[valid];assert len(mask)==count//3
   groups=[indices.reshape(-1,3)[mask==k].flatten() for k in range(len(part['materialGuids']))];subcounts=[len(g) for g in groups];indices=np.concatenate(groups)
  mn=v.min(axis=0);mx=v.max(axis=0);center=(mn+mx)/2;extent=(mx-mn)/2
  template=(ROOT/'Assets/UPCH/Campus/Generated/Meshes/BuildingH.asset').read_text()
@@ -636,10 +918,18 @@ Transform:
 
 
 def write_data(trace,excavation):
- model={'schema':1,'sourcePdfSha256':trace['sourceSha256'],'baseCommit':'98e8d8030f6ea5e9bee3360b28c86395f0abf28e','rootName':'Pabellon_H_Veterinaria','anchor':ANCHOR,'yaw':0,'npt':NPT,'parameters':PARAMS,'items':PARTS,'excavationArea':excavation.area,'limitations':['Alturas libres, antepechos, dinteles y espesores no definidos en plantas: parametros estimados.','Rampa posterior: pendiente 8% explicita, extremos y continuidad vertical inferidos.','Geometria de escaleras requiere validacion de recorrido y cotejo en Unity.','No se ejecutaron Unity ni pruebas Play en el entorno de generacion.']}
+ model={'schema':1,'sourcePdfSha256':trace['sourceSha256'],'baseCommit':'98e8d8030f6ea5e9bee3360b28c86395f0abf28e','rootName':'Pabellon_H_Veterinaria','anchor':ANCHOR,'yaw':0,'npt':NPT,'nptPrecise':NPT,'expectedFloorCoverage':[g.wkt for g in FLOORS],'parameters':PARAMS,'items':PARTS,'excavationArea':excavation.area,'limitations':['Alturas libres, antepechos, dinteles y espesores no definidos en plantas: parametros estimados.','Rampa posterior: pendiente 8% explicita, extremos y continuidad vertical inferidos.','Geometria de escaleras requiere validacion de recorrido y cotejo en Unity.','No se ejecutaron Unity ni pruebas Play en el entorno de generacion.']}
  cad_path=Path(__file__).parent/'Fuentes/CAD_H.json'
  if cad_path.exists():
-  cad=json.loads(cad_path.read_text());model['sourceDWG_SHA256']=cad['sourceSHA256'];model['horizontalSource']='Capas CAD nativas registradas; contornos de losas y circulaciones conservan trazado PDF documentado.'
+  cad=json.loads(cad_path.read_text());model['revision']=cad.get('reviewedArchitecture',{}).get('revision','R3_Escalera02_por_nivel');model['sourceDWG_SHA256']=cad['sourceSHA256'];model['horizontalSource']='Capas CAD registradas, cerramientos/parapetos/patios de azotea CAD y vacio oblicuo del hall02 A-03 cotejado con PDF. Resto de losas y circulaciones segun trazado PDF documentado.'
+ if cad_path.exists():
+  outline=cad.get('reviewedArchitecture',{}).get('exteriorAnnexRoof',{}).get('verificationOutline')
+  if outline:
+   q=np.array(outline[:4]);probes=[]
+   for across in [.2,.5,.8]:
+    for along in np.linspace(.15,.85,9):
+     a=q[0]*(1-along)+q[1]*along;z=q[3]*(1-along)+q[2]*along;probes.extend((a*(1-across)+z*across).tolist())
+   model['entryAnnexProbeXZ']=probes
  DATA.mkdir(parents=True,exist_ok=True);path=DATA/'Modelo_H.json';path.write_text(json.dumps(model,ensure_ascii=False,separators=(',',':')));meta(path)
  (DATA/'Parametros_H.json').write_text(json.dumps(PARAMS,indent=2));meta(DATA/'Parametros_H.json')
  (BASE/'Documentacion/Puertas_y_Niveles.json').write_text(json.dumps({'NPT':NPT,'doors':DOORS,'steps':STEPS,'observations':EVIDENCE},ensure_ascii=False,indent=2));meta(BASE/'Documentacion/Puertas_y_Niveles.json')
@@ -725,15 +1015,68 @@ def main():
  cad_path=Path(__file__).parent/'Fuentes/CAD_H.json'
  cad=json.loads(cad_path.read_text()) if cad_path.exists() else None
  if cad:
-  from cad_h import merge_doors,build_sections
+  from cad_h import merge_doors,build_sections,pair_beam_faces
+  ARCH_REVIEW.update(cad.get('reviewedArchitecture',{}))
+  NATIVE_BEAMS[:]=[pair_beam_faces(l.get('beamLines',[])) for l in cad['levels'][:4]]
   merge_doors(sys.modules[__name__],cad)
+  EAST_CASES[:]=cad.get('eastStairs',[])
+  review=cad.get('reviewedArchitecture',{})
+  from cad_h import prepare_roof
+  prepare_roof(sys.modules[__name__],cad)
  make_slabs()
  if cad:build_sections(sys.modules[__name__],cad,trace)
  else:load_sections(trace)
- make_doors();west_stair();east_stair();central_stairs();technical_access();exterior_access();architecture_complements()
+ make_doors();fit_slabs_to_enclosures();rear_containment();exterior_annex_roof();west_stair();east_stair();central_stairs();technical_access();exterior_access();architecture_complements()
+ if cad:
+  from cad_h import build_high_windows
+  build_high_windows(sys.modules[__name__],cad)
+  if ARCH_REVIEW.get('photoRevision'):
+   from fotografias_h import street_screens
+   street_screens(sys.modules[__name__],cad)
  excavation=unary_union([p for g in [envelope(0),envelope(1),metric(WEST_HALL.union(WEST_SLAB),2)]+GROUND_PATCHES for p in polygons(g)])
  # The actual excavation model excludes the adjacent campus and follows H only.
  add_mesh(merge_meshes([section(p) for p in polygons(excavation)]),'00_Estructura_General','Excavacion_H_Verificada','floor',False,'fixed',0,-3.57,-3.55,source='A-01/A-02: envolvente completa',note='Malla auxiliar solo Editor; no renderiza ni colisiona.',active=False,hidden=True)
+ # Frames share height profiles and materials. Consolidate by level and role
+ # so a separate asset is not created for every small frame component.
+ frame_groups=collections.defaultdict(list);retained=[]
+ for part in PARTS:
+  if part['name'].startswith('CAD_Carpinteria_'):frame_groups[(part['level'],part['role'])].append(part)
+  else:retained.append(part)
+ for (level,role),pieces in frame_groups.items():
+  merged=dict(pieces[0]);merged['name']=f'CAD_Carpinteria_{role}_nivel_{level}'
+  for key in ['vertices','normals','uv']:merged[key]=[value for piece in pieces for value in piece[key]]
+  merged['source']=f'DWG/A-0{level+1}: marcos de {len(pieces)} vanos consolidados'
+  merged['note']='Geometria por vano conservada; una malla por nivel y perfil vertical para evitar archivos de componentes pequenos. Secciones estimadas.'
+  retained.append(merged)
+ PARTS[:]=retained
+ union_railing_components()
+ frame_parts=[p for p in PARTS if p['name'] in ['Marcos_puertas_consolidados','HV_Marcos_consolidados']]
+ other_parts=[p for p in PARTS if p not in frame_parts]
+ PARTS[:]=frame_parts
+ repair_float32_topology()
+ # Fixed door/transom frames can intersect. Union them before assigning
+ # the surface to avoid two opaque skins at their shared sill/header.
+ import manifold3d as mf
+ joined_frames=[]
+ for level in range(5):
+  pieces=[p for p in PARTS if p['level']==level]
+  if not pieces:continue
+  bodies=[]
+  for part in pieces:
+   vv=materialize_vertices(part);mm=trimesh.Trimesh(vertices=vv,faces=np.arange(len(vv)).reshape(-1,3),process=True)
+   bodies.append(mf.Manifold(mf.Mesh(np.asarray(mm.vertices,dtype=np.float32),np.asarray(mm.faces,dtype=np.uint32))))
+  out=mf.Manifold.batch_boolean(bodies,mf.OpType.Add).simplify(.0001).to_mesh();mesh=trimesh.Trimesh(vertices=np.asarray(out.vert_properties[:,:3]),faces=np.asarray(out.tri_verts),process=False)
+  part=dict(pieces[0]);vv=mesh.vertices[mesh.faces].reshape(-1,3)
+  part.update(name='Marcos_carpinteria_fijos',vertices=vv.flatten().tolist(),normals=np.repeat(mesh.face_normals,3,axis=0).flatten().tolist(),uv=np.c_[vv[:,0]/3,vv[:,2]/3].flatten().tolist(),source='Marcos de puertas y ventanas altas del nivel; secciones estimadas')
+  joined_frames.append(part)
+ PARTS[:]=joined_frames
+ repair_float32_topology()
+ PARTS[:]=other_parts+PARTS
+ resolve_solid_junctions()
+ if __import__('os').environ.get('H_DEBUG_CHECKPOINT'):
+  import pickle
+  Path(__import__('os').environ['H_DEBUG_CHECKPOINT']).write_bytes(pickle.dumps(PARTS))
+ repair_float32_topology()
  seen=set();unique=[]
  for p in PARTS:
   vv=np.round(materialize_vertices(p),6).reshape(-1,3,3)
@@ -743,6 +1086,13 @@ def main():
  PARTS[:]=unique
  from acabados_h import material_assets,apply as apply_finishes
  finishes=material_assets(ROOT,BASE,uid);apply_finishes(PARTS,[envelope(i) for i in range(5)],materialize_vertices,finishes)
+ # Planar UV per face orientation, in metres. Vertical faces use elevation.
+ for part in PARTS:
+  vv=materialize_vertices(part).reshape(-1,3,3);nn=np.cross(vv[:,1]-vv[:,0],vv[:,2]-vv[:,0]);axes=np.argmax(np.abs(nn),axis=1);uv=[]
+  for face,axis in zip(vv,axes):
+   plane=face[:,[0,2]] if axis==1 else face[:,[2,1]] if axis==0 else face[:,[0,1]]
+   uv.extend((plane/3).flatten().tolist())
+  part['uv']=uv
  active_ids={p['id'] for p in PARTS}
  for old in (BASE/'Generado/Mallas').glob('H_*.asset'):
   if old.stem not in active_ids:
@@ -755,7 +1105,7 @@ def main():
  else:terrain=terrain_mesh(excavation)
  if not args.no_scene and not args.building_only:integrate_scene(terrain)
  for d in sorted([BASE]+[q for q in BASE.rglob('*') if q.is_dir()],key=lambda p:len(p.parts)):meta(d)
- summary={'parts':len(PARTS),'byGroup':dict(COUNTS),'NPT':NPT,'anchor':ANCHOR,'excavationArea':excavation.area,'terrainAreaRemoved':terrain['excavatedIntersectionArea'],'roofVoidArea':OPENINGS[4].area,'stairRisers':len(STEPS),'doors':list(map(len,DOORS))}
+ summary={'parts':len(PARTS),'byGroup':dict(collections.Counter(p['group'] for p in PARTS)),'NPT':NPT,'anchor':ANCHOR,'excavationArea':excavation.area,'terrainAreaRemoved':terrain['excavatedIntersectionArea'],'roofVoidArea':OPENINGS[4].area,'stairRisers':len(STEPS)+2*len(EAST_CASES),'eastStairRisers':[c['riserCount'] for c in EAST_CASES],'doors':list(map(len,DOORS))}
  (BASE/'Documentacion/Construccion.json').write_text(json.dumps(summary,indent=2,ensure_ascii=False));meta(BASE/'Documentacion/Construccion.json')
  # Geometry checkpoint for reproducible QA; not part of the Unity package.
  import pickle

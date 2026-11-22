@@ -1,26 +1,10 @@
-[
-  {
-    "file": "GenerarVeterinaria.cs",
-    "sha256": "692e80e1556515c5cb36df1cd48ee51f551e557845a5c8da84bcc723db0f7dfb",
-    "syntaxErrors": [],
-    "UnityCompilation": "NOT_RUN"
+{
+  "syntaxOnly": {
+    "Assets/UPCH/Veterinaria/Runtime/VeterinariaDoor.cs": true,
+    "Assets/UPCH/Veterinaria/Editor/GenerarVeterinaria.cs": true,
+    "Assets/UPCH/Veterinaria/Editor/VeterinariaTerreno.cs": true,
+    "Assets/UPCH/Veterinaria/Editor/VeterinariaTerrenoPruebas.cs": true,
+    "Assets/UPCH/Veterinaria/Editor/VeterinariaTerrenoEstado.cs": true
   },
-  {
-    "file": "VeterinariaTerreno.cs",
-    "sha256": "35f554041c9bbcf4cce22a730e280917122631d4d4821cdf03f3e965c76b39fd",
-    "syntaxErrors": [],
-    "UnityCompilation": "NOT_RUN"
-  },
-  {
-    "file": "VeterinariaTerrenoPruebas.cs",
-    "sha256": "627b1c0c18259aa6d2bbfd470d4d0c2f8e1ea3c44ee9221f19c7f8aad752d817",
-    "syntaxErrors": [],
-    "UnityCompilation": "NOT_RUN"
-  },
-  {
-    "file": "VeterinariaTerrenoEstado.cs",
-    "sha256": "8545f1fa5019d575ba7e92cddb383d0bf5498483eebd23a511aa99c7096a5e34",
-    "syntaxErrors": [],
-    "UnityCompilation": "NOT_RUN"
-  }
-]
+  "UnityCompilation": "NOT_RUN"
+}

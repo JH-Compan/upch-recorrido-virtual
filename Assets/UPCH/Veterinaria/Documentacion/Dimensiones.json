@@ -1,71 +1,101 @@
 {
-  "units": "metres",
-  "measurementStatus": "Dimensiones calculadas de contornos vectoriales registrados; no equivalen a cotas numericas verificadas en su totalidad.",
+  "revision": "R3_Escalera02_por_nivel",
+  "unityUnitsPerMetre": 1,
+  "rootScale": [
+    1,
+    1,
+    1
+  ],
+  "rootPosition": [
+    -8.720671,
+    1.17,
+    144.78705
+  ],
   "levels": [
     {
-      "sheet": "A-01",
+      "level": 0,
       "NPT": -3.55,
-      "boundingWidth": 52.45100000000001,
-      "boundingDepth": 26.14506666666666,
-      "floorSurfaceExcludingOpenings": 919.9669593455556,
-      "boundsXZ": [
-        -26.3017,
-        -16.065499999999993,
-        26.149300000000004,
-        10.079566666666668
-      ]
+      "boundsLocal": [
+        [
+          -26.3017,
+          -4.74,
+          -16.0661
+        ],
+        [
+          26.1502,
+          1.12,
+          10.0796
+        ]
+      ],
+      "source": "Limites de mallas, no cadenas acotadas verificadas."
     },
     {
-      "sheet": "A-02",
+      "level": 1,
       "NPT": 0.0,
-      "boundingWidth": 53.41625974764506,
-      "boundingDepth": 24.01993333333333,
-      "floorSurfaceExcludingOpenings": 873.085773259085,
-      "boundsXZ": [
-        -26.136659747645062,
-        -13.94883333333333,
-        27.2796,
-        10.071100000000001
-      ]
+      "boundsLocal": [
+        [
+          -26.1547,
+          -1.3699999999999999,
+          -19.0585
+        ],
+        [
+          27.2796,
+          4.67,
+          10.0746
+        ]
+      ],
+      "source": "Limites de mallas, no cadenas acotadas verificadas."
     },
     {
-      "sheet": "A-03",
+      "level": 2,
       "NPT": 3.55,
-      "boundingWidth": 50.5883930809784,
-      "boundingDepth": 20.188766666666663,
-      "floorSurfaceExcludingOpenings": 748.4361567855749,
-      "boundsXZ": [
-        -26.136659747645062,
-        -10.096499999999995,
-        24.451733333333337,
-        10.092266666666667
-      ]
+      "boundsLocal": [
+        [
+          -26.1547,
+          3.3099999999999996,
+          -10.0965
+        ],
+        [
+          24.4517,
+          8.22,
+          10.0937
+        ]
+      ],
+      "source": "Limites de mallas, no cadenas acotadas verificadas."
     },
     {
-      "sheet": "A-04",
+      "level": 3,
       "NPT": 7.1,
-      "boundingWidth": 50.5883930809784,
-      "boundingDepth": 20.188766666666663,
-      "floorSurfaceExcludingOpenings": 764.5198283218713,
-      "boundsXZ": [
-        -26.136659747645062,
-        -10.096499999999995,
-        24.451733333333337,
-        10.092266666666667
-      ]
+      "boundsLocal": [
+        [
+          -26.1547,
+          6.859999999999999,
+          -10.0965
+        ],
+        [
+          24.4517,
+          11.92,
+          10.0938
+        ]
+      ],
+      "source": "Limites de mallas, no cadenas acotadas verificadas."
     },
     {
-      "sheet": "A-05",
+      "level": 4,
       "NPT": 10.7,
-      "boundingWidth": 50.5883930809784,
-      "boundingDepth": 20.188766666666663,
-      "floorSurfaceExcludingOpenings": 819.0775754768074,
-      "boundsXZ": [
-        -26.136659747645062,
-        -10.096499999999995,
-        24.451733333333337,
-        10.092266666666667
-      ]
+      "boundsLocal": [
+        [
+          -26.1367,
+          10.459999999999999,
+          -10.0965
+        ],
+        [
+          24.4517,
+          13.44,
+          10.0923
+        ]
+      ],
+      "source": "Limites de mallas, no cadenas acotadas verificadas."
     }
   ]
 }

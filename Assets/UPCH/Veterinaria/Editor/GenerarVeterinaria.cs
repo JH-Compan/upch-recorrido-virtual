@@ -17,8 +17,8 @@ namespace UPCH.Veterinaria.Editor
         const string ModelPath = Root + "/Datos/Modelo_H.json";
         [Serializable] public class Parameters
         {
-            public float slabThickness = .24f, doorHeight = 2.15f, windowSill = .95f,
-                windowHead = 2.50f, roofWallHeight = 2.60f, beamDepth = .40f, railingHeight = 1.10f;
+            public double slabThickness = .24, doorHeight = 2.15, windowSill = .95,
+                windowHead = 2.50, roofWallHeight = 2.60, beamDepth = .40, railingHeight = 1.10;
         }
         [Serializable] public class Part
         {
@@ -27,14 +27,18 @@ namespace UPCH.Veterinaria.Editor
             public int[] triangleMaterials;
             public bool collider, active, hidden;
             public int level;
-            public float bottom, top;
-            public float[] vertices, normals, uv;
+            public double bottom, top;
+            public float[] doorHinge;
+            public float doorOpenDegrees;
+            public double[] vertices;
+            public float[] normals, uv;
         }
         [Serializable] public class Model
         {
             public int schema;
-            public string rootName, baseCommit, sourcePdfSha256;
+            public string rootName, baseCommit, sourcePdfSha256, revision;
             public float[] anchor, npt;
+            public double[] nptPrecise, entryAnnexProbeXZ;
             public float yaw;
             public Parameters parameters;
             public Part[] items;
@@ -59,34 +63,38 @@ namespace UPCH.Veterinaria.Editor
             }
             return model;
         }
-        static Vector2 Height(Model m, Part p)
+        static (double x, double y) Height(Model m, Part p)
         {
-            float y = m.npt[p.level];
-            float h = p.level < 4 ? m.npt[p.level + 1] - y - m.parameters.slabThickness : m.parameters.roofWallHeight;
+            double y = m.nptPrecise != null && m.nptPrecise.Length == 5 ? m.nptPrecise[p.level] : m.npt[p.level];
+            double next = p.level < 4 ? (m.nptPrecise != null && m.nptPrecise.Length == 5 ? m.nptPrecise[p.level + 1] : m.npt[p.level + 1]) : y;
+            double h = p.level < 4 ? next - y - m.parameters.slabThickness : m.parameters.roofWallHeight;
             switch (p.role)
             {
-                case "wall": return new Vector2(y, y + h);
-                case "slab": return new Vector2(y - m.parameters.slabThickness, y);
-                case "sill": return new Vector2(y, y + m.parameters.windowSill);
-                case "glass": return new Vector2(y + m.parameters.windowSill, y + m.parameters.windowHead);
-                case "windowLintel": return new Vector2(y + m.parameters.windowHead, y + h);
-                case "doorLintel": return new Vector2(y + m.parameters.doorHeight, y + h);
-                case "door": return new Vector2(y + .025f, y + m.parameters.doorHeight - .025f);
-                case "beam": return new Vector2(y + h - m.parameters.beamDepth, y + h);
-                case "railing": return new Vector2(y, y + m.parameters.railingHeight);
-                case "roofCover": return new Vector2(y + m.parameters.roofWallHeight, y + m.parameters.roofWallHeight + .14f);
-                default: return new Vector2(p.bottom, p.top);
+                case "wall": return (y, y + h);
+                case "slab": return (y - m.parameters.slabThickness, y);
+                case "sill": return (y, y + m.parameters.windowSill);
+                case "glass": return (y + m.parameters.windowSill, y + m.parameters.windowHead);
+                case "windowFrameVertical": return (y + m.parameters.windowSill + .045, y + m.parameters.windowHead - .045);
+                case "windowFrameBottom": return (y + m.parameters.windowSill, y + m.parameters.windowSill + .045);
+                case "windowFrameTop": return (y + m.parameters.windowHead - .045, y + m.parameters.windowHead);
+                case "windowLintel": return (y + m.parameters.windowHead, y + h);
+                case "doorLintel": return (y + m.parameters.doorHeight, y + h);
+                case "door": return (y + .025, y + m.parameters.doorHeight - .025);
+                case "beam": return (y + h - m.parameters.beamDepth, y + h);
+                case "railing": return (y, y + m.parameters.railingHeight);
+                case "roofCover": return (y + m.parameters.roofWallHeight, y + m.parameters.roofWallHeight + .14);
+                default: return (p.bottom, p.top);
             }
         }
         static Mesh MakeMesh(Model model, Part part)
         {
             int count = part.vertices.Length / 3;
             var vertices = new Vector3[count]; var uv = new Vector2[count]; var triangles = new int[count];
-            Vector2 y = Height(model, part);
+            var y = Height(model, part);
             if (y.y <= y.x) throw new InvalidDataException("Perfil vertical inválido: " + part.id);
             for (int k = 0; k < count; k++)
             {
-                vertices[k] = new Vector3(part.vertices[k * 3], Mathf.LerpUnclamped(y.x, y.y, part.vertices[k * 3 + 1]), part.vertices[k * 3 + 2]);
+                vertices[k] = new Vector3((float)part.vertices[k * 3], (float)(y.x + (y.y - y.x) * part.vertices[k * 3 + 1]), (float)part.vertices[k * 3 + 2]);
                 uv[k] = new Vector2(part.uv[k * 2], part.uv[k * 2 + 1]);
                 triangles[k] = k;
             }
@@ -168,7 +176,16 @@ namespace UPCH.Veterinaria.Editor
                     renderer.enabled = !part.hidden;
                     if (part.hidden) obj.tag = "EditorOnly";
                     if (part.material == "glass") renderer.shadowCastingMode = ShadowCastingMode.Off;
-                    if (part.collider)
+                    if (part.role == "door" && part.doorHinge != null && part.doorHinge.Length == 3)
+                    {
+                        var collision = obj.AddComponent<MeshCollider>();
+                        collision.sharedMesh = saved;
+                        collision.convex = true;
+                        var door = obj.AddComponent<UPCH.Veterinaria.VeterinariaDoor>();
+                        door.hinge = new Vector3(part.doorHinge[0], part.doorHinge[1], part.doorHinge[2]);
+                        door.openDegrees = part.doorOpenDegrees;
+                    }
+                    else if (part.collider)
                     {
                         var collider = obj.AddComponent<MeshCollider>(); collider.sharedMesh = saved;
                         if (part.material == "floor") floorColliders.Add(collider);
@@ -182,7 +199,16 @@ namespace UPCH.Veterinaria.Editor
                 var layers = serializedTeleport.FindProperty("m_InteractionLayers.m_Bits");
                 if (layers != null) layers.intValue = unchecked((int)0x80000000);
                 serializedTeleport.ApplyModifiedPropertiesWithoutUndo();
-                PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
+                var savedPrefab = PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
+                if (!savedPrefab) throw new InvalidOperationException("No se pudo guardar el prefab H; no se eliminan mallas.");
+                var keepMeshes = new HashSet<string>();
+                foreach (var part in model.items) keepMeshes.Add(Root + "/Generado/Mallas/" + part.id + ".asset");
+                foreach (var meshGuid in AssetDatabase.FindAssets("t:Mesh", new[] { Root + "/Generado/Mallas" }))
+                {
+                    string meshPath = AssetDatabase.GUIDToAssetPath(meshGuid);
+                    if (Path.GetFileName(meshPath).StartsWith("H_", StringComparison.Ordinal) && !keepMeshes.Contains(meshPath))
+                        AssetDatabase.DeleteAsset(meshPath);
+                }
                 AssetDatabase.SaveAssets();
                 Debug.Log("Veterinaria: prefab regenerado con " + model.items.Length + " piezas. Los NPT se conservaron; revisar los parámetros estimados y ejecutar las pruebas de recorrido.");
             }
@@ -236,18 +262,77 @@ namespace UPCH.Veterinaria.Editor
         [MenuItem("Tools/UPCH/Veterinaria/3 Comprobar referencias y escala")]
         public static void Validate()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode) throw new InvalidOperationException("Comprueba la geometria en Edit; las hojas cambian de pose durante Play.");
             var model = ReadModel();
-            GameObject root = null;
+            GameObject root = null; int roots = 0;
             foreach (var r in SceneManager.GetActiveScene().GetRootGameObjects())
-                foreach (var t in r.GetComponentsInChildren<Transform>(true)) if (t.name == model.rootName) root = t.gameObject;
+                foreach (var t in r.GetComponentsInChildren<Transform>(true)) if (t.name == model.rootName) { root = t.gameObject; roots++; }
             if (!root) throw new InvalidOperationException("No está el edificio H en la escena activa.");
             int missing = 0, meshes = 0, colliders = 0;
+            if (roots != 1) { missing++; Debug.LogError("Se encontraron " + roots + " raices H; revisar instancias duplicadas antes de corregir geometria."); }
+            var expected = new HashSet<string>(); var actual = new HashSet<string>();
+            var expectedParts = new Dictionary<string, Part>();
+            foreach (var part in model.items) expectedParts[part.id] = part;
+            foreach (var part in model.items) expected.Add(part.id);
             if ((root.transform.lossyScale - Vector3.one).sqrMagnitude > 1e-8f) { missing++; Debug.LogError("H no conserva escala unitaria."); }
-            foreach (var f in root.GetComponentsInChildren<MeshFilter>(true)) { meshes++; if (!f.sharedMesh) missing++; }
-            foreach (var c in root.GetComponentsInChildren<MeshCollider>(true)) { colliders++; if (!c.sharedMesh || c.convex || c.isTrigger) missing++; }
+            foreach (var f in root.GetComponentsInChildren<MeshFilter>(true))
+            {
+                meshes++;
+                if (!f.sharedMesh) { missing++; continue; }
+                if (!actual.Add(f.sharedMesh.name)) { missing++; Debug.LogWarning("Malla H repetida en la escena: " + f.sharedMesh.name, f); }
+                if (f.transform.localPosition.sqrMagnitude > 1e-8f || Quaternion.Angle(f.transform.localRotation, Quaternion.identity) > .001f || (f.transform.localScale - Vector3.one).sqrMagnitude > 1e-8f)
+                { missing++; Debug.LogWarning("Pieza con transformacion local distinta de la generada; revisar override: " + f.name, f); }
+                if (expectedParts.TryGetValue(f.sharedMesh.name, out var source))
+                {
+                    var actualVertices = f.sharedMesh.vertices;
+                    bool changedGeometry = actualVertices.Length != source.vertices.Length / 3;
+                    var profile = Height(model, source);
+                    var toBuilding = root.transform.worldToLocalMatrix * f.transform.localToWorldMatrix;
+                    if (!changedGeometry) for (int vertex = 0; vertex < actualVertices.Length; vertex++)
+                    {
+                        var expectedVertex = new Vector3((float)source.vertices[vertex * 3], (float)(profile.x + (profile.y - profile.x) * source.vertices[vertex * 3 + 1]), (float)source.vertices[vertex * 3 + 2]);
+                        if ((toBuilding.MultiplyPoint3x4(actualVertices[vertex]) - expectedVertex).sqrMagnitude > .000001f)
+                        { changedGeometry = true; break; }
+                    }
+                    if (changedGeometry) { missing++; Debug.LogError("Geometria o grupo desplazado respecto al modelo: " + f.name, f); }
+                }
+                var collision = f.GetComponent<MeshCollider>();
+                if (expectedParts.TryGetValue(f.sharedMesh.name, out var collisionSource) && collisionSource.collider && (!collision || !collision.enabled))
+                { missing++; Debug.LogError("Falta colision prevista en el modelo: " + f.name, f); }
+                if (collision && collision.sharedMesh != f.sharedMesh) { missing++; Debug.LogWarning("Collider y malla visual distintos: " + f.name, f); }
+                if (expectedParts.TryGetValue(f.sharedMesh.name, out var expectedDoor) && expectedDoor.role == "door")
+                {
+                    var door = f.GetComponent<UPCH.Veterinaria.VeterinariaDoor>();
+                    if (!door || !collision || !collision.enabled || !collision.convex || collision.isTrigger || collision.sharedMesh != f.sharedMesh)
+                    { missing++; Debug.LogError("Puerta sin apertura o colision coherente: " + f.name, f); }
+                }
+            }
+            foreach (var id in expected) if (!actual.Contains(id)) { missing++; Debug.LogWarning("Pieza del modelo ausente en la instancia: " + id, root); }
+            foreach (var id in actual) if (!expected.Contains(id)) { missing++; Debug.LogWarning("Pieza ajena a esta revision dentro de H: " + id, root); }
+            foreach (var c in root.GetComponentsInChildren<MeshCollider>(true)) { colliders++; if (!c.sharedMesh || c.isTrigger || (c.convex && !c.GetComponent<UPCH.Veterinaria.VeterinariaDoor>())) missing++; }
             foreach (var r in root.GetComponentsInChildren<MeshRenderer>(true))
                 foreach (var m in r.sharedMaterials) if (!m || !m.shader || !m.shader.isSupported) missing++;
-            Debug.Log($"Veterinaria: {meshes} mallas, {colliders} colisiones, {missing} referencias/configuraciones observadas. La revisión no sustituye comprobar accesos y recorrer las tres escaleras en Play.", root);
+            if (model.entryAnnexProbeXZ != null && model.entryAnnexProbeXZ.Length > 0)
+            {
+                Physics.SyncTransforms();
+                var floorIds = new HashSet<string>();
+                foreach (var part in model.items) if (part.collider && part.material == "floor") floorIds.Add(part.id);
+                var surfaces = root.GetComponentsInChildren<MeshCollider>(false);
+                int supported = 0, probes = model.entryAnnexProbeXZ.Length / 2;
+                for (int k = 0; k < probes; k++)
+                {
+                    var local = new Vector3((float)model.entryAnnexProbeXZ[k * 2], .05f, (float)model.entryAnnexProbeXZ[k * 2 + 1]);
+                    var ray = new Ray(root.transform.TransformPoint(local), root.transform.TransformDirection(Vector3.down));
+                    bool found = false;
+                    foreach (var surface in surfaces)
+                        if (surface.enabled && surface.sharedMesh && floorIds.Contains(surface.sharedMesh.name) && surface.Raycast(ray, out var hit, .10f))
+                        { found = true; break; }
+                    if (found) supported++;
+                    else { missing++; Debug.LogError("Cubierta del ingreso sin apoyo en la muestra " + (k + 1) + ": " + local, root); }
+                }
+                Debug.Log("Cubierta del ingreso: " + supported + "/" + probes + " muestras con collider en NPT +0.00. No sustituye el recorrido Play.", root);
+            }
+            Debug.Log($"Veterinaria {model.revision}: {meshes} mallas, {colliders} colisiones, {missing} referencias/configuraciones observadas. La revisión no sustituye comprobar accesos y recorrer las tres escaleras en Play.", root);
         }
     }
 }
