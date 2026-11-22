@@ -1,6 +1,6 @@
 # Pabellon H - R7_Fidelidad_Fotografica
 
-Base: copia local R6 capturada el 19/11/2026 a las 22:40, HEAD e96563c5. Se corrigen fuentes del generador y Modelo_H.json; regenerar el prefab en Unity es obligatorio. Esta revision incorpora las fotografias reales del usuario del 21/11/2026 y conserva los perfiles horizontales CAD, NPT, ancla y escala.
+La geometria R7 se incorporo en el commit `2ed6850a`, a partir de la base `e96563c5`. La rama incluye las fuentes, Modelo_H.json, las mallas y el prefab construido. Esta revision incorpora las fotografias reales del 21/11/2026 y conserva los perfiles horizontales CAD, NPT, ancla y escala.
 
 Cambios actuales:
 - 36 vanos altos recuperados de 74 trazos CAD agrupados; vidrio, marcos y corte del muro. No son 74 ventanas. Cotas 2.05/2.70 estimadas.
@@ -14,7 +14,7 @@ Cambios actuales:
 - Marcos fijos consolidados por nivel, UV de caras verticales corregidas y tono del concreto ajustado a las fotografias. Las mallas H_ obsoletas se eliminan solo despues de guardar el prefab.
 - Validador de Unity: contrasta vertices y transformaciones de grupos contra el modelo, detecta colliders ausentes y comprueba componentes de puertas. Ejecutar menu 3 fuera de Play.
 
-El instalador prepara datos y codigo; NO copia las mallas serializadas offline ni el prefab de inspeccion. En Unity: Tools / UPCH / Veterinaria / 1 Regenerar prefab del edificio; luego 3 Comprobar referencias y escala en Edit. No reintegrar ni recortar terreno. Scene Campus, terreno, jugadores y otros edificios se conservan.
+Para abrir esta rama, usar la escena `Assets/UPCH/Scenes/Campus.unity` y ejecutar **Tools / UPCH / Veterinaria / 3 Comprobar referencias y escala**, fuera de Play. Regenerar el prefab con el menu 1 solo cuando cambien sus datos de entrada. La integracion y el recorte del terreno existentes se conservan para las actualizaciones del edificio.
 
 Verificacion offline: cierre de mallas Float32, normales, indices/materiales, superficies coincidentes, cobertura declarada de pisos y trayectos con radio 0.25 / altura 1.75 m. Las rutas incluyen la colision de hojas en su pose abierta; dos pasos requieren giro alrededor de una hoja vecina. No se simula la transicion de apertura, CharacterController ni XR. Sintaxis C# no equivale a compilar en Unity. Las vistas externas usan iluminacion de inspeccion y no son capturas de Play.
 
@@ -60,17 +60,19 @@ Jerarquía existente: `Campus UPCH - Base exterior/Pabellon_H_Veterinaria`. Esce
 
 Raíz (-8.720671, 1.17, 144.78705), giro (0,0,0), escala (1,1,1). X/Z provienen de la reserva; Y=1.17 es inferido para que vereda -1.17 coincida con suelo del campus 0. No se cambió el ancla.
 
-NPT locales: -3.55, 0, +3.55, +7.10, +10.70; técnicos -4.50. Estimaciones: losa 0.24; puerta 2.15; antepecho 0.95; cabeza de ventana 2.50; cerramiento de azotea 2.60; viga 0.40; baranda general 1.10; escalera02 0.20 m. Vidrio 12 mm y marcos 45 x 56 mm estimados. Alturas generales editables en Parametros_H.json; espesores y perfiles fijos de preparación requieren reconstrucción Python o edición de mallas. No afirmar que cada detalle fijo se actualiza cambiando un parámetro de Editor.
+NPT locales: -3.55, 0, +3.55, +7.10, +10.70; técnicos -4.50. Estimaciones: losa 0.24; puerta 2.15; antepecho 0.70; cabeza de ventana 2.90; cerramiento de azotea 2.60; viga 0.40; baranda general 1.10; escalera02 0.20 m. Vidrio 12 mm y marcos 45 x 56 mm estimados. Alturas generales editables en Parametros_H.json; espesores y perfiles fijos de preparación requieren reconstrucción Python o edición de mallas. `construir.py` vuelve a escribir Parametros_H.json desde sus parametros: conservar alli las decisiones que deban sobrevivir a una reconstruccion Python. No afirmar que cada detalle fijo se actualiza cambiando un parámetro de Editor.
 
 Azotea y parte de contornos/accesos conservan trazado PDF e inferencias anteriores; la huella posterior de rampa se actualizó desde CAD. No se han convertido todas esas piezas en una reconstrucción exacta desde DWG. El empalme occidental del sótano, cubierta/altura de cerramientos de azotea y extremos de la rampa mantienen observaciones arquitectónicas.
 
 ## Regenerar y verificar
 
-El prefab ya está construido. En Unity 6000.3.10f1: menú **Tools / UPCH / Veterinaria / 1 Regenerar prefab del edificio**. Conserva GUID y elimina únicamente mallas H_ obsoletas después de guardar. El menú 3 debe mostrar `R5_Envolvente_Exterior` en la consola. No volver a recortar el suelo ni integrar para aplicar esta revisión.
+El prefab ya esta construido para Unity 6000.3.10f1. Si se modifica Modelo_H.json o Parametros_H.json, el menu **Tools / UPCH / Veterinaria / 1 Regenerar prefab del edificio** conserva GUID y elimina unicamente mallas H_ obsoletas despues de guardar. El menu 3 debe mostrar `R7_Fidelidad_Fotografica` en la consola. No volver a recortar el suelo ni integrar para aplicar esta revision.
 
 Preparación opcional (Python: instalar requirements.txt, incluida manifold3d; no añade dependencias a Unity): `python Tools/Veterinaria/construir.py --building-only`, conservando Campus y terreno. `verificar.py` inspecciona assets, NPT, referencias, cierre, normales, submallas y caras opacas coplanares en cualquier orientación. `validar_recorridos.py` ensaya puertas +/-0.45 m, tramos, accesos/desembarcos de escalera02, apoyo/intradós por rayos y rutas conservadoras en siete descansos con radio 0.25, altura 1.75 y grilla 0.05 m. No simula CharacterController ni todas las trayectorias por los ambientes.
 
 Consultar Verificacion_Estatica.json, Verificacion_Recorridos.json y la matriz CSV. Las vistas se generan de la geometría y no son capturas de Unity. La superposición automática detecta candidatos, no un porcentaje de fidelidad: también señala símbolos y el perfil de corte reemplazado por la escalera.
+
+`python Tools/Veterinaria/actualizar_reportes.py` actualiza Dimensiones.json y Verificacion_Terreno.json desde las mallas serializadas, con hashes de sus fuentes, sin regenerar geometria. Su ejecucion informa de la generacion de reportes; no equivale a aprobar la topologia o las colisiones. El terreno actual tiene 25984 triangulos y 72 aristas de borde tras soldar vertices coincidentes; su estado es `REVISAR_TOPOLOGIA`. La comprobacion proyectada del recorte no encontro diferencias fuera de una tolerancia de 1 mm. Verificar las uniones y el recorrido en Unity antes de declararlo cerrado. El validador general comprueba que este terreno se conserva respecto a la integracion inicial; no prueba su cierre topologico.
 
 **Unity no está instalado aquí. Compilación, importación, consola, iluminación y recorrido Play NO EJECUTADOS.** La sintaxis C# y los controles geométricos no sustituyen esas pruebas ni certifican el 100% arquitectónico. Mantener pendientes los detalles inferidos y el cotejo individual de cada ambiente/abertura.
 

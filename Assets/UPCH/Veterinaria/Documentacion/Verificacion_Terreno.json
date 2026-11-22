@@ -1,7 +1,15 @@
 {
-  "watertight": true,
+  "asset": "Assets/UPCH/Veterinaria/Generado/Terreno_Recortado_H.asset",
+  "meshSha256": "7981f475f13b141bc5617866100865196f6d408345169f8dde78c74f9beb20c0",
+  "watertight": false,
   "positiveVolume": true,
+  "signedVolume": 4380.301743251358,
+  "windingConsistent": true,
   "thickness": 0.1599999964237213,
-  "triangles": 512,
+  "triangles": 25984,
+  "boundaryEdgesAfterWelding": 72,
+  "nonManifoldEdgesAfterWelding": 0,
+  "status": "REVISAR_TOPOLOGIA",
+  "scope": "Topologia tras soldar vertices coincidentes. El volumen orientado no certifica un solido cerrado. No comprueba colisiones en Unity.",
   "UnityCollisionTest": "NOT_RUN"
 }

@@ -1,5 +1,7 @@
 {
-  "revision": "R3_Escalera02_por_nivel",
+  "revision": "R7_Fidelidad_Fotografica",
+  "sourceModelSha256": "cfca49542df5b35d4e76a08f833339df2225e16f62a1a9bee836f90d3d2c4495",
+  "sourceMeshSetSha256": "15afdd689ae3f63bbd09dce8a301f089fbebc4bd8e0fc255b74acb6e9b3fd606",
   "unityUnitsPerMetre": 1,
   "rootScale": [
     1,
@@ -17,9 +19,9 @@
       "NPT": -3.55,
       "boundsLocal": [
         [
-          -26.3017,
+          -26.301701,
           -4.74,
-          -16.0661
+          -16.066099
         ],
         [
           26.1502,
@@ -27,58 +29,58 @@
           10.0796
         ]
       ],
-      "source": "Limites de mallas, no cadenas acotadas verificadas."
+      "source": "Limites de mallas visibles serializadas; no cadenas acotadas verificadas."
     },
     {
       "level": 1,
       "NPT": 0.0,
       "boundsLocal": [
         [
-          -26.1547,
-          -1.3699999999999999,
+          -26.281401,
+          -1.37,
           -19.0585
         ],
         [
           27.2796,
           4.67,
-          10.0746
+          10.0758
         ]
       ],
-      "source": "Limites de mallas, no cadenas acotadas verificadas."
+      "source": "Limites de mallas visibles serializadas; no cadenas acotadas verificadas."
     },
     {
       "level": 2,
       "NPT": 3.55,
       "boundsLocal": [
         [
-          -26.1547,
-          3.3099999999999996,
-          -10.0965
+          -26.249901,
+          3.31,
+          -10.098
         ],
         [
-          24.4517,
+          27.0333,
           8.22,
-          10.0937
+          10.0963
         ]
       ],
-      "source": "Limites de mallas, no cadenas acotadas verificadas."
+      "source": "Limites de mallas visibles serializadas; no cadenas acotadas verificadas."
     },
     {
       "level": 3,
       "NPT": 7.1,
       "boundsLocal": [
         [
-          -26.1547,
-          6.859999999999999,
+          -26.1367,
+          6.86,
           -10.0965
         ],
         [
           24.4517,
-          11.92,
-          10.0938
+          11.82,
+          10.0957
         ]
       ],
-      "source": "Limites de mallas, no cadenas acotadas verificadas."
+      "source": "Limites de mallas visibles serializadas; no cadenas acotadas verificadas."
     },
     {
       "level": 4,
@@ -86,16 +88,16 @@
       "boundsLocal": [
         [
           -26.1367,
-          10.459999999999999,
+          10.46,
           -10.0965
         ],
         [
           24.4517,
           13.44,
-          10.0923
+          10.0957
         ]
       ],
-      "source": "Limites de mallas, no cadenas acotadas verificadas."
+      "source": "Limites de mallas visibles serializadas; no cadenas acotadas verificadas."
     }
   ]
 }

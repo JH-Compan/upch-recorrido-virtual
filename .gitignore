@@ -107,3 +107,16 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Python preparation tools
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Local review packages and backups
+/UPCH_Cambios_*.zip
+/Limpieza_Veterinaria_*.zip
+/Subir_Veterinaria_Auditoria.zip
+/UPCH_Respaldo_Limpieza_*/
+/Revision_Veterinaria/
