@@ -1,8 +1,49 @@
-# Pabellon H - R7_Fidelidad_Fotografica
+# Pabellon H - R10_Lateral_Icrea_Cierres
 
-La geometria R7 se incorporo en el commit `2ed6850a`, a partir de la base `e96563c5`. La rama incluye las fuentes, Modelo_H.json, las mallas y el prefab construido. Esta revision incorpora las fotografias reales del 21/11/2026 y conserva los perfiles horizontales CAD, NPT, ancla y escala.
+La geometria R7 se incorporo en el commit `2ed6850a`, a partir de la base `e96563c5`. La rama incluye las fuentes, Modelo_H.json, las mallas y el prefab construido. Esta revision incorpora fotografias reales del 21 y 22/11/2026; conserva los perimetros CAD, NPT principales, ancla y escala. La adaptacion de las huellas inferiores se detalla en R9.
 
-Cambios actuales:
+## Cierres y encuentros del lateral (R10)
+
+Revision de las zonas marcadas en las capturas del 22/11/2026:
+
+- A-03: se recompone el tramo recto del muro diagonal a partir de sus dos caras CAD. Se retiran las dos piezas recuperadas con intersecciones de corte y se conserva el limite del espacio de escalera, con encuentros de losas locales.
+- A-02: se elimina el falso volumen triangular de vidrio procedente de window[30]. En el PDF son lineas de proyeccion cruzadas, junto al antepecho macizo; se conserva este antepecho y el muro secundario real identificado como wall[82]. No se borran paredes del plano para disimular los bloques.
+- Se aplica el concreto existente a toda la cara exterior diagonal y sus retornos. El zocalo gris se relaciona con la cota del primer piso, evitando clasificar caras grandes con un corte de material a mitad de un triangulo.
+- La plataforma lateral se extiende hasta el extremo del panel/celosia. Se resta el terreno real antes de construir el pavimento: el umbral ya no tiene dos superficies a -1.17 sobrepuestas. Las coronaciones de cimentacion que caian sobre el suelo existente se dejan enterradas bajo sus 16 cm de espesor.
+- Se incorpora cierre vertical bajo el pavimento y bajo el panel/celosia, hasta el propio arranque de esta. Se respetan los pasos de las escaleras y puertas del sotano.
+- Se conservan las hipotesis verticales R9 y las cotas de los pisos principales. No se modifica Campus.unity, el terreno ni el estado de su recorte.
+
+La validacion adicional comprueba superficie completa de acceso dentro de la huella original del campus, solapes con el terreno y volumen bajo los paneles. El exterior de Site.asset no se contabiliza como hueco de pavimento. Las comparaciones oblicuas no sustituyen la inspeccion en Unity.
+
+## Lateral junto a I-crea (R9)
+
+Se corrige el acceso lateral que aparece junto al vehiculo en las fotografias recibidas el 22/11/2026. El vehiculo solo ubica el acceso y no se modela.
+
+- Piso local y cubierta de la zona tecnica a rasante de vereda -1.17; completa el encuentro con el terreno existente sin volver a recortar ni mover el campus.
+- Entrada abierta de aproximadamente 1.20 m de ancho sobre el eje CAD y dintel a 2.15 m sobre rasante, altura estimada. Zocalo gris continuo bajo el hall y concreto beige en el lateral.
+- Vanos de escalera con ancho CAD 1.20 y cotas verticales 1.10/2.30 estimadas de las fotos; se cierran el dintel ausente y el pequeno empalme de esquina. Se mantienen abiertos los vanos mayores del corredor y el voladizo.
+- El descanso de sotano se lleva a -1.17 para que este acceso quede al ras del suelo. **Es una interpretacion fotografica**, sin corte vertical disponible. Se conservan 19 contrahuellas totales y los limites de los tramos, pero se redistribuyen 12/7 con huellas interpoladas: 0.19833 y 0.16714 m de contrahuella. La propuesta sustituye en este punto la hipotesis uniforme 10/9 de R3; requiere confirmar la geometria real del sotano.
+- Los datos CAD originales de escalera se conservan en eastStairs; lateral_icrea.stair_cases aplica la adaptacion, registrada en reviewedArchitecture.lateralIcrea. Las otras dos conexiones orientales mantienen sus 20 contrahuellas por conexion.
+- Se conserva la geometria aceptada fuera de la seccion en las regeneraciones locales. Para una reconstruccion total desde cero, la seccion dependera tambien de las revisiones previas aceptadas. Unity regenera desde el Modelo_H.json incluido.
+- La comprobacion de recorrido incluye el terreno real del campus, las coronaciones de concreto a rasante y las caras recortadas en altura de muros escalonados. La comprobacion de juntas usa las caras horizontales de cada altura, evitando atribuir a toda una pared el nivel de su coronacion maxima.
+
+El prefab esta incluido. No hay que reintegrar H ni regenerar el terreno. Tras importar en Unity, ejecutar el menu 3 de comprobacion y probar vereda -> puerta lateral -> descanso -> primer piso y sotano, ademas de puertas e ingreso principal.
+
+## Fachada hacia el interior del campus (R8)
+
+Se conserva la geometria de base R7 y se corrigen los siguientes puntos a partir de las plantas y las fotografias del ingreso:
+
+- Los rotulos de vidrio templado de los ambientes se aplican a las divisiones interiores; los dos paños exteriores afectados del ultimo piso recuperan su antepecho, ventana y dintel CAD. No se convierte toda la fachada en vidrio.
+- Se incorporan celosias metalicas oscuras en los paños de ventilacion del frente interior. Las celosias de concreto de la fachada hacia la calle conservan su material y geometria.
+- Se completa el cierre en L sobre el ingreso principal, entre el extremo del muro A-04, el quiebre de losa y el vano lateral. Este empalme es una interpretacion de continuidad cotejada con fotos; no una nueva cota medida.
+- Se conservan el acceso de doble altura, los vanos de los planos, los patios, las escaleras, el ancla, los NPT y los materiales existentes.
+- La reconstruccion Python conserva ahora los componentes de apertura y los colliders convexos de las 161 puertas, igual que el regenerador de Unity.
+
+Las fuentes de esta correccion estan en reviewedArchitecture.campusFacade de CAD_H.json y fachada_campus.py. Las secciones y alturas de celosias y el empalme de esquina siguen siendo estimados y requieren cotejo en Unity. La sintaxis y las comprobaciones estaticas no equivalen a compilar o recorrer el edificio.
+
+## Base R7
+
+Cambios conservados de R7:
 - 36 vanos altos recuperados de 74 trazos CAD agrupados; vidrio, marcos y corte del muro. No son 74 ventanas. Cotas 2.05/2.70 estimadas.
 - Fachada hacia la calle: nueve modulos de celosia horizontal de concreto, sobre la alineacion CAD. La correspondencia entre modulos de A-02/A-03, cotas 0.15/3.05, paso aproximado 0.23 y secciones son interpretaciones de las fotos, no un levantamiento metrico.
 - Modulo central de ventana antes oculto por el muro exterior: se corrige el plano de acristalamiento en segundo/tercer piso a partir de los modulos contiguos y fotos. La forma en L del simbolo ya no se extruye como vidrio interior.
@@ -66,7 +107,7 @@ Azotea y parte de contornos/accesos conservan trazado PDF e inferencias anterior
 
 ## Regenerar y verificar
 
-El prefab ya esta construido para Unity 6000.3.10f1. Si se modifica Modelo_H.json o Parametros_H.json, el menu **Tools / UPCH / Veterinaria / 1 Regenerar prefab del edificio** conserva GUID y elimina unicamente mallas H_ obsoletas despues de guardar. El menu 3 debe mostrar `R7_Fidelidad_Fotografica` en la consola. No volver a recortar el suelo ni integrar para aplicar esta revision.
+El prefab ya esta construido para Unity 6000.3.10f1. Si se modifica Modelo_H.json o Parametros_H.json, el menu **Tools / UPCH / Veterinaria / 1 Regenerar prefab del edificio** conserva GUID y elimina unicamente mallas H_ obsoletas despues de guardar. El menu 3 debe mostrar `R10_Lateral_Icrea_Cierres` en la consola. No volver a recortar el suelo ni integrar para aplicar esta revision.
 
 Preparación opcional (Python: instalar requirements.txt, incluida manifold3d; no añade dependencias a Unity): `python Tools/Veterinaria/construir.py --building-only`, conservando Campus y terreno. `verificar.py` inspecciona assets, NPT, referencias, cierre, normales, submallas y caras opacas coplanares en cualquier orientación. `validar_recorridos.py` ensaya puertas +/-0.45 m, tramos, accesos/desembarcos de escalera02, apoyo/intradós por rayos y rutas conservadoras en siete descansos con radio 0.25, altura 1.75 y grilla 0.05 m. No simula CharacterController ni todas las trayectorias por los ambientes.
 

@@ -43,7 +43,7 @@ def meta(path,kind=None):
  elif path.suffix=='.prefab':tail='PrefabImporter:\n  externalObjects: {}\n'
  elif path.suffix=='.cs':tail='MonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n'
  else:tail='TextScriptImporter:\n  externalObjects: {}\n'
- m.write_text(f'fileFormatVersion: 2\nguid: {g}\n'+tail+'  userData: \n  assetBundleName: \n  assetBundleVariant: \n');return g
+ m.write_text(re.sub(r'[ \t]+$', '', f'fileFormatVersion: 2\nguid: {g}\n'+tail+'  userData: \n  assetBundleName: \n  assetBundleVariant: \n', flags=re.M));return g
 
 def polygons(g):
  g=make_valid(g)
@@ -518,8 +518,9 @@ def east_stair():
  if not EAST_CASES:raise ValueError('Falta trazado de escalera 02 registrado por nivel.')
  group='06_Escaleras_Rampas/Escalera_02_Diagonal'
  for c in EAST_CASES:
-  i=c['fromLevel'];y0=NPT[i];y1=NPT[i+1];rise=(y1-y0)/c['riserCount'];mid=y0+c['upRisers']*rise
+  i=c['fromLevel'];y0=NPT[i];y1=NPT[i+1];rise=(y1-y0)/c['riserCount'];mid=c.get('midHeightOverride',y0+c['upRisers']*rise)
   for name,lines,start in [('tramo_1',c['up'],y0),('tramo_2',c['return'],mid)]:
+   rise=(mid-y0)/c['upRisers'] if name=='tramo_1' else (y1-mid)/(c['riserCount']-c['upRisers'])
    for k,(a,b) in enumerate(zip(lines,lines[1:])):
     q=Polygon([a[0],a[1],b[1],b[0]]);lo=start+k*rise;hi=lo+rise
     fixed_prism(q,max(start,lo-PARAMS['stairSlabThickness']),hi,group,f'Este_{i}_{name}_peldaño_{k+1}','floor',True,i,c['evidence'],c['verticalRule'])
@@ -732,7 +733,7 @@ def repair_float32_topology():
  PARTS[:]=result;EVIDENCE.append({'element':'Topologia serializada float32','collinearBoundaryRepairs':repairs,'separateClosedBodies':splits,'status':'Se conserva la superficie; no se rellenan huecos arquitectonicos'})
 
 
-def resolve_solid_junctions():
+def resolve_solid_junctions(scope_ids=None):
  """Boolean differences give shared faces a single owner without hiding gaps.
 
  The offline preparation uses manifold3d; Unity receives ordinary closed mesh
@@ -786,11 +787,13 @@ def resolve_solid_junctions():
   for j in tree.query(box(q[0,0],q[0,2],q[1,0],q[1,2])):
    j=int(j)
    if j not in done or j in removed:continue
+   if scope_ids is not None and p['id'] not in scope_ids and PARTS[j]['id'] not in scope_ids:continue
    if PARTS[j]['material']=='glass':continue
    if np.all(np.minimum(q[1],bounds[j][1])-np.maximum(q[0],bounds[j][0])>1e-6):near.append(j)
   if near:
    stair_guard=p['material']=='wall' and '/Escalera_03_Oeste' in p['group'] and '_antepecho_' in p['name']
-   body=solid(k);result=mf.Manifold.batch_boolean([body]+[solid(j) if not stair_guard and (p['material']=='floor' or PARTS[j]['material']=='floor') else cutter(j) for j in near],mf.OpType.Subtract)
+   margin=ARCH_REVIEW.get('lateralIcrea') and p['material']=='metal'
+   body=solid(k);result=mf.Manifold.batch_boolean([body]+[solid(j) if scope_ids is None and not margin and not stair_guard and (p['material']=='floor' or PARTS[j]['material']=='floor') else cutter(j) for j in near],mf.OpType.Subtract)
    if result.status()!=mf.Error.NoError:raise ValueError(f"Encuentro no valido: {p['id']} / {result.status()}")
    result=result.simplify(.00002 if p['material']=='floor' else .0001)
    if result.is_empty() or result.volume()<1e-9:removed.append(k);done.add(k);continue
@@ -836,7 +839,7 @@ def write_mesh_asset(path,part):
   for amount in subcounts:
    entry=re.sub(r'firstByte: \d+',f'firstByte: {offset}',block);entry=re.sub(r'indexCount: \d+',f'indexCount: {amount}',entry);blocks.append(entry);offset+=amount*4
   template=template[:a]+'  m_SubMeshes:\n'+''.join(blocks)+template[z:]
- path.write_text(template);meta(path);return uid(path.relative_to(ROOT))
+ path.write_text(re.sub(r'[ \t]+$', '', template, flags=re.M));meta(path);return uid(path.relative_to(ROOT))
 
 
 def read_mesh(path):
@@ -855,10 +858,12 @@ def create_prefab(parts):
    parent=path;path=path+'/'+segment if path else segment
    if path not in tree:
     tree[path]={'go':seq,'tr':seq+1,'children':[],'part':None,'name':segment};seq+=2;tree[parent]['children'].append(path)
-  key=path+'/'+p['id'];tree[key]={'go':seq,'tr':seq+1,'mf':seq+2,'mr':seq+3,'mc':seq+4 if p['collider'] else None,'part':p,'children':[],'name':p['id']+'_'+p['name']};seq+=5;tree[path]['children'].append(key)
+  moving_door=p['role']=='door' and len(p.get('doorHinge',[]))==3
+  key=path+'/'+p['id'];tree[key]={'go':seq,'tr':seq+1,'mf':seq+2,'mr':seq+3,'mc':seq+4 if p['collider'] else None,'door':seq+5 if moving_door else None,'part':p,'children':[],'name':p['id']+'_'+p['name']};seq+=6 if moving_door else 5;tree[path]['children'].append(key)
  out=['%YAML 1.1\n%TAG !u! tag:unity3d.com,2011:\n']
  for path,node in tree.items():
   p=node['part'];components=[node['tr']]+([1003] if path=='' else [])+([node['mf'],node['mr']]+([node['mc']] if p['collider'] else []) if p else [])
+  if node.get('door') is not None:components.append(node['door'])
   go=f'''--- !u!1 &{node['go']}
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +909,28 @@ Transform:
      b=re.sub(r'  m_Materials:\n(?:  - [^\n]+\n)+',materialblock,b)
     if typ==23 and p['hidden']:b=b.replace('m_Enabled: 1','m_Enabled: 0',1)
     if typ==23 and p['material']=='glass':b=b.replace('m_CastShadows: 1','m_CastShadows: 0')
+    if typ==64 and node.get('door') is not None:b=b.replace('m_Convex: 0','m_Convex: 1')
     out.append(b)
+   if node.get('door') is not None:
+    door_guid=meta(BASE/'Runtime/VeterinariaDoor.cs');hinge=p['doorHinge']
+    out.append(f'''--- !u!114 &{node['door']}
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {{fileID: 0}}
+  m_PrefabInstance: {{fileID: 0}}
+  m_PrefabAsset: {{fileID: 0}}
+  m_GameObject: {{fileID: {node['go']}}}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {{fileID: 11500000, guid: {door_guid}, type: 3}}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::UPCH.Veterinaria.VeterinariaDoor
+  hinge: {{x: {hinge[0]}, y: {hinge[1]}, z: {hinge[2]}}}
+  openDegrees: {p['doorOpenDegrees']}
+  approachDistance: 2.5
+  closeDistance: 3.2
+  angularSpeed: 180
+''')
  # Reuse the campus's XR teleportation configuration on the new building.
  import subprocess
  scene_source=(ROOT/'Assets/UPCH/Scenes/Campus.unity').read_text()
@@ -913,7 +939,7 @@ Transform:
  collider_ids=[n['mc'] for n in tree.values() if n.get('part') and n['part']['material']=='floor' and n.get('mc')]
  tele=tele.replace('  m_Colliders:\n  - {fileID: 357576547}','  m_Colliders:\n'+''.join('  - {fileID: '+str(c)+'}\n' for c in collider_ids).rstrip('\n'))
  out.append(tele)
- path=BASE/'Prefabs/Pabellon_H_Veterinaria.prefab';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(''.join(out));meta(path)
+ path=BASE/'Prefabs/Pabellon_H_Veterinaria.prefab';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(re.sub(r'[ \t]+$', '', ''.join(out), flags=re.M));meta(path)
  return tree
 
 
@@ -1011,6 +1037,13 @@ Transform:
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--trace',type=Path,default=Path(__file__).parent/'Fuentes/Trazado_Vectorial.json');ap.add_argument('--doors',type=Path,default=Path(__file__).parent/'Fuentes');ap.add_argument('--no-scene',action='store_true');ap.add_argument('--building-only',action='store_true',help='Regenera solo H; conserva Campus y el terreno ya validado');args=ap.parse_args()
  trace=json.loads(args.trace.read_text())
+ model_path=DATA/'Modelo_H.json';previous_model=json.loads(model_path.read_text()) if model_path.exists() else None
+ if previous_model and previous_model.get('revision') in ('R13_Retoque_Exterior_Icrea','R14_Retoque_Exterior_Icrea','R15_Recorte_Salientes_Icrea','R16_Fachada_Interna_Campus','R17_Correccion_Fachada_Campus','R18_Entrada_Triangular_Vacios_Campus','R19_Revision_Interiores'):
+  print(previous_model['revision']+' local conservada; no se reconstruyen otras secciones.');return
+ local_cad=json.loads((Path(__file__).parent/'Fuentes/CAD_H.json').read_text())
+ if local_cad.get('reviewedArchitecture',{}).get('lateralIcrea',{}).get('localClosure'):
+  from cierre_icrea import build as close_icrea
+  return close_icrea(sys.modules[__name__],args)
  for i in range(5):DOORS.append(json.loads((args.doors/f'doors_{i+1}.json').read_text()))
  cad_path=Path(__file__).parent/'Fuentes/CAD_H.json'
  cad=json.loads(cad_path.read_text()) if cad_path.exists() else None
@@ -1019,7 +1052,8 @@ def main():
   ARCH_REVIEW.update(cad.get('reviewedArchitecture',{}))
   NATIVE_BEAMS[:]=[pair_beam_faces(l.get('beamLines',[])) for l in cad['levels'][:4]]
   merge_doors(sys.modules[__name__],cad)
-  EAST_CASES[:]=cad.get('eastStairs',[])
+  from lateral_icrea import stair_cases
+  EAST_CASES[:]=stair_cases(cad)
   review=cad.get('reviewedArchitecture',{})
   from cad_h import prepare_roof
   prepare_roof(sys.modules[__name__],cad)
@@ -1033,6 +1067,15 @@ def main():
   if ARCH_REVIEW.get('photoRevision'):
    from fotografias_h import street_screens
    street_screens(sys.modules[__name__],cad)
+  if ARCH_REVIEW.get('campusFacade'):
+   from fachada_campus import build as build_campus_facade
+   build_campus_facade(sys.modules[__name__],cad)
+  if ARCH_REVIEW.get('lateralIcrea'):
+   from lateral_icrea import build as build_icrea_side
+   build_icrea_side(sys.modules[__name__],cad)
+   if ARCH_REVIEW['lateralIcrea'].get('finishReview'):
+    from retoques_icrea import ramp_clearance
+    ramp_clearance(sys.modules[__name__],cad)
  excavation=unary_union([p for g in [envelope(0),envelope(1),metric(WEST_HALL.union(WEST_SLAB),2)]+GROUND_PATCHES for p in polygons(g)])
  # The actual excavation model excludes the adjacent campus and follows H only.
  add_mesh(merge_meshes([section(p) for p in polygons(excavation)]),'00_Estructura_General','Excavacion_H_Verificada','floor',False,'fixed',0,-3.57,-3.55,source='A-01/A-02: envolvente completa',note='Malla auxiliar solo Editor; no renderiza ni colisiona.',active=False,hidden=True)
@@ -1084,6 +1127,13 @@ def main():
   key=(p['materialGuid'],p['collider'],p['active'],hashlib.sha256(repr(canonical).encode()).hexdigest())
   if key not in seen:seen.add(key);unique.append(p)
  PARTS[:]=unique
+ if ARCH_REVIEW.get('lateralIcrea'):
+  from lateral_icrea import preserve_other_sections
+  preserve_other_sections(sys.modules[__name__],previous_model)
+  if ARCH_REVIEW['lateralIcrea'].get('finishReview'):
+   from retoques_icrea import align_faces
+   align_faces(sys.modules[__name__],cad)
+   repair_float32_topology()
  from acabados_h import material_assets,apply as apply_finishes
  finishes=material_assets(ROOT,BASE,uid);apply_finishes(PARTS,[envelope(i) for i in range(5)],materialize_vertices,finishes)
  # Planar UV per face orientation, in metres. Vertical faces use elevation.
@@ -1097,7 +1147,12 @@ def main():
  for old in (BASE/'Generado/Mallas').glob('H_*.asset'):
   if old.stem not in active_ids:
    old.unlink();old.with_name(old.name+'.meta').unlink(missing_ok=True)
- for p in PARTS:write_mesh_asset(BASE/'Generado/Mallas'/f"{p['id']}.asset",p)
+ previous_parts={p['id']:p for p in previous_model['items']} if previous_model else {}
+ for p in PARTS:
+  path=BASE/'Generado/Mallas'/f"{p['id']}.asset"
+  # Preserve Unity serialization for source-identical accepted meshes.
+  if ARCH_REVIEW.get('lateralIcrea') and path.exists() and p==previous_parts.get(p['id']):continue
+  write_mesh_asset(path,p)
  create_prefab(PARTS);write_data(trace,excavation)
  if args.building_only:
   previous=BASE/'Documentacion/Construccion.json'

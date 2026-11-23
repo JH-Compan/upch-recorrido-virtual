@@ -15,6 +15,26 @@ def mesh(path):
  raw=bytes.fromhex(re.search(r'm_IndexBuffer: (\w+)',s)[1]);dtype='<u4' if 'm_IndexFormat: 1' in s else '<u2';t=np.frombuffer(raw,dtype=dtype).reshape(-1,3)
  return v,t
 
+def terrain_local(model):
+ """Actual serialized campus ground in the building's local coordinates."""
+ text=(ROOT/'Assets/UPCH/Scenes/Campus.unity').read_text()
+ blocks=re.split(r'(?=^--- !u!)',text,flags=re.M)[1:]
+ ground=next(re.search(r'&(\d+)',s)[1] for s in blocks if s.startswith('--- !u!1 ') and re.search(r'  m_Name: [\"]?Terreno[\"]?\n',s))
+ transforms={re.search(r'&(\d+)',s)[1]:s for s in blocks if s.startswith('--- !u!4 ')}
+ tid=next(k for k,s in transforms.items() if 'm_GameObject: {fileID: '+ground+'}' in s)
+ translation=np.zeros(3)
+ while tid!='0':
+  s=transforms[tid]
+  position=re.search(r'm_LocalPosition: \{x: ([^,]+), y: ([^,]+), z: ([^}]+)',s)
+  rotation=re.search(r'm_LocalRotation: \{x: ([^,]+), y: ([^,]+), z: ([^,]+), w: ([^}]+)',s)
+  scale=re.search(r'm_LocalScale: \{x: ([^,]+), y: ([^,]+), z: ([^}]+)',s)
+  if not np.allclose(list(map(float,rotation.groups())),[0,0,0,1]) or not np.allclose(list(map(float,scale.groups())),[1,1,1]):
+   raise ValueError('La transformacion del terreno cambio; revisar la conversion antes de validar.')
+  translation+=np.array(list(map(float,position.groups())))
+  tid=re.search(r'm_Father: \{fileID: (\d+)\}',s)[1]
+ vertices,faces=mesh(BASE/'Generado/Terreno_Recortado_H.asset')
+ return vertices[:,:3].astype(float)+translation-np.array(model['anchor']),faces
+
 def circulation_vertices(part,vertices):
  """Evaluate the defined open pose, including the actual leaf collision."""
  if part['role']!='door' or 'doorHinge' not in part:return vertices
@@ -56,7 +76,7 @@ class MetalSurfaceIndex:
   return unary_union(gs)
 
 def main():
- model=json.loads((BASE/'Datos/Modelo_H.json').read_text());errors=[];observed=[];summaries=[];hashes={};walls=[];floors=[];support_surfaces=[];junctions=[];metal_triangles=[];metal_ids=[];planes=collections.defaultdict(lambda:collections.defaultdict(list))
+ model=json.loads((BASE/'Datos/Modelo_H.json').read_text());errors=[];observed=[];summaries=[];hashes={};walls=[];floors=[];support_surfaces=[];junctions=[];junction_meshes={};metal_triangles=[];metal_ids=[];planes=collections.defaultdict(lambda:collections.defaultdict(list))
  for p in model['items']:
   path=BASE/'Generado/Mallas'/f"{p['id']}.asset";v,t=mesh(path)
   if not np.isfinite(v).all():errors.append([p['id'],'nonfinite'])
@@ -90,7 +110,8 @@ def main():
    elif p['material']!='floor':walls.append((p['id'],g,float(v[:,1].min()),float(v[:,1].max())))
    elif p['role']=='slab':floors.append((p['level'],g,float(v[:,1].min())))
    if p['material']=='floor' and p['role'] in ['slab','fixed']:support_surfaces.append((p['level'],g,float(v[:,1].max()),p['id']))
-   if p['material'] in ['wall','glass'] and p['role'] in ['wall','sill','doorLintel','windowLintel','fixed']:junctions.append((p['id'],g,float(v[:,1].min()),float(v[:,1].max()),p['level']))
+   if p['material'] in ['wall','glass'] and p['role'] in ['wall','sill','doorLintel','windowLintel','fixed']:
+    junctions.append((p['id'],g,float(v[:,1].min()),float(v[:,1].max()),p['level']));junction_meshes[p['id']]=tris
   if p['role']=='slab':
    npt=model['npt'][p['level']]
    if abs(v[:,1].max()-npt)>.00001:errors.append([p['id'],'NPT'])
@@ -107,7 +128,9 @@ def main():
  old=blocks(source);new=blocks(actual)
  changed=[i for i in old if old[i]!=new.get(i)]
  allowed={357576547,357576549,1237960108,6118289441634658740,1084190064,834378008}
- if set(changed)-allowed:errors.append(['scene','unrelated_changes',sorted(set(changed)-allowed)])
+ scene_hash=model.get('userSceneSha256NormalizedLF')
+ if scene_hash and hashlib.sha256(actual.encode()).hexdigest()!=scene_hash:errors.append(['scene','changed_from_user_snapshot'])
+ if not scene_hash and set(changed)-allowed:errors.append(['scene','unrelated_changes',sorted(set(changed)-allowed)])
  if len(set(new)-set(old))!=2:errors.append(['scene','new_instance_docs'])
  guid=re.search(r'^guid: (\w+)',(BASE/'Prefabs/Pabellon_H_Veterinaria.prefab.meta').read_text(),re.M)[1]
  if actual.count('m_SourcePrefab: {fileID: 100100000, guid: '+guid)!=1:errors.append(['scene','H_prefab_instances'])
@@ -123,7 +146,7 @@ def main():
  preserved={}
  for rel in protected:
   original=subprocess.check_output(['git','show','38a6b895e22e6a94eefedf66065cd0cd7260e70c:'+rel],cwd=ROOT)
-  preserved[rel]=(ROOT/rel).read_bytes()==original
+  preserved[rel]=hashlib.sha256((ROOT/rel).read_text().encode()).hexdigest()==scene_hash if scene_hash and rel.endswith('Campus.unity') else (ROOT/rel).read_bytes()==original
   if not preserved[rel]:errors.append([rel,'modified_outside_building_revision'])
  circulationData=json.loads((BASE/'Documentacion/Puertas_y_Niveles.json').read_text());steps=circulationData['steps']
  circulation=[];metal=MetalSurfaceIndex(metal_triangles,metal_ids)
@@ -159,7 +182,12 @@ def main():
    if i==0:continue
    for kind,relevant in [('base',abs(lo-npt)<.00002),('cabeza',abs(hi-(npt-model['parameters']['slabThickness']))<.00002)]:
     if not relevant:continue
-    missing=g.difference(slab_planes[i].buffer(.002));area=float(missing.area)
+    # A stepped wall can have caps at different heights. Its entire projected
+    # footprint must not be attributed to the highest cap's slab junction.
+    height=npt if kind=='base' else npt-model['parameters']['slabThickness']
+    faces=junction_meshes[ident];at_height=np.all(np.abs(faces[:,:,1]-height)<.00002,axis=1)
+    profile=unary_union([Polygon(t[:,[0,2]]) for t in faces[at_height]])
+    missing=profile.difference(slab_planes[i].buffer(.002));area=float(missing.area)
     junction_checks.append({'asset':ident,'junction':kind,'level':i,'uncoveredArea':area})
     if area>.001:errors.append([ident,kind,i,'encuentro_muro_losa_abierto',area])
  cad=json.loads((ROOT/'Tools/Veterinaria/Fuentes/CAD_H.json').read_text());review=cad.get('reviewedArchitecture',{});entry_area=None

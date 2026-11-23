@@ -1,0 +1,35 @@
+{
+  "revision": "R18_Entrada_Triangular_Vacios_Campus",
+  "changed": [
+    "H_1_Barandas_0001",
+    "H_1_Campus_R17_0011",
+    "H_1_Campus_R17_0012",
+    "H_1_Campus_R17_0013",
+    "H_1_Campus_R17_0014",
+    "H_1_Losas_0001",
+    "H_1_Losas_0007",
+    "H_1_Losas_0008",
+    "H_2_Campus_R17_0003",
+    "H_3_Campus_R17_0006"
+  ],
+  "added": [
+    "H_1_Campus_R18_0001",
+    "H_0_Campus_R18_0002",
+    "H_0_Campus_R18_0003",
+    "H_0_Campus_R18_0004",
+    "H_0_Campus_R18_0005",
+    "H_1_Campus_R18_0006",
+    "H_1_Campus_R18_0007"
+  ],
+  "estimated": "Parapeto +0.78 y espesor 0.15; triangulo enlazado con extremos de huellas y esquina de losa existente. Las cotas verticales de ventilacion son las del modelo CAD previo, estimadas en ausencia de alzado.",
+  "entry": "Peldaños y pasamanos de la escalera principal conservados. Se corrige solo el costado triangular, el cerramiento y su baranda.",
+  "basementWindowsPreserved": [
+    "H_0_Ventanas_Altas_0002",
+    "H_0_Ventanas_Altas_0023",
+    "H_0_Ventanas_Altas_0024",
+    "H_0_Ventanas_Altas_0025"
+  ],
+  "basementGrilles": 4,
+  "centralOpening": "Se retiran los dos paños R17; se conservan remates exteriores de techo y vacios previstos del CAD.",
+  "UnityPlay": "NOT_RUN"
+}

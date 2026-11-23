@@ -70,7 +70,7 @@ def build_sections(b,data,trace):
   W=W.intersection(envelope).difference(b.metric(b.WEST_SLAB,2).buffer(.005))
   if i==0:
    section=W.intersection(Polygon(data['eastStairSectionMask']));W=W.difference(section)
-   case=data['eastStairs'][0];mid=b.NPT[0]+(b.NPT[1]-b.NPT[0])*case['upRisers']/case['riserCount']
+   case=b.EAST_CASES[0];mid=case.get('midHeightOverride',b.NPT[0]+(b.NPT[1]-b.NPT[0])*case['upRisers']/case['riserCount'])
    b.fixed_prism(section,b.NPT[0],mid-b.PARAMS['stairSlabThickness'],b.LEVEL_NAMES[0]+'/Muros_Bajos','Borde_corte_escalera02_bajo_descanso','wall',True,0,'A-01: perfil en C conservado en planta','Clasificacion como borde/cerramiento bajo inferida; coronacion al intrados del descanso calculado, no altura explicita de plano.')
   D=D.intersection(envelope);L=L.intersection(envelope);V=V.intersection(envelope)
   backing=geometry(level.get('windowBacking',[])).difference(W).difference(D)
@@ -83,6 +83,10 @@ def build_sections(b,data,trace):
    glass_indices=[36] if i==2 else [46,47,62,68]
    for tag,indices in [('Divisorios_1_60',low_indices),('Cerramientos_Vidrio',glass_indices)]:
     mask=unary_union([b.metric(Polygon(supplemental[j]['outline'],supplemental[j]['holes']),i) for j in indices]).buffer(.015)
+    if tag=='Cerramientos_Vidrio' and data.get('reviewedArchitecture',{}).get('campusFacade'):
+     # These annotations describe glazed room partitions, not an entirely
+     # glazed exterior. Retain the native sill/window/lintel at the campus edge.
+     mask=mask.difference(box(-22.2,-10.2,21.4,-9.77))
     actual=unary_union([W,D,L,V]).intersection(mask)
     W=W.difference(mask);D=D.difference(mask);L=L.difference(mask);V=V.difference(mask)
     if tag=='Divisorios_1_60':b.fixed_prism(actual,b.NPT[i],b.NPT[i]+1.60,b.LEVEL_NAMES[i]+'/'+tag,'CAD_Divisorios_rotulados_1_60','wall',True,i,f'DWG + PDF/A-0{i+1}/DIVISORIO H=1.60')
