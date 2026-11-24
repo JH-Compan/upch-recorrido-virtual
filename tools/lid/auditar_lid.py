@@ -24,6 +24,8 @@ GUID = 'feddea9206ce8abc5e23031e26161927'
 
 def main():
     reference = json.loads((Path(__file__).parent/'referencia_cad.json').read_text())
+    revision_path = A/'Documentacion/Revision_Accesos_R2.json'
+    clearance_cuts = json.loads(revision_path.read_text())['wall_clearance_cuts'] if revision_path.exists() else []
     prefab = UnityText(A/'Prefabs/Edificio_LID.prefab')
     scene = UnityText(ROOT/'Assets/UPCH/Scenes/Campus.unity')
     guids = asset_guids(ROOT/'Assets')
@@ -90,6 +92,13 @@ def main():
                     polygons.extend(planar.polygons_full)
                 actual = unary_union(polygons)
                 expected = target
+                # The explicit R2 soffit cut retains the native CAD wall footprint
+                # beneath the stair support. Compare the exact removed prism only
+                # at heights intersecting it; do not exempt an entire room/level.
+                if name == 'Sotano' and key == 'walls':
+                    for cut in clearance_cuts:
+                        if cut['bottom_npt'] < height < cut['top_npt']:
+                            expected = expected.difference(shape(cut['plan_polygon']))
                 if name == 'Sotano':
                     expected = expected.difference(exclusion)
                     actual = actual.difference(exclusion)

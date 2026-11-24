@@ -1,3 +1,5 @@
+> Actualización posterior: **LID R2 Accesos y estructura**, documentada en `REVISION_ACCESOS_R2.md`. Los resultados de este documento describen la corrección anterior; R2 añade un recorte local de intradós y del pavimento auxiliar de revisión.
+
 # LID: corrección y validación del 20 de noviembre de 2026
 
 Base revisada: `develop`, commit `98e8d8030f6ea5e9bee3360b28c86395f0abf28e`.

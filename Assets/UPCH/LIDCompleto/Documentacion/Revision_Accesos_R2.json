@@ -1,0 +1,60 @@
+{
+  "revision": "LID_R2_Accesos_Estructura",
+  "base_commit": "5b47012fe5c0c453c0872a78857123d8b4698bf8",
+  "source_hashes": {
+    "pdf_sha256": "60284846faf3e0350f38341fa85dad440a3e3a0cfa6336719501484f3501f7dd",
+    "dwg_sha256": "46a629643083cf4670d3b68985b060c051a8bcfe860f94c14eef1d5ab3831138"
+  },
+  "wall_mesh": "Assets/UPCH/LIDCompleto/Meshes/M_02644.asset",
+  "wall_clearance_cuts": [
+    {
+      "tread": "LID_16426_Interior_Tramo01_Peldano09",
+      "bottom_npt": 1.3800000000000003,
+      "top_npt": 3.2,
+      "plan_polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.49749,
+              24.44999
+            ],
+            [
+              39.49749,
+              25.94941
+            ],
+            [
+              39.22112,
+              25.94941
+            ],
+            [
+              39.22112,
+              24.44999
+            ],
+            [
+              39.49749,
+              24.44999
+            ]
+          ]
+        ]
+      },
+      "removed_volume_m3": 0.3759387179757591
+    }
+  ],
+  "wall_removed_volume_m3": 0.3759192435808103,
+  "review_pavement_mesh": "Assets/UPCH/LIDCompleto/Meshes/M_02643.asset",
+  "review_pavement_relief_m2": 0.15963223145103148,
+  "unchanged": [
+    "All stair transforms and tread meshes",
+    "All windows and doors",
+    "All floor slabs",
+    "Campus scene and Campus terrain",
+    "Prefab serialized IDs and transforms"
+  ],
+  "estimated": [
+    "Exterior grade +1.20",
+    "Stair support depth 0.22 m",
+    "Unspecified opening heights"
+  ],
+  "unity_play_tested": false
+}
