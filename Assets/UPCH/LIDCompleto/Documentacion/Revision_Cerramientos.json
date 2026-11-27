@@ -1,0 +1,6604 @@
+{
+  "horizontalWallSections": [
+    {
+      "level": "Sotano",
+      "relativeHeightM": 0.755,
+      "sourceAreaM2": 183.61067037373317,
+      "sectionAreaM2": 183.6106703737331,
+      "symmetricDifferenceM2": 3.5714812433862404e-13,
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "relativeHeightM": 1.963,
+      "sourceAreaM2": 183.61067037373317,
+      "sectionAreaM2": 183.61067037373314,
+      "symmetricDifferenceM2": 3.5685541685710727e-13,
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "relativeHeightM": 2.718,
+      "sourceAreaM2": 183.61067037373317,
+      "sectionAreaM2": 183.61067028370113,
+      "symmetricDifferenceM2": 9.00324716657886e-08,
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "relativeHeightM": 0.755,
+      "sourceAreaM2": 156.32275678659968,
+      "sectionAreaM2": 156.3227567865939,
+      "symmetricDifferenceM2": 5.893159146628695e-12,
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "relativeHeightM": 1.963,
+      "sourceAreaM2": 156.32275678659968,
+      "sectionAreaM2": 156.32275678659397,
+      "symmetricDifferenceM2": 5.8928740077009465e-12,
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "relativeHeightM": 2.718,
+      "sourceAreaM2": 156.32275678659968,
+      "sectionAreaM2": 156.32275678659397,
+      "symmetricDifferenceM2": 5.892697293135755e-12,
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "relativeHeightM": 0.7549999999999998,
+      "sourceAreaM2": 158.50520021954972,
+      "sectionAreaM2": 158.50520021953787,
+      "symmetricDifferenceM2": 1.2066925296344565e-11,
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "relativeHeightM": 1.9629999999999994,
+      "sourceAreaM2": 158.50520021954972,
+      "sectionAreaM2": 158.50519965768112,
+      "symmetricDifferenceM2": 5.618688165504548e-07,
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "relativeHeightM": 2.717999999999999,
+      "sourceAreaM2": 158.50520021954972,
+      "sectionAreaM2": 158.50519999726484,
+      "symmetricDifferenceM2": 2.2228506659230654e-07,
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "relativeHeightM": 0.7550000000000002,
+      "sourceAreaM2": 154.36010168857803,
+      "sectionAreaM2": 154.36010168856617,
+      "symmetricDifferenceM2": 1.2059518304476008e-11,
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "relativeHeightM": 1.9630000000000007,
+      "sourceAreaM2": 154.36010168857803,
+      "sectionAreaM2": 154.36010112670942,
+      "symmetricDifferenceM2": 5.618688090411858e-07,
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "relativeHeightM": 2.718000000000001,
+      "sourceAreaM2": 154.36010168857803,
+      "sectionAreaM2": 154.36010146629317,
+      "symmetricDifferenceM2": 2.2228505942360426e-07,
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "relativeHeightM": 0.955,
+      "sourceAreaM2": 160.37893806174975,
+      "sectionAreaM2": 160.37893806174375,
+      "symmetricDifferenceM2": 6.187218574414156e-12,
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "relativeHeightM": 2.483,
+      "sourceAreaM2": 160.37893806174975,
+      "sectionAreaM2": 160.37893749988706,
+      "symmetricDifferenceM2": 5.618629378006092e-07,
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "relativeHeightM": 3.4379999999999997,
+      "sourceAreaM2": 160.37893806174975,
+      "sectionAreaM2": 160.37893783947078,
+      "symmetricDifferenceM2": 2.2227918797495702e-07,
+      "ok": true
+    }
+  ],
+  "recoveredGlazing": [
+    {
+      "level": "Sotano",
+      "planX": 64.461995,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.6762300000000039,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00751",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 64.461995,
+      "planY": 0.59978,
+      "sourceSpanM": 0.6762300000000039,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00759",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 61.401335,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00395",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 60.498725,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00563",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 57.399845,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00570",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 57.399845,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00577",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 56.99411,
+      "planY": 20.37499,
+      "sourceSpanM": 1.5582600000000042,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00321",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 56.99411,
+      "planY": 14.22427,
+      "sourceSpanM": 1.5582600000000042,
+      "sourceFaceSeparationM": 0.02351999999999954,
+      "modelId": "LID_00328",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 56.500164999999996,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00648",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 56.500164999999996,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00655",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 54.28626,
+      "planY": 14.22427,
+      "sourceSpanM": 1.4465399999999988,
+      "sourceFaceSeparationM": 0.02351999999999954,
+      "modelId": "LID_00335",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 54.28626,
+      "planY": 20.37499,
+      "sourceSpanM": 1.4465399999999988,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00342",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 53.401285,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00662",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 53.401285,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00669",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 52.498675000000006,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00402",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 52.498675000000006,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00409",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 51.581360000000004,
+      "planY": 20.37499,
+      "sourceSpanM": 1.5641400000000019,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00307",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 51.581360000000004,
+      "planY": 14.22427,
+      "sourceSpanM": 1.5641400000000019,
+      "sourceFaceSeparationM": 0.02351999999999954,
+      "modelId": "LID_00314",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 49.399795,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00416",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 49.399795,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00423",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 48.500114999999994,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00430",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 48.500114999999994,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00437",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 45.398295000000005,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00676",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 45.398295000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00683",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 44.513324999999995,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7291499999999971,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00717",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 44.501565,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00549",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 41.396805,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00556",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 41.423265,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.652709999999999,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00791",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 40.500065,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00584",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 39.838539999999995,
+      "planY": 31.074060000000003,
+      "sourceSpanM": 0.6350600000000028,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_00846",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 38.2597,
+      "planY": 31.074060000000003,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_00839",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 37.398245,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00444",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 36.498575,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00451",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 30.07148,
+      "planY": 32.500145,
+      "sourceSpanM": 1.1993100000000005,
+      "sourceFaceSeparationM": 0.023520000000001318,
+      "modelId": "LID_00372",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 29.045385,
+      "planY": 31.05054,
+      "sourceSpanM": 1.8993099999999998,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_00271",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 28.598485,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00690",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 27.695875,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00511",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 24.596995,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00458",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 23.694375,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00591",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 23.659095,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.6762300000000003,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00767",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 20.595495,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00699",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 20.583735,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7232699999999994,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00742",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 19.698765,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00519",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 19.698765,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00527",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 16.596944999999998,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00600",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 16.596944999999998,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00608",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 15.697265,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00616",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 15.697265,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00624",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 15.14747,
+      "planY": 10.699075,
+      "sourceSpanM": 0.3939699999999995,
+      "sourceFaceSeparationM": 0.023520000000001318,
+      "modelId": "LID_00910",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 13.14525,
+      "planY": 10.699075,
+      "sourceSpanM": 0.3939699999999995,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_00917",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 13.14525,
+      "planY": 4.748285,
+      "sourceSpanM": 0.40573000000000015,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_00867",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 12.595445000000002,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526700000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00467",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 12.595445000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526700000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00474",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 11.710474999999999,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7232700000000012,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00734",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 11.698715,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00632",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 8.596895,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00535",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 8.596895,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00542",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 7.697215,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00481",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 7.697215,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00488",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 5.045235,
+      "planY": 10.704955,
+      "sourceSpanM": 0.40572999999999837,
+      "sourceFaceSeparationM": 0.02353000000000005,
+      "modelId": "LID_00903",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 5.045235,
+      "planY": 4.748285,
+      "sourceSpanM": 0.40573000000000015,
+      "sourceFaceSeparationM": 0.02353000000000005,
+      "modelId": "LID_00876",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 4.5983350000000005,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00495",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 4.5983350000000005,
+      "planY": 0.61742,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00503",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 3.704545,
+      "planY": 0.61742,
+      "sourceSpanM": 0.7291499999999997,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00708",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 3.695725,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00639",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 3.0407149999999996,
+      "planY": 4.748285,
+      "sourceSpanM": 0.40573000000000015,
+      "sourceFaceSeparationM": 0.022250000000000103,
+      "modelId": "LID_00885",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 0.623305,
+      "planY": 0.61742,
+      "sourceSpanM": 0.65859,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_00776",
+      "ok": true
+    },
+    {
+      "level": "Sotano",
+      "planX": 0.620365,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.65271,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_00783",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 64.461995,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.6762300000000039,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03782",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 64.461995,
+      "planY": 0.59978,
+      "sourceSpanM": 0.6762300000000039,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03790",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 61.401335,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03395",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 61.401335,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03402",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 60.501665,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03409",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 60.501665,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03416",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 57.399845,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03558",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 57.399845,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03565",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 56.99411,
+      "planY": 20.37499,
+      "sourceSpanM": 1.5582600000000042,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03279",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 56.99411,
+      "planY": 14.22427,
+      "sourceSpanM": 1.5582600000000042,
+      "sourceFaceSeparationM": 0.02351999999999954,
+      "modelId": "LID_03286",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 56.500164999999996,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03648",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 56.500164999999996,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03655",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 53.401285,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03662",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 53.401285,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03669",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 52.498675000000006,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03423",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 52.498675000000006,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03430",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 51.581360000000004,
+      "planY": 20.37499,
+      "sourceSpanM": 1.5641400000000019,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03257",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 51.581360000000004,
+      "planY": 14.22427,
+      "sourceSpanM": 1.5641400000000019,
+      "sourceFaceSeparationM": 0.02351999999999954,
+      "modelId": "LID_03264",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 49.399795,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03437",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 49.399795,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03444",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 48.503055,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03676",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 48.503055,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03683",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 46.950680000000006,
+      "planY": 24.826320000000003,
+      "sourceSpanM": 0.9526000000000003,
+      "sourceFaceSeparationM": 0.029400000000002535,
+      "modelId": "LID_03380",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 46.950680000000006,
+      "planY": 27.125565,
+      "sourceSpanM": 2.04617,
+      "sourceFaceSeparationM": 0.029400000000002535,
+      "modelId": "LID_03233",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 46.950680000000006,
+      "planY": 29.574605,
+      "sourceSpanM": 1.8522700000000007,
+      "sourceFaceSeparationM": 0.029400000000002535,
+      "modelId": "LID_03242",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 45.398295000000005,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03690",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 45.398295000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03697",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 44.501565,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03544",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 44.501565,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03551",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 41.399745,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03388",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 41.437965000000005,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.6821100000000015,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03775",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 40.946965,
+      "planY": 29.724555000000002,
+      "sourceSpanM": 2.3520900000000005,
+      "sourceFaceSeparationM": 0.029409999999998604,
+      "modelId": "LID_03225",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 40.500065,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03572",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 39.84148,
+      "planY": 31.050539999999998,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_03836",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 38.26852,
+      "planY": 31.050539999999998,
+      "sourceSpanM": 0.6233000000000004,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_03861",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 37.401185,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03704",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 36.498575,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03451",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 28.598485,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03711",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 27.698815,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03720",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 26.83736,
+      "planY": 31.074060000000003,
+      "sourceSpanM": 0.6350600000000028,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_03852",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 25.25852,
+      "planY": 31.074060000000003,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_03843",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 24.596995,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03458",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 23.697315,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03467",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 23.659095,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.6762300000000003,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03798",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 20.598435000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03512",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 20.598435000000002,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03520",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 19.698765,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03528",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 19.698765,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03536",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 18.37277,
+      "planY": 20.37499,
+      "sourceSpanM": 0.6056600000000003,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03877",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 16.596944999999998,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03579",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 16.596944999999998,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03587",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 15.697265,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03595",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 15.697265,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03603",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 13.515699999999999,
+      "planY": 14.22427,
+      "sourceSpanM": 1.5700200000000013,
+      "sourceFaceSeparationM": 0.02351999999999954,
+      "modelId": "LID_03250",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 12.595445000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526700000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03476",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 12.595445000000002,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526700000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03483",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 11.698715,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03611",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 11.698715,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03618",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 8.599834999999999,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03634",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 8.599834999999999,
+      "planY": 0.59978,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03641",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 8.10295,
+      "planY": 14.22427,
+      "sourceSpanM": 1.564140000000001,
+      "sourceFaceSeparationM": 0.02351999999999954,
+      "modelId": "LID_03271",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 7.697215,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03490",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 7.697215,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03497",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 4.604215,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7409099999999995,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03729",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 4.5983350000000005,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03504",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 3.710425,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7409099999999995,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03738",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 3.695725,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03625",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 0.635065,
+      "planY": 33.999480000000005,
+      "sourceSpanM": 0.67035,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_03807",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 0.6262449999999999,
+      "planY": 0.59978,
+      "sourceSpanM": 0.65271,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_03815",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 14.009644999999999,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.029400000000000093,
+      "modelId": "LID_03949",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.029400000000000093,
+      "modelId": "LID_03979",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 17.149684999999998,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_03987",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 18.86965,
+      "sourceSpanM": 0.176400000000001,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_04029",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 17.449575,
+      "sourceSpanM": 0.18229000000000184,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_03931",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_04013",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 15.729610000000001,
+      "sourceSpanM": 0.17639999999999922,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_04047",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 1.4729999999999999,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_03956",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 54.2892,
+      "planY": 17.29963,
+      "sourceSpanM": 6.127200000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_03173",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.627,
+      "planY": 17.149684999999998,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_03996",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.627,
+      "planY": 18.86965,
+      "sourceSpanM": 0.176400000000001,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_04038",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.627,
+      "planY": 17.449575,
+      "sourceSpanM": 0.18229000000000184,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_03940",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.627,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_04021",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.627,
+      "planY": 15.729610000000001,
+      "sourceSpanM": 0.17639999999999922,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_04055",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.627,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_03964",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.62406,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_04005",
+      "ok": true
+    },
+    {
+      "level": "Piso_01",
+      "planX": 63.62406,
+      "planY": 14.009644999999999,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_03972",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 64.464935,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6703499999999991,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06960",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 64.464935,
+      "planY": 0.59978,
+      "sourceSpanM": 0.6703499999999991,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06968",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 61.404275,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06833",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 61.404275,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06840",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 60.501665,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06584",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 60.501665,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06591",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 57.402784999999994,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06598",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 57.402784999999994,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06605",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 57.02902,
+      "planY": 14.22721,
+      "sourceSpanM": 1.5001999999999995,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06448",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 56.500164999999996,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06847",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 56.500164999999996,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06854",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 54.278665000000004,
+      "planY": 14.22721,
+      "sourceSpanM": 2.2011699999999976,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06397",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 54.251155,
+      "planY": 20.37499,
+      "sourceSpanM": 1.5552099999999953,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_06441",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 53.401285,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06861",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 53.401285,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06868",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 52.501615,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06556",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 52.501615,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06563",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 51.53885,
+      "planY": 20.37499,
+      "sourceSpanM": 1.4791200000000018,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_06463",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 51.53885,
+      "planY": 14.22721,
+      "sourceSpanM": 1.4791200000000018,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06470",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 49.399795,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06612",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 49.399795,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06619",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 48.500114999999994,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06626",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 48.500114999999994,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06633",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 45.398295000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06875",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 45.398295000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06882",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 44.501565,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06741",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 44.501565,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06748",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 41.402685000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06640",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 41.437965000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6821100000000015,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06928",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 40.500065,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06755",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 37.401185,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06889",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 32.55,
+      "planY": 31.08582,
+      "sourceSpanM": 8.908539999999999,
+      "sourceFaceSeparationM": 0.017639999999996547,
+      "modelId": "LID_06371",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 36.498575,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06647",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 28.598485,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06896",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 27.698815,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06905",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 24.599935000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06762",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 23.697315,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06654",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 23.659095,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6762300000000003,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06935",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 20.598435000000002,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06709",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 20.598435000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06717",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 19.698765,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06725",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 19.698765,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06733",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 16.596944999999998,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06771",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 16.596944999999998,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06779",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 15.700205,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06663",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 15.700205,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06671",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 13.518640000000001,
+      "planY": 20.37499,
+      "sourceSpanM": 1.56414,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_06434",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 13.515699999999999,
+      "planY": 14.22721,
+      "sourceSpanM": 1.5700200000000013,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06411",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 12.598385,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06570",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 12.598385,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06577",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 11.698715,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06787",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 11.698715,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06794",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 8.599834999999999,
+      "planY": 34.00242,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06819",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 8.599834999999999,
+      "planY": 0.59978,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06826",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 8.10295,
+      "planY": 14.22721,
+      "sourceSpanM": 1.564140000000001,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06418",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 8.10295,
+      "planY": 20.37499,
+      "sourceSpanM": 1.564140000000001,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_06426",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 7.697215,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06679",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 7.697215,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06686",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 4.5983350000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06693",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 4.5983350000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06701",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 3.695725,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06801",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 3.695725,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06810",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 0.632125,
+      "planY": 34.00242,
+      "sourceSpanM": 0.67623,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06944",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 0.632125,
+      "planY": 0.59978,
+      "sourceSpanM": 0.67623,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_06952",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 10.2904,
+      "planY": 20.37499,
+      "sourceSpanM": 1.0113999999999983,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_06549",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 11.3165,
+      "planY": 20.37499,
+      "sourceSpanM": 1.0408000000000008,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_06542",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 10.440345,
+      "planY": 14.22721,
+      "sourceSpanM": 0.7115099999999988,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06921",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 11.166554999999999,
+      "planY": 14.22721,
+      "sourceSpanM": 0.7409100000000013,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_06914",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 1.4729999999999999,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_07171",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 1.4729999999999999,
+      "planY": 18.872590000000002,
+      "sourceSpanM": 0.18228000000000222,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_07137",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 1.4729999999999999,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_07121",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 1.4729999999999999,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_07098",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 1.4729999999999999,
+      "planY": 15.73255,
+      "sourceSpanM": 0.18227999999999867,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_07155",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 1.4729999999999999,
+      "planY": 17.452515,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_07179",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 1.4729999999999999,
+      "planY": 17.152625,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_07187",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 30.01268,
+      "planY": 22.2743,
+      "sourceSpanM": 0.1411200000000008,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_07221",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 35.087320000000005,
+      "planY": 22.2743,
+      "sourceSpanM": 0.1411200000000008,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_07228",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 32.55,
+      "planY": 22.2743,
+      "sourceSpanM": 0.1411200000000008,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_07235",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 31.788510000000002,
+      "planY": 12.342600000000001,
+      "sourceSpanM": 0.11760000000000126,
+      "sourceFaceSeparationM": 0.023520000000001318,
+      "modelId": "LID_07242",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 33.31149,
+      "planY": 12.342600000000001,
+      "sourceSpanM": 0.11760000000000126,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07249",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07129",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 18.872590000000002,
+      "sourceSpanM": 0.18228000000000222,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07146",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07196",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07106",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 14.009644999999999,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07114",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 15.73255,
+      "sourceSpanM": 0.18227999999999867,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07163",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 17.452515,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07204",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "planX": 63.62406,
+      "planY": 17.152625,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_07212",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 64.464935,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6703499999999991,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09884",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 64.464935,
+      "planY": 0.59978,
+      "sourceSpanM": 0.6703499999999991,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09892",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 61.404275,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09771",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 61.404275,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09778",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 60.501665,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09522",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 60.501665,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09529",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 57.402784999999994,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09536",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 57.402784999999994,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09543",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 57.25578,
+      "planY": 20.37499,
+      "sourceSpanM": 1.046680000000002,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_09487",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 57.123475,
+      "planY": 14.22721,
+      "sourceSpanM": 1.3112899999999996,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09480",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 56.500164999999996,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09785",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 56.500164999999996,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09792",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 54.415625000000006,
+      "planY": 14.22721,
+      "sourceSpanM": 2.3050500000000014,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09386",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 54.54793,
+      "planY": 20.37499,
+      "sourceSpanM": 1.9698800000000034,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_09393",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 53.401285,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09799",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 53.401285,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09806",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 52.501615,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09494",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 52.501615,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09501",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 51.581360000000004,
+      "planY": 20.37499,
+      "sourceSpanM": 1.5641400000000019,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_09400",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 51.581360000000004,
+      "planY": 14.22721,
+      "sourceSpanM": 1.5641400000000019,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09407",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 49.399795,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09550",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 49.399795,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09557",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 48.500114999999994,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09564",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 48.500114999999994,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09571",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 45.398295000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09813",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 45.398295000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09820",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 44.501565,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09679",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 44.501565,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09686",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 41.437965000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6821100000000015,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09852",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 41.402685000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09578",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 40.500065,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09693",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 39.84148,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_09914",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 38.2597,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_09921",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 37.401185,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09827",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 36.498575,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09585",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 28.598485,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09834",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 27.698815,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09843",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 26.8403,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_09928",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 25.25852,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_09937",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 24.599935000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09700",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 23.697315,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09592",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 23.659095,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6762300000000003,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09859",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 20.598435000000002,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09647",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 20.598435000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09655",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 19.698765,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09663",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 19.698765,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09671",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 16.596944999999998,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09709",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 16.596944999999998,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09717",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 15.700205,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09601",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 15.700205,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09609",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 12.598385,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09508",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 12.598385,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09515",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 11.698715,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09725",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 11.698715,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09732",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 10.12048,
+      "planY": 14.22721,
+      "sourceSpanM": 3.2534799999999997,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09368",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 10.15911,
+      "planY": 20.37499,
+      "sourceSpanM": 3.17614,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_09377",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 8.599834999999999,
+      "planY": 34.00242,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09757",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 8.599834999999999,
+      "planY": 0.59978,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09764",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 7.697215,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09617",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 7.697215,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09624",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 5.11831,
+      "planY": 14.22721,
+      "sourceSpanM": 4.250539999999999,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09347",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 4.856925,
+      "planY": 20.37499,
+      "sourceSpanM": 3.72777,
+      "sourceFaceSeparationM": 0.023519999999997765,
+      "modelId": "LID_09357",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 4.5983350000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09631",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 4.5983350000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09639",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 3.695725,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09739",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 3.695725,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09748",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 0.632125,
+      "planY": 34.00242,
+      "sourceSpanM": 0.67623,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_09868",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 0.632125,
+      "planY": 0.59978,
+      "sourceSpanM": 0.67623,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_09876",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10089",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 18.872590000000002,
+      "sourceSpanM": 0.18228000000000222,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10055",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10039",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 14.009644999999999,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10009",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10016",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 15.73255,
+      "sourceSpanM": 0.18227999999999867,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10073",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 17.452515,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10097",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 1.4729999999999999,
+      "planY": 17.152625,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_10105",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10047",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 18.872590000000002,
+      "sourceSpanM": 0.18228000000000222,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10064",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10114",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10024",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 14.009644999999999,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10032",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 15.73255,
+      "sourceSpanM": 0.18227999999999867,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10081",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 17.452515,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10122",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 63.62406,
+      "planY": 17.152625,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10130",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 31.788510000000002,
+      "planY": 12.342600000000001,
+      "sourceSpanM": 0.11760000000000126,
+      "sourceFaceSeparationM": 0.023520000000001318,
+      "modelId": "LID_10139",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "planX": 33.31149,
+      "planY": 12.342600000000001,
+      "sourceSpanM": 0.11760000000000126,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_10146",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 64.464935,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6703499999999991,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_13028",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 64.464935,
+      "planY": 0.59978,
+      "sourceSpanM": 0.6703499999999991,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_13036",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 61.404275,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12915",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 61.404275,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12922",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 60.501665,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12666",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 60.501665,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12673",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 57.402784999999994,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12680",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 57.402784999999994,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12687",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 56.500164999999996,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12929",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 56.500164999999996,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12936",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 53.401285,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12943",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 53.401285,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12950",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 52.501615,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12638",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 52.501615,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12645",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 49.399795,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12694",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 49.399795,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12701",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 48.500114999999994,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12708",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 48.500114999999994,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12715",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 45.398295000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12957",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 45.398295000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12964",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 44.501565,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12823",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 44.501565,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999948,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12830",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 41.402685000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12722",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 41.437965000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6821100000000015,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12996",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 40.500065,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000043,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12837",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 39.84148,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_13058",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 38.2597,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_13065",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 37.401185,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12971",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 36.498575,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12729",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 28.598485,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12978",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 27.698815,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999972,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12987",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 26.8403,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_13072",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 25.25852,
+      "planY": 31.07994,
+      "sourceSpanM": 0.6409400000000005,
+      "sourceFaceSeparationM": 0.029399999999998983,
+      "modelId": "LID_13081",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 24.599935000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12844",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 23.697315,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12736",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 23.659095,
+      "planY": 34.00242,
+      "sourceSpanM": 0.6762300000000003,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_13003",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 20.598435000000002,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12791",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 20.598435000000002,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12799",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 19.698765,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12807",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 19.698765,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999984,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12815",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 16.596944999999998,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12853",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 16.596944999999998,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12861",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 15.700205,
+      "planY": 34.00242,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12745",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 15.700205,
+      "planY": 0.59978,
+      "sourceSpanM": 0.752670000000002,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12753",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 12.598385,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12652",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 12.598385,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7585499999999996,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12659",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 11.698715,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12869",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 11.698715,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467900000000007,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12876",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 8.599834999999999,
+      "planY": 34.00242,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12901",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 8.599834999999999,
+      "planY": 0.59978,
+      "sourceSpanM": 0.746789999999999,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12908",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 7.697215,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12761",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 7.697215,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12768",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 4.5983350000000005,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12775",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 4.5983350000000005,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7526699999999993,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12783",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 3.695725,
+      "planY": 0.59978,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_12883",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 3.695725,
+      "planY": 34.00242,
+      "sourceSpanM": 0.7467899999999998,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_12892",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 0.632125,
+      "planY": 0.59978,
+      "sourceSpanM": 0.67623,
+      "sourceFaceSeparationM": 0.023519999999999985,
+      "modelId": "LID_13012",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 0.632125,
+      "planY": 34.00242,
+      "sourceSpanM": 0.67623,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_13020",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 45.40126,
+      "planY": 5.048205,
+      "sourceSpanM": 2.8459799999999973,
+      "sourceFaceSeparationM": 0.023930000000000007,
+      "modelId": "LID_12365",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 28.22215,
+      "planY": 17.30257,
+      "sourceSpanM": 0.5938999999999979,
+      "sourceFaceSeparationM": 0.0176400000000001,
+      "modelId": "LID_13097",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 28.78823,
+      "planY": 22.21624,
+      "sourceSpanM": 1.2850000000000001,
+      "sourceFaceSeparationM": 0.02499999999999858,
+      "modelId": "LID_12477",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 30.13073,
+      "planY": 22.21624,
+      "sourceSpanM": 1.2999999999999972,
+      "sourceFaceSeparationM": 0.02499999999999858,
+      "modelId": "LID_12470",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 31.48073,
+      "planY": 22.21624,
+      "sourceSpanM": 1.3000000000000007,
+      "sourceFaceSeparationM": 0.02499999999999858,
+      "modelId": "LID_12463",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13240",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 18.872590000000002,
+      "sourceSpanM": 0.18228000000000222,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13206",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13190",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 14.009644999999999,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13160",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13167",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 15.73255,
+      "sourceSpanM": 0.18227999999999867,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13224",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 17.452515,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13248",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 1.4729999999999999,
+      "planY": 17.152625,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.017639999999999878,
+      "modelId": "LID_13256",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 20.589615000000002,
+      "sourceSpanM": 0.1822899999999983,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13198",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 18.872590000000002,
+      "sourceSpanM": 0.18228000000000222,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13215",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 19.169545,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13265",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 15.432655,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13175",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 14.009644999999999,
+      "sourceSpanM": 0.18229000000000006,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13183",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 15.73255,
+      "sourceSpanM": 0.18227999999999867,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13232",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 17.452515,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13273",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "planX": 63.62406,
+      "planY": 17.152625,
+      "sourceSpanM": 0.17641000000000062,
+      "sourceFaceSeparationM": 0.02352000000000487,
+      "modelId": "LID_13281",
+      "ok": true
+    }
+  ],
+  "glassCollisions": [
+    {
+      "modelId": "LID_00191",
+      "name": "Vidrio_001",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00202",
+      "name": "Vidrio_002",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00214",
+      "name": "Vidrio_003",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00226",
+      "name": "Vidrio_004",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00238",
+      "name": "Vidrio_005",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00249",
+      "name": "Vidrio_006",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00260",
+      "name": "Vidrio_007",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00271",
+      "name": "Vidrio_008",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00280",
+      "name": "Vidrio_009",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00289",
+      "name": "Vidrio_010",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00298",
+      "name": "Vidrio_011",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00307",
+      "name": "Vidrio_012",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00314",
+      "name": "Vidrio_013",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00321",
+      "name": "Vidrio_014",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00328",
+      "name": "Vidrio_015",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00335",
+      "name": "Vidrio_016",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00342",
+      "name": "Vidrio_017",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00349",
+      "name": "Vidrio_018",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00356",
+      "name": "Vidrio_019",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00363",
+      "name": "Vidrio_020",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00372",
+      "name": "Vidrio_021",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00379",
+      "name": "Vidrio_022",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00386",
+      "name": "Vidrio_023",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00395",
+      "name": "Vidrio_025",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00402",
+      "name": "Vidrio_026",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00409",
+      "name": "Vidrio_027",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00416",
+      "name": "Vidrio_028",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00423",
+      "name": "Vidrio_029",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00430",
+      "name": "Vidrio_030",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00437",
+      "name": "Vidrio_031",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00444",
+      "name": "Vidrio_032",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00451",
+      "name": "Vidrio_033",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00458",
+      "name": "Vidrio_034",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00467",
+      "name": "Vidrio_035",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00474",
+      "name": "Vidrio_036",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00481",
+      "name": "Vidrio_037",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00488",
+      "name": "Vidrio_038",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00495",
+      "name": "Vidrio_039",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00503",
+      "name": "Vidrio_040",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00511",
+      "name": "Vidrio_041",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00519",
+      "name": "Vidrio_042",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00527",
+      "name": "Vidrio_043",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00535",
+      "name": "Vidrio_044",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00542",
+      "name": "Vidrio_045",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00549",
+      "name": "Vidrio_046",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00556",
+      "name": "Vidrio_047",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00563",
+      "name": "Vidrio_048",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00570",
+      "name": "Vidrio_049",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00577",
+      "name": "Vidrio_050",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00584",
+      "name": "Vidrio_051",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00591",
+      "name": "Vidrio_052",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00600",
+      "name": "Vidrio_053",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00608",
+      "name": "Vidrio_054",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00616",
+      "name": "Vidrio_055",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00624",
+      "name": "Vidrio_056",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00632",
+      "name": "Vidrio_057",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00639",
+      "name": "Vidrio_058",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00648",
+      "name": "Vidrio_059",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00655",
+      "name": "Vidrio_060",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00662",
+      "name": "Vidrio_061",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00669",
+      "name": "Vidrio_062",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00676",
+      "name": "Vidrio_063",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00683",
+      "name": "Vidrio_064",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00690",
+      "name": "Vidrio_065",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00699",
+      "name": "Vidrio_066",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00708",
+      "name": "Vidrio_067",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00717",
+      "name": "Vidrio_068",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00725",
+      "name": "Vidrio_024",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00734",
+      "name": "Vidrio_069",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00742",
+      "name": "Vidrio_070",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00751",
+      "name": "Vidrio_076",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00759",
+      "name": "Vidrio_077",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00767",
+      "name": "Vidrio_078",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00776",
+      "name": "Vidrio_079",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00783",
+      "name": "Vidrio_080",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00791",
+      "name": "Vidrio_081",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00799",
+      "name": "Vidrio_071",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00806",
+      "name": "Vidrio_072",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00813",
+      "name": "Vidrio_073",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00821",
+      "name": "Vidrio_074",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00830",
+      "name": "Vidrio_075",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00839",
+      "name": "Vidrio_082",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00846",
+      "name": "Vidrio_085",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00853",
+      "name": "Vidrio_083",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00860",
+      "name": "Vidrio_084",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00867",
+      "name": "Vidrio_087",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00876",
+      "name": "Vidrio_088",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00885",
+      "name": "Vidrio_089",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00894",
+      "name": "Vidrio_086",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00903",
+      "name": "Vidrio_090",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00910",
+      "name": "Vidrio_091",
+      "ok": true
+    },
+    {
+      "modelId": "LID_00917",
+      "name": "Vidrio_092",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03161",
+      "name": "Vidrio_001",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03173",
+      "name": "Vidrio_098",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03185",
+      "name": "Vidrio_002",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03195",
+      "name": "Vidrio_003",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03205",
+      "name": "Vidrio_004",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03215",
+      "name": "Vidrio_005",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03225",
+      "name": "Vidrio_006",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03233",
+      "name": "Vidrio_007",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03242",
+      "name": "Vidrio_008",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03250",
+      "name": "Vidrio_009",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03257",
+      "name": "Vidrio_010",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03264",
+      "name": "Vidrio_011",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03271",
+      "name": "Vidrio_012",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03279",
+      "name": "Vidrio_013",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03286",
+      "name": "Vidrio_014",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03293",
+      "name": "Vidrio_015",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03302",
+      "name": "Vidrio_016",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03311",
+      "name": "Vidrio_017",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03320",
+      "name": "Vidrio_018",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03329",
+      "name": "Vidrio_019",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03336",
+      "name": "Vidrio_020",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03343",
+      "name": "Vidrio_021",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03350",
+      "name": "Vidrio_022",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03357",
+      "name": "Vidrio_023",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03364",
+      "name": "Vidrio_024",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03371",
+      "name": "Vidrio_025",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03380",
+      "name": "Vidrio_026",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03388",
+      "name": "Vidrio_027",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03395",
+      "name": "Vidrio_030",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03402",
+      "name": "Vidrio_031",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03409",
+      "name": "Vidrio_032",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03416",
+      "name": "Vidrio_033",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03423",
+      "name": "Vidrio_034",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03430",
+      "name": "Vidrio_035",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03437",
+      "name": "Vidrio_036",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03444",
+      "name": "Vidrio_037",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03451",
+      "name": "Vidrio_038",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03458",
+      "name": "Vidrio_039",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03467",
+      "name": "Vidrio_040",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03476",
+      "name": "Vidrio_041",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03483",
+      "name": "Vidrio_042",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03490",
+      "name": "Vidrio_043",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03497",
+      "name": "Vidrio_044",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03504",
+      "name": "Vidrio_045",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03512",
+      "name": "Vidrio_046",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03520",
+      "name": "Vidrio_047",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03528",
+      "name": "Vidrio_048",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03536",
+      "name": "Vidrio_049",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03544",
+      "name": "Vidrio_050",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03551",
+      "name": "Vidrio_051",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03558",
+      "name": "Vidrio_054",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03565",
+      "name": "Vidrio_055",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03572",
+      "name": "Vidrio_056",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03579",
+      "name": "Vidrio_057",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03587",
+      "name": "Vidrio_058",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03595",
+      "name": "Vidrio_059",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03603",
+      "name": "Vidrio_060",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03611",
+      "name": "Vidrio_061",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03618",
+      "name": "Vidrio_062",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03625",
+      "name": "Vidrio_063",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03634",
+      "name": "Vidrio_064",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03641",
+      "name": "Vidrio_065",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03648",
+      "name": "Vidrio_066",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03655",
+      "name": "Vidrio_067",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03662",
+      "name": "Vidrio_068",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03669",
+      "name": "Vidrio_069",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03676",
+      "name": "Vidrio_070",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03683",
+      "name": "Vidrio_071",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03690",
+      "name": "Vidrio_072",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03697",
+      "name": "Vidrio_073",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03704",
+      "name": "Vidrio_074",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03711",
+      "name": "Vidrio_075",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03720",
+      "name": "Vidrio_076",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03729",
+      "name": "Vidrio_077",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03738",
+      "name": "Vidrio_078",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03747",
+      "name": "Vidrio_028",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03754",
+      "name": "Vidrio_029",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03761",
+      "name": "Vidrio_052",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03768",
+      "name": "Vidrio_053",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03775",
+      "name": "Vidrio_081",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03782",
+      "name": "Vidrio_082",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03790",
+      "name": "Vidrio_083",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03798",
+      "name": "Vidrio_084",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03807",
+      "name": "Vidrio_085",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03815",
+      "name": "Vidrio_086",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03822",
+      "name": "Vidrio_079",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03829",
+      "name": "Vidrio_080",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03836",
+      "name": "Vidrio_088",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03843",
+      "name": "Vidrio_089",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03852",
+      "name": "Vidrio_091",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03861",
+      "name": "Vidrio_092",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03868",
+      "name": "Vidrio_087",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03877",
+      "name": "Vidrio_097",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03886",
+      "name": "Vidrio_090",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03895",
+      "name": "Vidrio_093",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03904",
+      "name": "Vidrio_094",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03913",
+      "name": "Vidrio_095",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03922",
+      "name": "Vidrio_096",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03931",
+      "name": "Vidrio_099",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03940",
+      "name": "Vidrio_100",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03949",
+      "name": "Vidrio_101",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03956",
+      "name": "Vidrio_102",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03964",
+      "name": "Vidrio_103",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03972",
+      "name": "Vidrio_104",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03979",
+      "name": "Vidrio_105",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03987",
+      "name": "Vidrio_106",
+      "ok": true
+    },
+    {
+      "modelId": "LID_03996",
+      "name": "Vidrio_107",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04005",
+      "name": "Vidrio_108",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04013",
+      "name": "Vidrio_109",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04021",
+      "name": "Vidrio_110",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04029",
+      "name": "Vidrio_111",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04038",
+      "name": "Vidrio_112",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04047",
+      "name": "Vidrio_113",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04055",
+      "name": "Vidrio_114",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04960",
+      "name": "Hoja_Vidrio_Ingreso_10E71B",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04970",
+      "name": "Hoja_Vidrio_Ingreso_10E71C",
+      "ok": true
+    },
+    {
+      "modelId": "LID_04980",
+      "name": "Hoja_Vidrio_Ingreso_10E71D",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06371",
+      "name": "Vidrio_001",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06386",
+      "name": "Vidrio_002",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06397",
+      "name": "Vidrio_003",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06404",
+      "name": "Vidrio_004",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06411",
+      "name": "Vidrio_005",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06418",
+      "name": "Vidrio_006",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06426",
+      "name": "Vidrio_007",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06434",
+      "name": "Vidrio_008",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06441",
+      "name": "Vidrio_009",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06448",
+      "name": "Vidrio_012",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06455",
+      "name": "Vidrio_010",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06463",
+      "name": "Vidrio_013",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06470",
+      "name": "Vidrio_014",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06477",
+      "name": "Vidrio_011",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06485",
+      "name": "Vidrio_015",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06492",
+      "name": "Vidrio_016",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06501",
+      "name": "Vidrio_017",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06508",
+      "name": "Vidrio_018",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06515",
+      "name": "Vidrio_019",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06524",
+      "name": "Vidrio_020",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06533",
+      "name": "Vidrio_021",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06542",
+      "name": "Vidrio_090",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06549",
+      "name": "Vidrio_091",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06556",
+      "name": "Vidrio_022",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06563",
+      "name": "Vidrio_023",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06570",
+      "name": "Vidrio_024",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06577",
+      "name": "Vidrio_025",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06584",
+      "name": "Vidrio_026",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06591",
+      "name": "Vidrio_027",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06598",
+      "name": "Vidrio_028",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06605",
+      "name": "Vidrio_029",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06612",
+      "name": "Vidrio_030",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06619",
+      "name": "Vidrio_031",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06626",
+      "name": "Vidrio_032",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06633",
+      "name": "Vidrio_033",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06640",
+      "name": "Vidrio_034",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06647",
+      "name": "Vidrio_035",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06654",
+      "name": "Vidrio_036",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06663",
+      "name": "Vidrio_037",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06671",
+      "name": "Vidrio_038",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06679",
+      "name": "Vidrio_039",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06686",
+      "name": "Vidrio_040",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06693",
+      "name": "Vidrio_041",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06701",
+      "name": "Vidrio_042",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06709",
+      "name": "Vidrio_043",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06717",
+      "name": "Vidrio_044",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06725",
+      "name": "Vidrio_045",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06733",
+      "name": "Vidrio_046",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06741",
+      "name": "Vidrio_047",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06748",
+      "name": "Vidrio_048",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06755",
+      "name": "Vidrio_049",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06762",
+      "name": "Vidrio_050",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06771",
+      "name": "Vidrio_051",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06779",
+      "name": "Vidrio_052",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06787",
+      "name": "Vidrio_053",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06794",
+      "name": "Vidrio_054",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06801",
+      "name": "Vidrio_055",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06810",
+      "name": "Vidrio_056",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06819",
+      "name": "Vidrio_057",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06826",
+      "name": "Vidrio_058",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06833",
+      "name": "Vidrio_059",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06840",
+      "name": "Vidrio_060",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06847",
+      "name": "Vidrio_061",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06854",
+      "name": "Vidrio_062",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06861",
+      "name": "Vidrio_063",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06868",
+      "name": "Vidrio_064",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06875",
+      "name": "Vidrio_065",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06882",
+      "name": "Vidrio_066",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06889",
+      "name": "Vidrio_067",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06896",
+      "name": "Vidrio_068",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06905",
+      "name": "Vidrio_069",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06914",
+      "name": "Vidrio_092",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06921",
+      "name": "Vidrio_093",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06928",
+      "name": "Vidrio_072",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06935",
+      "name": "Vidrio_073",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06944",
+      "name": "Vidrio_074",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06952",
+      "name": "Vidrio_075",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06960",
+      "name": "Vidrio_076",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06968",
+      "name": "Vidrio_077",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06976",
+      "name": "Vidrio_070",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06983",
+      "name": "Vidrio_071",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06990",
+      "name": "Vidrio_078",
+      "ok": true
+    },
+    {
+      "modelId": "LID_06999",
+      "name": "Vidrio_079",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07008",
+      "name": "Vidrio_080",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07017",
+      "name": "Vidrio_081",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07026",
+      "name": "Vidrio_082",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07035",
+      "name": "Vidrio_083",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07044",
+      "name": "Vidrio_084",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07053",
+      "name": "Vidrio_085",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07062",
+      "name": "Vidrio_086",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07071",
+      "name": "Vidrio_087",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07080",
+      "name": "Vidrio_088",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07089",
+      "name": "Vidrio_089",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07098",
+      "name": "Vidrio_094",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07106",
+      "name": "Vidrio_095",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07114",
+      "name": "Vidrio_096",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07121",
+      "name": "Vidrio_097",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07129",
+      "name": "Vidrio_098",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07137",
+      "name": "Vidrio_099",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07146",
+      "name": "Vidrio_100",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07155",
+      "name": "Vidrio_101",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07163",
+      "name": "Vidrio_102",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07171",
+      "name": "Vidrio_103",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07179",
+      "name": "Vidrio_104",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07187",
+      "name": "Vidrio_105",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07196",
+      "name": "Vidrio_106",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07204",
+      "name": "Vidrio_107",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07212",
+      "name": "Vidrio_108",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07221",
+      "name": "Vidrio_109",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07228",
+      "name": "Vidrio_110",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07235",
+      "name": "Vidrio_111",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07242",
+      "name": "Vidrio_112",
+      "ok": true
+    },
+    {
+      "modelId": "LID_07249",
+      "name": "Vidrio_113",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09347",
+      "name": "Vidrio_001",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09357",
+      "name": "Vidrio_002",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09368",
+      "name": "Vidrio_003",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09377",
+      "name": "Vidrio_004",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09386",
+      "name": "Vidrio_005",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09393",
+      "name": "Vidrio_006",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09400",
+      "name": "Vidrio_007",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09407",
+      "name": "Vidrio_008",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09414",
+      "name": "Vidrio_009",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09422",
+      "name": "Vidrio_010",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09430",
+      "name": "Vidrio_011",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09439",
+      "name": "Vidrio_012",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09446",
+      "name": "Vidrio_013",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09453",
+      "name": "Vidrio_014",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09462",
+      "name": "Vidrio_015",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09471",
+      "name": "Vidrio_016",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09480",
+      "name": "Vidrio_017",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09487",
+      "name": "Vidrio_018",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09494",
+      "name": "Vidrio_019",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09501",
+      "name": "Vidrio_020",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09508",
+      "name": "Vidrio_021",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09515",
+      "name": "Vidrio_022",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09522",
+      "name": "Vidrio_023",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09529",
+      "name": "Vidrio_024",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09536",
+      "name": "Vidrio_025",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09543",
+      "name": "Vidrio_026",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09550",
+      "name": "Vidrio_027",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09557",
+      "name": "Vidrio_028",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09564",
+      "name": "Vidrio_029",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09571",
+      "name": "Vidrio_030",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09578",
+      "name": "Vidrio_031",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09585",
+      "name": "Vidrio_032",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09592",
+      "name": "Vidrio_033",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09601",
+      "name": "Vidrio_034",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09609",
+      "name": "Vidrio_035",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09617",
+      "name": "Vidrio_036",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09624",
+      "name": "Vidrio_037",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09631",
+      "name": "Vidrio_038",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09639",
+      "name": "Vidrio_039",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09647",
+      "name": "Vidrio_040",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09655",
+      "name": "Vidrio_041",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09663",
+      "name": "Vidrio_042",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09671",
+      "name": "Vidrio_043",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09679",
+      "name": "Vidrio_044",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09686",
+      "name": "Vidrio_045",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09693",
+      "name": "Vidrio_046",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09700",
+      "name": "Vidrio_047",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09709",
+      "name": "Vidrio_048",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09717",
+      "name": "Vidrio_049",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09725",
+      "name": "Vidrio_050",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09732",
+      "name": "Vidrio_051",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09739",
+      "name": "Vidrio_052",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09748",
+      "name": "Vidrio_053",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09757",
+      "name": "Vidrio_054",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09764",
+      "name": "Vidrio_055",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09771",
+      "name": "Vidrio_056",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09778",
+      "name": "Vidrio_057",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09785",
+      "name": "Vidrio_058",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09792",
+      "name": "Vidrio_059",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09799",
+      "name": "Vidrio_060",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09806",
+      "name": "Vidrio_061",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09813",
+      "name": "Vidrio_062",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09820",
+      "name": "Vidrio_063",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09827",
+      "name": "Vidrio_064",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09834",
+      "name": "Vidrio_065",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09843",
+      "name": "Vidrio_066",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09852",
+      "name": "Vidrio_069",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09859",
+      "name": "Vidrio_070",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09868",
+      "name": "Vidrio_071",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09876",
+      "name": "Vidrio_072",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09884",
+      "name": "Vidrio_073",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09892",
+      "name": "Vidrio_074",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09900",
+      "name": "Vidrio_067",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09907",
+      "name": "Vidrio_068",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09914",
+      "name": "Vidrio_075",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09921",
+      "name": "Vidrio_076",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09928",
+      "name": "Vidrio_077",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09937",
+      "name": "Vidrio_078",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09946",
+      "name": "Vidrio_079",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09955",
+      "name": "Vidrio_080",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09964",
+      "name": "Vidrio_081",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09973",
+      "name": "Vidrio_082",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09982",
+      "name": "Vidrio_083",
+      "ok": true
+    },
+    {
+      "modelId": "LID_09991",
+      "name": "Vidrio_084",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10000",
+      "name": "Vidrio_085",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10009",
+      "name": "Vidrio_086",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10016",
+      "name": "Vidrio_087",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10024",
+      "name": "Vidrio_088",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10032",
+      "name": "Vidrio_089",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10039",
+      "name": "Vidrio_090",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10047",
+      "name": "Vidrio_091",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10055",
+      "name": "Vidrio_092",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10064",
+      "name": "Vidrio_093",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10073",
+      "name": "Vidrio_094",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10081",
+      "name": "Vidrio_095",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10089",
+      "name": "Vidrio_096",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10097",
+      "name": "Vidrio_097",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10105",
+      "name": "Vidrio_098",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10114",
+      "name": "Vidrio_099",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10122",
+      "name": "Vidrio_100",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10130",
+      "name": "Vidrio_101",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10139",
+      "name": "Vidrio_102",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10146",
+      "name": "Vidrio_103",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10154",
+      "name": "Frente_Vidrio",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10168",
+      "name": "Retorno_Oeste_Vidrio",
+      "ok": true
+    },
+    {
+      "modelId": "LID_10176",
+      "name": "Retorno_Este_Vidrio",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12342",
+      "name": "Vidrio_001",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12353",
+      "name": "Vidrio_002",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12365",
+      "name": "Vidrio_003",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12375",
+      "name": "Vidrio_004",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12384",
+      "name": "Vidrio_005",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12391",
+      "name": "Vidrio_006",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12398",
+      "name": "Vidrio_007",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12405",
+      "name": "Vidrio_008",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12413",
+      "name": "Vidrio_009",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12422",
+      "name": "Vidrio_010",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12431",
+      "name": "Vidrio_011",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12438",
+      "name": "Vidrio_012",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12445",
+      "name": "Vidrio_013",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12454",
+      "name": "Vidrio_014",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12463",
+      "name": "Vidrio_104",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12470",
+      "name": "Vidrio_105",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12477",
+      "name": "Vidrio_106",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12485",
+      "name": "Vidrio_015",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12492",
+      "name": "Vidrio_016",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12500",
+      "name": "Vidrio_017",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12507",
+      "name": "Vidrio_018",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12515",
+      "name": "Vidrio_019",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12522",
+      "name": "Vidrio_020",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12530",
+      "name": "Vidrio_021",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12537",
+      "name": "Vidrio_022",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12545",
+      "name": "Vidrio_023",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12552",
+      "name": "Vidrio_024",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12560",
+      "name": "Vidrio_025",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12568",
+      "name": "Vidrio_026",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12575",
+      "name": "Vidrio_027",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12582",
+      "name": "Vidrio_028",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12589",
+      "name": "Vidrio_029",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12596",
+      "name": "Vidrio_030",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12603",
+      "name": "Vidrio_031",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12610",
+      "name": "Vidrio_032",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12617",
+      "name": "Vidrio_033",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12624",
+      "name": "Vidrio_034",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12631",
+      "name": "Vidrio_035",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12638",
+      "name": "Vidrio_036",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12645",
+      "name": "Vidrio_037",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12652",
+      "name": "Vidrio_038",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12659",
+      "name": "Vidrio_039",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12666",
+      "name": "Vidrio_040",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12673",
+      "name": "Vidrio_041",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12680",
+      "name": "Vidrio_042",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12687",
+      "name": "Vidrio_043",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12694",
+      "name": "Vidrio_044",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12701",
+      "name": "Vidrio_045",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12708",
+      "name": "Vidrio_046",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12715",
+      "name": "Vidrio_047",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12722",
+      "name": "Vidrio_048",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12729",
+      "name": "Vidrio_049",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12736",
+      "name": "Vidrio_050",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12745",
+      "name": "Vidrio_051",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12753",
+      "name": "Vidrio_052",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12761",
+      "name": "Vidrio_053",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12768",
+      "name": "Vidrio_054",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12775",
+      "name": "Vidrio_055",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12783",
+      "name": "Vidrio_056",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12791",
+      "name": "Vidrio_057",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12799",
+      "name": "Vidrio_058",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12807",
+      "name": "Vidrio_059",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12815",
+      "name": "Vidrio_060",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12823",
+      "name": "Vidrio_061",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12830",
+      "name": "Vidrio_062",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12837",
+      "name": "Vidrio_063",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12844",
+      "name": "Vidrio_064",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12853",
+      "name": "Vidrio_065",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12861",
+      "name": "Vidrio_066",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12869",
+      "name": "Vidrio_067",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12876",
+      "name": "Vidrio_068",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12883",
+      "name": "Vidrio_069",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12892",
+      "name": "Vidrio_070",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12901",
+      "name": "Vidrio_071",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12908",
+      "name": "Vidrio_072",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12915",
+      "name": "Vidrio_073",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12922",
+      "name": "Vidrio_074",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12929",
+      "name": "Vidrio_075",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12936",
+      "name": "Vidrio_076",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12943",
+      "name": "Vidrio_077",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12950",
+      "name": "Vidrio_078",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12957",
+      "name": "Vidrio_079",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12964",
+      "name": "Vidrio_080",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12971",
+      "name": "Vidrio_081",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12978",
+      "name": "Vidrio_082",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12987",
+      "name": "Vidrio_083",
+      "ok": true
+    },
+    {
+      "modelId": "LID_12996",
+      "name": "Vidrio_086",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13003",
+      "name": "Vidrio_087",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13012",
+      "name": "Vidrio_088",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13020",
+      "name": "Vidrio_089",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13028",
+      "name": "Vidrio_090",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13036",
+      "name": "Vidrio_091",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13044",
+      "name": "Vidrio_084",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13051",
+      "name": "Vidrio_085",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13058",
+      "name": "Vidrio_092",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13065",
+      "name": "Vidrio_093",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13072",
+      "name": "Vidrio_094",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13081",
+      "name": "Vidrio_095",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13090",
+      "name": "Vidrio_096",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13097",
+      "name": "Vidrio_103",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13106",
+      "name": "Vidrio_097",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13115",
+      "name": "Vidrio_098",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13124",
+      "name": "Vidrio_099",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13133",
+      "name": "Vidrio_100",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13142",
+      "name": "Vidrio_101",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13151",
+      "name": "Vidrio_102",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13160",
+      "name": "Vidrio_107",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13167",
+      "name": "Vidrio_108",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13175",
+      "name": "Vidrio_109",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13183",
+      "name": "Vidrio_110",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13190",
+      "name": "Vidrio_111",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13198",
+      "name": "Vidrio_112",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13206",
+      "name": "Vidrio_113",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13215",
+      "name": "Vidrio_114",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13224",
+      "name": "Vidrio_115",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13232",
+      "name": "Vidrio_116",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13240",
+      "name": "Vidrio_117",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13248",
+      "name": "Vidrio_118",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13256",
+      "name": "Vidrio_119",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13265",
+      "name": "Vidrio_120",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13273",
+      "name": "Vidrio_121",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13281",
+      "name": "Vidrio_122",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13291",
+      "name": "Frente_Vidrio",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13305",
+      "name": "Retorno_Oeste_Vidrio",
+      "ok": true
+    },
+    {
+      "modelId": "LID_13313",
+      "name": "Retorno_Este_Vidrio",
+      "ok": true
+    }
+  ],
+  "northGardens": [
+    {
+      "level": "Piso_02",
+      "part": "Parapeto_Jardin_Norte",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "part": "Sustrato_Jardin_Norte",
+      "ok": true
+    },
+    {
+      "level": "Piso_02",
+      "part": "Baranda_Posterior_Jardin_Pasamanos",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "part": "Parapeto_Jardin_Norte",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "part": "Sustrato_Jardin_Norte",
+      "ok": true
+    },
+    {
+      "level": "Piso_03",
+      "part": "Baranda_Posterior_Jardin_Pasamanos",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "part": "Parapeto_Jardin_Norte",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "part": "Sustrato_Jardin_Norte",
+      "ok": true
+    },
+    {
+      "level": "Piso_04",
+      "part": "Baranda_Posterior_Jardin_Pasamanos",
+      "ok": true
+    }
+  ],
+  "runtimeUnityTested": false
+}

@@ -1,0 +1,1007 @@
+{
+  "meshes": 137,
+  "triangles": 7364,
+  "open_edges": 0,
+  "inverted_solids": 0,
+  "degenerate_faces": 0,
+  "duplicate_faces_within_piece": 0,
+  "tolerance_m": 0.0001,
+  "volume_threshold_m3": 1e-07,
+  "checked_positive_aabb_pairs": 177,
+  "volumetric_intersections": 165,
+  "boolean_failures": 0,
+  "intersections": [
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_00",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 1.266899825481871e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_01",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505773577e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_01",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590887e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_02",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505760533e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_02",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590413e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_03",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505778998e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_03",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590098e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_04",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505780523e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_04",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.348070659258967e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_05",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505777304e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_05",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590064e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_06",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505771544e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_06",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.348070659258991e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_07",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505760533e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_07",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590654e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_08",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.928226250577273e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_08",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590386e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_09",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505774085e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_09",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590372e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_10",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.928226250577722e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_10",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 2.3480706592590223e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_11",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505773662e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_superior_poste_11",
+      "b": "Rampa_R7_baranda_interior_superior_pasamanos_00",
+      "volume_m3": 1.0811708337771996e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_00",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.928226250577019e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_00",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 1.0811708337771566e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_01",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505765446e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_01",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592590237e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_02",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505771798e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_02",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 2.348070659258964e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_03",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505771883e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_03",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592589542e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_04",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505770867e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_04",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592590115e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_05",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505766377e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_05",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592590233e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_06",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.928226250577019e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_06",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 2.348070659259035e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_07",
+      "b": "Rampa_IJ_retorno_inclinado",
+      "volume_m3": 3.978243074404689e-06,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_interior_inferior_poste_07",
+      "b": "Rampa_R7_baranda_interior_inferior_pasamanos_00",
+      "volume_m3": 1.2668998254812354e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_00",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505771597e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_00",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 1.0811708337771044e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_01",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.928226250576697e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_01",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592590017e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_02",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505771007e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_02",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592589386e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_03",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505770809e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_03",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 2.348070659258936e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_04",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505770983e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_04",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592590105e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_05",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505768559e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_05",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 2.34807065925903e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_06",
+      "b": "Rampa_IJ_tramo_inferior",
+      "volume_m3": 1.9282262505770697e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_06",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 2.3480706592590203e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_exterior_inferior_poste_07",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 1.2668998254812235e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_01",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_00",
+      "volume_m3": 2.3178487306831212e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_02",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_01",
+      "volume_m3": 2.3178486948290633e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_03",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_02",
+      "volume_m3": 2.3178487311345829e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_04",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_03",
+      "volume_m3": 2.3178488397534293e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_05",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_04",
+      "volume_m3": 2.3178490209185386e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_06",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_05",
+      "volume_m3": 2.317849275025445e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_07",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_06",
+      "volume_m3": 2.3178496025408484e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_08",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_07",
+      "volume_m3": 2.3178500040840017e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_09",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_08",
+      "volume_m3": 2.3178504803599323e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_10",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_09",
+      "volume_m3": 2.317851032207258e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_11",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_10",
+      "volume_m3": 2.317851660582401e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_12",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_11",
+      "volume_m3": 2.3178523665529303e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_13",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_12",
+      "volume_m3": 2.3178531513190202e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_14",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_13",
+      "volume_m3": 2.3178540161922109e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_15",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_14",
+      "volume_m3": 2.3178549625997557e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_16",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_15",
+      "volume_m3": 2.3178559921114693e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_17",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_16",
+      "volume_m3": 2.3178571063966297e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_18",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_17",
+      "volume_m3": 2.3178583072671464e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_19",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_18",
+      "volume_m3": 2.3178595966328214e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_20",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_19",
+      "volume_m3": 2.3178609765444107e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_21",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_20",
+      "volume_m3": 2.3178624491693621e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_22",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_21",
+      "volume_m3": 2.317864016770107e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_23",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_22",
+      "volume_m3": 2.3178656817003266e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_24",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_23",
+      "volume_m3": 2.3178674464462549e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_25",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_24",
+      "volume_m3": 2.3178693135064932e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_26",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_25",
+      "volume_m3": 2.317871285490507e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_27",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_26",
+      "volume_m3": 2.3178733649536603e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_28",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_27",
+      "volume_m3": 2.317875554469489e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_29",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_28",
+      "volume_m3": 2.317877856422923e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_30",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_29",
+      "volume_m3": 2.317880273038296e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_31",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_30",
+      "volume_m3": 2.317882806051485e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_32",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_31",
+      "volume_m3": 2.3178854565675047e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_33",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_32",
+      "volume_m3": 2.3178882245455798e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_34",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_33",
+      "volume_m3": 2.3178911087049021e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_35",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_34",
+      "volume_m3": 2.317894108290421e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_36",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_35",
+      "volume_m3": 2.31789722164376e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_37",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_36",
+      "volume_m3": 2.3179004447105992e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_38",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_37",
+      "volume_m3": 2.3179037712207198e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_39",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_38",
+      "volume_m3": 2.3179071960546246e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_40",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_39",
+      "volume_m3": 2.317910713039326e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_41",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_40",
+      "volume_m3": 2.3179143139101668e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_42",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_41",
+      "volume_m3": 2.3179179877450673e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_43",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_42",
+      "volume_m3": 2.3179217202281979e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_44",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_43",
+      "volume_m3": 2.3179254925144675e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_45",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_44",
+      "volume_m3": 2.3179292795451157e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_46",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_45",
+      "volume_m3": 2.3179330470673693e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_47",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_46",
+      "volume_m3": 2.3179367458356655e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_48",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_47",
+      "volume_m3": 2.2951761715621065e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_49",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_48",
+      "volume_m3": 2.3179351897221027e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_50",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_49",
+      "volume_m3": 2.3179311408088763e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_51",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_50",
+      "volume_m3": 2.3179270388480275e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_52",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_51",
+      "volume_m3": 2.3179229277762134e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_53",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_52",
+      "volume_m3": 2.3179188387830012e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_54",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_53",
+      "volume_m3": 2.317914794933333e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_55",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_54",
+      "volume_m3": 2.3179108136867659e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_56",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_55",
+      "volume_m3": 2.3179069083387744e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_57",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_56",
+      "volume_m3": 2.3179030890272713e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_58",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_57",
+      "volume_m3": 2.3178993634168707e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_59",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_58",
+      "volume_m3": 2.3178957372444303e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_60",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_59",
+      "volume_m3": 2.3178922164045457e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_61",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_60",
+      "volume_m3": 2.3178888069560262e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_62",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_61",
+      "volume_m3": 2.317885511964866e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_63",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_62",
+      "volume_m3": 2.317882332615856e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_64",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_63",
+      "volume_m3": 2.3178792701462057e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_65",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_64",
+      "volume_m3": 2.317876325588147e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_66",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_65",
+      "volume_m3": 2.317873498507581e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_67",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_66",
+      "volume_m3": 2.3178707875360095e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_68",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_67",
+      "volume_m3": 2.3178681907364185e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_69",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_68",
+      "volume_m3": 2.3178657058275005e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_70",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_69",
+      "volume_m3": 2.3178633303543316e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_71",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_70",
+      "volume_m3": 2.3178610617620122e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_72",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_71",
+      "volume_m3": 2.3178588974891758e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_73",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_72",
+      "volume_m3": 2.3178568349866682e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_74",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_73",
+      "volume_m3": 2.3178548717535713e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_75",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_74",
+      "volume_m3": 2.3178530053967363e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_76",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_75",
+      "volume_m3": 2.3178512336041313e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_77",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_76",
+      "volume_m3": 2.3178495541562666e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_78",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_77",
+      "volume_m3": 2.3178479649643337e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_79",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_78",
+      "volume_m3": 2.3178464640554857e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_80",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_79",
+      "volume_m3": 2.3178450495740148e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_81",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_80",
+      "volume_m3": 2.3178437197802188e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_82",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_81",
+      "volume_m3": 2.3178424730719363e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_83",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_82",
+      "volume_m3": 2.3178413079650383e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_84",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_83",
+      "volume_m3": 2.3178402230977994e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_85",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_84",
+      "volume_m3": 2.3178392172247385e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_86",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_85",
+      "volume_m3": 2.3178382892307919e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_87",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_86",
+      "volume_m3": 2.3178374381282767e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_88",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_87",
+      "volume_m3": 2.3178366630279896e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_89",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_88",
+      "volume_m3": 2.317835963173315e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_90",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_89",
+      "volume_m3": 2.3178353379380853e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_91",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_90",
+      "volume_m3": 2.3178347867935763e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_92",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_91",
+      "volume_m3": 2.317834309332613e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_93",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_92",
+      "volume_m3": 2.3178339052746871e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_94",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_93",
+      "volume_m3": 2.3178335744443824e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_95",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 3.606531850413253e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_95",
+      "b": "Rampa_R7_baranda_exterior_inferior_poste_07",
+      "volume_m3": 1.1370081654468407e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_pasamanos_95",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_94",
+      "volume_m3": 2.3178333167855101e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_00",
+      "b": "Rampa_IJ_tramo_superior",
+      "volume_m3": 1.9282262505773831e-07,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_00",
+      "b": "Rampa_IJ_muro_lateral_foto",
+      "volume_m3": 0.0002932499999999966,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_00",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_00",
+      "volume_m3": 1.2046881307945455e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_01",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_23",
+      "volume_m3": 1.4034627219246521e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_01",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_24",
+      "volume_m3": 9.383953735573505e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_02",
+      "b": "Paso_I_J_tramo_cota_FASPA_recorte_R7_0",
+      "volume_m3": 0.00014489137152981038,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_02",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_47",
+      "volume_m3": 1.4929181717988127e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_02",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_48",
+      "volume_m3": 8.492606943679185e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_03",
+      "b": "Paso_I_J_tramo_cota_FASPA_recorte_R7_0",
+      "volume_m3": 0.00014496098849775267,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_03",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_71",
+      "volume_m3": 1.4033277356092575e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_03",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_72",
+      "volume_m3": 9.3855151012793e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_04",
+      "b": "Rampa_R7_baranda_exterior_inferior_pasamanos_00",
+      "volume_m3": 1.2668998254812235e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_04",
+      "b": "Rampa_R7_baranda_exterior_inferior_poste_07",
+      "volume_m3": 0.0011729999999999861,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Rampa_R7_baranda_retorno_poste_04",
+      "b": "Rampa_R7_baranda_retorno_pasamanos_95",
+      "volume_m3": 1.1370081654468378e-05,
+      "type": "misma_categoria_revisar"
+    }
+  ],
+  "failed_pairs": [],
+  "meaning": "Encuentros reales entre piezas: columnas con muros, pa\u00f1os con marcos, barandas con pelda\u00f1os y juntas. No se han eliminado por booleana global para mantener edici\u00f3n por piezas. Revisar contactos listados, no se declara ausencia de intersecciones."
+}
