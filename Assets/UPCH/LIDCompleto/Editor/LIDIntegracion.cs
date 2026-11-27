@@ -48,10 +48,11 @@ namespace UPCH.LIDCompleto.Editor
         {
             if (EditorApplication.isPlaying) { Debug.LogError("LID: sal del modo Play."); return; }
             var anchor = Selection.activeGameObject;
-            if (anchor == null || anchor.name != "L")
+            if (anchor == null || !(anchor.name == "L" || anchor.name.StartsWith("L -", StringComparison.Ordinal)))
             { Debug.LogError("LID: selecciona el volumen de referencia llamado L en la escena Campus."); return; }
             foreach (var candidate in anchor.scene.GetRootGameObjects())
-                if (candidate.name == "Edificio_LID") { Debug.LogError("LID: ya hay un edificio LID en esta escena."); return; }
+                foreach (var child in candidate.GetComponentsInChildren<Transform>(true))
+                    if (child.name == "Edificio_LID") { Debug.LogError("LID: ya hay un edificio LID en esta escena, incluso dentro de otro objeto. Selecciona la instancia existente."); return; }
             var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(Root + "/Prefabs/Edificio_LID.prefab");
             if (prefab == null) throw new FileNotFoundException("No se encuentra el Prefab del LID.");
             int undo = Undo.GetCurrentGroup(); Undo.SetCurrentGroupName("Integrar LID");
@@ -68,7 +69,8 @@ namespace UPCH.LIDCompleto.Editor
         static Transform FindBuilding()
         {
             foreach (var r in SceneManager.GetActiveScene().GetRootGameObjects())
-                if (r.name == "Edificio_LID") return r.transform;
+                foreach (var child in r.GetComponentsInChildren<Transform>(true))
+                    if (child.name == "Edificio_LID") return child;
             return null;
         }
         static void Validate()
@@ -92,9 +94,64 @@ namespace UPCH.LIDCompleto.Editor
             public V(Vector3 local, Vector3 building, Vector2 uv) { this.local = local; this.building = building; this.uv = uv; }
             public static V Lerp(V a, V b, float t) { return new V(Vector3.Lerp(a.local,b.local,t), Vector3.Lerp(a.building,b.building,t), Vector2.Lerp(a.uv,b.uv,t)); }
         }
+        // Exact rectangular decomposition of the CAD basement/access outline.
         static readonly Rect[] GroundVoids = {
-            Rect.MinMaxRect(-34.4f,-17.55f,34.4f,17.55f),
-            Rect.MinMaxRect(-2.705f,-18.85f,.20f,-17.30f)
+            Rect.MinMaxRect(-8.2529f,-13.89549f,-8.25f,17.305f),
+            Rect.MinMaxRect(0.04998f,-13.89549f,8.24702f,17.305f),
+            Rect.MinMaxRect(-32.25599f,-16.80032f,-31.57976f,17.305f),
+            Rect.MinMaxRect(-29.22767f,-16.80032f,-28.48088f,17.305f),
+            Rect.MinMaxRect(-28.328f,-16.80032f,-27.57533f,17.305f),
+            Rect.MinMaxRect(-25.22912f,-16.80032f,-24.47645f,17.305f),
+            Rect.MinMaxRect(-24.32944f,-16.80032f,-23.57677f,17.305f),
+            Rect.MinMaxRect(-21.22468f,-16.80032f,-20.47789f,17.305f),
+            Rect.MinMaxRect(-20.33089f,-16.80032f,-19.57822f,17.305f),
+            Rect.MinMaxRect(-17.22613f,-16.80032f,-16.47934f,17.305f),
+            Rect.MinMaxRect(-16.32645f,-16.80032f,-15.57966f,17.305f),
+            Rect.MinMaxRect(-13.22757f,-16.80032f,-12.4749f,17.305f),
+            Rect.MinMaxRect(-12.3279f,-16.80032f,-11.58111f,17.305f),
+            Rect.MinMaxRect(-9.22902f,-16.80032f,-8.55279f,17.305f),
+            Rect.MinMaxRect(8.54691f,-16.80032f,9.22314f,17.305f),
+            Rect.MinMaxRect(11.57523f,-16.80032f,12.3279f,17.305f),
+            Rect.MinMaxRect(12.4749f,-16.80032f,13.22169f,17.305f),
+            Rect.MinMaxRect(15.57378f,-16.80032f,16.32645f,17.305f),
+            Rect.MinMaxRect(16.47346f,-16.80032f,17.22613f,17.305f),
+            Rect.MinMaxRect(19.57234f,-16.80032f,20.32501f,17.305f),
+            Rect.MinMaxRect(20.47789f,-16.80032f,21.22468f,17.305f),
+            Rect.MinMaxRect(23.57677f,-16.80032f,24.32356f,17.305f),
+            Rect.MinMaxRect(24.47645f,-16.80032f,25.22324f,17.305f),
+            Rect.MinMaxRect(27.57533f,-16.80032f,28.32212f,17.305f),
+            Rect.MinMaxRect(28.475f,-16.80032f,29.22767f,17.305f),
+            Rect.MinMaxRect(31.57388f,-16.80032f,32.25011f,17.305f),
+            Rect.MinMaxRect(-32.55f,-17.30013955f,-32.25599f,17.305f),
+            Rect.MinMaxRect(-31.57976f,-17.30013955f,-29.22767f,17.305f),
+            Rect.MinMaxRect(-28.48088f,-17.30013955f,-28.328f,17.305f),
+            Rect.MinMaxRect(-27.57533f,-17.30013955f,-25.22912f,17.305f),
+            Rect.MinMaxRect(-24.47645f,-17.30013955f,-24.32944f,17.305f),
+            Rect.MinMaxRect(-23.57677f,-17.30013955f,-21.22468f,17.305f),
+            Rect.MinMaxRect(-20.47789f,-17.30013955f,-20.33089f,17.305f),
+            Rect.MinMaxRect(-19.57822f,-17.30013955f,-17.22613f,17.305f),
+            Rect.MinMaxRect(-16.47934f,-17.30013955f,-16.32645f,17.305f),
+            Rect.MinMaxRect(-15.57966f,-17.30013955f,-13.22757f,17.305f),
+            Rect.MinMaxRect(-12.4749f,-17.30013955f,-12.3279f,17.305f),
+            Rect.MinMaxRect(-11.58111f,-17.30013955f,-9.22902f,17.305f),
+            Rect.MinMaxRect(-8.55279f,-17.30013955f,-8.2529f,17.305f),
+            Rect.MinMaxRect(8.24702f,-17.30013955f,8.54691f,17.305f),
+            Rect.MinMaxRect(9.22314f,-17.30013955f,11.57523f,17.305f),
+            Rect.MinMaxRect(12.3279f,-17.30013955f,12.4749f,17.305f),
+            Rect.MinMaxRect(13.22169f,-17.30013955f,15.57378f,17.305f),
+            Rect.MinMaxRect(16.32645f,-17.30013955f,16.47346f,17.305f),
+            Rect.MinMaxRect(17.22613f,-17.30013955f,19.57234f,17.305f),
+            Rect.MinMaxRect(20.32501f,-17.30013955f,20.47789f,17.305f),
+            Rect.MinMaxRect(21.22468f,-17.30013955f,23.57677f,17.305f),
+            Rect.MinMaxRect(24.32356f,-17.30013955f,24.47645f,17.305f),
+            Rect.MinMaxRect(25.22324f,-17.30013955f,27.57533f,17.305f),
+            Rect.MinMaxRect(28.32212f,-17.30013955f,28.475f,17.305f),
+            Rect.MinMaxRect(29.22767f,-17.30013955f,31.57388f,17.305f),
+            Rect.MinMaxRect(32.25011f,-17.30013955f,32.55f,17.305f),
+            Rect.MinMaxRect(-8.25f,-17.30014f,-2.55496f,17.305f),
+            Rect.MinMaxRect(-2.55496f,-18.69963f,0.04998f,17.305f),
+            Rect.MinMaxRect(-33.87893f,-4.89876f,-32.55f,4.9036f),
+            Rect.MinMaxRect(32.55f,-4.89876f,33.87893f,4.9036f),
         };
         static float Distance(V v,int plane,Rect area)
         {

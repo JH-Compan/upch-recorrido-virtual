@@ -1,0 +1,139 @@
+{
+  "revision": "Terreno_Parque_R1",
+  "meshes": [
+    {
+      "source": "Region5.asset",
+      "faces": 2556,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 5.483897426421736e-06,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Region2.asset",
+      "faces": 608,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 8.0457755302632e-07,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Site_Recorte_LID.asset",
+      "faces": 29220,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 0.0005090175501560085,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Site.asset",
+      "faces": 24352,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 0.00025931200895712436,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Region4.asset",
+      "faces": 616,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 8.439335655446856e-07,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Region6.asset",
+      "faces": 728,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 2.3787026056156208e-07,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Region1.asset",
+      "faces": 716,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 2.0567588734589273e-06,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Region0.asset",
+      "faces": 676,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 4.27316986011117e-07,
+      "old_horizontal_domain_preserved": true
+    },
+    {
+      "source": "Region3.asset",
+      "faces": 752,
+      "closed_after_serialization": true,
+      "footprint_error_m2": 1.160437349989607e-06,
+      "old_horizontal_domain_preserved": true
+    }
+  ],
+  "north_profile_length_m": 9.875000000640284,
+  "north_profile_slope_percent": 7.999999984569653,
+  "north_profile_max_error_m": 1.2220651157690554e-09,
+  "min_npt": -0.34,
+  "max_npt": 0.45,
+  "high_platform_1_40_reserved": true,
+  "buildings_moved": false,
+  "original_assets_changed": false,
+  "scene_changed": false,
+  "UnityPlay": "NOT_RUN",
+  "CSharpCompilation": "NOT_RUN",
+  "physical_ray_samples": 83,
+  "physical_ray_max_height_error_m": 6.246406986099018e-08,
+  "outside_graded_sector_samples": 100,
+  "outside_sector_max_height_change_m": 0.0,
+  "compatible_scene_assignments": [
+    {
+      "object": "Parque central - jardin oriental",
+      "source": "Region5.asset",
+      "compatible": true
+    },
+    {
+      "object": "Parque central - jardin oeste",
+      "source": "Region2.asset",
+      "compatible": true
+    },
+    {
+      "object": "Terreno",
+      "source": "Site_Recorte_LID.asset",
+      "compatible": true
+    },
+    {
+      "object": "Parque central - jardin sureste",
+      "source": "Region4.asset",
+      "compatible": true
+    },
+    {
+      "object": "Parque central - isla",
+      "source": "Region6.asset",
+      "compatible": true
+    },
+    {
+      "object": "Parque central - jardin noreste",
+      "source": "Region1.asset",
+      "compatible": true
+    },
+    {
+      "object": "Parque central - jardin noroeste",
+      "source": "Region0.asset",
+      "compatible": true
+    },
+    {
+      "object": "Parque central - jardin suroeste",
+      "source": "Region3.asset",
+      "compatible": true
+    }
+  ],
+  "surface_slope_percentiles_90_95_99_max": [
+    4.724147452270039,
+    6.133698486828134,
+    8.089279149342298,
+    13.574639431896834
+  ],
+  "unconstrained_slopes_status": "Interpolated candidate; not all seven CAD ramp profiles are reconstructed or certified.",
+  "baseline_scene_prefab_and_source_terrains_byte_identical": true,
+  "errors": [],
+  "assignment_restore_simulation": {
+    "mesh_reference_documents_changed": 9,
+    "other_scene_documents_changed": 0,
+    "restore_byte_identical_documents": true
+  }
+}

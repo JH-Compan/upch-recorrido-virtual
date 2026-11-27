@@ -1,0 +1,107 @@
+{
+  "revision": "LID_Terreno_R3",
+  "base_commit": "ba4dc4cdbaf668856bf9a00fd9869dea78ed3ff9",
+  "ground_only": true,
+  "unchanged": [
+    "Campus.unity",
+    "Edificio_LID.prefab",
+    "Existing terrain meshes",
+    "Stairs, doors, windows, materials and manual overrides"
+  ],
+  "added_plan_area_m2": 21.3276489900054,
+  "work_polygons": [
+    {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            125.81901,
+            133.12089
+          ],
+          [
+            125.81901,
+            146.94982
+          ],
+          [
+            93.91901,
+            146.94982
+          ],
+          [
+            93.91901,
+            133.12089
+          ],
+          [
+            125.81901,
+            133.12089
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            125.81901,
+            65.19196000000001
+          ],
+          [
+            125.81901,
+            84.02089000000001
+          ],
+          [
+            93.91901,
+            84.02089000000001
+          ],
+          [
+            93.91901,
+            65.19196000000001
+          ],
+          [
+            125.81901,
+            65.19196000000001
+          ]
+        ]
+      ]
+    }
+  ],
+  "lower_landing_y": -1.2,
+  "longitudinal_runs_m": [
+    15,
+    15
+  ],
+  "longitudinal_slope_percent": 8,
+  "outer_clear_width_m": 1.5,
+  "transverse_bank_runs_m": {
+    "Oeste": 3.0,
+    "Este": 8.0
+  },
+  "max_transverse_slope_percent": {
+    "Oeste": 40,
+    "Este": 15
+  },
+  "max_combined_analytic_slope_percent": 40,
+  "faces": 32800,
+  "watertight": true,
+  "native_Unity_Play": "NOT_RUN",
+  "exterior_datum_surveyed": false,
+  "serialized_watertight": true,
+  "walkway_samples": 162,
+  "walkway_max_height_error_m": 2.76779695163043e-07,
+  "stair_samples": 38,
+  "covered_stair_samples": 0,
+  "minimum_stair_top_to_ground_m": 0.15888809499682566,
+  "R1_controls_preserved": 83,
+  "outside_work_samples": 419,
+  "outside_work_max_height_delta_m": 2.260571180912052e-06,
+  "outside_work_plan_difference_m2": 0.019613909683587498,
+  "measured_max_combined_slope_percent": 40.004649736824696,
+  "lower_slabs_uncovered": true,
+  "protected_source_files_byte_identical": true,
+  "apply_restore_reference_simulation": "PASS",
+  "entry_samples_ground_or_original_landing": 74,
+  "entry_max_height_error_m": 2.9570072435092243e-07,
+  "errors": [],
+  "exterior_rim_samples": 500,
+  "exterior_rim_max_height_delta_m": 1.7763568394002505e-15
+}
