@@ -1,0 +1,5232 @@
+{
+  "NPT": [
+    -3.55,
+    0.0,
+    3.55,
+    7.1,
+    10.7
+  ],
+  "doors": [
+    [
+      {
+        "hinge": [
+          -17.530790570895988,
+          -2.4512787924068107
+        ],
+        "closed": [
+          -18.482108648914163,
+          -2.4512786797918125
+        ],
+        "opened": [
+          -17.530790683510986,
+          -3.4025968704249863
+        ],
+        "width": 0.9513180780181822,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.951 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9513180780181822,
+        "dimensionHandle": "4681F"
+      },
+      {
+        "hinge": [
+          -10.728674994803896,
+          -0.6512788621596428
+        ],
+        "closed": [
+          -9.528674994804078,
+          -0.6512788409077075
+        ],
+        "opened": [
+          -10.728675016055831,
+          0.5487211378401753
+        ],
+        "width": 1.1999999999998183,
+        "sweep": 93.59262962713252,
+        "score": [
+          0.03517922413229258,
+          0.004652601453990713
+        ],
+        "evidence": "DWG A-01: extremos de cota 1.200 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 1.1999999999998183,
+        "dimensionHandle": "4681D"
+      },
+      {
+        "hinge": [
+          -17.42098291095408,
+          -0.6512788409027053
+        ],
+        "closed": [
+          -18.36942302357693,
+          -0.6512788409027053
+        ],
+        "opened": [
+          -17.42098291095408,
+          0.2971612717201424
+        ],
+        "width": 0.9484401126228477,
+        "sweep": 93.59285041303646,
+        "score": [
+          0.1672756458305876,
+          0.08385630849573367
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.948 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9484401126228477,
+        "dimensionHandle": "4681C"
+      },
+      {
+        "hinge": [
+          -8.578098069427142,
+          -0.6512788621546406
+        ],
+        "closed": [
+          -7.378098069426869,
+          -0.6512788409027053
+        ],
+        "opened": [
+          -8.578098090679077,
+          0.5487211378456323
+        ],
+        "width": 1.200000000000273,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.200 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 1.200000000000273,
+        "dimensionHandle": "4681E"
+      },
+      {
+        "hinge": [
+          -9.504444490818969,
+          -2.452055005049715
+        ],
+        "closed": [
+          -10.504444189550213,
+          -2.451278771154648
+        ],
+        "opened": [
+          -9.505220724714036,
+          -3.4520547037809592
+        ],
+        "width": 1.0000000000008196,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.000 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 1.0000000000008196,
+        "dimensionHandle": "46821"
+      },
+      {
+        "hinge": [
+          -3.6934018906367783,
+          -2.333484947264651
+        ],
+        "closed": [
+          -4.444767396632415,
+          -2.363286260201903
+        ],
+        "opened": [
+          -3.6760292620324435,
+          -1.5817293795248588
+        ],
+        "width": 0.7519562765563811,
+        "sourceHandle": null,
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada"
+      },
+      {
+        "hinge": [
+          -3.6935843230539085,
+          -0.7725832351706661
+        ],
+        "closed": [
+          -4.444411663818361,
+          -0.7428377760145377
+        ],
+        "opened": [
+          -3.6762221191406255,
+          -1.5237989356146908
+        ],
+        "width": 0.7514177105357187,
+        "sweep": 93.5926878064586,
+        "score": [
+          0.09090444268120733,
+          0.8406764960211447
+        ],
+        "evidence": "PDF registrado contra DWG; arco no recuperado como entidad circular. Altura estimada."
+      },
+      {
+        "hinge": [
+          4.287671537460028,
+          -7.746278681696822
+        ],
+        "closed": [
+          3.4876703161057776,
+          -7.746278681696822
+        ],
+        "opened": [
+          4.287671537460028,
+          -8.546279903051072
+        ],
+        "width": 0.8000012213542504,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000012213542504,
+        "dimensionHandle": "5D71A"
+      },
+      {
+        "hinge": [
+          4.287671526823942,
+          -6.9462786816957305
+        ],
+        "closed": [
+          4.287618236877734,
+          -7.746331964623778
+        ],
+        "opened": [
+          5.08772480975199,
+          -6.946331971641939
+        ],
+        "width": 0.8000532847028156,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000532847028156,
+        "dimensionHandle": "5D702"
+      },
+      {
+        "hinge": [
+          4.287671467810014,
+          -6.796086370799685
+        ],
+        "closed": [
+          4.2876714585040645,
+          -6.096085333748761
+        ],
+        "opened": [
+          4.987672504860939,
+          -6.796086361493735
+        ],
+        "width": 0.7000010370509245,
+        "sweep": 93.59303428548549,
+        "score": [
+          0.06357381117079086,
+          0.025557699245879913
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7000010370509245,
+        "dimensionHandle": "5D6EA"
+      },
+      {
+        "hinge": [
+          11.45882550108081,
+          -4.799547734855651
+        ],
+        "closed": [
+          12.408825497423095,
+          -4.799391030866673
+        ],
+        "opened": [
+          11.458982205069788,
+          -5.749547731197936
+        ],
+        "width": 0.9500000092665694,
+        "sweep": 93.59237299868323,
+        "score": [
+          0.09346475151909318,
+          0.029843656412758435
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500000092665694,
+        "dimensionHandle": "46BA3"
+      },
+      {
+        "hinge": [
+          15.005265668675747,
+          -6.884259572034807
+        ],
+        "closed": [
+          15.677129267379769,
+          -7.555898851962638
+        ],
+        "opened": [
+          14.333626388747916,
+          -7.556123170738829
+        ],
+        "width": 0.9500000092660494,
+        "sweep": 93.59252493747974,
+        "score": [
+          0.09639464312947055,
+          0.029648072953093994
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500000092660494,
+        "dimensionHandle": "46BA4"
+      },
+      {
+        "hinge": [
+          17.157663103039795,
+          -4.799547678494719
+        ],
+        "closed": [
+          17.857864095479727,
+          -4.799547678494719
+        ],
+        "opened": [
+          17.157663103039795,
+          -5.49974867093465
+        ],
+        "width": 0.7002009924399317,
+        "sweep": 93.59172440500413,
+        "score": [
+          0.1051466944433832,
+          0.021323418511279613
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7002009924399317,
+        "dimensionHandle": "5D625"
+      },
+      {
+        "hinge": [
+          20.43775479065971,
+          -4.3160031318486745
+        ],
+        "closed": [
+          21.003441079179993,
+          -3.7503168433277096
+        ],
+        "opened": [
+          21.003441079180675,
+          -4.881689420368957
+        ],
+        "width": 0.8000012212743658,
+        "sweep": 93.59288179435957,
+        "score": [
+          0.0782073877104033,
+          0.02366726476373751
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000012212743658,
+        "dimensionHandle": "5EC3B"
+      },
+      {
+        "hinge": [
+          20.45343893171912,
+          1.6011974918492342
+        ],
+        "closed": [
+          20.453440948280786,
+          0.8991063391013085
+        ],
+        "opened": [
+          21.155530084467046,
+          1.6011995084109003
+        ],
+        "width": 0.7020911527508217,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.702 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7020911527508217,
+        "dimensionHandle": "46BA5"
+      },
+      {
+        "hinge": [
+          16.48074856922085,
+          3.644683278952243
+        ],
+        "closed": [
+          16.48074856922085,
+          4.444683278952198
+        ],
+        "opened": [
+          17.280748569220805,
+          3.644683278952243
+        ],
+        "width": 0.7999999999999545,
+        "sweep": 93.59223757257782,
+        "score": [
+          0.6517570823976229,
+          0.025578585137260745
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999999999545,
+        "dimensionHandle": "5EC92"
+      },
+      {
+        "hinge": [
+          -14.154830239147941,
+          5.348721156521378
+        ],
+        "closed": [
+          -13.354829017794145,
+          5.348721156517286
+        ],
+        "opened": [
+          -14.154830239152034,
+          4.548719935167583
+        ],
+        "width": 0.8000012213537957,
+        "sweep": 93.59231625089473,
+        "score": [
+          0.08138555772569413,
+          0.7237170654296872
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000012213537957,
+        "dimensionHandle": "5E9A4"
+      },
+      {
+        "hinge": [
+          -17.24252130381001,
+          5.493144425834316
+        ],
+        "closed": [
+          -16.44252130381028,
+          5.493144401239306
+        ],
+        "opened": [
+          -17.242521279214998,
+          6.293144425834043
+        ],
+        "width": 0.7999999999997275,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999999997275,
+        "dimensionHandle": "5E788"
+      },
+      {
+        "hinge": [
+          -11.008674891987994,
+          -8.115177836320754
+        ],
+        "closed": [
+          -11.008674891988903,
+          -8.915126337499714
+        ],
+        "opened": [
+          -11.808623393166954,
+          -8.115177836319845
+        ],
+        "width": 0.7999485011789602,
+        "sweep": 93.5926396331335,
+        "score": [
+          0.08138728027343944,
+          0.7279521213107643
+        ],
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999485011789602,
+        "dimensionHandle": "5E966"
+      },
+      {
+        "hinge": [
+          -6.8542713868801,
+          -2.4517091642737796
+        ],
+        "closed": [
+          -8.054271430964036,
+          -2.4518658750387203
+        ],
+        "opened": [
+          -6.8541146761151595,
+          -3.6517092083577154
+        ],
+        "width": 1.2000000543165452,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.200 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 1.2000000543165452,
+        "dimensionHandle": "46822"
+      },
+      {
+        "hinge": [
+          -20.304636755156935,
+          -2.45127879240772
+        ],
+        "closed": [
+          -21.30463675586998,
+          -2.451278771155785
+        ],
+        "opened": [
+          -20.30463677640887,
+          -3.451278793120764
+        ],
+        "width": 1.000000000713044,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.000 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 1.000000000713044,
+        "dimensionHandle": "46820"
+      },
+      {
+        "hinge": [
+          16.740195576023325,
+          -2.47185660121454
+        ],
+        "closed": [
+          16.71246516848214,
+          -1.7727040255442716
+        ],
+        "opened": [
+          17.439711108350366,
+          -2.4880219840497375
+        ],
+        "width": 0.6997022935284103,
+        "sourceHandle": null,
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada"
+      },
+      {
+        "hinge": [
+          5.941484600738214,
+          -1.670047425209157
+        ],
+        "closed": [
+          5.918939403618708,
+          -0.6945267713758643
+        ],
+        "opened": [
+          6.916501252577042,
+          -1.708676755099825
+        ],
+        "width": 0.9757832932858741,
+        "sweep": 93.59274692743661,
+        "score": [
+          0.7424232449001735,
+          0.042593438042533904
+        ],
+        "evidence": "PDF registrado contra DWG; arco no recuperado como entidad circular. Altura estimada."
+      },
+      {
+        "hinge": [
+          -21.747521299465916,
+          3.3977596023441947
+        ],
+        "closed": [
+          -21.747521299465916,
+          2.7988390923342195
+        ],
+        "opened": [
+          -21.14860078945594,
+          3.3977596023441947
+        ],
+        "width": 0.5989205100099753,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.599 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.5989205100099753,
+        "dimensionHandle": "5E84D"
+      },
+      {
+        "hinge": [
+          -20.447521287500876,
+          6.243144399245239
+        ],
+        "closed": [
+          -20.447521287500876,
+          5.643144372130337
+        ],
+        "opened": [
+          -19.847521260385975,
+          6.243144399245239
+        ],
+        "width": 0.600000027114902,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.600 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.600000027114902,
+        "dimensionHandle": "5E805"
+      },
+      {
+        "hinge": [
+          -1.4613122069426936,
+          -0.5819217137575379
+        ],
+        "closed": [
+          -1.4281141468291025,
+          -1.4189276969541424
+        ],
+        "opened": [
+          -2.298752711036741,
+          -0.562568956717314
+        ],
+        "width": 0.8376640896577484,
+        "sourceHandle": null,
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada",
+        "nativeOnly": true
+      },
+      {
+        "hinge": [
+          -0.708001698183125,
+          -4.79939133771677
+        ],
+        "closed": [
+          -1.4080017253336337,
+          -4.799469693098786
+        ],
+        "opened": [
+          -0.7079233428011094,
+          -5.499391364867279
+        ],
+        "width": 0.7000000315359127,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4000000630718255,
+        "dimensionHandle": "46823"
+      },
+      {
+        "hinge": [
+          -2.1080017524841423,
+          -4.799548048480801
+        ],
+        "closed": [
+          -1.4080017253336337,
+          -4.799469693098786
+        ],
+        "opened": [
+          -2.1079233971021267,
+          -5.49954807563131
+        ],
+        "width": 0.7000000315359127,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4000000630718255,
+        "dimensionHandle": "46823"
+      },
+      {
+        "hinge": [
+          11.084402381268774,
+          -2.449355426940656
+        ],
+        "closed": [
+          10.384402381268956,
+          -2.4493554141737377
+        ],
+        "opened": [
+          11.084402368501856,
+          -3.149355426940474
+        ],
+        "width": 0.6999999999998182,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.3999999999996364,
+        "dimensionHandle": "466A8"
+      },
+      {
+        "hinge": [
+          9.684402381269138,
+          -2.4493554014068195
+        ],
+        "closed": [
+          10.384402381268956,
+          -2.4493554141737377
+        ],
+        "opened": [
+          9.68440236850222,
+          -3.1493554014066376
+        ],
+        "width": 0.6999999999998182,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.3999999999996364,
+        "dimensionHandle": "466A8"
+      },
+      {
+        "hinge": [
+          3.363248401637975,
+          -4.79939133771677
+        ],
+        "closed": [
+          2.663248374487466,
+          -4.799469693098786
+        ],
+        "opened": [
+          3.3633267570199905,
+          -5.499391364867279
+        ],
+        "width": 0.7000000315359127,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4000000630718255,
+        "dimensionHandle": "46824"
+      },
+      {
+        "hinge": [
+          1.9632483473369575,
+          -4.799548048480801
+        ],
+        "closed": [
+          2.663248374487466,
+          -4.799469693098786
+        ],
+        "opened": [
+          1.9633267027189731,
+          -5.49954807563131
+        ],
+        "width": 0.7000000315359127,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4000000630718255,
+        "dimensionHandle": "46824"
+      },
+      {
+        "hinge": [
+          9.309592599274765,
+          -4.799391072069739
+        ],
+        "closed": [
+          8.609592572124257,
+          -4.799469427452209
+        ],
+        "opened": [
+          9.309670954657236,
+          -5.499391099220247
+        ],
+        "width": 0.7000000315359127,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4000000630718255,
+        "dimensionHandle": "46825"
+      },
+      {
+        "hinge": [
+          7.909592544973748,
+          -4.799547782834679
+        ],
+        "closed": [
+          8.609592572124257,
+          -4.799469427452209
+        ],
+        "opened": [
+          7.909670900356218,
+          -5.499547809985188
+        ],
+        "width": 0.7000000315359127,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4000000630718255,
+        "dimensionHandle": "46825"
+      },
+      {
+        "hinge": [
+          13.30767177238613,
+          -11.5455094120598
+        ],
+        "closed": [
+          13.30767177238613,
+          -10.942617336223748
+        ],
+        "opened": [
+          12.704779696550077,
+          -11.5455094120598
+        ],
+        "width": 0.6028920758360528,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.603 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.6028920758360528,
+        "dimensionHandle": "5EB75"
+      },
+      {
+        "hinge": [
+          15.401902564836746,
+          -9.328586259997792
+        ],
+        "closed": [
+          15.826166658363036,
+          -9.7528503422418
+        ],
+        "opened": [
+          15.826166647080754,
+          -8.904322166471502
+        ],
+        "width": 0.6000000271150284,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.600 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.6000000271150284,
+        "dimensionHandle": "5EBB7"
+      },
+      {
+        "hinge": [
+          12.296518540427769,
+          -8.645317055937767
+        ],
+        "closed": [
+          11.696518513314004,
+          -8.645317055937767
+        ],
+        "opened": [
+          12.296518540427769,
+          -9.245317083051532
+        ],
+        "width": 0.6000000271137651,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.600 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.6000000271137651,
+        "dimensionHandle": "5EB43"
+      },
+      {
+        "hinge": [
+          17.97090826582098,
+          -7.86820694431367
+        ],
+        "closed": [
+          17.475875645536007,
+          -8.363158658958696
+        ],
+        "opened": [
+          18.465859980466007,
+          -8.363239564598643
+        ],
+        "width": 0.700024638835133,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.400049277670266,
+        "dimensionHandle": "467A3"
+      },
+      {
+        "hinge": [
+          16.980843025251033,
+          -8.858110373603722
+        ],
+        "closed": [
+          17.475875645536007,
+          -8.363158658958696
+        ],
+        "opened": [
+          17.47579473989606,
+          -9.353142993888696
+        ],
+        "width": 0.700024638835133,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.400049277670266,
+        "dimensionHandle": "467A3"
+      },
+      {
+        "hinge": [
+          16.48074856921994,
+          1.298721646488275
+        ],
+        "closed": [
+          16.443729312759842,
+          0.598721633721766
+        ],
+        "opened": [
+          17.18074858198645,
+          1.2617023900281765
+        ],
+        "width": 0.7009782045270532,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.402 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4019564090541063,
+        "dimensionHandle": "46BA0"
+      },
+      {
+        "hinge": [
+          16.406710056299744,
+          -0.1012783790447429
+        ],
+        "closed": [
+          16.443729312759842,
+          0.598721633721766
+        ],
+        "opened": [
+          17.106710069066253,
+          -0.1382976355048413
+        ],
+        "width": 0.7009782045270532,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.402 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4019564090541063,
+        "dimensionHandle": "46BA0"
+      },
+      {
+        "hinge": [
+          -18.47252126622925,
+          5.493144401239306
+        ],
+        "closed": [
+          -17.77252130381021,
+          5.493144401239306
+        ],
+        "opened": [
+          -18.47252126622925,
+          6.193144363658348
+        ],
+        "width": 0.6999999624190423,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.6999999624190423,
+        "dimensionHandle": "5E770"
+      },
+      {
+        "hinge": [
+          -10.528674936011157,
+          -7.295125116749659
+        ],
+        "closed": [
+          -10.528674936011157,
+          -6.495123895395636
+        ],
+        "opened": [
+          -11.32867615736518,
+          -7.295125116749659
+        ],
+        "width": 0.8000012213540231,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.8000012213540231,
+        "dimensionHandle": "5E97E"
+      },
+      {
+        "hinge": [
+          -5.641307633752149,
+          6.711088907421299
+        ],
+        "closed": [
+          -6.340411671098082,
+          6.74649317904084
+        ],
+        "opened": [
+          -5.67671190537169,
+          6.011984870075366
+        ],
+        "width": 0.6999999410587786,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.3999998821175572,
+        "dimensionHandle": "46826"
+      },
+      {
+        "hinge": [
+          -7.039515708444014,
+          6.781897450660381
+        ],
+        "closed": [
+          -6.340411671098082,
+          6.74649317904084
+        ],
+        "opened": [
+          -7.074919980063555,
+          6.082793413314448
+        ],
+        "width": 0.6999999410587786,
+        "sourceHandle": null,
+        "evidence": "DWG A-01: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.3999998821175572,
+        "dimensionHandle": "46826"
+      },
+      {
+        "hinge": [
+          0.8889999999999993,
+          -2.5251833333333327
+        ],
+        "closed": [
+          1.5875000000000004,
+          -2.5251833333333327
+        ],
+        "opened": [
+          0.8889999999999993,
+          -3.2236833333333337
+        ],
+        "width": 0.698500000000001,
+        "evidence": "A-01: dos hojas, jambas del perfil vectorial y hojas 815.76/851.52; ancho vectorial 1.397 m, sin estirar a 1.40.",
+        "manualSourceReview": true
+      },
+      {
+        "hinge": [
+          2.2860000000000014,
+          -2.5251833333333327
+        ],
+        "closed": [
+          1.5875000000000004,
+          -2.5251833333333327
+        ],
+        "opened": [
+          2.2860000000000014,
+          -3.2236833333333337
+        ],
+        "width": 0.698500000000001,
+        "evidence": "A-01: dos hojas, jambas del perfil vectorial y hojas 815.76/851.52; ancho vectorial 1.397 m, sin estirar a 1.40.",
+        "manualSourceReview": true
+      },
+      {
+        "hinge": [
+          11.808883333333334,
+          1.299633333333336
+        ],
+        "closed": [
+          11.808883333333334,
+          0.5990166666666692
+        ],
+        "opened": [
+          12.509500000000001,
+          1.299633333333336
+        ],
+        "width": 0.7006166666666669,
+        "evidence": "A-01: acceso sala preparacion, cota 1.40; jambas 1121.28/1125.48, longitud vectorial 1.401 m.",
+        "manualSourceReview": true
+      },
+      {
+        "hinge": [
+          11.808883333333334,
+          -0.10159999999999769
+        ],
+        "closed": [
+          11.808883333333334,
+          0.5990166666666692
+        ],
+        "opened": [
+          12.509500000000001,
+          -0.10159999999999769
+        ],
+        "width": 0.7006166666666669,
+        "evidence": "A-01: acceso sala preparacion, cota 1.40; jambas 1121.28/1125.48, longitud vectorial 1.401 m.",
+        "manualSourceReview": true
+      }
+    ],
+    [
+      {
+        "hinge": [
+          -22.133050342959905,
+          0.967714147214565
+        ],
+        "closed": [
+          -21.333050342960178,
+          0.967714147214565
+        ],
+        "opened": [
+          -22.133050342959905,
+          1.767714147214292
+        ],
+        "width": 0.7999999999997272,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999999997272,
+        "dimensionHandle": "5EEDC"
+      },
+      {
+        "hinge": [
+          -5.150838624781045,
+          0.5469449557306234
+        ],
+        "closed": [
+          -5.9508385900549,
+          0.5469449557306234
+        ],
+        "opened": [
+          -5.150838624781045,
+          1.3469449210044786
+        ],
+        "width": 0.7999999652738552,
+        "sweep": 93.59354826923682,
+        "score": [
+          0.07292026909722438,
+          0.029814889865452436
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999652738552,
+        "dimensionHandle": "5EFFA"
+      },
+      {
+        "hinge": [
+          9.889161687856813,
+          6.563099191758511
+        ],
+        "closed": [
+          9.889161687856813,
+          5.613291481239457
+        ],
+        "opened": [
+          10.838969398375866,
+          6.563099191758511
+        ],
+        "width": 0.9498077105190532,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9498077105190532,
+        "dimensionHandle": "752C2"
+      },
+      {
+        "hinge": [
+          12.586277212804816,
+          -0.1024778232654171
+        ],
+        "closed": [
+          12.586277302813869,
+          0.8475235841615358
+        ],
+        "opened": [
+          11.636275805377863,
+          -0.10247773325636444
+        ],
+        "width": 0.9500014074269572,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014074269572,
+        "dimensionHandle": "752DA"
+      },
+      {
+        "hinge": [
+          -3.7049929660256566,
+          -4.657067088515987
+        ],
+        "closed": [
+          -4.624445487546836,
+          -4.693535215021484
+        ],
+        "opened": [
+          -3.6837339289145348,
+          -3.73713724503682
+        ],
+        "width": 0.9201754526079926,
+        "sourceHandle": null,
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada"
+      },
+      {
+        "hinge": [
+          -3.7020542460449093,
+          -2.745320139925912
+        ],
+        "closed": [
+          -4.62207919989692,
+          -2.708868159315319
+        ],
+        "opened": [
+          -3.680777913411461,
+          -3.6658209452311183
+        ],
+        "width": 0.9207484866747268,
+        "sweep": 93.5930001312752,
+        "score": [
+          0.10960149264865394,
+          1.0665542785644535
+        ],
+        "evidence": "PDF registrado contra DWG; arco no recuperado como entidad circular. Altura estimada."
+      },
+      {
+        "hinge": [
+          -5.951032324197968,
+          -2.6007473218924133
+        ],
+        "closed": [
+          -5.001030873842865,
+          -2.600553555558463
+        ],
+        "opened": [
+          -5.951226090531918,
+          -1.6507458715373104
+        ],
+        "width": 0.9500014701158052,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014701158052,
+        "dimensionHandle": "46997"
+      },
+      {
+        "hinge": [
+          -6.101030894933956,
+          -2.6005535701824556
+        ],
+        "closed": [
+          -7.051032345289059,
+          -2.600747336517543
+        ],
+        "opened": [
+          -6.101224661269043,
+          -1.6505521198273527
+        ],
+        "width": 0.9500014701158054,
+        "sweep": 93.59301378000082,
+        "score": [
+          0.09346182318793339,
+          0.034079918077257076
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014701158054,
+        "dimensionHandle": "46996"
+      },
+      {
+        "hinge": [
+          -18.044011743333158,
+          -4.801523753305446
+        ],
+        "closed": [
+          -18.99401319369008,
+          -4.800747518746448
+        ],
+        "opened": [
+          -18.044787977892156,
+          -5.751525203662368
+        ],
+        "width": 0.9500017674827482,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500017674827482,
+        "dimensionHandle": "4698C"
+      },
+      {
+        "hinge": [
+          -17.893819432435976,
+          -4.800747518746448
+        ],
+        "closed": [
+          -16.945550180947066,
+          -4.800747528031479
+        ],
+        "opened": [
+          -17.893819441721007,
+          -5.749016770235357
+        ],
+        "width": 0.9482692514889096,
+        "sweep": 93.59244059203365,
+        "score": [
+          0.09769980740017559,
+          0.025608600531686676
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.948 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9482692514889096,
+        "dimensionHandle": "4698D"
+      },
+      {
+        "hinge": [
+          -12.248338614773274,
+          -2.6007474182445094
+        ],
+        "closed": [
+          -13.198146351785908,
+          -2.600941184575504
+        ],
+        "opened": [
+          -12.248532381104269,
+          -1.6509396812318755
+        ],
+        "width": 0.9498077567773658,
+        "sweep": 93.59301378000525,
+        "score": [
+          0.0934614786783854,
+          0.03408026258680508
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9498077567773658,
+        "dimensionHandle": "46993"
+      },
+      {
+        "hinge": [
+          -12.098146330693908,
+          -2.60094119644441
+        ],
+        "closed": [
+          -11.39795398308388,
+          -2.6007474334314793
+        ],
+        "opened": [
+          -12.098340093706838,
+          -1.9007488488343824
+        ],
+        "width": 0.7001923744198779,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7001923744198779,
+        "dimensionHandle": "46994"
+      },
+      {
+        "hinge": [
+          -16.714269635840083,
+          -2.3511321025005145
+        ],
+        "closed": [
+          -16.714269635840083,
+          -1.4511307284774375
+        ],
+        "opened": [
+          -15.814268261817006,
+          -2.3511321025005145
+        ],
+        "width": 0.900001374023077,
+        "sweep": 93.59284550417667,
+        "score": [
+          0.18403734537760383,
+          0.034067085096573635
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.900 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.900001374023077,
+        "dimensionHandle": "46992"
+      },
+      {
+        "hinge": [
+          -16.594203789761195,
+          1.8963665349474468
+        ],
+        "closed": [
+          -15.894396434421196,
+          1.8965602979544656
+        ],
+        "opened": [
+          -16.594397552768214,
+          2.596173890287446
+        ],
+        "width": 0.6998073821645973,
+        "sweep": 93.59210441170521,
+        "score": [
+          0.017090257432725405,
+          0.07203694661458471
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.6998073821645973,
+        "dimensionHandle": "4699B"
+      },
+      {
+        "hinge": [
+          -15.594877220854869,
+          3.445021870088567
+        ],
+        "closed": [
+          -15.5948772115471,
+          2.7448295489705288
+        ],
+        "opened": [
+          -16.295069541972907,
+          3.4450218607807983
+        ],
+        "width": 0.7001923211180384,
+        "sweep": 93.59331048256765,
+        "score": [
+          0.3094944593641493,
+          0.021322987874349053
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7001923211180384,
+        "dimensionHandle": "5EEC4"
+      },
+      {
+        "hinge": [
+          -3.7021845356562153,
+          -7.798247331713583
+        ],
+        "closed": [
+          -4.502185720858051,
+          -7.798247342349441
+        ],
+        "opened": [
+          -3.702184525020357,
+          -8.598248516915419
+        ],
+        "width": 0.800001185201836,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.800001185201836,
+        "dimensionHandle": "5F11C"
+      },
+      {
+        "hinge": [
+          -3.551992245128986,
+          -5.340555040038453
+        ],
+        "closed": [
+          -3.5519922323928768,
+          -6.298439695084426
+        ],
+        "opened": [
+          -2.594107590083013,
+          -5.340555027302344
+        ],
+        "width": 0.9578846550459731,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.958 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9578846550459731,
+        "dimensionHandle": "46BAA"
+      },
+      {
+        "hinge": [
+          0.7443539553119081,
+          -5.3486319845653725
+        ],
+        "closed": [
+          0.7443539553119081,
+          -6.298633434923431
+        ],
+        "opened": [
+          -0.20564749504615065,
+          -5.3486319845653725
+        ],
+        "width": 0.9500014503580587,
+        "sweep": 93.59255786445068,
+        "score": [
+          0.49562788696288973,
+          0.02984503445095754
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014503580587,
+        "dimensionHandle": "469A2"
+      },
+      {
+        "hinge": [
+          4.290796459355988,
+          -7.747477226370393
+        ],
+        "closed": [
+          3.490815289801958,
+          -7.747477226370393
+        ],
+        "opened": [
+          4.290796459355988,
+          -8.547458395924423
+        ],
+        "width": 0.7999811695540302,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999811695540302,
+        "dimensionHandle": "752F7"
+      },
+      {
+        "hinge": [
+          4.2907964429527965,
+          -5.348631989066462
+        ],
+        "closed": [
+          4.2907964429527965,
+          -6.2986334394245205
+        ],
+        "opened": [
+          5.240797893310855,
+          -5.348631989066462
+        ],
+        "width": 0.9500014503580587,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014503580587,
+        "dimensionHandle": "469A3"
+      },
+      {
+        "hinge": [
+          -1.0526104204432158,
+          -0.3034404439295031
+        ],
+        "closed": [
+          -1.0526104204432158,
+          0.3967527741945105
+        ],
+        "opened": [
+          -1.7528036385672294,
+          -0.3034404439295031
+        ],
+        "width": 0.7001932181240136,
+        "sweep": 93.59249453221807,
+        "score": [
+          0.025555459933809033,
+          0.2667749738905165
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7001932181240136,
+        "dimensionHandle": "5F0E8"
+      },
+      {
+        "hinge": [
+          -1.0535292972899697,
+          0.9547513343854916
+        ],
+        "closed": [
+          -1.0537230627842291,
+          1.904752784741504
+        ],
+        "opened": [
+          -2.003530747645982,
+          0.9545575688912322
+        ],
+        "width": 0.9500014701165435,
+        "sweep": 93.59258449595883,
+        "score": [
+          0.049189611753249436,
+          0.08922887742784269
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014701165435,
+        "dimensionHandle": "46BAC"
+      },
+      {
+        "hinge": [
+          0.5941615235847166,
+          5.513868254113504
+        ],
+        "closed": [
+          -0.3048769551910482,
+          5.513868242161607
+        ],
+        "opened": [
+          0.5941615116328194,
+          6.412906732889269
+        ],
+        "width": 0.8990384787757649,
+        "sweep": 93.59240966273795,
+        "score": [
+          0.08243855116102594,
+          0.8634007873535161
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.899 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8990384787757649,
+        "dimensionHandle": "5F197"
+      },
+      {
+        "hinge": [
+          0.5941630207489652,
+          1.9047527940215332
+        ],
+        "closed": [
+          -0.35583842960704715,
+          1.9045590285284106
+        ],
+        "opened": [
+          0.5939692552558427,
+          2.8547542443775455
+        ],
+        "width": 0.9500014701165431,
+        "sweep": 93.59257880917379,
+        "score": [
+          0.08922969563802143,
+          0.8807432257758238
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014701165431,
+        "dimensionHandle": "46BAB"
+      },
+      {
+        "hinge": [
+          -10.7485309840431,
+          4.1938680758455575
+        ],
+        "closed": [
+          -9.748529457350287,
+          4.1938680758455575
+        ],
+        "opened": [
+          -10.7485309840431,
+          3.1938665491527445
+        ],
+        "width": 1.000001526692813,
+        "sweep": 93.59209707281937,
+        "score": [
+          0.10025124511718886,
+          0.029854680718312206
+        ],
+        "evidence": "DWG A-02: extremos de cota 1.000 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 1.000001526692813,
+        "dimensionHandle": "46999"
+      },
+      {
+        "hinge": [
+          -10.748530958140236,
+          2.245598834598468
+        ],
+        "closed": [
+          -10.748530958140236,
+          3.195598834599423
+        ],
+        "opened": [
+          -11.698530958141191,
+          2.245598834598468
+        ],
+        "width": 0.950000000000955,
+        "sweep": 93.59225883026254,
+        "score": [
+          0.034078583102756355,
+          0.09346208157009706
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.950000000000955,
+        "dimensionHandle": "46998"
+      },
+      {
+        "hinge": [
+          -10.621177927151166,
+          -2.4519039762603825
+        ],
+        "closed": [
+          -10.653501948372195,
+          -1.63693469582131
+        ],
+        "opened": [
+          -9.805785565885799,
+          -2.4707472136999513
+        ],
+        "width": 0.8156100602661752,
+        "sourceHandle": null,
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada"
+      },
+      {
+        "hinge": [
+          -8.92175321817129,
+          -2.453214427228371
+        ],
+        "closed": [
+          -8.88949098714193,
+          -1.6389377733018655
+        ],
+        "opened": [
+          -9.736450486924916,
+          -2.472043682861326
+        ],
+        "width": 0.8149164476424062,
+        "sweep": 93.59289595237587,
+        "score": [
+          0.08839098714192774,
+          0.9353504869249143
+        ],
+        "evidence": "PDF registrado contra DWG; arco no recuperado como entidad circular. Altura estimada."
+      },
+      {
+        "hinge": [
+          -14.893819561232249,
+          7.0919450228534515
+        ],
+        "closed": [
+          -15.593626916572248,
+          7.091751259846433
+        ],
+        "opened": [
+          -14.894013324239268,
+          7.791752378193451
+        ],
+        "width": 0.6998073821645973,
+        "sweep": 93.59330403881395,
+        "score": [
+          0.5414360797441986,
+          0.025556407335068698
+        ],
+        "evidence": "DWG A-02: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.6998073821645973,
+        "dimensionHandle": "4699A"
+      },
+      {
+        "hinge": [
+          -17.30958888344503,
+          7.265406554863603
+        ],
+        "closed": [
+          -17.93551437520182,
+          7.8913320299889165
+        ],
+        "opened": [
+          -17.93551437520182,
+          6.639481079738289
+        ],
+        "width": 0.8851923077173983,
+        "sourceHandle": "46966",
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada"
+      },
+      {
+        "hinge": [
+          -7.249684804958179,
+          0.5469450142604728
+        ],
+        "closed": [
+          -6.449684834074105,
+          0.546945031528594
+        ],
+        "opened": [
+          -7.2496848222263,
+          1.346944985144546
+        ],
+        "width": 0.7999999708840735,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999708840735,
+        "dimensionHandle": "5EFE2"
+      },
+      {
+        "hinge": [
+          -16.74564648364594,
+          4.193868041866608
+        ],
+        "closed": [
+          -16.745646396630036,
+          4.917304087108505
+        ],
+        "opened": [
+          -16.022210438404045,
+          4.1938679548507025
+        ],
+        "width": 0.7234360452419021,
+        "sourceHandle": "5D8EF",
+        "evidence": "DWG A-02: extremos de cota 0.723 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7234360452419021,
+        "dimensionHandle": "4699C"
+      },
+      {
+        "hinge": [
+          -19.05035798771496,
+          -0.5297859255065305
+        ],
+        "closed": [
+          -18.23467145352288,
+          0.2534286387112843
+        ],
+        "opened": [
+          -18.250742577137316,
+          -1.3294013148231443
+        ],
+        "width": 1.130826943287456,
+        "sourceHandle": "45903",
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada",
+        "nativeOnly": true
+      },
+      {
+        "hinge": [
+          15.08348873811201,
+          -0.5022855701295157
+        ],
+        "closed": [
+          14.382959925123487,
+          -0.5022855393895043
+        ],
+        "opened": [
+          15.083488707371998,
+          -1.2028143831180387
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "469A5"
+      },
+      {
+        "hinge": [
+          13.682431112134964,
+          -0.5022855086494928
+        ],
+        "closed": [
+          14.382959925123487,
+          -0.5022855393895043
+        ],
+        "opened": [
+          13.682431081394952,
+          -1.2028143216380158
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "469A5"
+      },
+      {
+        "hinge": [
+          -6.601992296572007,
+          -4.800747368647535
+        ],
+        "closed": [
+          -5.901992296572644,
+          -4.800747374630987
+        ],
+        "opened": [
+          -6.601992290588555,
+          -4.100747368648172
+        ],
+        "width": 0.6999999999993634,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.3999999999987267,
+        "dimensionHandle": "4698F"
+      },
+      {
+        "hinge": [
+          -5.20199229657328,
+          -4.800747380614439
+        ],
+        "closed": [
+          -5.901992296572644,
+          -4.800747374630987
+        ],
+        "opened": [
+          -5.201992290589828,
+          -4.100747380615076
+        ],
+        "width": 0.6999999999993634,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.3999999999987267,
+        "dimensionHandle": "4698F"
+      },
+      {
+        "hinge": [
+          -11.399684696255008,
+          -4.8007474324303985
+        ],
+        "closed": [
+          -10.699684696254963,
+          -4.800747438413964
+        ],
+        "opened": [
+          -11.399684690271442,
+          -4.100747432430353
+        ],
+        "width": 0.7000000000000455,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.400000000000091,
+        "dimensionHandle": "4698E"
+      },
+      {
+        "hinge": [
+          -9.999684696254917,
+          -4.80074744439753
+        ],
+        "closed": [
+          -10.699684696254963,
+          -4.800747438413964
+        ],
+        "opened": [
+          -9.999684690271351,
+          -4.100747444397484
+        ],
+        "width": 0.7000000000000455,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.400 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.400000000000091,
+        "dimensionHandle": "4698E"
+      },
+      {
+        "hinge": [
+          -22.139204184697974,
+          -3.300939806304541
+        ],
+        "closed": [
+          -21.190934933209064,
+          -3.3009398155895724
+        ],
+        "opened": [
+          -22.139204175412942,
+          -2.3526705548156315
+        ],
+        "width": 0.9482692514889096,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.948 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.9482692514889096,
+        "dimensionHandle": "46BA7"
+      },
+      {
+        "hinge": [
+          -22.28920276912004,
+          -4.350747552951589
+        ],
+        "closed": [
+          -22.28920277840507,
+          -3.4024783014615423
+        ],
+        "opened": [
+          -23.237472020610085,
+          -4.35074756223662
+        ],
+        "width": 0.9482692514900464,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.948 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.9482692514900464,
+        "dimensionHandle": "46BA6"
+      },
+      {
+        "hinge": [
+          -0.3048769522670227,
+          4.743868242161625
+        ],
+        "closed": [
+          -0.3048769522670227,
+          5.2938682626624995
+        ],
+        "opened": [
+          -0.8548769727678973,
+          4.743868242161625
+        ],
+        "width": 0.5500000205008746,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.550 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.5500000205008746,
+        "dimensionHandle": "5F17F"
+      },
+      {
+        "hinge": [
+          9.539065554879926,
+          -0.5022856438595227
+        ],
+        "closed": [
+          8.838536741891403,
+          -0.5022856131190565
+        ],
+        "opened": [
+          9.53906552413946,
+          -1.2028144568480457
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "469A4"
+      },
+      {
+        "hinge": [
+          8.13800792890288,
+          -0.5022855823785903
+        ],
+        "closed": [
+          8.838536741891403,
+          -0.5022856131190565
+        ],
+        "opened": [
+          8.138007898162414,
+          -1.2028143953671133
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "469A4"
+      },
+      {
+        "hinge": [
+          -7.15026169822886,
+          -1.551516571102411
+        ],
+        "closed": [
+          -7.751030940517921,
+          -1.551516571102411
+        ],
+        "opened": [
+          -7.15026169822886,
+          -2.1522858133914724
+        ],
+        "width": 0.6007692422890614,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.601 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.6007692422890614,
+        "dimensionHandle": "5F041"
+      },
+      {
+        "hinge": [
+          -2.642510930310891,
+          4.672842098760611
+        ],
+        "closed": [
+          -2.642510930310891,
+          5.220194028417609
+        ],
+        "opened": [
+          -3.1898628599678887,
+          4.672842098760611
+        ],
+        "width": 0.5473519296569975,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 0.547 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.5473519296569975,
+        "dimensionHandle": "5F171"
+      },
+      {
+        "hinge": [
+          -19.0799734988791,
+          7.265406554863603
+        ],
+        "closed": [
+          -18.45404800712231,
+          7.8913320299889165
+        ],
+        "opened": [
+          -18.45404800712231,
+          6.639481079738289
+        ],
+        "width": 0.8851923077173983,
+        "sourceHandle": "46969",
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada",
+        "nativeOnly": true
+      },
+      {
+        "hinge": [
+          3.3663733410207897,
+          -4.80074717442244
+        ],
+        "closed": [
+          2.566373342005363,
+          -4.8007471994249045
+        ],
+        "opened": [
+          3.3663733660232538,
+          -5.600747173437867
+        ],
+        "width": 0.799999999015427,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.599999998030854,
+        "dimensionHandle": "48E87"
+      },
+      {
+        "hinge": [
+          1.7663733429899366,
+          -4.800747224427369
+        ],
+        "closed": [
+          2.566373342005363,
+          -4.8007471994249045
+        ],
+        "opened": [
+          1.7663733679924007,
+          -5.600747223442795
+        ],
+        "width": 0.799999999015427,
+        "sourceHandle": null,
+        "evidence": "DWG A-02: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.599999998030854,
+        "dimensionHandle": "48E87"
+      },
+      {
+        "hinge": [
+          -8.130116666666666,
+          4.042833333333334
+        ],
+        "closed": [
+          -8.130116666666666,
+          2.9442833333333347
+        ],
+        "opened": [
+          -7.0315666666666665,
+          4.042833333333334
+        ],
+        "width": 1.0985499999999995,
+        "evidence": "A-02: Lavado, cota 2.20 m; dos hojas; giro dibujado a 45 grados es posicion abierta, no plano del vano.",
+        "manualSourceReview": true
+      },
+      {
+        "hinge": [
+          -8.130116666666666,
+          1.8457333333333352
+        ],
+        "closed": [
+          -8.130116666666666,
+          2.9442833333333347
+        ],
+        "opened": [
+          -7.0315666666666665,
+          1.8457333333333352
+        ],
+        "width": 1.0985499999999995,
+        "evidence": "A-02: Lavado, cota 2.20 m; dos hojas; giro dibujado a 45 grados es posicion abierta, no plano del vano.",
+        "manualSourceReview": true
+      }
+    ],
+    [
+      {
+        "hinge": [
+          -20.464863779769985,
+          -0.3428517004367677
+        ],
+        "closed": [
+          -21.165392592758508,
+          -0.34285166969687
+        ],
+        "opened": [
+          -20.464863810509883,
+          -1.0433805134252907
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A24"
+      },
+      {
+        "hinge": [
+          -21.86592140574703,
+          -0.34285163895697224
+        ],
+        "closed": [
+          -21.165392592758508,
+          -0.34285166969687
+        ],
+        "opened": [
+          -21.86592143648693,
+          -1.0433804519454952
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A24"
+      },
+      {
+        "hinge": [
+          -13.838625476656034,
+          -0.3428515322248131
+        ],
+        "closed": [
+          -13.138096663668193,
+          -0.342851562965393
+        ],
+        "opened": [
+          -13.838625507396614,
+          -1.043380345212654
+        ],
+        "width": 0.7005288129878415,
+        "sweep": 93.592211060417,
+        "score": [
+          0.3997831616108634,
+          0.6814090535481778
+        ],
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.401057625975683,
+        "dimensionHandle": "46A25"
+      },
+      {
+        "hinge": [
+          -12.437567850680352,
+          -0.34285159370597285
+        ],
+        "closed": [
+          -13.138096663668193,
+          -0.342851562965393
+        ],
+        "opened": [
+          -12.437567881420932,
+          -1.0433804066938137
+        ],
+        "width": 0.7005288129878415,
+        "sweep": 93.592211060417,
+        "score": [
+          0.3997831616108634,
+          0.6814090535481778
+        ],
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.401057625975683,
+        "dimensionHandle": "46A25"
+      },
+      {
+        "hinge": [
+          -5.185462195086984,
+          -0.34285141717191436
+        ],
+        "closed": [
+          -4.484933382099143,
+          -0.34285144791238054
+        ],
+        "opened": [
+          -5.18546222582745,
+          -1.0433802301597552
+        ],
+        "width": 0.7005288129878415,
+        "sweep": 93.59311203155585,
+        "score": [
+          0.3997837358316826,
+          0.6814079338921425
+        ],
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.401057625975683,
+        "dimensionHandle": "46A26"
+      },
+      {
+        "hinge": [
+          -3.7844045691113024,
+          -0.3428514786528467
+        ],
+        "closed": [
+          -4.484933382099143,
+          -0.34285144791238054
+        ],
+        "opened": [
+          -3.7844045998517686,
+          -1.0433802916406876
+        ],
+        "width": 0.7005288129878415,
+        "sweep": 93.59311203155585,
+        "score": [
+          0.3997837358316826,
+          0.6814079338921425
+        ],
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.401057625975683,
+        "dimensionHandle": "46A26"
+      },
+      {
+        "hinge": [
+          -1.059185246881043,
+          3.25875568194715
+        ],
+        "closed": [
+          -1.059379012374393,
+          4.208757132302026
+        ],
+        "opened": [
+          -2.0091866972359185,
+          3.2585619164538002
+        ],
+        "width": 0.9500014701154064,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014701154064,
+        "dimensionHandle": "46BAE"
+      },
+      {
+        "hinge": [
+          0.5885070711578919,
+          4.208757141583192
+        ],
+        "closed": [
+          -0.36149437919721095,
+          4.20856337608916
+        ],
+        "opened": [
+          0.5883133056638599,
+          5.158758591938295
+        ],
+        "width": 0.950001470115634,
+        "sweep": 93.59242694407412,
+        "score": [
+          0.08923004014757296,
+          0.03407621459961163
+        ],
+        "evidence": "DWG A-03: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.950001470115634,
+        "dimensionHandle": "46BAD"
+      },
+      {
+        "hinge": [
+          -1.0593790777911636,
+          2.1090354382390615
+        ],
+        "closed": [
+          -1.0593790777911636,
+          2.8090374039450126
+        ],
+        "opened": [
+          -1.7593810434971147,
+          2.1090354382390615
+        ],
+        "width": 0.7000019657059511,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 0.700 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7000019657059511,
+        "dimensionHandle": "78E51"
+      },
+      {
+        "hinge": [
+          4.441488399746049,
+          -7.745096262606921
+        ],
+        "closed": [
+          5.241489621099845,
+          -7.7450962519708355
+        ],
+        "opened": [
+          4.441488410382135,
+          -8.545097483960717
+        ],
+        "width": 0.8000012213537957,
+        "sweep": 93.5934561979319,
+        "score": [
+          0.08138659125434343,
+          0.021348567708336926
+        ],
+        "evidence": "DWG A-03: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000012213537957,
+        "dimensionHandle": "46BB0"
+      },
+      {
+        "hinge": [
+          5.922229156853973,
+          -6.795096241971805
+        ],
+        "closed": [
+          5.922229156853973,
+          -7.745096244099841
+        ],
+        "opened": [
+          6.872229158982009,
+          -6.795096241971805
+        ],
+        "width": 0.9500000021280357,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500000021280357,
+        "dimensionHandle": "46A72"
+      },
+      {
+        "hinge": [
+          4.291156766849781,
+          -7.745096241334977
+        ],
+        "closed": [
+          3.3911567668505995,
+          -7.745096253301881
+        ],
+        "opened": [
+          4.291156778816685,
+          -8.645096241334159
+        ],
+        "width": 0.8999999999991815,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 0.900 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8999999999991815,
+        "dimensionHandle": "5ACBB"
+      },
+      {
+        "hinge": [
+          23.797967895375677,
+          1.9078887062271406
+        ],
+        "closed": [
+          23.097439082387154,
+          1.9078887369676067
+        ],
+        "opened": [
+          23.79796786463521,
+          1.2073598932386176
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A27"
+      },
+      {
+        "hinge": [
+          22.39691026939863,
+          1.907888767708073
+        ],
+        "closed": [
+          23.097439082387154,
+          1.9078887369676067
+        ],
+        "opened": [
+          22.396910238658165,
+          1.20735995471955
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A27"
+      },
+      {
+        "hinge": [
+          2.590034183555872,
+          1.9078884673240282
+        ],
+        "closed": [
+          1.889505370567349,
+          1.9078884980640396
+        ],
+        "opened": [
+          2.5900341528158606,
+          1.2073596543355052
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A29"
+      },
+      {
+        "hinge": [
+          1.188976557578826,
+          1.907888528804051
+        ],
+        "closed": [
+          1.889505370567349,
+          1.9078884980640396
+        ],
+        "opened": [
+          1.1889765268388146,
+          1.207359715815528
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A29"
+      },
+      {
+        "hinge": [
+          13.076574442766741,
+          1.9078885797850944
+        ],
+        "closed": [
+          12.376045629778218,
+          1.9078886105251058
+        ],
+        "opened": [
+          13.07657441202673,
+          1.2073597667965714
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A28"
+      },
+      {
+        "hinge": [
+          11.675516816789695,
+          1.9078886412651173
+        ],
+        "closed": [
+          12.376045629778218,
+          1.9078886105251058
+        ],
+        "opened": [
+          11.675516786049684,
+          1.2073598282765943
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A28"
+      },
+      {
+        "hinge": [
+          -3.4096342541283775,
+          6.711283158874039
+        ],
+        "closed": [
+          -2.8595974921590823,
+          6.711283158875176
+        ],
+        "opened": [
+          -3.4096342541295144,
+          7.261319920843334
+        ],
+        "width": 0.5500367619692952,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 0.550 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.5500367619692952,
+        "dimensionHandle": "78EF0"
+      },
+      {
+        "hinge": [
+          -0.3098383267342797,
+          6.409367984835171
+        ],
+        "closed": [
+          -0.3098383267342797,
+          6.959368824516105
+        ],
+        "opened": [
+          -0.8598391664152132,
+          6.409367984835171
+        ],
+        "width": 0.5500008396809335,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 0.550 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.5500008396809335,
+        "dimensionHandle": "78F20"
+      },
+      {
+        "hinge": [
+          -3.409634155334061,
+          -6.944024932531875
+        ],
+        "closed": [
+          -3.4096341245940494,
+          -6.144024932532375
+        ],
+        "opened": [
+          -4.209634155333561,
+          -6.944024901791863
+        ],
+        "width": 0.7999999999995003,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.5999999999990007,
+        "dimensionHandle": "46A70"
+      },
+      {
+        "hinge": [
+          -3.409634093854038,
+          -5.344024932532875
+        ],
+        "closed": [
+          -3.4096341245940494,
+          -6.144024932532375
+        ],
+        "opened": [
+          -4.209634093853538,
+          -5.344024901792864
+        ],
+        "width": 0.7999999999995003,
+        "sourceHandle": null,
+        "evidence": "DWG A-03: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.5999999999990007,
+        "dimensionHandle": "46A70"
+      }
+    ],
+    [
+      {
+        "hinge": [
+          -8.571018297342562,
+          -6.626698684363419
+        ],
+        "closed": [
+          -7.77101829734238,
+          -6.626698684363419
+        ],
+        "opened": [
+          -8.571018297342562,
+          -7.4266986843636005
+        ],
+        "width": 0.8000000000001819,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000000000001819,
+        "dimensionHandle": "458AB"
+      },
+      {
+        "hinge": [
+          -19.416266521608577,
+          -6.724662335434459
+        ],
+        "closed": [
+          -19.41626655234313,
+          -6.124651553930903
+        ],
+        "opened": [
+          -18.81625574010502,
+          -6.724662304699905
+        ],
+        "width": 0.600010781503557,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.200 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.200021563007114,
+        "dimensionHandle": "46BB8"
+      },
+      {
+        "hinge": [
+          -19.416266583077686,
+          -5.524640772427347
+        ],
+        "closed": [
+          -19.41626655234313,
+          -6.124651553930903
+        ],
+        "opened": [
+          -18.81625580157413,
+          -5.524640741692792
+        ],
+        "width": 0.600010781503557,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.200 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.200021563007114,
+        "dimensionHandle": "46BB8"
+      },
+      {
+        "hinge": [
+          -9.061018297343708,
+          -6.626698684361372
+        ],
+        "closed": [
+          -9.861018297343435,
+          -6.626698684354324
+        ],
+        "opened": [
+          -9.061018297350756,
+          -7.426698684361099
+        ],
+        "width": 0.7999999999997272,
+        "sweep": 90.02854563270954,
+        "score": [
+          0.7408374674479177,
+          1.0112773622867033
+        ],
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999999997272,
+        "dimensionHandle": "458AA"
+      },
+      {
+        "hinge": [
+          -13.821018297348473,
+          -6.626698684361372
+        ],
+        "closed": [
+          -13.021018297349656,
+          -6.626698684354324
+        ],
+        "opened": [
+          -13.821018297341425,
+          -7.42669868436019
+        ],
+        "width": 0.7999999999988177,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999999988177,
+        "dimensionHandle": "458A9"
+      },
+      {
+        "hinge": [
+          -14.31101829734962,
+          -6.6270299034245
+        ],
+        "closed": [
+          -15.111018297349347,
+          -6.626698684381381
+        ],
+        "opened": [
+          -14.311349516392738,
+          -7.427029903424227
+        ],
+        "width": 0.8000000685660084,
+        "sweep": 90.02854564759235,
+        "score": [
+          0.7408348836263007,
+          1.0421941080878596
+        ],
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000000685660084,
+        "dimensionHandle": "458A8"
+      },
+      {
+        "hinge": [
+          -19.04601829735566,
+          -6.627029903380389
+        ],
+        "closed": [
+          -18.246018297354567,
+          -6.627029903376297
+        ],
+        "opened": [
+          -19.046018297351566,
+          -7.427029903381481
+        ],
+        "width": 0.8000000000010914,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000000000010914,
+        "dimensionHandle": "458A7"
+      },
+      {
+        "hinge": [
+          -1.059498055608401,
+          3.258804442123619
+        ],
+        "closed": [
+          -1.0596918211026605,
+          4.208805892479631
+        ],
+        "opened": [
+          -2.0094995059644134,
+          3.2586106766293597
+        ],
+        "width": 0.9500014701165435,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014701165435,
+        "dimensionHandle": "46BB3"
+      },
+      {
+        "hinge": [
+          0.5881942624305339,
+          4.208805901759661
+        ],
+        "closed": [
+          -0.3618071879254785,
+          4.208612136266538
+        ],
+        "opened": [
+          0.5880004969374113,
+          5.158807352115673
+        ],
+        "width": 0.9500014701165431,
+        "sweep": 93.59242694407412,
+        "score": [
+          0.08923004014757296,
+          0.03407621459961163
+        ],
+        "evidence": "DWG A-04: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500014701165431,
+        "dimensionHandle": "46BB2"
+      },
+      {
+        "hinge": [
+          -1.166553849812317,
+          2.2005170936820377
+        ],
+        "closed": [
+          -1.1530253716505285,
+          2.7859269940774993
+        ],
+        "opened": [
+          -1.7516599998707534,
+          2.1773101040873826
+        ],
+        "width": 0.5855661971139575,
+        "sourceHandle": null,
+        "evidence": "DWG ARC A-PUERTAS; altura de hoja estimada"
+      },
+      {
+        "hinge": [
+          4.290843958122423,
+          -7.745048392616354
+        ],
+        "closed": [
+          3.390843958122332,
+          -7.7450484045834855
+        ],
+        "opened": [
+          4.290843970089554,
+          -8.645048392616445
+        ],
+        "width": 0.9000000000000911,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.900 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9000000000000911,
+        "dimensionHandle": "46BB4"
+      },
+      {
+        "hinge": [
+          4.4411755910182364,
+          -7.74504840325244
+        ],
+        "closed": [
+          5.241176812372487,
+          -7.745048392616354
+        ],
+        "opened": [
+          4.441175601654322,
+          -8.54504962460669
+        ],
+        "width": 0.8000012213542506,
+        "sweep": 93.5934561979319,
+        "score": [
+          0.08138659125434343,
+          0.021348567708336926
+        ],
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000012213542506,
+        "dimensionHandle": "46BB5"
+      },
+      {
+        "hinge": [
+          -19.16644176212276,
+          -0.09325041873444206
+        ],
+        "closed": [
+          -19.16644177275839,
+          0.7067624037856604
+        ],
+        "opened": [
+          -19.96645458464286,
+          -0.0932504293700731
+        ],
+        "width": 0.8000128225201024,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.8000128225201024,
+        "dimensionHandle": "7911C"
+      },
+      {
+        "hinge": [
+          13.068650050941415,
+          -4.946425268989287
+        ],
+        "closed": [
+          12.268648829586937,
+          -4.946425268989287
+        ],
+        "opened": [
+          13.068650050941415,
+          -5.746426490343765
+        ],
+        "width": 0.8000012213544778,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.6000024427089556,
+        "dimensionHandle": "46B73"
+      },
+      {
+        "hinge": [
+          11.468647608232459,
+          -4.946425268989287
+        ],
+        "closed": [
+          12.268648829586937,
+          -4.946425268989287
+        ],
+        "opened": [
+          11.468647608232459,
+          -5.746426490343765
+        ],
+        "width": 0.8000012213544778,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "confirmedOpeningDimension": 1.6000024427089556,
+        "dimensionHandle": "46B73"
+      },
+      {
+        "hinge": [
+          13.218574147038453,
+          -5.847955098713328
+        ],
+        "closed": [
+          13.218573989176548,
+          -6.797243065359453
+        ],
+        "opened": [
+          14.167862113684578,
+          -5.847955256575233
+        ],
+        "width": 0.949287966646138,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.949 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.949287966646138,
+        "dimensionHandle": "46B74"
+      },
+      {
+        "hinge": [
+          12.719186104962318,
+          -7.745048359996417
+        ],
+        "closed": [
+          11.919186104962591,
+          -7.745048370631366
+        ],
+        "opened": [
+          12.719186115597267,
+          -8.545048359996144
+        ],
+        "width": 0.7999999999997273,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999999997273,
+        "dimensionHandle": "7922D"
+      },
+      {
+        "hinge": [
+          16.34490006286751,
+          -4.946425236750429
+        ],
+        "closed": [
+          15.394900061955468,
+          -4.946425238081474
+        ],
+        "opened": [
+          16.344900064198555,
+          -5.89642523766247
+        ],
+        "width": 0.9500000009120413,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.950 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9500000009120413,
+        "dimensionHandle": "46BB6"
+      },
+      {
+        "hinge": [
+          19.0760217911984,
+          -8.296144705911502
+        ],
+        "closed": [
+          19.07602179053356,
+          -9.096144705912366
+        ],
+        "opened": [
+          19.876021791199264,
+          -8.296144706576342
+        ],
+        "width": 0.800000000000864,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.800000000000864,
+        "dimensionHandle": "46BB7"
+      },
+      {
+        "hinge": [
+          20.421459203917493,
+          -8.296144688025379
+        ],
+        "closed": [
+          20.42145700606443,
+          -8.84614468802647
+        ],
+        "opened": [
+          20.971459203918585,
+          -8.296146885878443
+        ],
+        "width": 0.5500000000054829,
+        "sweep": 90.02836004929141,
+        "score": [
+          0.5503364498144006,
+          0.07036069542870665
+        ],
+        "evidence": "DWG A-04: extremos de cota 0.550 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.5500000000054829,
+        "dimensionHandle": "7935A"
+      },
+      {
+        "hinge": [
+          -14.513379186162638,
+          1.9079359821155322
+        ],
+        "closed": [
+          -15.21390799915116,
+          1.907936012856112
+        ],
+        "opened": [
+          -14.513379216903218,
+          1.2074071691270092
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A93"
+      },
+      {
+        "hinge": [
+          -15.914436812139684,
+          1.9079360435966919
+        ],
+        "closed": [
+          -15.21390799915116,
+          1.907936012856112
+        ],
+        "opened": [
+          -15.914436842880264,
+          1.207407230608169
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A93"
+      },
+      {
+        "hinge": [
+          -4.040278638361542,
+          1.9079359821155322
+        ],
+        "closed": [
+          -4.740807451350065,
+          1.907936012856112
+        ],
+        "opened": [
+          -4.040278669102122,
+          1.2074071691270092
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A94"
+      },
+      {
+        "hinge": [
+          -5.441336264338588,
+          1.9079360435966919
+        ],
+        "closed": [
+          -4.740807451350065,
+          1.907936012856112
+        ],
+        "opened": [
+          -5.441336295079168,
+          1.207407230608169
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A94"
+      },
+      {
+        "hinge": [
+          23.798712712627548,
+          1.9079365227355538
+        ],
+        "closed": [
+          23.09818389963948,
+          1.9079365534761337
+        ],
+        "opened": [
+          23.79871268188697,
+          1.2074077097474856
+        ],
+        "width": 0.7005288129880689,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259761378,
+        "dimensionHandle": "46A97"
+      },
+      {
+        "hinge": [
+          22.39765508665141,
+          1.9079365842167135
+        ],
+        "closed": [
+          23.09818389963948,
+          1.9079365534761337
+        ],
+        "opened": [
+          22.397655055910832,
+          1.2074077712286453
+        ],
+        "width": 0.7005288129880689,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259761378,
+        "dimensionHandle": "46A97"
+      },
+      {
+        "hinge": [
+          2.8487126373865976,
+          1.9079362035315626
+        ],
+        "closed": [
+          2.1481838243980746,
+          1.907936234271574
+        ],
+        "opened": [
+          2.848712606646586,
+          1.2074073905430396
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A95"
+      },
+      {
+        "hinge": [
+          1.4476550114095517,
+          1.9079362650115854
+        ],
+        "closed": [
+          2.1481838243980746,
+          1.907936234271574
+        ],
+        "opened": [
+          1.4476549806695402,
+          1.2074074520230624
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A95"
+      },
+      {
+        "hinge": [
+          13.08356929660249,
+          1.9079363762075445
+        ],
+        "closed": [
+          12.383040483613968,
+          1.907936406947556
+        ],
+        "opened": [
+          13.08356926586248,
+          1.2074075632190215
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A96"
+      },
+      {
+        "hinge": [
+          11.682511670625445,
+          1.9079364376875674
+        ],
+        "closed": [
+          12.383040483613968,
+          1.907936406947556
+        ],
+        "opened": [
+          11.682511639885433,
+          1.2074076246990444
+        ],
+        "width": 0.7005288129885237,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.401 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.4010576259770473,
+        "dimensionHandle": "46A96"
+      },
+      {
+        "hinge": [
+          -3.409947062856645,
+          6.711331916660583
+        ],
+        "closed": [
+          -2.85991030088735,
+          6.711331916660583
+        ],
+        "opened": [
+          -3.409947062856645,
+          7.261368678629879
+        ],
+        "width": 0.5500367619692952,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.550 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.5500367619692952,
+        "dimensionHandle": "7925F"
+      },
+      {
+        "hinge": [
+          -0.31015113546254724,
+          6.4094167426217155
+        ],
+        "closed": [
+          -0.31015113546254724,
+          6.959417582302649
+        ],
+        "opened": [
+          -0.8601519751434807,
+          6.4094167426217155
+        ],
+        "width": 0.5500008396809335,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.550 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.5500008396809335,
+        "dimensionHandle": "79265"
+      },
+      {
+        "hinge": [
+          5.842859266762389,
+          -6.145439488028387
+        ],
+        "closed": [
+          5.842859176752427,
+          -6.944691262853439
+        ],
+        "opened": [
+          6.642111041587441,
+          -6.145439578038349
+        ],
+        "width": 0.7992517748250572,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 0.799 m; una hoja; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 0.7992517748250572,
+        "dimensionHandle": "46B72"
+      },
+      {
+        "hinge": [
+          -3.4430251366147786,
+          -6.944690460344418
+        ],
+        "closed": [
+          -3.443025105874767,
+          -6.144690460344464
+        ],
+        "opened": [
+          -4.243025136614733,
+          -6.944690429604407
+        ],
+        "width": 0.7999999999999551,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.5999999999999102,
+        "dimensionHandle": "46B83"
+      },
+      {
+        "hinge": [
+          -3.4430250751347558,
+          -5.344690460344509
+        ],
+        "closed": [
+          -3.443025105874767,
+          -6.144690460344464
+        ],
+        "opened": [
+          -4.24302507513471,
+          -5.344690429604498
+        ],
+        "width": 0.7999999999999551,
+        "sourceHandle": null,
+        "evidence": "DWG A-04: extremos de cota 1.600 m; dos hojas; altura estimada.",
+        "nativeOnly": true,
+        "confirmedOpeningDimension": 1.5999999999999102,
+        "dimensionHandle": "46B83"
+      }
+    ],
+    [
+      {
+        "hinge": [
+          -12.166667959609185,
+          3.008272548390323
+        ],
+        "closed": [
+          -11.3666679598673,
+          3.008272548390323
+        ],
+        "opened": [
+          -12.166667959609185,
+          3.8082725481322086
+        ],
+        "width": 0.7999999997418854,
+        "sweep": 90.02854565213187,
+        "score": [
+          0.027516838921439298,
+          0.19543940565321097
+        ],
+        "evidence": "DWG A-05: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999997418854,
+        "dimensionHandle": "7940D"
+      },
+      {
+        "hinge": [
+          2.3416870089085933,
+          3.008272548390323
+        ],
+        "closed": [
+          3.141687008651843,
+          3.008272548390323
+        ],
+        "opened": [
+          2.3416870089085933,
+          3.808272548133573
+        ],
+        "width": 0.7999999997432496,
+        "sweep": 90.02865522338504,
+        "score": [
+          0.027516838921439298,
+          0.16862795003255115
+        ],
+        "evidence": "DWG A-05: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999997432496,
+        "dimensionHandle": "79425"
+      },
+      {
+        "hinge": [
+          15.998507077362774,
+          3.4517248276304144
+        ],
+        "closed": [
+          15.198507077619524,
+          3.4517248276304144
+        ],
+        "opened": [
+          15.998507077362774,
+          4.251724827373664
+        ],
+        "width": 0.7999999997432496,
+        "sourceHandle": null,
+        "evidence": "DWG A-05: extremos de cota 0.800 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.7999999997432496,
+        "dimensionHandle": "7943D"
+      },
+      {
+        "hinge": [
+          -17.345650487784496,
+          2.0345189576673874
+        ],
+        "closed": [
+          -18.245650487786406,
+          2.0345189576673874
+        ],
+        "opened": [
+          -17.345650487784496,
+          1.1345189576654775
+        ],
+        "width": 0.9000000000019099,
+        "sweep": 90.02882811329755,
+        "score": [
+          0.05997286817762593,
+          0.8490190179661445
+        ],
+        "evidence": "DWG A-05: extremos de cota 0.900 m; una hoja; altura estimada.",
+        "confirmedOpeningDimension": 0.9000000000019099,
+        "dimensionHandle": "795B2"
+      }
+    ]
+  ],
+  "steps": [
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 1,
+      "tread": "POLYGON ((-23.770166666666668 -4.614333333333331, -22.292733333333334 -4.614333333333331, -22.292733333333334 -4.93183333333333, -23.6855 -4.93183333333333, -23.770166666666668 -4.614333333333331))",
+      "lower": -3.55,
+      "upper": -3.380952380952381,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 2,
+      "tread": "POLYGON ((-23.6855 -4.93183333333333, -22.292733333333334 -4.93183333333333, -22.292733333333334 -5.2112333333333325, -23.719366666666666 -5.2112333333333325, -23.6855 -4.93183333333333))",
+      "lower": -3.380952380952381,
+      "upper": -3.2119047619047616,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 3,
+      "tread": "POLYGON ((-23.719366666666666 -5.2112333333333325, -22.292733333333334 -5.2112333333333325, -22.292733333333334 -5.4906333333333315, -23.753233333333334 -5.4906333333333315, -23.719366666666666 -5.2112333333333325))",
+      "lower": -3.2119047619047616,
+      "upper": -3.0428571428571427,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 4,
+      "tread": "POLYGON ((-23.753233333333334 -5.4906333333333315, -22.292733333333334 -5.4906333333333315, -22.292733333333334 -5.7700333333333305, -23.787100000000002 -5.7700333333333305, -23.753233333333334 -5.4906333333333315))",
+      "lower": -3.0428571428571427,
+      "upper": -2.873809523809524,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 5,
+      "tread": "POLYGON ((-23.787100000000002 -5.7700333333333305, -22.292733333333334 -5.7700333333333305, -22.292733333333334 -6.053666666666665, -23.820966666666667 -6.053666666666665, -23.787100000000002 -5.7700333333333305))",
+      "lower": -2.873809523809524,
+      "upper": -2.7047619047619045,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 6,
+      "tread": "POLYGON ((-23.820966666666667 -6.053666666666665, -22.292733333333334 -6.053666666666665, -22.292733333333334 -6.333066666666664, -23.854833333333335 -6.333066666666664, -23.820966666666667 -6.053666666666665))",
+      "lower": -2.7047619047619045,
+      "upper": -2.5357142857142856,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 7,
+      "tread": "POLYGON ((-23.854833333333335 -6.333066666666664, -22.292733333333334 -6.333066666666664, -22.292733333333334 -6.612466666666663, -23.8887 -6.612466666666663, -23.854833333333335 -6.333066666666664))",
+      "lower": -2.5357142857142856,
+      "upper": -2.3666666666666663,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 8,
+      "tread": "POLYGON ((-23.8887 -6.612466666666663, -22.292733333333334 -6.612466666666663, -22.292733333333334 -6.891866666666665, -23.9268 -6.891866666666665, -23.8887 -6.612466666666663))",
+      "lower": -2.3666666666666663,
+      "upper": -2.197619047619048,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 9,
+      "tread": "POLYGON ((-23.9268 -6.891866666666665, -22.292733333333334 -6.891866666666665, -22.292733333333334 -7.171266666666664, -23.96066666666667 -7.171266666666664, -23.9268 -6.891866666666665))",
+      "lower": -2.197619047619048,
+      "upper": -2.0285714285714285,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 10,
+      "tread": "POLYGON ((-23.96066666666667 -7.171266666666664, -22.292733333333334 -7.171266666666664, -22.292733333333334 -7.450666666666667, -23.994533333333337 -7.450666666666667, -23.96066666666667 -7.171266666666664))",
+      "lower": -2.0285714285714285,
+      "upper": -1.8595238095238094,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_0_tramo_1",
+      "level": 0,
+      "index": 11,
+      "tread": "POLYGON ((-23.994533333333337 -7.450666666666667, -22.292733333333334 -7.450666666666667, -22.292733333333334 -7.730066666666666, -24.0284 -7.730066666666666, -23.994533333333337 -7.450666666666667))",
+      "lower": -1.8595238095238094,
+      "upper": -1.6904761904761905,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 1,
+      "tread": "POLYGON ((-26.132712217280073 -8.336658055089309, -24.5999 -8.547099999999997, -24.667633333333335 -8.263466666666666, -26.1366 -8.081433333333333, -26.132712217280073 -8.336658055089309))",
+      "lower": -1.6904761904761905,
+      "upper": -1.5214285714285714,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 2,
+      "tread": "POLYGON ((-26.1366 -8.081433333333333, -24.667633333333335 -8.263466666666666, -24.633766666666666 -7.992533333333331, -26.090033333333334 -7.8104999999999976, -26.1366 -8.081433333333333))",
+      "lower": -1.5214285714285714,
+      "upper": -1.3523809523809525,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 3,
+      "tread": "POLYGON ((-26.090033333333334 -7.8104999999999976, -24.633766666666666 -7.992533333333331, -24.5999 -7.717366666666663, -26.0223 -7.543800000000001, -26.090033333333334 -7.8104999999999976))",
+      "lower": -1.3523809523809525,
+      "upper": -1.1833333333333333,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 4,
+      "tread": "POLYGON ((-26.0223 -7.543800000000001, -24.5999 -7.717366666666663, -24.566033333333333 -7.446433333333335, -25.95456666666667 -7.277099999999997, -26.0223 -7.543800000000001))",
+      "lower": -1.1833333333333333,
+      "upper": -1.0142857142857142,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 5,
+      "tread": "POLYGON ((-25.95456666666667 -7.277099999999997, -24.566033333333333 -7.446433333333335, -24.53216666666667 -7.171266666666664, -25.886833333333335 -7.006166666666665, -25.95456666666667 -7.277099999999997))",
+      "lower": -1.0142857142857142,
+      "upper": -0.8452380952380952,
+      "riser": 0.169047619047619
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 6,
+      "tread": "POLYGON ((-25.886833333333335 -7.006166666666665, -24.53216666666667 -7.171266666666664, -24.4983 -6.900333333333332, -25.819100000000002 -6.739466666666665, -25.886833333333335 -7.006166666666665))",
+      "lower": -0.8452380952380952,
+      "upper": -0.6761904761904762,
+      "riser": 0.169047619047619
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 7,
+      "tread": "POLYGON ((-25.819100000000002 -6.739466666666665, -24.4983 -6.900333333333332, -24.468666666666667 -6.625166666666665, -25.759833333333333 -6.468533333333333, -25.819100000000002 -6.739466666666665))",
+      "lower": -0.6761904761904762,
+      "upper": -0.5071428571428571,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 8,
+      "tread": "POLYGON ((-25.759833333333333 -6.468533333333333, -24.468666666666667 -6.625166666666665, -24.434800000000003 -6.354233333333333, -25.6921 -6.2018333333333295, -25.759833333333333 -6.468533333333333))",
+      "lower": -0.5071428571428571,
+      "upper": -0.338095238095238,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 9,
+      "tread": "POLYGON ((-25.6921 -6.2018333333333295, -24.434800000000003 -6.354233333333333, -24.400933333333334 -6.079066666666662, -25.624366666666667 -5.930899999999998, -25.6921 -6.2018333333333295))",
+      "lower": -0.338095238095238,
+      "upper": -0.1690476190476191,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_0_tramo_2",
+      "level": 0,
+      "index": 10,
+      "tread": "POLYGON ((-25.624366666666667 -5.930899999999998, -24.400933333333334 -6.079066666666662, -24.367066666666666 -5.803899999999999, -25.556633333333334 -5.659966666666662, -25.624366666666667 -5.930899999999998))",
+      "lower": -0.1690476190476191,
+      "upper": 0.0,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 1,
+      "tread": "POLYGON ((-23.935266666666667 -5.545666666666662, -22.635633333333335 -5.545666666666662, -22.635633333333335 -5.820833333333333, -23.935266666666667 -5.820833333333333, -23.935266666666667 -5.545666666666662))",
+      "lower": 0.0,
+      "upper": 0.16904761904761903,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 2,
+      "tread": "POLYGON ((-23.935266666666667 -5.820833333333333, -22.635633333333335 -5.820833333333333, -22.635633333333335 -6.0959999999999965, -23.84636666666667 -6.0959999999999965, -23.935266666666667 -5.820833333333333))",
+      "lower": 0.16904761904761903,
+      "upper": 0.33809523809523806,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 3,
+      "tread": "POLYGON ((-23.84636666666667 -6.0959999999999965, -22.635633333333335 -6.0959999999999965, -22.635633333333335 -6.371166666666667, -23.880233333333333 -6.371166666666667, -23.84636666666667 -6.0959999999999965))",
+      "lower": 0.33809523809523806,
+      "upper": 0.5071428571428571,
+      "riser": 0.16904761904761906
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 4,
+      "tread": "POLYGON ((-23.880233333333333 -6.371166666666667, -22.635633333333335 -6.371166666666667, -22.635633333333335 -6.646333333333331, -23.9141 -6.646333333333331, -23.880233333333333 -6.371166666666667))",
+      "lower": 0.5071428571428571,
+      "upper": 0.6761904761904761,
+      "riser": 0.169047619047619
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 5,
+      "tread": "POLYGON ((-23.9141 -6.646333333333331, -22.635633333333335 -6.646333333333331, -22.635633333333335 -6.921499999999995, -23.947966666666666 -6.921499999999995, -23.9141 -6.646333333333331))",
+      "lower": 0.6761904761904761,
+      "upper": 0.8452380952380952,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 6,
+      "tread": "POLYGON ((-23.947966666666666 -6.921499999999995, -22.635633333333335 -6.921499999999995, -22.635633333333335 -7.196666666666665, -23.981833333333334 -7.196666666666665, -23.947966666666666 -6.921499999999995))",
+      "lower": 0.8452380952380952,
+      "upper": 1.0142857142857142,
+      "riser": 0.169047619047619
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 7,
+      "tread": "POLYGON ((-23.981833333333334 -7.196666666666665, -22.635633333333335 -7.196666666666665, -22.635633333333335 -7.467599999999997, -24.015700000000002 -7.467599999999997, -23.981833333333334 -7.196666666666665))",
+      "lower": 1.0142857142857142,
+      "upper": 1.1833333333333333,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 8,
+      "tread": "POLYGON ((-24.015700000000002 -7.467599999999997, -22.635633333333335 -7.467599999999997, -22.635633333333335 -7.742766666666665, -24.049566666666667 -7.742766666666665, -24.015700000000002 -7.467599999999997))",
+      "lower": 1.1833333333333333,
+      "upper": 1.3523809523809522,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 9,
+      "tread": "POLYGON ((-24.049566666666667 -7.742766666666665, -22.635633333333335 -7.742766666666665, -22.635633333333335 -8.017933333333332, -24.083433333333332 -8.017933333333332, -24.049566666666667 -7.742766666666665))",
+      "lower": 1.3523809523809522,
+      "upper": 1.5214285714285714,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 10,
+      "tread": "POLYGON ((-24.083433333333332 -8.017933333333332, -22.635633333333335 -8.017933333333332, -22.635633333333335 -8.293099999999999, -24.1173 -8.293099999999999, -24.083433333333332 -8.017933333333332))",
+      "lower": 1.5214285714285714,
+      "upper": 1.6904761904761905,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_1_tramo_1",
+      "level": 1,
+      "index": 11,
+      "tread": "POLYGON ((-24.1173 -8.293099999999999, -22.635633333333335 -8.293099999999999, -22.652548769395615 -8.562438934529624, -24.15116666666667 -8.568266666666666, -24.1173 -8.293099999999999))",
+      "lower": 1.6904761904761905,
+      "upper": 1.8595238095238094,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 1,
+      "tread": "POLYGON ((-26.132712217280073 -8.336658055089309, -24.5999 -8.547099999999997, -24.667633333333335 -8.263466666666666, -26.1366 -8.081433333333333, -26.132712217280073 -8.336658055089309))",
+      "lower": 1.8595238095238094,
+      "upper": 2.0285714285714285,
+      "riser": 0.1690476190476191
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 2,
+      "tread": "POLYGON ((-26.1366 -8.081433333333333, -24.667633333333335 -8.263466666666666, -24.633766666666666 -7.992533333333331, -26.090033333333334 -7.8104999999999976, -26.1366 -8.081433333333333))",
+      "lower": 2.0285714285714285,
+      "upper": 2.1976190476190474,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 3,
+      "tread": "POLYGON ((-26.090033333333334 -7.8104999999999976, -24.633766666666666 -7.992533333333331, -24.5999 -7.717366666666663, -26.0223 -7.543800000000001, -26.090033333333334 -7.8104999999999976))",
+      "lower": 2.1976190476190474,
+      "upper": 2.3666666666666663,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 4,
+      "tread": "POLYGON ((-26.0223 -7.543800000000001, -24.5999 -7.717366666666663, -24.566033333333333 -7.446433333333335, -25.95456666666667 -7.277099999999997, -26.0223 -7.543800000000001))",
+      "lower": 2.3666666666666663,
+      "upper": 2.5357142857142856,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 5,
+      "tread": "POLYGON ((-25.95456666666667 -7.277099999999997, -24.566033333333333 -7.446433333333335, -24.53216666666667 -7.171266666666664, -25.886833333333335 -7.006166666666665, -25.95456666666667 -7.277099999999997))",
+      "lower": 2.5357142857142856,
+      "upper": 2.7047619047619045,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 6,
+      "tread": "POLYGON ((-25.886833333333335 -7.006166666666665, -24.53216666666667 -7.171266666666664, -24.4983 -6.900333333333332, -25.819100000000002 -6.739466666666665, -25.886833333333335 -7.006166666666665))",
+      "lower": 2.7047619047619045,
+      "upper": 2.8738095238095234,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 7,
+      "tread": "POLYGON ((-25.819100000000002 -6.739466666666665, -24.4983 -6.900333333333332, -24.468666666666667 -6.625166666666665, -25.759833333333333 -6.468533333333333, -25.819100000000002 -6.739466666666665))",
+      "lower": 2.8738095238095234,
+      "upper": 3.0428571428571427,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 8,
+      "tread": "POLYGON ((-25.759833333333333 -6.468533333333333, -24.468666666666667 -6.625166666666665, -24.434800000000003 -6.354233333333333, -25.6921 -6.2018333333333295, -25.759833333333333 -6.468533333333333))",
+      "lower": 3.0428571428571427,
+      "upper": 3.211904761904762,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 9,
+      "tread": "POLYGON ((-25.6921 -6.2018333333333295, -24.434800000000003 -6.354233333333333, -24.400933333333334 -6.079066666666662, -25.624366666666667 -5.930899999999998, -25.6921 -6.2018333333333295))",
+      "lower": 3.211904761904762,
+      "upper": 3.3809523809523805,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_1_tramo_2",
+      "level": 1,
+      "index": 10,
+      "tread": "POLYGON ((-25.624366666666667 -5.930899999999998, -24.400933333333334 -6.079066666666662, -24.367066666666666 -5.803899999999999, -25.556633333333334 -5.659966666666662, -25.624366666666667 -5.930899999999998))",
+      "lower": 3.3809523809523805,
+      "upper": 3.55,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 1,
+      "tread": "POLYGON ((-23.935266666666667 -5.545666666666662, -22.635633333333335 -5.545666666666662, -22.635633333333335 -5.820833333333333, -23.935266666666667 -5.820833333333333, -23.935266666666667 -5.545666666666662))",
+      "lower": 3.55,
+      "upper": 3.7190476190476187,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 2,
+      "tread": "POLYGON ((-23.935266666666667 -5.820833333333333, -22.635633333333335 -5.820833333333333, -22.635633333333335 -6.0959999999999965, -23.84636666666667 -6.0959999999999965, -23.935266666666667 -5.820833333333333))",
+      "lower": 3.7190476190476187,
+      "upper": 3.8880952380952376,
+      "riser": 0.1690476190476189
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 3,
+      "tread": "POLYGON ((-23.84636666666667 -6.0959999999999965, -22.635633333333335 -6.0959999999999965, -22.635633333333335 -6.371166666666667, -23.880233333333333 -6.371166666666667, -23.84636666666667 -6.0959999999999965))",
+      "lower": 3.8880952380952376,
+      "upper": 4.057142857142857,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 4,
+      "tread": "POLYGON ((-23.880233333333333 -6.371166666666667, -22.635633333333335 -6.371166666666667, -22.635633333333335 -6.646333333333331, -23.9141 -6.646333333333331, -23.880233333333333 -6.371166666666667))",
+      "lower": 4.057142857142857,
+      "upper": 4.226190476190476,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 5,
+      "tread": "POLYGON ((-23.9141 -6.646333333333331, -22.635633333333335 -6.646333333333331, -22.635633333333335 -6.921499999999995, -23.947966666666666 -6.921499999999995, -23.9141 -6.646333333333331))",
+      "lower": 4.226190476190476,
+      "upper": 4.395238095238095,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 6,
+      "tread": "POLYGON ((-23.947966666666666 -6.921499999999995, -22.635633333333335 -6.921499999999995, -22.635633333333335 -7.196666666666665, -23.981833333333334 -7.196666666666665, -23.947966666666666 -6.921499999999995))",
+      "lower": 4.395238095238095,
+      "upper": 4.564285714285714,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 7,
+      "tread": "POLYGON ((-23.981833333333334 -7.196666666666665, -22.635633333333335 -7.196666666666665, -22.635633333333335 -7.467599999999997, -24.015700000000002 -7.467599999999997, -23.981833333333334 -7.196666666666665))",
+      "lower": 4.564285714285714,
+      "upper": 4.7333333333333325,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 8,
+      "tread": "POLYGON ((-24.015700000000002 -7.467599999999997, -22.635633333333335 -7.467599999999997, -22.635633333333335 -7.742766666666665, -24.049566666666667 -7.742766666666665, -24.015700000000002 -7.467599999999997))",
+      "lower": 4.7333333333333325,
+      "upper": 4.902380952380952,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 9,
+      "tread": "POLYGON ((-24.049566666666667 -7.742766666666665, -22.635633333333335 -7.742766666666665, -22.635633333333335 -8.017933333333332, -24.083433333333332 -8.017933333333332, -24.049566666666667 -7.742766666666665))",
+      "lower": 4.902380952380952,
+      "upper": 5.071428571428571,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 10,
+      "tread": "POLYGON ((-24.083433333333332 -8.017933333333332, -22.635633333333335 -8.017933333333332, -22.635633333333335 -8.293099999999999, -24.1173 -8.293099999999999, -24.083433333333332 -8.017933333333332))",
+      "lower": 5.071428571428571,
+      "upper": 5.24047619047619,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_2_tramo_1",
+      "level": 2,
+      "index": 11,
+      "tread": "POLYGON ((-24.1173 -8.293099999999999, -22.635633333333335 -8.293099999999999, -22.652548769395615 -8.562438934529624, -24.15116666666667 -8.568266666666666, -24.1173 -8.293099999999999))",
+      "lower": 5.24047619047619,
+      "upper": 5.409523809523809,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 1,
+      "tread": "POLYGON ((-26.132712217280073 -8.336658055089309, -24.5999 -8.547099999999997, -24.667633333333335 -8.263466666666666, -26.1366 -8.081433333333333, -26.132712217280073 -8.336658055089309))",
+      "lower": 5.409523809523809,
+      "upper": 5.578571428571428,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 2,
+      "tread": "POLYGON ((-26.1366 -8.081433333333333, -24.667633333333335 -8.263466666666666, -24.633766666666666 -7.992533333333331, -26.090033333333334 -7.8104999999999976, -26.1366 -8.081433333333333))",
+      "lower": 5.578571428571428,
+      "upper": 5.747619047619047,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 3,
+      "tread": "POLYGON ((-26.090033333333334 -7.8104999999999976, -24.633766666666666 -7.992533333333331, -24.5999 -7.717366666666663, -26.0223 -7.543800000000001, -26.090033333333334 -7.8104999999999976))",
+      "lower": 5.747619047619047,
+      "upper": 5.916666666666666,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 4,
+      "tread": "POLYGON ((-26.0223 -7.543800000000001, -24.5999 -7.717366666666663, -24.566033333333333 -7.446433333333335, -25.95456666666667 -7.277099999999997, -26.0223 -7.543800000000001))",
+      "lower": 5.916666666666666,
+      "upper": 6.085714285714285,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 5,
+      "tread": "POLYGON ((-25.95456666666667 -7.277099999999997, -24.566033333333333 -7.446433333333335, -24.53216666666667 -7.171266666666664, -25.886833333333335 -7.006166666666665, -25.95456666666667 -7.277099999999997))",
+      "lower": 6.085714285714285,
+      "upper": 6.254761904761904,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 6,
+      "tread": "POLYGON ((-25.886833333333335 -7.006166666666665, -24.53216666666667 -7.171266666666664, -24.4983 -6.900333333333332, -25.819100000000002 -6.739466666666665, -25.886833333333335 -7.006166666666665))",
+      "lower": 6.254761904761904,
+      "upper": 6.423809523809523,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 7,
+      "tread": "POLYGON ((-25.819100000000002 -6.739466666666665, -24.4983 -6.900333333333332, -24.468666666666667 -6.625166666666665, -25.759833333333333 -6.468533333333333, -25.819100000000002 -6.739466666666665))",
+      "lower": 6.423809523809523,
+      "upper": 6.5928571428571425,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 8,
+      "tread": "POLYGON ((-25.759833333333333 -6.468533333333333, -24.468666666666667 -6.625166666666665, -24.434800000000003 -6.354233333333333, -25.6921 -6.2018333333333295, -25.759833333333333 -6.468533333333333))",
+      "lower": 6.5928571428571425,
+      "upper": 6.761904761904761,
+      "riser": 0.16904761904761845
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 9,
+      "tread": "POLYGON ((-25.6921 -6.2018333333333295, -24.434800000000003 -6.354233333333333, -24.400933333333334 -6.079066666666662, -25.624366666666667 -5.930899999999998, -25.6921 -6.2018333333333295))",
+      "lower": 6.761904761904761,
+      "upper": 6.93095238095238,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_2_tramo_2",
+      "level": 2,
+      "index": 10,
+      "tread": "POLYGON ((-25.624366666666667 -5.930899999999998, -24.400933333333334 -6.079066666666662, -24.367066666666666 -5.803899999999999, -25.556633333333334 -5.659966666666662, -25.624366666666667 -5.930899999999998))",
+      "lower": 6.93095238095238,
+      "upper": 7.1,
+      "riser": 0.16904761904761934
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 1,
+      "tread": "POLYGON ((-23.935266666666667 -5.545666666666662, -22.635633333333335 -5.545666666666662, -22.635633333333335 -5.820833333333333, -23.935266666666667 -5.820833333333333, -23.935266666666667 -5.545666666666662))",
+      "lower": 7.1,
+      "upper": 7.271428571428571,
+      "riser": 0.1714285714285717
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 2,
+      "tread": "POLYGON ((-23.935266666666667 -5.820833333333333, -22.635633333333335 -5.820833333333333, -22.635633333333335 -6.0959999999999965, -23.84636666666667 -6.0959999999999965, -23.935266666666667 -5.820833333333333))",
+      "lower": 7.271428571428571,
+      "upper": 7.442857142857142,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 3,
+      "tread": "POLYGON ((-23.84636666666667 -6.0959999999999965, -22.635633333333335 -6.0959999999999965, -22.635633333333335 -6.371166666666667, -23.880233333333333 -6.371166666666667, -23.84636666666667 -6.0959999999999965))",
+      "lower": 7.442857142857142,
+      "upper": 7.614285714285714,
+      "riser": 0.1714285714285717
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 4,
+      "tread": "POLYGON ((-23.880233333333333 -6.371166666666667, -22.635633333333335 -6.371166666666667, -22.635633333333335 -6.646333333333331, -23.9141 -6.646333333333331, -23.880233333333333 -6.371166666666667))",
+      "lower": 7.614285714285714,
+      "upper": 7.785714285714286,
+      "riser": 0.1714285714285717
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 5,
+      "tread": "POLYGON ((-23.9141 -6.646333333333331, -22.635633333333335 -6.646333333333331, -22.635633333333335 -6.921499999999995, -23.947966666666666 -6.921499999999995, -23.9141 -6.646333333333331))",
+      "lower": 7.785714285714286,
+      "upper": 7.957142857142857,
+      "riser": 0.1714285714285717
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 6,
+      "tread": "POLYGON ((-23.947966666666666 -6.921499999999995, -22.635633333333335 -6.921499999999995, -22.635633333333335 -7.196666666666665, -23.981833333333334 -7.196666666666665, -23.947966666666666 -6.921499999999995))",
+      "lower": 7.957142857142857,
+      "upper": 8.128571428571428,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 7,
+      "tread": "POLYGON ((-23.981833333333334 -7.196666666666665, -22.635633333333335 -7.196666666666665, -22.635633333333335 -7.467599999999997, -24.015700000000002 -7.467599999999997, -23.981833333333334 -7.196666666666665))",
+      "lower": 8.128571428571428,
+      "upper": 8.3,
+      "riser": 0.1714285714285726
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 8,
+      "tread": "POLYGON ((-24.015700000000002 -7.467599999999997, -22.635633333333335 -7.467599999999997, -22.635633333333335 -7.742766666666665, -24.049566666666667 -7.742766666666665, -24.015700000000002 -7.467599999999997))",
+      "lower": 8.3,
+      "upper": 8.471428571428572,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 9,
+      "tread": "POLYGON ((-24.049566666666667 -7.742766666666665, -22.635633333333335 -7.742766666666665, -22.635633333333335 -8.017933333333332, -24.083433333333332 -8.017933333333332, -24.049566666666667 -7.742766666666665))",
+      "lower": 8.471428571428572,
+      "upper": 8.642857142857142,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 10,
+      "tread": "POLYGON ((-24.083433333333332 -8.017933333333332, -22.635633333333335 -8.017933333333332, -22.635633333333335 -8.293099999999999, -24.1173 -8.293099999999999, -24.083433333333332 -8.017933333333332))",
+      "lower": 8.642857142857142,
+      "upper": 8.814285714285715,
+      "riser": 0.1714285714285726
+    },
+    {
+      "stair": "Oeste_3_tramo_1",
+      "level": 3,
+      "index": 11,
+      "tread": "POLYGON ((-24.1173 -8.293099999999999, -22.635633333333335 -8.293099999999999, -22.652548769395615 -8.562438934529624, -24.15116666666667 -8.568266666666666, -24.1173 -8.293099999999999))",
+      "lower": 8.814285714285715,
+      "upper": 8.985714285714286,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 1,
+      "tread": "POLYGON ((-26.132712217280073 -8.336658055089309, -24.5999 -8.547099999999997, -24.667633333333335 -8.263466666666666, -26.1366 -8.081433333333333, -26.132712217280073 -8.336658055089309))",
+      "lower": 8.985714285714286,
+      "upper": 9.157142857142857,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 2,
+      "tread": "POLYGON ((-26.1366 -8.081433333333333, -24.667633333333335 -8.263466666666666, -24.633766666666666 -7.992533333333331, -26.090033333333334 -7.8104999999999976, -26.1366 -8.081433333333333))",
+      "lower": 9.157142857142857,
+      "upper": 9.32857142857143,
+      "riser": 0.1714285714285726
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 3,
+      "tread": "POLYGON ((-26.090033333333334 -7.8104999999999976, -24.633766666666666 -7.992533333333331, -24.5999 -7.717366666666663, -26.0223 -7.543800000000001, -26.090033333333334 -7.8104999999999976))",
+      "lower": 9.32857142857143,
+      "upper": 9.5,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 4,
+      "tread": "POLYGON ((-26.0223 -7.543800000000001, -24.5999 -7.717366666666663, -24.566033333333333 -7.446433333333335, -25.95456666666667 -7.277099999999997, -26.0223 -7.543800000000001))",
+      "lower": 9.5,
+      "upper": 9.67142857142857,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 5,
+      "tread": "POLYGON ((-25.95456666666667 -7.277099999999997, -24.566033333333333 -7.446433333333335, -24.53216666666667 -7.171266666666664, -25.886833333333335 -7.006166666666665, -25.95456666666667 -7.277099999999997))",
+      "lower": 9.67142857142857,
+      "upper": 9.842857142857142,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 6,
+      "tread": "POLYGON ((-25.886833333333335 -7.006166666666665, -24.53216666666667 -7.171266666666664, -24.4983 -6.900333333333332, -25.819100000000002 -6.739466666666665, -25.886833333333335 -7.006166666666665))",
+      "lower": 9.842857142857142,
+      "upper": 10.014285714285714,
+      "riser": 0.1714285714285726
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 7,
+      "tread": "POLYGON ((-25.819100000000002 -6.739466666666665, -24.4983 -6.900333333333332, -24.468666666666667 -6.625166666666665, -25.759833333333333 -6.468533333333333, -25.819100000000002 -6.739466666666665))",
+      "lower": 10.014285714285714,
+      "upper": 10.185714285714285,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 8,
+      "tread": "POLYGON ((-25.759833333333333 -6.468533333333333, -24.468666666666667 -6.625166666666665, -24.434800000000003 -6.354233333333333, -25.6921 -6.2018333333333295, -25.759833333333333 -6.468533333333333))",
+      "lower": 10.185714285714285,
+      "upper": 10.357142857142856,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 9,
+      "tread": "POLYGON ((-25.6921 -6.2018333333333295, -24.434800000000003 -6.354233333333333, -24.400933333333334 -6.079066666666662, -25.624366666666667 -5.930899999999998, -25.6921 -6.2018333333333295))",
+      "lower": 10.357142857142856,
+      "upper": 10.528571428571428,
+      "riser": 0.1714285714285726
+    },
+    {
+      "stair": "Oeste_3_tramo_2",
+      "level": 3,
+      "index": 10,
+      "tread": "POLYGON ((-25.624366666666667 -5.930899999999998, -24.400933333333334 -6.079066666666662, -24.367066666666666 -5.803899999999999, -25.556633333333334 -5.659966666666662, -25.624366666666667 -5.930899999999998))",
+      "lower": 10.528571428571428,
+      "upper": 10.7,
+      "riser": 0.17142857142857082
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 1,
+      "tread": "POLYGON ((17.91716977881697 -4.579622579469742, 19.131325642013962 -3.363201467765748, 19.29028484426011 -3.522160665785005, 18.076086220936507 -4.738539017364247, 17.91716977881697 -4.579622579469742))",
+      "lower": -3.55,
+      "upper": -3.3516666666666666,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 2,
+      "tread": "POLYGON ((18.076086220936507 -4.738539017364247, 19.29028484426011 -3.522160665785005, 19.449234609665705 -3.6811104269639636, 18.23501209989685 -4.897464892098798, 18.076086220936507 -4.738539017364247))",
+      "lower": -3.3516666666666666,
+      "upper": -3.1533333333333333,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 3,
+      "tread": "POLYGON ((18.23501209989685 -4.897464892098798, 19.449234609665705 -3.6811104269639636, 19.608415313426597 -3.8402911264924837, 18.393707040501766 -5.056159828483915, 18.23501209989685 -4.897464892098798))",
+      "lower": -3.1533333333333333,
+      "upper": -2.955,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 4,
+      "tread": "POLYGON ((18.393707040501766 -5.056159828483915, 19.608415313426597 -3.8402911264924837, 19.76778620869425 -3.9996620175227995, 18.55221178959988 -5.21466457336728, 18.393707040501766 -5.056159828483915))",
+      "lower": -2.955,
+      "upper": -2.756666666666667,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 5,
+      "tread": "POLYGON ((18.55221178959988 -5.21466457336728, 19.76778620869425 -3.9996620175227995, 19.927109903156648 -4.158985707748697, 18.71076373950346 -5.373216519054849, 18.55221178959988 -5.21466457336728))",
+      "lower": -2.7566666666666664,
+      "upper": -2.558333333333333,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 6,
+      "tread": "POLYGON ((18.71076373950346 -5.373216519054849, 19.927109903156648 -4.158985707748697, 20.086047725339114 -4.317923525705584, 18.869701561686668 -5.532154337011736, 18.71076373950346 -5.373216519054849))",
+      "lower": -2.558333333333333,
+      "upper": -2.36,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 7,
+      "tread": "POLYGON ((18.869701561686668 -5.532154337011736, 20.086047725339114 -4.317923525705584, 20.24536808400875 -4.4757116466441715, 19.029021920376152 -5.691474691465384, 18.869701561686668 -5.532154337011736))",
+      "lower": -2.36,
+      "upper": -2.1616666666666666,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 8,
+      "tread": "POLYGON ((19.029021920376152 -5.691474691465384, 20.24536808400875 -4.4757116466441715, 20.404315250792475 -4.634935747850004, 19.187811092872767 -5.8502638597399255, 19.029021920376152 -5.691474691465384))",
+      "lower": -2.161666666666666,
+      "upper": -1.963333333333333,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 9,
+      "tread": "POLYGON ((19.187811092872767 -5.8502638597399255, 20.404315250792475 -4.634935747850004, 20.563138528101838 -4.794482120098456, 19.34650154073973 -6.008954305256458, 19.187811092872767 -5.8502638597399255))",
+      "lower": -1.9633333333333332,
+      "upper": -1.765,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 10,
+      "tread": "POLYGON ((19.34650154073973 -6.008954305256458, 20.563138528101838 -4.794482120098456, 20.722076348171697 -4.953419940168317, 19.50543936080959 -6.167892125326318, 19.34650154073973 -6.008954305256458))",
+      "lower": -1.765,
+      "upper": -1.5666666666666667,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_1",
+      "level": 0,
+      "index": 11,
+      "tread": "POLYGON ((19.50543936080959 -6.167892125326318, 20.722076348171697 -4.953419940168317, 20.88101416824156 -5.11235776023818, 19.664377180879452 -6.326829945396182, 19.50543936080959 -6.167892125326318))",
+      "lower": -1.5666666666666664,
+      "upper": -1.3683333333333332,
+      "riser": 0.19833333333333333
+    },
+    {
+      "stair": "Este_0_tramo_2",
+      "level": 0,
+      "index": 1,
+      "tread": "POLYGON ((19.075219854446914 -7.487285542822519, 19.92348909023076 -6.641131669166498, 19.66391363989764 -6.381556225735153, 18.815644404141533 -7.229825484046576, 19.075219854446914 -7.487285542822519))",
+      "lower": -1.17,
+      "upper": -1.002857142857143,
+      "riser": 0.16714285714285712
+    },
+    {
+      "stair": "Este_0_tramo_2",
+      "level": 0,
+      "index": 2,
+      "tread": "POLYGON ((18.815644404141533 -7.229825484046576, 19.66391363989764 -6.381556225735153, 19.40486631523804 -6.12250890796313, 18.556597079481328 -6.970778166274404, 18.815644404141533 -7.229825484046576))",
+      "lower": -1.002857142857143,
+      "upper": -0.8357142857142857,
+      "riser": 0.16714285714285712
+    },
+    {
+      "stair": "Este_0_tramo_2",
+      "level": 0,
+      "index": 3,
+      "tread": "POLYGON ((18.556597079481328 -6.970778166274404, 19.40486631523804 -6.12250890796313, 19.14529158146688 -5.862934181094556, 18.299134860204518 -6.7112034393786555, 18.556597079481328 -6.970778166274404))",
+      "lower": -0.8357142857142856,
+      "upper": -0.6685714285714285,
+      "riser": 0.16714285714285712
+    },
+    {
+      "stair": "Este_0_tramo_2",
+      "level": 0,
+      "index": 4,
+      "tread": "POLYGON ((18.299134860204518 -6.7112034393786555, 19.14529158146688 -5.862934181094556, 18.887830799226933 -5.603358021071825, 18.039561563470524 -6.451627279383553, 18.299134860204518 -6.7112034393786555))",
+      "lower": -0.6685714285714286,
+      "upper": -0.5014285714285714,
+      "riser": 0.16714285714285712
+    },
+    {
+      "stair": "Este_0_tramo_2",
+      "level": 0,
+      "index": 5,
+      "tread": "POLYGON ((18.039561563470524 -6.451627279383553, 18.887830799226933 -5.603358021071825, 18.628783474566692 -5.344310703299919, 17.780514238810582 -6.192579961611642, 18.039561563470524 -6.451627279383553))",
+      "lower": -0.5014285714285714,
+      "upper": -0.3342857142857143,
+      "riser": 0.16714285714285712
+    },
+    {
+      "stair": "Este_0_tramo_2",
+      "level": 0,
+      "index": 6,
+      "tread": "POLYGON ((17.780514238810582 -6.192579961611642, 18.628783474566692 -5.344310703299919, 18.368681347440997 -5.086323967718499, 17.52041211168489 -5.934593226029392, 17.780514238810582 -6.192579961611642))",
+      "lower": -0.3342857142857143,
+      "upper": -0.16714285714285718,
+      "riser": 0.16714285714285712
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 1,
+      "tread": "POLYGON ((18.2882967188998 -4.212670105881443, 19.1344505699999 -3.3644008475985174, 19.329065960933804 -3.559016233357397, 18.48079672517906 -4.407285491669427, 18.2882967188998 -4.212670105881443))",
+      "lower": 0.0,
+      "upper": 0.1775,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 2,
+      "tread": "POLYGON ((18.48079672517906 -4.407285491669427, 19.329065960933804 -3.559016233357397, 19.523681351869072 -3.7536316191174137, 18.675412116112966 -4.601900877429443, 18.48079672517906 -4.407285491669427))",
+      "lower": 0.1775,
+      "upper": 0.355,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 3,
+      "tread": "POLYGON ((18.675412116112966 -4.601900877429443, 19.523681351869072 -3.7536316191174137, 19.718296742802977 -3.948247004876521, 18.87002750704687 -4.7965162631885505, 18.675412116112966 -4.601900877429443))",
+      "lower": 0.355,
+      "upper": 0.5325,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 4,
+      "tread": "POLYGON ((18.87002750704687 -4.7965162631885505, 19.718296742802977 -3.948247004876521, 19.91291213373779 -4.142862390636537, 19.064642897980775 -4.991131648948567, 18.87002750704687 -4.7965162631885505))",
+      "lower": 0.5325,
+      "upper": 0.71,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 5,
+      "tread": "POLYGON ((19.064642897980775 -4.991131648948567, 19.91291213373779 -4.142862390636537, 20.107615419055218 -4.336567255536556, 19.258559306519327 -5.18562339064656, 19.064642897980775 -4.991131648948567))",
+      "lower": 0.71,
+      "upper": 0.8875,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 6,
+      "tread": "POLYGON ((19.258559306519327 -5.18562339064656, 20.107615419055218 -4.336567255536556, 20.302411340326397 -4.531363171628618, 19.453355227789142 -5.380419306738622, 19.258559306519327 -5.18562339064656))",
+      "lower": 0.8875,
+      "upper": 1.065,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 7,
+      "tread": "POLYGON ((19.453355227789142 -5.380419306738622, 20.302411340326397 -4.531363171628618, 20.497207261596213 -4.726159087721589, 19.648151149067143 -5.575215222831593, 19.453355227789142 -5.380419306738622))",
+      "lower": 1.065,
+      "upper": 1.2425,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 8,
+      "tread": "POLYGON ((19.648151149067143 -5.575215222831593, 20.497207261596213 -4.726159087721589, 20.692003182874213 -4.92095500381456, 19.842947070337413 -5.7700111389245645, 19.648151149067143 -5.575215222831593))",
+      "lower": 1.2425,
+      "upper": 1.42,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_1",
+      "level": 1,
+      "index": 9,
+      "tread": "POLYGON ((19.842947070337413 -5.7700111389245645, 20.692003182874213 -4.92095500381456, 20.88679910414403 -5.115750919906622, 20.037742991578124 -5.962689708075549, 19.842947070337413 -5.7700111389245645))",
+      "lower": 1.42,
+      "upper": 1.5975,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 1,
+      "tread": "POLYGON ((19.08929454242889 -7.484662391975917, 19.93835065496478 -6.635606256865913, 19.743554733694964 -6.440810340773851, 18.89661596810174 -7.289866475855888, 19.08929454242889 -7.484662391975917))",
+      "lower": 1.775,
+      "upper": 1.9525,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 2,
+      "tread": "POLYGON ((18.89661596810174 -7.289866475855888, 19.743554733694964 -6.440810340773851, 19.550876159360996 -6.246014424651776, 18.701820046831926 -7.095070559762917, 18.89661596810174 -7.289866475855888))",
+      "lower": 1.9525,
+      "upper": 2.13,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 3,
+      "tread": "POLYGON ((18.701820046831926 -7.095070559762917, 19.550876159360996 -6.246014424651776, 19.35608023811983 -6.053335855501928, 18.507024125553926 -6.900274643670855, 18.701820046831926 -7.095070559762917))",
+      "lower": 2.13,
+      "upper": 2.3075,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 4,
+      "tread": "POLYGON ((18.507024125553926 -6.900274643670855, 19.35608023811983 -6.053335855501928, 19.16128431684865 -5.858539939409866, 18.31222820431276 -6.70759607451987, 18.507024125553926 -6.900274643670855))",
+      "lower": 2.3075,
+      "upper": 2.4850000000000003,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 5,
+      "tread": "POLYGON ((18.31222820431276 -6.70759607451987, 19.16128431684865 -5.858539939409866, 18.966488395572014 -5.6637440233168945, 18.117432283042945 -6.512800158426899, 18.31222820431276 -6.70759607451987))",
+      "lower": 2.485,
+      "upper": 2.6624999999999996,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 6,
+      "tread": "POLYGON ((18.117432283042945 -6.512800158426899, 18.966488395572014 -5.6637440233168945, 18.771692474300835 -5.468948107223923, 17.922636361764944 -6.318004242334837, 18.117432283042945 -6.512800158426899))",
+      "lower": 2.6624999999999996,
+      "upper": 2.84,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 7,
+      "tread": "POLYGON ((17.922636361764944 -6.318004242334837, 18.771692474300835 -5.468948107223923, 18.57689655303102 -5.274152191131861, 17.727840440494674 -6.1232083262418655, 17.922636361764944 -6.318004242334837))",
+      "lower": 2.84,
+      "upper": 3.0175,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 8,
+      "tread": "POLYGON ((17.727840440494674 -6.1232083262418655, 18.57689655303102 -5.274152191131861, 18.38210063176075 -5.07935627503889, 17.53304451922486 -5.928412410148894, 17.727840440494674 -6.1232083262418655))",
+      "lower": 3.0175,
+      "upper": 3.1950000000000003,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_1_tramo_2",
+      "level": 1,
+      "index": 9,
+      "tread": "POLYGON ((17.53304451922486 -5.928412410148894, 18.38210063176075 -5.07935627503889, 18.18730471048275 -4.884560358945919, 17.340365944896803 -5.733616494028865, 17.53304451922486 -5.928412410148894))",
+      "lower": 3.195,
+      "upper": 3.3724999999999996,
+      "riser": 0.1775
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 1,
+      "tread": "POLYGON ((18.30164143635284 -4.207009335921839, 19.15069754888964 -3.3579532008109254, 19.34549347016673 -3.5527491169038967, 18.49643735763084 -4.401805252013901, 18.30164143635284 -4.207009335921839))",
+      "lower": 3.55,
+      "upper": 3.7274999999999996,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 2,
+      "tread": "POLYGON ((18.49643735763084 -4.401805252013901, 19.34549347016673 -3.5527491169038967, 19.538172044494786 -3.747545033024835, 18.691233278872005 -4.594483821164886, 18.49643735763084 -4.401805252013901))",
+      "lower": 3.7274999999999996,
+      "upper": 3.9049999999999994,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 3,
+      "tread": "POLYGON ((18.691233278872005 -4.594483821164886, 19.538172044494786 -3.747545033024835, 19.732967965735952 -3.9402236021749104, 18.883911853206882 -4.789279737285824, 18.691233278872005 -4.594483821164886))",
+      "lower": 3.905,
+      "upper": 4.0825,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 4,
+      "tread": "POLYGON ((18.883911853206882 -4.789279737285824, 19.732967965735952 -3.9402236021749104, 19.927763887013043 -4.135019518267882, 19.078707774476698 -4.984075653377886, 18.883911853206882 -4.789279737285824))",
+      "lower": 4.0825,
+      "upper": 4.26,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 5,
+      "tread": "POLYGON ((19.078707774476698 -4.984075653377886, 19.927763887013043 -4.135019518267882, 20.12255980828286 -4.329815434360853, 19.273503695746967 -5.178871569470857, 19.078707774476698 -4.984075653377886))",
+      "lower": 4.26,
+      "upper": 4.4375,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 6,
+      "tread": "POLYGON ((19.273503695746967 -5.178871569470857, 20.12255980828286 -4.329815434360853, 20.317355729554038 -4.524611350452915, 19.468299617016783 -5.373667485562919, 19.273503695746967 -5.178871569470857))",
+      "lower": 4.4375,
+      "upper": 4.615,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 7,
+      "tread": "POLYGON ((19.468299617016783 -5.373667485562919, 20.317355729554038 -4.524611350452915, 20.512151650823853 -4.719407266545886, 19.663095538294783 -5.56846340165589, 19.468299617016783 -5.373667485562919))",
+      "lower": 4.614999999999999,
+      "upper": 4.7924999999999995,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 8,
+      "tread": "POLYGON ((19.663095538294783 -5.56846340165589, 20.512151650823853 -4.719407266545886, 20.706947572101853 -4.9142031826388575, 19.857891459565053 -5.763259317748862, 19.663095538294783 -5.56846340165589))",
+      "lower": 4.7924999999999995,
+      "upper": 4.97,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_1",
+      "level": 2,
+      "index": 9,
+      "tread": "POLYGON ((19.857891459565053 -5.763259317748862, 20.706947572101853 -4.9142031826388575, 20.90174349337167 -5.108999098730919, 20.052687380805764 -5.9559378868998465, 19.857891459565053 -5.763259317748862))",
+      "lower": 4.969999999999999,
+      "upper": 5.147499999999999,
+      "riser": 0.17749999999999994
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 1,
+      "tread": "POLYGON ((19.08898173370153 -7.4846145326214355, 19.93803784623742 -6.635558397511431, 19.743241924967606 -6.44076248141937, 18.896303159373474 -7.289818616501407, 19.08898173370153 -7.4846145326214355))",
+      "lower": 5.324999999999999,
+      "upper": 5.5024999999999995,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 2,
+      "tread": "POLYGON ((18.896303159373474 -7.289818616501407, 19.743241924967606 -6.44076248141937, 19.550563350632274 -6.245966565297294, 18.70150723810366 -7.095022700408435, 18.896303159373474 -7.289818616501407))",
+      "lower": 5.5024999999999995,
+      "upper": 5.68,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 3,
+      "tread": "POLYGON ((18.70150723810366 -7.095022700408435, 19.550563350632274 -6.245966565297294, 19.355767429391562 -6.053287996147446, 18.506711316826568 -6.900226784316374, 18.70150723810366 -7.095022700408435))",
+      "lower": 5.68,
+      "upper": 5.8575,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 4,
+      "tread": "POLYGON ((18.506711316826568 -6.900226784316374, 19.355767429391562 -6.053287996147446, 19.160971508121293 -5.858492080055385, 18.3119153955854 -6.707548215165389, 18.506711316826568 -6.900226784316374))",
+      "lower": 5.8575,
+      "upper": 6.035,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 5,
+      "tread": "POLYGON ((18.3119153955854 -6.707548215165389, 19.160971508121293 -5.858492080055385, 18.966175586843292 -5.663696163962413, 18.117119474314222 -6.512752299072417, 18.3119153955854 -6.707548215165389))",
+      "lower": 6.034999999999999,
+      "upper": 6.2124999999999995,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 6,
+      "tread": "POLYGON ((18.117119474314222 -6.512752299072417, 18.966175586843292 -5.663696163962413, 18.771379665573477 -5.468900247869442, 17.922323553037586 -6.317956382980356, 18.117119474314222 -6.512752299072417))",
+      "lower": 6.2124999999999995,
+      "upper": 6.39,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 7,
+      "tread": "POLYGON ((17.922323553037586 -6.317956382980356, 18.771379665573477 -5.468900247869442, 18.57658374430366 -5.27410433177738, 17.727527631766407 -6.123160466887384, 17.922323553037586 -6.317956382980356))",
+      "lower": 6.39,
+      "upper": 6.5675,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 8,
+      "tread": "POLYGON ((17.727527631766407 -6.123160466887384, 18.57658374430366 -5.27410433177738, 18.381787823032482 -5.079308415684409, 17.53273171049659 -5.928364550794413, 17.727527631766407 -6.123160466887384))",
+      "lower": 6.5675,
+      "upper": 6.745,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Este_2_tramo_2",
+      "level": 2,
+      "index": 9,
+      "tread": "POLYGON ((17.53273171049659 -5.928364550794413, 18.381787823032482 -5.079308415684409, 18.18699190175539 -4.8845124995914375, 17.340053136169445 -5.733568634674384, 17.53273171049659 -5.928364550794413))",
+      "lower": 6.744999999999999,
+      "upper": 6.922499999999999,
+      "riser": 0.17750000000000005
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 1,
+      "tread": "POLYGON ((9.893299999999996 -2.8744333333333323, 9.893299999999996 -4.5931666666666615, 9.618133333333333 -4.5931666666666615, 9.618133333333333 -2.8744333333333323, 9.893299999999996 -2.8744333333333323))",
+      "lower": 0.0,
+      "upper": 0.16904761904761903,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 2,
+      "tread": "POLYGON ((9.618133333333333 -2.8744333333333323, 9.618133333333333 -4.5931666666666615, 9.342966666666669 -4.5931666666666615, 9.342966666666669 -2.8744333333333323, 9.618133333333333 -2.8744333333333323))",
+      "lower": 0.16904761904761903,
+      "upper": 0.33809523809523806,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 3,
+      "tread": "POLYGON ((9.342966666666669 -2.8744333333333323, 9.342966666666669 -4.5931666666666615, 9.067799999999998 -4.5931666666666615, 9.067799999999998 -2.8744333333333323, 9.342966666666669 -2.8744333333333323))",
+      "lower": 0.33809523809523806,
+      "upper": 0.5071428571428571,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 4,
+      "tread": "POLYGON ((9.067799999999998 -2.8744333333333323, 9.067799999999998 -4.5931666666666615, 8.792633333333328 -4.5931666666666615, 8.792633333333328 -2.8744333333333323, 9.067799999999998 -2.8744333333333323))",
+      "lower": 0.5071428571428571,
+      "upper": 0.6761904761904761,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 5,
+      "tread": "POLYGON ((8.792633333333328 -2.8744333333333323, 8.792633333333328 -4.5931666666666615, 8.517466666666664 -4.5931666666666615, 8.517466666666664 -2.8744333333333323, 8.792633333333328 -2.8744333333333323))",
+      "lower": 0.6761904761904761,
+      "upper": 0.8452380952380951,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 6,
+      "tread": "POLYGON ((8.517466666666664 -2.8744333333333323, 8.517466666666664 -4.5931666666666615, 8.2423 -4.5931666666666615, 8.2423 -2.8744333333333323, 8.517466666666664 -2.8744333333333323))",
+      "lower": 0.8452380952380951,
+      "upper": 1.0142857142857142,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 7,
+      "tread": "POLYGON ((8.2423 -2.8744333333333323, 8.2423 -4.5931666666666615, 7.9671333333333365 -4.5931666666666615, 7.9671333333333365 -2.8744333333333323, 8.2423 -2.8744333333333323))",
+      "lower": 1.0142857142857142,
+      "upper": 1.1833333333333333,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 8,
+      "tread": "POLYGON ((7.9671333333333365 -2.8744333333333323, 7.9671333333333365 -4.5931666666666615, 7.691966666666666 -4.5931666666666615, 7.691966666666666 -2.8744333333333323, 7.9671333333333365 -2.8744333333333323))",
+      "lower": 1.1833333333333331,
+      "upper": 1.3523809523809522,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 9,
+      "tread": "POLYGON ((7.691966666666666 -2.8744333333333323, 7.691966666666666 -4.5931666666666615, 7.416799999999995 -4.5931666666666615, 7.416799999999995 -2.8744333333333323, 7.691966666666666 -2.8744333333333323))",
+      "lower": 1.3523809523809522,
+      "upper": 1.5214285714285714,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 10,
+      "tread": "POLYGON ((7.416799999999995 -2.8744333333333323, 7.416799999999995 -4.5931666666666615, 7.141633333333331 -4.5931666666666615, 7.141633333333331 -2.8744333333333323, 7.416799999999995 -2.8744333333333323))",
+      "lower": 1.5214285714285714,
+      "upper": 1.6904761904761905,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 11,
+      "tread": "POLYGON ((6.21876666666666 -2.8744333333333323, 6.21876666666666 -4.5931666666666615, 5.943599999999996 -4.5931666666666615, 5.943599999999996 -2.8744333333333323, 6.21876666666666 -2.8744333333333323))",
+      "lower": 1.6904761904761902,
+      "upper": 1.8595238095238094,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 12,
+      "tread": "POLYGON ((5.943599999999996 -2.8744333333333323, 5.943599999999996 -4.5931666666666615, 5.668433333333326 -4.5931666666666615, 5.668433333333326 -2.8744333333333323, 5.943599999999996 -2.8744333333333323))",
+      "lower": 1.8595238095238094,
+      "upper": 2.0285714285714285,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 13,
+      "tread": "POLYGON ((5.668433333333326 -2.8744333333333323, 5.668433333333326 -4.5931666666666615, 5.393266666666662 -4.5931666666666615, 5.393266666666662 -2.8744333333333323, 5.668433333333326 -2.8744333333333323))",
+      "lower": 2.0285714285714285,
+      "upper": 2.1976190476190474,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 14,
+      "tread": "POLYGON ((5.393266666666662 -2.8744333333333323, 5.393266666666662 -4.5931666666666615, 5.118099999999991 -4.5931666666666615, 5.118099999999991 -2.8744333333333323, 5.393266666666662 -2.8744333333333323))",
+      "lower": 2.1976190476190474,
+      "upper": 2.3666666666666663,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 15,
+      "tread": "POLYGON ((5.118099999999991 -2.8744333333333323, 5.118099999999991 -4.5931666666666615, 4.8429333333333275 -4.5931666666666615, 4.8429333333333275 -2.8744333333333323, 5.118099999999991 -2.8744333333333323))",
+      "lower": 2.3666666666666663,
+      "upper": 2.535714285714285,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 16,
+      "tread": "POLYGON ((4.8429333333333275 -2.8744333333333323, 4.8429333333333275 -4.5931666666666615, 4.567766666666664 -4.5931666666666615, 4.567766666666664 -2.8744333333333323, 4.8429333333333275 -2.8744333333333323))",
+      "lower": 2.5357142857142856,
+      "upper": 2.7047619047619045,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 17,
+      "tread": "POLYGON ((4.567766666666664 -2.8744333333333323, 4.567766666666664 -4.5931666666666615, 4.292599999999993 -4.5931666666666615, 4.292599999999993 -2.8744333333333323, 4.567766666666664 -2.8744333333333323))",
+      "lower": 2.7047619047619045,
+      "upper": 2.8738095238095234,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 18,
+      "tread": "POLYGON ((4.292599999999993 -2.8744333333333323, 4.292599999999993 -4.5931666666666615, 4.017433333333329 -4.5931666666666615, 4.017433333333329 -2.8744333333333323, 4.292599999999993 -2.8744333333333323))",
+      "lower": 2.8738095238095234,
+      "upper": 3.0428571428571423,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 19,
+      "tread": "POLYGON ((4.017433333333329 -2.8744333333333323, 4.017433333333329 -4.5931666666666615, 3.7422666666666586 -4.5931666666666615, 3.7422666666666586 -2.8744333333333323, 4.017433333333329 -2.8744333333333323))",
+      "lower": 3.0428571428571427,
+      "upper": 3.2119047619047616,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_1",
+      "level": 1,
+      "index": 20,
+      "tread": "POLYGON ((3.7422666666666586 -2.8744333333333323, 3.7422666666666586 -4.5931666666666615, 3.467099999999995 -4.5931666666666615, 3.467099999999995 -2.8744333333333323, 3.7422666666666586 -2.8744333333333323))",
+      "lower": 3.2119047619047616,
+      "upper": 3.3809523809523805,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 1,
+      "tread": "POLYGON ((-7.209366666666668 -3.2935333333333325, -7.209366666666668 -4.792133333333332, -7.484533333333335 -4.792133333333332, -7.484533333333335 -3.2935333333333325, -7.209366666666668 -3.2935333333333325))",
+      "lower": 3.55,
+      "upper": 3.7190476190476187,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 2,
+      "tread": "POLYGON ((-7.484533333333335 -3.2935333333333325, -7.484533333333335 -4.792133333333332, -7.759700000000002 -4.792133333333332, -7.759700000000002 -3.2935333333333325, -7.484533333333335 -3.2935333333333325))",
+      "lower": 3.7190476190476187,
+      "upper": 3.8880952380952376,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 3,
+      "tread": "POLYGON ((-7.759700000000002 -3.2935333333333325, -7.759700000000002 -4.792133333333332, -8.03486666666667 -4.792133333333332, -8.03486666666667 -3.2935333333333325, -7.759700000000002 -3.2935333333333325))",
+      "lower": 3.888095238095238,
+      "upper": 4.057142857142857,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 4,
+      "tread": "POLYGON ((-8.03486666666667 -3.2935333333333325, -8.03486666666667 -4.792133333333332, -8.310033333333337 -4.792133333333332, -8.310033333333337 -3.2935333333333325, -8.03486666666667 -3.2935333333333325))",
+      "lower": 4.057142857142857,
+      "upper": 4.226190476190476,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 5,
+      "tread": "POLYGON ((-8.310033333333337 -3.2935333333333325, -8.310033333333337 -4.792133333333332, -8.585200000000004 -4.792133333333332, -8.585200000000004 -3.2935333333333325, -8.310033333333337 -3.2935333333333325))",
+      "lower": 4.226190476190476,
+      "upper": 4.395238095238096,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 6,
+      "tread": "POLYGON ((-8.585200000000004 -3.2935333333333325, -8.585200000000004 -4.792133333333332, -8.860366666666668 -4.792133333333332, -8.860366666666668 -3.2935333333333325, -8.585200000000004 -3.2935333333333325))",
+      "lower": 4.395238095238095,
+      "upper": 4.564285714285714,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 7,
+      "tread": "POLYGON ((-8.860366666666668 -3.2935333333333325, -8.860366666666668 -4.792133333333332, -9.135533333333338 -4.792133333333332, -9.135533333333338 -3.2935333333333325, -8.860366666666668 -3.2935333333333325))",
+      "lower": 4.564285714285714,
+      "upper": 4.733333333333333,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 8,
+      "tread": "POLYGON ((-9.135533333333338 -3.2935333333333325, -9.135533333333338 -4.792133333333332, -9.410700000000002 -4.792133333333332, -9.410700000000002 -3.2935333333333325, -9.135533333333338 -3.2935333333333325))",
+      "lower": 4.7333333333333325,
+      "upper": 4.902380952380952,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 9,
+      "tread": "POLYGON ((-9.410700000000002 -3.2935333333333325, -9.410700000000002 -4.792133333333332, -9.68586666666667 -4.792133333333332, -9.68586666666667 -3.2935333333333325, -9.410700000000002 -3.2935333333333325))",
+      "lower": 4.902380952380952,
+      "upper": 5.071428571428571,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 10,
+      "tread": "POLYGON ((-9.68586666666667 -3.2935333333333325, -9.68586666666667 -4.792133333333332, -9.961033333333337 -4.792133333333332, -9.961033333333337 -3.2935333333333325, -9.68586666666667 -3.2935333333333325))",
+      "lower": 5.071428571428571,
+      "upper": 5.2404761904761905,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 11,
+      "tread": "POLYGON ((-11.163300000000003 -3.2935333333333325, -11.163300000000003 -4.792133333333332, -11.43846666666667 -4.792133333333332, -11.43846666666667 -3.2935333333333325, -11.163300000000003 -3.2935333333333325))",
+      "lower": 5.2404761904761905,
+      "upper": 5.40952380952381,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 12,
+      "tread": "POLYGON ((-11.43846666666667 -3.2935333333333325, -11.43846666666667 -4.792133333333332, -11.713633333333338 -4.792133333333332, -11.713633333333338 -3.2935333333333325, -11.43846666666667 -3.2935333333333325))",
+      "lower": 5.409523809523809,
+      "upper": 5.578571428571428,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 13,
+      "tread": "POLYGON ((-11.713633333333338 -3.2935333333333325, -11.713633333333338 -4.792133333333332, -11.988800000000001 -4.792133333333332, -11.988800000000001 -3.2935333333333325, -11.713633333333338 -3.2935333333333325))",
+      "lower": 5.578571428571428,
+      "upper": 5.747619047619048,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 14,
+      "tread": "POLYGON ((-11.988800000000001 -3.2935333333333325, -11.988800000000001 -4.792133333333332, -12.263966666666668 -4.792133333333332, -12.263966666666668 -3.2935333333333325, -11.988800000000001 -3.2935333333333325))",
+      "lower": 5.747619047619047,
+      "upper": 5.916666666666666,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 15,
+      "tread": "POLYGON ((-12.263966666666668 -3.2935333333333325, -12.263966666666668 -4.792133333333332, -12.539133333333336 -4.792133333333332, -12.539133333333336 -3.2935333333333325, -12.263966666666668 -3.2935333333333325))",
+      "lower": 5.916666666666666,
+      "upper": 6.085714285714285,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 16,
+      "tread": "POLYGON ((-12.539133333333336 -3.2935333333333325, -12.539133333333336 -4.792133333333332, -12.814300000000003 -4.792133333333332, -12.814300000000003 -3.2935333333333325, -12.539133333333336 -3.2935333333333325))",
+      "lower": 6.085714285714285,
+      "upper": 6.254761904761905,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 17,
+      "tread": "POLYGON ((-12.814300000000003 -3.2935333333333325, -12.814300000000003 -4.792133333333332, -13.08946666666667 -4.792133333333332, -13.08946666666667 -3.2935333333333325, -12.814300000000003 -3.2935333333333325))",
+      "lower": 6.254761904761905,
+      "upper": 6.423809523809524,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 18,
+      "tread": "POLYGON ((-13.08946666666667 -3.2935333333333325, -13.08946666666667 -4.792133333333332, -13.364633333333334 -4.792133333333332, -13.364633333333334 -3.2935333333333325, -13.08946666666667 -3.2935333333333325))",
+      "lower": 6.423809523809523,
+      "upper": 6.5928571428571425,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 19,
+      "tread": "POLYGON ((-13.364633333333334 -3.2935333333333325, -13.364633333333334 -4.792133333333332, -13.639800000000001 -4.792133333333332, -13.639800000000001 -3.2935333333333325, -13.364633333333334 -3.2935333333333325))",
+      "lower": 6.5928571428571425,
+      "upper": 6.761904761904762,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Central_2",
+      "level": 2,
+      "index": 20,
+      "tread": "POLYGON ((-13.639800000000001 -3.2935333333333325, -13.639800000000001 -4.792133333333332, -13.914966666666668 -4.792133333333332, -13.914966666666668 -3.2935333333333325, -13.639800000000001 -3.2935333333333325))",
+      "lower": 6.761904761904761,
+      "upper": 6.93095238095238,
+      "riser": 0.16904761904761903
+    },
+    {
+      "stair": "Bombas",
+      "level": 0,
+      "index": 1,
+      "tread": "POLYGON ((21.9456 -3.911599999999998, 21.9456 -4.711699999999995, 22.19560185185185 -4.711699999999995, 22.19560185185185 -3.911599999999998, 21.9456 -3.911599999999998))",
+      "lower": -3.55,
+      "upper": -3.708333333333333,
+      "riser": -0.15833333333333321
+    },
+    {
+      "stair": "Bombas",
+      "level": 0,
+      "index": 2,
+      "tread": "POLYGON ((22.19560185185185 -3.911599999999998, 22.19560185185185 -4.711699999999995, 22.445603703703704 -4.711699999999995, 22.445603703703704 -3.911599999999998, 22.19560185185185 -3.911599999999998))",
+      "lower": -3.708333333333333,
+      "upper": -3.8666666666666667,
+      "riser": -0.15833333333333366
+    },
+    {
+      "stair": "Bombas",
+      "level": 0,
+      "index": 3,
+      "tread": "POLYGON ((22.445603703703704 -3.911599999999998, 22.445603703703704 -4.711699999999995, 22.695605555555556 -4.711699999999995, 22.695605555555556 -3.911599999999998, 22.445603703703704 -3.911599999999998))",
+      "lower": -3.8666666666666667,
+      "upper": -4.025,
+      "riser": -0.15833333333333366
+    },
+    {
+      "stair": "Bombas",
+      "level": 0,
+      "index": 4,
+      "tread": "POLYGON ((22.695605555555556 -3.911599999999998, 22.695605555555556 -4.711699999999995, 22.945607407407408 -4.711699999999995, 22.945607407407408 -3.911599999999998, 22.695605555555556 -3.911599999999998))",
+      "lower": -4.025,
+      "upper": -4.183333333333334,
+      "riser": -0.15833333333333321
+    },
+    {
+      "stair": "Bombas",
+      "level": 0,
+      "index": 5,
+      "tread": "POLYGON ((22.945607407407408 -3.911599999999998, 22.945607407407408 -4.711699999999995, 23.19560925925926 -4.711699999999995, 23.19560925925926 -3.911599999999998, 22.945607407407408 -3.911599999999998))",
+      "lower": -4.183333333333334,
+      "upper": -4.341666666666667,
+      "riser": -0.15833333333333321
+    },
+    {
+      "stair": "Bombas",
+      "level": 0,
+      "index": 6,
+      "tread": "POLYGON ((23.19560925925926 -3.911599999999998, 23.19560925925926 -4.711699999999995, 23.445611111111113 -4.711699999999995, 23.445611111111113 -3.911599999999998, 23.19560925925926 -3.911599999999998))",
+      "lower": -4.341666666666667,
+      "upper": -4.5,
+      "riser": -0.15833333333333321
+    },
+    {
+      "stair": "Ingreso_principal",
+      "level": 1,
+      "index": 1,
+      "tread": "POLYGON ((10.985499999999998 -11.6967, 16.704733333333333 -17.4117, 16.704733333333333 -16.916399999999992, 11.480799999999991 -11.6967, 10.985499999999998 -11.6967))",
+      "lower": -1.17,
+      "upper": -1.002857142857143,
+      "riser": 0.16714285714285704
+    },
+    {
+      "stair": "Ingreso_principal",
+      "level": 1,
+      "index": 2,
+      "tread": "POLYGON ((11.480799999999991 -11.6967, 16.704733333333333 -16.916399999999992, 16.704733333333333 -16.4211, 11.976099999999999 -11.6967, 11.480799999999991 -11.6967))",
+      "lower": -1.002857142857143,
+      "upper": -0.8357142857142856,
+      "riser": 0.16714285714285726
+    },
+    {
+      "stair": "Ingreso_principal",
+      "level": 1,
+      "index": 3,
+      "tread": "POLYGON ((11.976099999999999 -11.6967, 16.704733333333333 -16.4211, 16.704733333333333 -15.925799999999999, 12.4714 -11.6967, 11.976099999999999 -11.6967))",
+      "lower": -0.8357142857142856,
+      "upper": -0.6685714285714285,
+      "riser": 0.16714285714285715
+    },
+    {
+      "stair": "Ingreso_principal",
+      "level": 1,
+      "index": 4,
+      "tread": "POLYGON ((12.4714 -11.6967, 16.704733333333333 -15.925799999999999, 16.704733333333333 -15.430499999999999, 12.9667 -11.6967, 12.4714 -11.6967))",
+      "lower": -0.6685714285714285,
+      "upper": -0.5014285714285714,
+      "riser": 0.16714285714285704
+    },
+    {
+      "stair": "Ingreso_principal",
+      "level": 1,
+      "index": 5,
+      "tread": "POLYGON ((12.9667 -11.6967, 16.704733333333333 -15.430499999999999, 16.704733333333333 -14.93943333333333, 13.462 -11.6967, 12.9667 -11.6967))",
+      "lower": -0.5014285714285714,
+      "upper": -0.3342857142857143,
+      "riser": 0.16714285714285715
+    },
+    {
+      "stair": "Ingreso_principal",
+      "level": 1,
+      "index": 6,
+      "tread": "POLYGON ((13.462 -11.6967, 16.704733333333333 -14.93943333333333, 16.704733333333333 -14.44413333333333, 13.957299999999993 -11.6967, 13.462 -11.6967))",
+      "lower": -0.3342857142857143,
+      "upper": -0.16714285714285704,
+      "riser": 0.16714285714285726
+    },
+    {
+      "stair": "Ingreso_principal",
+      "level": 1,
+      "index": 7,
+      "tread": "POLYGON ((13.957299999999993 -11.6967, 16.704733333333333 -14.44413333333333, 16.704733333333333 -13.94883333333333, 14.448366666666661 -11.6967, 13.957299999999993 -11.6967))",
+      "lower": -0.16714285714285704,
+      "upper": 0.0,
+      "riser": 0.16714285714285704
+    },
+    {
+      "stair": "Ingreso_clinica",
+      "level": 1,
+      "index": 1,
+      "tread": "POLYGON ((-21.784733333333335 9.829800000000002, -22.4028 7.340600000000002, -22.0472 7.340600000000002, -21.441833333333335 9.808633333333336, -21.784733333333335 9.829800000000002))",
+      "lower": -1.17,
+      "upper": -1.002857142857143,
+      "riser": 0.16714285714285704
+    },
+    {
+      "stair": "Ingreso_clinica",
+      "level": 1,
+      "index": 2,
+      "tread": "POLYGON ((-21.441833333333335 9.808633333333336, -22.0472 7.340600000000002, -21.683133333333334 7.340600000000002, -21.086233333333332 9.791700000000002, -21.441833333333335 9.808633333333336))",
+      "lower": -1.002857142857143,
+      "upper": -0.8357142857142856,
+      "riser": 0.16714285714285726
+    },
+    {
+      "stair": "Ingreso_clinica",
+      "level": 1,
+      "index": 3,
+      "tread": "POLYGON ((-21.086233333333332 9.791700000000002, -21.683133333333334 7.340600000000002, -21.3233 7.340600000000002, -20.730633333333333 9.774766666666668, -21.086233333333332 9.791700000000002))",
+      "lower": -0.8357142857142856,
+      "upper": -0.6685714285714285,
+      "riser": 0.16714285714285715
+    },
+    {
+      "stair": "Ingreso_clinica",
+      "level": 1,
+      "index": 4,
+      "tread": "POLYGON ((-20.730633333333333 9.774766666666668, -21.3233 7.340600000000002, -20.96346666666667 7.340600000000002, -20.370800000000003 9.757833333333334, -20.730633333333333 9.774766666666668))",
+      "lower": -0.6685714285714285,
+      "upper": -0.5014285714285714,
+      "riser": 0.16714285714285704
+    },
+    {
+      "stair": "Ingreso_clinica",
+      "level": 1,
+      "index": 5,
+      "tread": "POLYGON ((-20.370800000000003 9.757833333333334, -20.96346666666667 7.340600000000002, -20.603633333333335 7.340600000000002, -20.0152 9.740900000000003, -20.370800000000003 9.757833333333334))",
+      "lower": -0.5014285714285714,
+      "upper": -0.3342857142857143,
+      "riser": 0.16714285714285715
+    },
+    {
+      "stair": "Ingreso_clinica",
+      "level": 1,
+      "index": 6,
+      "tread": "POLYGON ((-20.0152 9.740900000000003, -20.603633333333335 7.340600000000002, -20.2438 7.340600000000002, -19.6596 9.719733333333334, -20.0152 9.740900000000003))",
+      "lower": -0.3342857142857143,
+      "upper": -0.16714285714285704,
+      "riser": 0.16714285714285726
+    },
+    {
+      "stair": "Ingreso_clinica",
+      "level": 1,
+      "index": 7,
+      "tread": "POLYGON ((-19.6596 9.719733333333334, -20.2438 7.340600000000002, -19.883966666666666 7.340600000000002, -19.304000000000002 9.702800000000002, -19.6596 9.719733333333334))",
+      "lower": -0.16714285714285704,
+      "upper": 0.0,
+      "riser": 0.16714285714285704
+    }
+  ],
+  "observations": [
+    {
+      "element": "Encuentros losa nivel 0",
+      "sheet": "A-01",
+      "confirmed": "Huella de los cerramientos CAD ya construidos",
+      "estimated": "Espesor de losa 0.24 m; detalle de encuentro no acotado",
+      "addedFootprintArea": 0.4121196650000319,
+      "status": "Comprobacion de continuidad geometrica; no calculo estructural"
+    },
+    {
+      "element": "Encuentros losa nivel 1",
+      "sheet": "A-02",
+      "confirmed": "Huella de los cerramientos CAD ya construidos",
+      "estimated": "Espesor de losa 0.24 m; detalle de encuentro no acotado",
+      "addedFootprintArea": 11.100041169999995,
+      "status": "Comprobacion de continuidad geometrica; no calculo estructural"
+    },
+    {
+      "element": "Encuentros losa nivel 2",
+      "sheet": "A-03",
+      "confirmed": "Huella de los cerramientos CAD ya construidos",
+      "estimated": "Espesor de losa 0.24 m; detalle de encuentro no acotado",
+      "addedFootprintArea": 9.25525553499996,
+      "status": "Comprobacion de continuidad geometrica; no calculo estructural"
+    },
+    {
+      "element": "Encuentros losa nivel 3",
+      "sheet": "A-04",
+      "confirmed": "Huella de los cerramientos CAD ya construidos",
+      "estimated": "Espesor de losa 0.24 m; detalle de encuentro no acotado",
+      "addedFootprintArea": 6.5270570549999904,
+      "status": "Comprobacion de continuidad geometrica; no calculo estructural"
+    },
+    {
+      "element": "Encuentros losa nivel 4",
+      "sheet": "A-05",
+      "confirmed": "Huella de los cerramientos CAD ya construidos",
+      "estimated": "Espesor de losa 0.24 m; detalle de encuentro no acotado",
+      "addedFootprintArea": 4.222699525000019,
+      "status": "Comprobacion de continuidad geometrica; no calculo estructural"
+    },
+    {
+      "element": "Cubierta exterior sobre laboratorio de sotano",
+      "sheet": "A-01/A-02",
+      "area": 16.063165120000008,
+      "confirmed": "Huella horizontal del sotano y ausencia de rotulo VACIO en A-02 sobre el sector",
+      "estimated": "Cota +0.00 por continuidad con hall y fotografias; espesor 0.24 y baranda 1.10",
+      "status": "Adaptacion arquitectonica; confirmar cota por corte/inspeccion"
+    },
+    {
+      "element": "Escalera 03 sotano",
+      "sheet": "A-01/A-02",
+      "confirmed": "Primeras diez huellas rectas trazadas en A-01",
+      "estimated": "Continuacion bajo proyeccion y empalme con retorno y descanso superior; requiere seccion o inspeccion",
+      "status": "Observado"
+    },
+    {
+      "element": "Rampa posterior",
+      "sheet": "A-01/A-02",
+      "confirmed": "Huella A-PISO 45E57 y pendiente 8%",
+      "estimated": "Anclaje superior -1.17 m; extremo inferior calculado -3.0304 m, sin enlace confirmado al sotano -3.55.",
+      "status": "Observado; no certifica itinerario publico ni continuidad al sotano"
+    },
+    {
+      "element": "Ventanas altas",
+      "sheet": "A-01 a A-04",
+      "count": 36,
+      "confirmed": "Posicion y ancho de segmentos de A-VENTANA ALTA agrupados por extremos y paralelismo",
+      "estimated": "Cotas 2.05/2.70, vidrio 12 mm y marco 40 mm; cortador 0.36 m de profundidad",
+      "status": "Pendiente alzado e inspeccion Unity; no equivale a 74 ventanas"
+    },
+    {
+      "element": "Envolvente fotografica",
+      "confirmed": "Celosias horizontales de concreto en fachada larga hacia calle y antepechos macizos en escalera curva y nucleo oriental",
+      "estimated": "Secciones, alturas, paso de lamas y correspondencia de modulos de celosia entre A-02/A-03",
+      "status": "Comparar vistas finales y recorrer en Unity; no se afirma levantamiento metrico de fotos"
+    },
+    {
+      "element": "Fachada interior y esquina del ingreso",
+      "revision": "R8_Fachada_Campus",
+      "confirmed": "Cerramiento opaco, vidrio y celosias metalicas diferenciados en fotografias; vanos de plantas CAD",
+      "estimated": "Cierre de union en esquina A-04 inferido entre perfiles existentes; alturas, paso y secciones de celosias no medidos en alzado",
+      "status": "Comprobar fachada y circulacion en Unity; no es certificacion arquitectonica"
+    },
+    {
+      "element": "Lateral junto a I-crea",
+      "revision": "R9_Lateral_Icrea",
+      "confirmed": "Huellas exteriores CAD, voladizo A-03/A-04, vanos y vereda rotulada -1.17; fotos confirman entrada y concreto visto",
+      "estimated": "Descanso a rasante; reparto 12/7 de 19 contrahuellas del sotano; alturas de puerta 2.15 y vano 1.10/2.30",
+      "status": "Interpretacion geometrica revisable; no medicion ni prueba Play"
+    },
+    {
+      "element": "Paso inclinado posterior",
+      "revision": "R11_Retoques_Icrea",
+      "confirmed": "Huella CAD A-PISO 45E57 y pendiente 8%; usuario confirma paso inclinado",
+      "changedObstructions": [
+        "H_0_Vigas_0041",
+        "H_0_Vigas_0063",
+        "H_0_Vigas_0064",
+        "H_0_Vigas_0065",
+        "H_0_Lateral_Icrea_0002"
+      ],
+      "preserved": "Superficie continua, pendiente y anclaje vertical R10; vigas superiores",
+      "estimated": "Cota superior -1.17; conexion del extremo inferior con sotano pendiente de corte",
+      "clearanceHeight": 1.85,
+      "status": "Validar apoyo y altura libre en las tres franjas de paso"
+    },
+    {
+      "element": "Topologia serializada float32",
+      "collinearBoundaryRepairs": 9,
+      "separateClosedBodies": 0,
+      "status": "Se conserva la superficie; no se rellenan huecos arquitectonicos"
+    },
+    {
+      "element": "Topologia serializada float32",
+      "collinearBoundaryRepairs": 0,
+      "separateClosedBodies": 0,
+      "status": "Se conserva la superficie; no se rellenan huecos arquitectonicos"
+    },
+    {
+      "element": "Encuentros volumetricos",
+      "sheet": "A-01 a A-05",
+      "changedParts": 694,
+      "removedCoveredParts": 2,
+      "confirmed": "Se evita superponer caras de las piezas construidas",
+      "estimated": "Criterio de propiedad de superficies: cerramientos, losas, circulaciones y carpinterias; no altera las cotas de referencia",
+      "status": "Validar mallas serializadas y recorrido despues de regularizar"
+    },
+    {
+      "element": "Topologia serializada float32",
+      "collinearBoundaryRepairs": 0,
+      "separateClosedBodies": 63,
+      "status": "Se conserva la superficie; no se rellenan huecos arquitectonicos"
+    },
+    {
+      "element": "Encuentros volumetricos",
+      "sheet": "A-01 a A-05",
+      "changedParts": 35,
+      "removedCoveredParts": 1,
+      "confirmed": "Se evita superponer caras de las piezas construidas",
+      "estimated": "Criterio de propiedad de superficies: cerramientos, losas, circulaciones y carpinterias; no altera las cotas de referencia",
+      "status": "Validar mallas serializadas y recorrido despues de regularizar"
+    },
+    {
+      "element": "Encuentros de fachada I-crea",
+      "revision": "R11_Retoques_Icrea",
+      "changedParts": [
+        "H_1_Muros_0051",
+        "H_1_Muros_0053",
+        "H_1_Muros_0055",
+        "H_1_Muros_Bajos_0006",
+        "H_2_Muros_0014",
+        "H_2_Muros_0016",
+        "H_2_Muros_Bajos_0013",
+        "H_3_Muros_0017",
+        "H_3_Muros_0018",
+        "H_3_Columnas_0027",
+        "H_3_Muros_Bajos_0013",
+        "H_1_Lateral_Icrea_0002",
+        "H_2_Lateral_Icrea_0002",
+        "H_2_Lateral_Icrea_0003",
+        "H_2_Lateral_Icrea_0004",
+        "H_3_Lateral_Icrea_0001",
+        "H_3_Lateral_Icrea_0002",
+        "H_3_Lateral_Icrea_0003"
+      ],
+      "removedCollapsedRecoveryFragments": [],
+      "maxDisplacementMetres": 0.01869999999999905,
+      "source": "Plano exterior repetido de escalera A-02/A-03/A-04 y fotos",
+      "estimated": "Alineacion visual comun dentro de 25 mm; no nueva medicion de cotas",
+      "status": "Comprobar ausencia de salientes y continuidad del material"
+    },
+    {
+      "element": "Topologia serializada float32",
+      "collinearBoundaryRepairs": 0,
+      "separateClosedBodies": 0,
+      "status": "Se conserva la superficie; no se rellenan huecos arquitectonicos"
+    }
+  ]
+}

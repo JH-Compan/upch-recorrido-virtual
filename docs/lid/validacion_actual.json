@@ -1,0 +1,5005 @@
+{
+  "base_commit": "98e8d8030f6ea5e9bee3360b28c86395f0abf28e",
+  "source_hashes": {
+    "pdf_sha256": "60284846faf3e0350f38341fa85dad440a3e3a0cfa6336719501484f3501f7dd",
+    "dwg_sha256": "46a629643083cf4670d3b68985b060c051a8bcfe860f94c14eef1d5ab3831138"
+  },
+  "levels": [
+    {
+      "name": "Sotano",
+      "npt": 0.0,
+      "world_y_campus": -1.2
+    },
+    {
+      "name": "Piso_01",
+      "npt": 3.2,
+      "world_y_campus": 2.0
+    },
+    {
+      "name": "Piso_02",
+      "npt": 6.4,
+      "world_y_campus": 5.2
+    },
+    {
+      "name": "Piso_03",
+      "npt": 9.6,
+      "world_y_campus": 8.4
+    },
+    {
+      "name": "Piso_04",
+      "npt": 12.8,
+      "world_y_campus": 11.600000000000001
+    },
+    {
+      "name": "Azotea",
+      "npt": 16.8,
+      "world_y_campus": 15.600000000000001
+    }
+  ],
+  "native_meshes_read": 2695,
+  "native_rendered_parts": 13662,
+  "room_references_checked": 569,
+  "room_references_are_unique_rooms": false,
+  "wall_sections": [
+    {
+      "level": "Sotano",
+      "category": "Muros",
+      "height_npt": 0.755,
+      "difference_m2": 0.00010713905031242665,
+      "expected_m2": 183.61067037373317
+    },
+    {
+      "level": "Sotano",
+      "category": "Muros",
+      "height_npt": 1.963,
+      "difference_m2": 0.00010512355789651249,
+      "expected_m2": 183.38143904413312
+    },
+    {
+      "level": "Sotano",
+      "category": "Muros",
+      "height_npt": 2.718,
+      "difference_m2": 0.00010549747248334212,
+      "expected_m2": 183.38143904413312
+    },
+    {
+      "level": "Sotano",
+      "category": "Tabiques",
+      "height_npt": 0.755,
+      "difference_m2": 1.2803530753389068e-06,
+      "expected_m2": 6.701438331728835
+    },
+    {
+      "level": "Piso_01",
+      "category": "Muros",
+      "height_npt": 3.955,
+      "difference_m2": 5.538374576965891e-05,
+      "expected_m2": 156.32275678659968
+    },
+    {
+      "level": "Piso_01",
+      "category": "Muros",
+      "height_npt": 5.163,
+      "difference_m2": 5.5383745769752656e-05,
+      "expected_m2": 156.32275678659968
+    },
+    {
+      "level": "Piso_01",
+      "category": "Muros",
+      "height_npt": 5.918,
+      "difference_m2": 5.538374576414848e-05,
+      "expected_m2": 156.32275678659968
+    },
+    {
+      "level": "Piso_01",
+      "category": "Tabiques",
+      "height_npt": 3.955,
+      "difference_m2": 7.4008813159585e-05,
+      "expected_m2": 10.262156520812606
+    },
+    {
+      "level": "Piso_02",
+      "category": "Muros",
+      "height_npt": 7.155,
+      "difference_m2": 5.376019925804662e-05,
+      "expected_m2": 158.50520021954972
+    },
+    {
+      "level": "Piso_02",
+      "category": "Muros",
+      "height_npt": 8.363,
+      "difference_m2": 5.430797589807417e-05,
+      "expected_m2": 158.50520021954972
+    },
+    {
+      "level": "Piso_02",
+      "category": "Muros",
+      "height_npt": 9.117999999999999,
+      "difference_m2": 5.396256590606881e-05,
+      "expected_m2": 158.50520021954972
+    },
+    {
+      "level": "Piso_02",
+      "category": "Tabiques",
+      "height_npt": 7.155,
+      "difference_m2": 1.3511539166232547e-06,
+      "expected_m2": 11.208118960100037
+    },
+    {
+      "level": "Piso_03",
+      "category": "Muros",
+      "height_npt": 10.355,
+      "difference_m2": 4.8722824471158695e-05,
+      "expected_m2": 154.36010168857803
+    },
+    {
+      "level": "Piso_03",
+      "category": "Muros",
+      "height_npt": 11.563,
+      "difference_m2": 4.9270600874984766e-05,
+      "expected_m2": 154.36010168857803
+    },
+    {
+      "level": "Piso_03",
+      "category": "Muros",
+      "height_npt": 12.318000000000001,
+      "difference_m2": 4.8925191040893096e-05,
+      "expected_m2": 154.36010168857803
+    },
+    {
+      "level": "Piso_03",
+      "category": "Tabiques",
+      "height_npt": 10.355,
+      "difference_m2": 2.3081327592100327e-06,
+      "expected_m2": 13.04620999029998
+    },
+    {
+      "level": "Piso_04",
+      "category": "Muros",
+      "height_npt": 13.755,
+      "difference_m2": 4.838448947678421e-05,
+      "expected_m2": 160.37893806174975
+    },
+    {
+      "level": "Piso_04",
+      "category": "Muros",
+      "height_npt": 15.283000000000001,
+      "difference_m2": 4.8932266120076576e-05,
+      "expected_m2": 160.37893806174975
+    },
+    {
+      "level": "Piso_04",
+      "category": "Muros",
+      "height_npt": 16.238,
+      "difference_m2": 4.8586856099750496e-05,
+      "expected_m2": 160.37893806174975
+    },
+    {
+      "level": "Piso_04",
+      "category": "Tabiques",
+      "height_npt": 13.755,
+      "difference_m2": 1.90200621974921e-06,
+      "expected_m2": 11.840763944900015
+    },
+    {
+      "level": "Azotea",
+      "category": "Muros",
+      "height_npt": 16.9605,
+      "difference_m2": 1.891717289400579e-07,
+      "expected_m2": 3.536623578699979
+    },
+    {
+      "level": "Azotea",
+      "category": "Tabiques",
+      "height_npt": 17.0675,
+      "difference_m2": 0.0,
+      "expected_m2": 0.0
+    }
+  ],
+  "door_leaves": [
+    {
+      "level": "Sotano",
+      "handle": "10B996",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1673266890886266e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B997",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1666001648075722e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B998",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1544371200027667e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B999",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.170285291253852e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B99A",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1523603834641136e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B99B",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1689578078909492e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B99C",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1618061424009342e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9A7",
+      "clear_width_source_m": 0.8533515160158629,
+      "leaf_plan_deviation_m": 1.157375117575401e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9A8",
+      "clear_width_source_m": 0.8467820620842019,
+      "leaf_plan_deviation_m": 1.1124802914178056e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9A9",
+      "clear_width_source_m": 0.8533515160158629,
+      "leaf_plan_deviation_m": 1.1142982801170595e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9AA",
+      "clear_width_source_m": 0.8467820620842019,
+      "leaf_plan_deviation_m": 1.1336415693472132e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9AB",
+      "clear_width_source_m": 1.1492598592112984,
+      "leaf_plan_deviation_m": 1.4952404453696651e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9AC",
+      "clear_width_source_m": 1.1492598592112984,
+      "leaf_plan_deviation_m": 1.4952590174272839e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9AD",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1499553578556108e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9AE",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.759278031400175e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9AF",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1513285913765965e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B0",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.7640590280583825e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B1",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1506275227842656e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B2",
+      "clear_width_source_m": 0.37045434016803824,
+      "leaf_plan_deviation_m": 4.868680439071718e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B3",
+      "clear_width_source_m": 0.8528813968657118,
+      "leaf_plan_deviation_m": 1.1138078531317195e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B5",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1534435599554806e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B6",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.801877588587018e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B7",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1538648861282379e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B8",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.773545304090238e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9B9",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1538688227792864e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9BA",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.773505937579752e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9BB",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1514601125400102e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9BC",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.748147556790056e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9BD",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.154367147351018e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9BE",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.768522691552797e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9BF",
+      "clear_width_source_m": 0.8820341432571577,
+      "leaf_plan_deviation_m": 1.1512239404100706e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C0",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.779991110057797e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C1",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1543344141898861e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C2",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.787237724997638e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C3",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1502958283457338e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C4",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.746298566537121e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C7",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1475000815372136e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C8",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.8108707807176235e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C9",
+      "clear_width_source_m": 0.8487531843929332,
+      "leaf_plan_deviation_m": 1.1093482955220785e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9CB",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1492405416570913e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9CC",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.744468831857006e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9CD",
+      "clear_width_source_m": 0.852909711815812,
+      "leaf_plan_deviation_m": 1.1143578284756396e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9CF",
+      "clear_width_source_m": 0.848749835964469,
+      "leaf_plan_deviation_m": 1.1090697061752221e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9D5",
+      "clear_width_source_m": 0.8861946816687407,
+      "leaf_plan_deviation_m": 1.1530791405601288e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9D6",
+      "clear_width_source_m": 0.36629380175642723,
+      "leaf_plan_deviation_m": 4.765375608318289e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9D7",
+      "clear_width_source_m": 0.8862047675162614,
+      "leaf_plan_deviation_m": 1.154623537187029e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9D8",
+      "clear_width_source_m": 0.36629797057338465,
+      "leaf_plan_deviation_m": 4.8404643692423746e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9D9",
+      "clear_width_source_m": 0.8528813968657118,
+      "leaf_plan_deviation_m": 1.1135607442948903e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9DA",
+      "clear_width_source_m": 0.8063818375058531,
+      "leaf_plan_deviation_m": 1.0529082712841505e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9DB",
+      "clear_width_source_m": 0.8937945985005911,
+      "leaf_plan_deviation_m": 1.1630921831027656e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9C1",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1543344141898861e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9DD",
+      "clear_width_source_m": 0.8469275290365204,
+      "leaf_plan_deviation_m": 1.1041993431112244e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9DE",
+      "clear_width_source_m": 0.7997109565531559,
+      "leaf_plan_deviation_m": 1.0446777731297222e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9DF",
+      "clear_width_source_m": 0.8732138018245763,
+      "leaf_plan_deviation_m": 1.163097936834125e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E0",
+      "clear_width_source_m": 0.8732138018245763,
+      "leaf_plan_deviation_m": 1.1631949328769347e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E1",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.1227317591741998e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E2",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.1227695831023224e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E3",
+      "clear_width_source_m": 0.8708745377434326,
+      "leaf_plan_deviation_m": 1.18078591444625e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E4",
+      "clear_width_source_m": 0.8708745377434326,
+      "leaf_plan_deviation_m": 1.1807136204859254e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E5",
+      "clear_width_source_m": 0.8469275290365346,
+      "leaf_plan_deviation_m": 1.104643841453182e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E6",
+      "clear_width_source_m": 0.8469275290365346,
+      "leaf_plan_deviation_m": 1.104682284705341e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E7",
+      "clear_width_source_m": 0.8469275290365346,
+      "leaf_plan_deviation_m": 1.1022215208659369e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E8",
+      "clear_width_source_m": 0.8469275290365346,
+      "leaf_plan_deviation_m": 1.1021822978071342e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9E9",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.1033607118854435e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9EA",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.103399199842796e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9EB",
+      "clear_width_source_m": 0.846927529036531,
+      "leaf_plan_deviation_m": 1.1031142203420622e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9EC",
+      "clear_width_source_m": 0.8469275290365346,
+      "leaf_plan_deviation_m": 1.1036914719609303e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9EF",
+      "clear_width_source_m": 0.8725230773975525,
+      "leaf_plan_deviation_m": 1.180593779186456e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9F0",
+      "clear_width_source_m": 0.8725230773975525,
+      "leaf_plan_deviation_m": 1.1806307350334855e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9F1",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.1053959386762283e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9F2",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.1058880871026574e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9F9",
+      "clear_width_source_m": 0.8591339905183872,
+      "leaf_plan_deviation_m": 1.117684581318685e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9FA",
+      "clear_width_source_m": 0.8591339905183872,
+      "leaf_plan_deviation_m": 1.1176828566347988e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9FB",
+      "clear_width_source_m": 0.8926438778088084,
+      "leaf_plan_deviation_m": 1.1992266691817698e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9FC",
+      "clear_width_source_m": 0.8961539156354661,
+      "leaf_plan_deviation_m": 1.2108903251777884e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9FD",
+      "clear_width_source_m": 0.9079512803196224,
+      "leaf_plan_deviation_m": 1.186192598548227e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10B9FF",
+      "clear_width_source_m": 0.8761539156354559,
+      "leaf_plan_deviation_m": 1.1753376220372614e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA00",
+      "clear_width_source_m": 0.8761539156354559,
+      "leaf_plan_deviation_m": 1.175773863093078e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA01",
+      "clear_width_source_m": 0.8761539156354559,
+      "leaf_plan_deviation_m": 1.1635763184782616e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA02",
+      "clear_width_source_m": 0.8761539156354559,
+      "leaf_plan_deviation_m": 1.161702288223891e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA04",
+      "clear_width_source_m": 0.8959249556637019,
+      "leaf_plan_deviation_m": 1.1888377038009589e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA05",
+      "clear_width_source_m": 0.8604074631438436,
+      "leaf_plan_deviation_m": 1.1501527263543697e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA06",
+      "clear_width_source_m": 0.898641202766413,
+      "leaf_plan_deviation_m": 1.2080151399389846e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA07",
+      "clear_width_source_m": 0.8761539156354559,
+      "leaf_plan_deviation_m": 1.1808202489586408e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA08",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1500804633319068e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA09",
+      "clear_width_source_m": 0.8000644805079844,
+      "leaf_plan_deviation_m": 1.044175987845306e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA0A",
+      "clear_width_source_m": 0.8996748261222933,
+      "leaf_plan_deviation_m": 1.1733006920525482e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA0B",
+      "clear_width_source_m": 0.8467443074416678,
+      "leaf_plan_deviation_m": 1.1057310030809835e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA0C",
+      "clear_width_source_m": 0.8467443074416678,
+      "leaf_plan_deviation_m": 1.1088272031261605e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA0D",
+      "clear_width_source_m": 0.8996748261223004,
+      "leaf_plan_deviation_m": 1.1709582414276499e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA0E",
+      "clear_width_source_m": 0.8996748261223004,
+      "leaf_plan_deviation_m": 1.1848100144921983e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA0F",
+      "clear_width_source_m": 0.8996748261223004,
+      "leaf_plan_deviation_m": 1.1910042275931817e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA10",
+      "clear_width_source_m": 0.8467527775268806,
+      "leaf_plan_deviation_m": 1.1065280870523406e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA12",
+      "clear_width_source_m": 0.7999412767042671,
+      "leaf_plan_deviation_m": 1.0637112294983842e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA13",
+      "clear_width_source_m": 1.0532197609478047,
+      "leaf_plan_deviation_m": 1.4202591833372116e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA14",
+      "clear_width_source_m": 0.8026542342620857,
+      "leaf_plan_deviation_m": 1.0480708674764784e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA40",
+      "clear_width_source_m": 0.7999412767042742,
+      "leaf_plan_deviation_m": 1.060515323405926e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA41",
+      "clear_width_source_m": 0.7999412767042742,
+      "leaf_plan_deviation_m": 1.067850671366858e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA42",
+      "clear_width_source_m": 0.7999412767042742,
+      "leaf_plan_deviation_m": 1.0596122813653016e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA47",
+      "clear_width_source_m": 0.8996748261223004,
+      "leaf_plan_deviation_m": 1.1744883938277163e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA59",
+      "clear_width_source_m": 0.8819018754387002,
+      "leaf_plan_deviation_m": 1.1529616181765977e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA5A",
+      "clear_width_source_m": 0.3645194418480173,
+      "leaf_plan_deviation_m": 4.814863915598613e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA5C",
+      "clear_width_source_m": 0.8996748261223217,
+      "leaf_plan_deviation_m": 1.1797079101944186e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA5D",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 5.151884118820898e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA5E",
+      "clear_width_source_m": 0.8820341432571723,
+      "leaf_plan_deviation_m": 1.1656392939492535e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA5F",
+      "clear_width_source_m": 0.8483486488072955,
+      "leaf_plan_deviation_m": 1.1215927266949261e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA60",
+      "clear_width_source_m": 0.8526330051485829,
+      "leaf_plan_deviation_m": 1.1117252306876803e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA67",
+      "clear_width_source_m": 0.8775708970482974,
+      "leaf_plan_deviation_m": 1.14627936847003e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA68",
+      "clear_width_source_m": 1.2466082558034337,
+      "leaf_plan_deviation_m": 1.6582484340584676e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA6D",
+      "clear_width_source_m": 0.5119651092036861,
+      "leaf_plan_deviation_m": 6.697168926014463e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA6E",
+      "clear_width_source_m": 0.5119651092036861,
+      "leaf_plan_deviation_m": 6.704110464029004e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA6F",
+      "clear_width_source_m": 0.5119651092036861,
+      "leaf_plan_deviation_m": 6.671102247494936e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA70",
+      "clear_width_source_m": 0.5119651092036861,
+      "leaf_plan_deviation_m": 6.67805220568475e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BA95",
+      "clear_width_source_m": 1.0525607442868363,
+      "leaf_plan_deviation_m": 1.3751945106605106e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BAAB",
+      "clear_width_source_m": 0.8798145402941486,
+      "leaf_plan_deviation_m": 1.1457291904843083e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BAC3",
+      "clear_width_source_m": 0.8988357475942621,
+      "leaf_plan_deviation_m": 1.2211754168400136e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BAE2",
+      "clear_width_source_m": 0.8937945985005911,
+      "leaf_plan_deviation_m": 1.1773384212479071e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BAE3",
+      "clear_width_source_m": 0.5939029897931505,
+      "leaf_plan_deviation_m": 7.732880144275812e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BAF8",
+      "clear_width_source_m": 0.8026542342620875,
+      "leaf_plan_deviation_m": 1.048303935994674e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BB4D",
+      "clear_width_source_m": 0.5997832174148527,
+      "leaf_plan_deviation_m": 7.817854892723879e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BB59",
+      "clear_width_source_m": 0.8467820620842019,
+      "leaf_plan_deviation_m": 1.1093303677950686e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BB5A",
+      "clear_width_source_m": 0.8533515160158629,
+      "leaf_plan_deviation_m": 1.1256679651798405e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BB7A",
+      "clear_width_source_m": 0.7999412767042671,
+      "leaf_plan_deviation_m": 1.0580034741873036e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BB7B",
+      "clear_width_source_m": 0.7999412767042742,
+      "leaf_plan_deviation_m": 1.0894508829334659e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BBF6",
+      "clear_width_source_m": 0.8836045478498384,
+      "leaf_plan_deviation_m": 1.1510260869265422e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "10BC13",
+      "clear_width_source_m": 0.8836045478498136,
+      "leaf_plan_deviation_m": 1.170869388666556e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110A85",
+      "clear_width_source_m": 0.9050008036034569,
+      "leaf_plan_deviation_m": 1.1787521735702797e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110A96",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.833144239704972e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "110AB4",
+      "clear_width_source_m": 0.8755326430878334,
+      "leaf_plan_deviation_m": 1.1612018212914194e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110AB5",
+      "clear_width_source_m": 0.8755326430878299,
+      "leaf_plan_deviation_m": 1.1614334646624496e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110B2F",
+      "clear_width_source_m": 0.8761539156354559,
+      "leaf_plan_deviation_m": 1.1778412889149441e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110B58",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.891878781410396e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "110BF3",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.854509155288877e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "110C0A",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.806416989674643e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "110C21",
+      "clear_width_source_m": 0.9050008036034569,
+      "leaf_plan_deviation_m": 1.1790697699909883e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110C60",
+      "clear_width_source_m": 0.8996748261223217,
+      "leaf_plan_deviation_m": 1.2073652512269827e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110CB0",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.866063067984717e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "110D16",
+      "clear_width_source_m": 0.9050008036034569,
+      "leaf_plan_deviation_m": 1.1785140427367302e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110E27",
+      "clear_width_source_m": 0.9996386956914307,
+      "leaf_plan_deviation_m": 1.3076423643154755e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110E50",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.844224295582617e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "110EA4",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.818819056112681e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "110F72",
+      "clear_width_source_m": 0.8820341432571652,
+      "leaf_plan_deviation_m": 1.1511635644119184e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "110F73",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 5.0113740763286416e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "111067",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.816989189345308e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "111081",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.838791296634547e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "1110CE",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.82035292731125e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "1110E9",
+      "clear_width_source_m": 1.0137634376017672,
+      "leaf_plan_deviation_m": 1.3210806769827861e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "1110EA",
+      "clear_width_source_m": 0.3826616989441334,
+      "leaf_plan_deviation_m": 4.995408667531767e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "111169",
+      "clear_width_source_m": 0.5997832174148883,
+      "leaf_plan_deviation_m": 7.827024179318178e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "1111F9",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.850058451582949e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "111225",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.824796744498529e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "1113F8",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.803436327349554e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "111A46",
+      "clear_width_source_m": 0.5997832174148527,
+      "leaf_plan_deviation_m": 7.816586310234403e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "1129CE",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.835822820214587e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112A05",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.853839840535259e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112A24",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.821661414560425e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112A3B",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.806416971823739e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112A70",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.808145532435963e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112A92",
+      "clear_width_source_m": 0.9902081419585045,
+      "leaf_plan_deviation_m": 1.292399781991011e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "112A93",
+      "clear_width_source_m": 0.4092860320095326,
+      "leaf_plan_deviation_m": 5.3262422421193525e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112B54",
+      "clear_width_source_m": 0.9079512803196224,
+      "leaf_plan_deviation_m": 1.1884988007655275e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "112BB8",
+      "clear_width_source_m": 0.5997832174148813,
+      "leaf_plan_deviation_m": 7.841674042034901e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112C43",
+      "clear_width_source_m": 1.0522005371837224,
+      "leaf_plan_deviation_m": 1.3703100272949102e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "112C9F",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1500390774835105e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "112CA0",
+      "clear_width_source_m": 0.36457411254630756,
+      "leaf_plan_deviation_m": 4.760000386122208e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112C9F",
+      "clear_width_source_m": 0.8820341432571581,
+      "leaf_plan_deviation_m": 1.1500390774835105e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "112CE9",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.881697100604236e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112D04",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.826733991021544e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112D8F",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.836218695088678e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "112DAC",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.829619495447996e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "113131",
+      "clear_width_source_m": 0.9187431539369229,
+      "leaf_plan_deviation_m": 1.2131604983272512e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "113132",
+      "clear_width_source_m": 0.379747170293939,
+      "leaf_plan_deviation_m": 5.410189821834421e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "113159",
+      "clear_width_source_m": 0.9187431539369229,
+      "leaf_plan_deviation_m": 1.2131837897288772e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "11315A",
+      "clear_width_source_m": 0.379747170293939,
+      "leaf_plan_deviation_m": 5.383654899132315e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "113179",
+      "clear_width_source_m": 0.8861946816687691,
+      "leaf_plan_deviation_m": 1.1707510643060385e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "11317A",
+      "clear_width_source_m": 0.36629380175642723,
+      "leaf_plan_deviation_m": 4.923679447967939e-06
+    },
+    {
+      "level": "Sotano",
+      "handle": "1133FA",
+      "clear_width_source_m": 0.7999412767042742,
+      "leaf_plan_deviation_m": 1.0650722770023823e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "1133FB",
+      "clear_width_source_m": 0.7999412767042742,
+      "leaf_plan_deviation_m": 1.0568122282224829e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "11347B",
+      "clear_width_source_m": 0.7999412767042742,
+      "leaf_plan_deviation_m": 1.0443470980975237e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "1327F3",
+      "clear_width_source_m": 1.0,
+      "leaf_plan_deviation_m": 1.318274914359933e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "13F3A3",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.1518812796049731e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "13F3A4",
+      "clear_width_source_m": 0.8469275290365275,
+      "leaf_plan_deviation_m": 1.1513777778927202e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "1660B2",
+      "clear_width_source_m": 0.8295596046399488,
+      "leaf_plan_deviation_m": 3.9070166625246964e-08
+    },
+    {
+      "level": "Sotano",
+      "handle": "16646E",
+      "clear_width_source_m": 0.9952191002150954,
+      "leaf_plan_deviation_m": 1.299502132851726e-05
+    },
+    {
+      "level": "Sotano",
+      "handle": "1673E4",
+      "clear_width_source_m": 0.7950088639191115,
+      "leaf_plan_deviation_m": 1.0391961068647851e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E069",
+      "clear_width_source_m": 0.8996748261223004,
+      "leaf_plan_deviation_m": 1.184207531274648e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E06A",
+      "clear_width_source_m": 0.8996748261222933,
+      "leaf_plan_deviation_m": 1.2127710426547196e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E06B",
+      "clear_width_source_m": 0.846802654988835,
+      "leaf_plan_deviation_m": 1.1216495350230957e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E06C",
+      "clear_width_source_m": 0.9020341420074942,
+      "leaf_plan_deviation_m": 1.2151135716022341e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E06D",
+      "clear_width_source_m": 0.8577193392196705,
+      "leaf_plan_deviation_m": 1.1410389134213067e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E06E",
+      "clear_width_source_m": 0.8554392653167611,
+      "leaf_plan_deviation_m": 1.121101508564585e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E070",
+      "clear_width_source_m": 0.952675186142983,
+      "leaf_plan_deviation_m": 1.2563753949644397e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E071",
+      "clear_width_source_m": 0.946721212478792,
+      "leaf_plan_deviation_m": 1.2629611630987879e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E073",
+      "clear_width_source_m": 0.9466742115215538,
+      "leaf_plan_deviation_m": 1.2700225523437363e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E074",
+      "clear_width_source_m": 0.9526216348621688,
+      "leaf_plan_deviation_m": 1.2670806841445163e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E075",
+      "clear_width_source_m": 0.934933913304576,
+      "leaf_plan_deviation_m": 1.2375415260936363e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E079",
+      "clear_width_source_m": 0.946716647095684,
+      "leaf_plan_deviation_m": 1.2602142621901313e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E082",
+      "clear_width_source_m": 1.0525607442868363,
+      "leaf_plan_deviation_m": 1.3749666693052974e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E083",
+      "clear_width_source_m": 0.8998357507466608,
+      "leaf_plan_deviation_m": 1.1747268502288797e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E084",
+      "clear_width_source_m": 1.2466925175981132,
+      "leaf_plan_deviation_m": 1.6323780492635365e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E085",
+      "clear_width_source_m": 0.8410051367607994,
+      "leaf_plan_deviation_m": 1.0967305296710091e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E086",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.430124072763017e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E087",
+      "clear_width_source_m": 0.8410051367607991,
+      "leaf_plan_deviation_m": 1.0945123780278908e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E088",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.365611259058517e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E08B",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.0968752980288751e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E08C",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.385121654962576e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E08D",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.0976957205422e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E08E",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.378699322467908e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E08F",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.095651954864902e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E090",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.358133880053822e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E091",
+      "clear_width_source_m": 0.8996748261228049,
+      "leaf_plan_deviation_m": 1.173628074667476e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E093",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.096747090638538e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E094",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.395559551607732e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E095",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.096589403893749e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E096",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.3967285946116e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E099",
+      "clear_width_source_m": 0.8054597182009502,
+      "leaf_plan_deviation_m": 1.0494686349862573e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E09A",
+      "clear_width_source_m": 0.39434316006241943,
+      "leaf_plan_deviation_m": 5.145058376490726e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E09B",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.0953615775859646e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E09C",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.3975526076421165e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E09D",
+      "clear_width_source_m": 0.7739769823646157,
+      "leaf_plan_deviation_m": 1.0123295540410798e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E09E",
+      "clear_width_source_m": 0.3789296002572655,
+      "leaf_plan_deviation_m": 4.95613739857492e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E09F",
+      "clear_width_source_m": 0.8054597182009502,
+      "leaf_plan_deviation_m": 1.0512345131388819e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0A0",
+      "clear_width_source_m": 0.39434316006241943,
+      "leaf_plan_deviation_m": 5.145215490015921e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0B7",
+      "clear_width_source_m": 0.8466831252393376,
+      "leaf_plan_deviation_m": 1.105432445710289e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0B8",
+      "clear_width_source_m": 0.8996748261228049,
+      "leaf_plan_deviation_m": 1.1747602537989266e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0B9",
+      "clear_width_source_m": 0.7997109565529854,
+      "leaf_plan_deviation_m": 1.0423112935490768e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0BA",
+      "clear_width_source_m": 0.7997109565529854,
+      "leaf_plan_deviation_m": 1.0428299757113771e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0BB",
+      "clear_width_source_m": 0.7738425550126635,
+      "leaf_plan_deviation_m": 1.0075924351569636e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0BC",
+      "clear_width_source_m": 0.37886378628104467,
+      "leaf_plan_deviation_m": 4.975074966599481e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0BD",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.1015892462662039e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0BE",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.395992074515113e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0BF",
+      "clear_width_source_m": 0.7738425550131183,
+      "leaf_plan_deviation_m": 1.0077019182224399e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C0",
+      "clear_width_source_m": 0.3788637862812152,
+      "leaf_plan_deviation_m": 4.986036819740695e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C1",
+      "clear_width_source_m": 0.9055550537442514,
+      "leaf_plan_deviation_m": 1.1829391090953435e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C3",
+      "clear_width_source_m": 0.8996957907003278,
+      "leaf_plan_deviation_m": 1.2032137223506295e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C4",
+      "clear_width_source_m": 0.8996957907003278,
+      "leaf_plan_deviation_m": 1.2031262388477455e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C5",
+      "clear_width_source_m": 0.8996957907003278,
+      "leaf_plan_deviation_m": 1.1912109517738522e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C6",
+      "clear_width_source_m": 1.2466082558034834,
+      "leaf_plan_deviation_m": 1.672833351621806e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C7",
+      "clear_width_source_m": 1.246608255803487,
+      "leaf_plan_deviation_m": 1.673062771905025e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C8",
+      "clear_width_source_m": 0.8370133758302813,
+      "leaf_plan_deviation_m": 1.0890652831416839e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0C9",
+      "clear_width_source_m": 0.4097914423040834,
+      "leaf_plan_deviation_m": 5.342187448060392e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0CA",
+      "clear_width_source_m": 0.8409615521313754,
+      "leaf_plan_deviation_m": 1.0945834483832266e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0CB",
+      "clear_width_source_m": 0.41172442080551264,
+      "leaf_plan_deviation_m": 5.3757730733717495e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0CC",
+      "clear_width_source_m": 0.8409615521312617,
+      "leaf_plan_deviation_m": 1.0956287861803911e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0CD",
+      "clear_width_source_m": 0.4117244208054558,
+      "leaf_plan_deviation_m": 5.41231144824393e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0D0",
+      "clear_width_source_m": 0.8409822339659172,
+      "leaf_plan_deviation_m": 1.0954092774118368e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0D1",
+      "clear_width_source_m": 0.41173454637703344,
+      "leaf_plan_deviation_m": 5.39605225347845e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0D6",
+      "clear_width_source_m": 1.2466925175981167,
+      "leaf_plan_deviation_m": 1.632599327051181e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0D7",
+      "clear_width_source_m": 0.8732559327219249,
+      "leaf_plan_deviation_m": 1.1396745862615906e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0D8",
+      "clear_width_source_m": 0.8732559327219249,
+      "leaf_plan_deviation_m": 1.1401075506240068e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0D9",
+      "clear_width_source_m": 0.8732559327219107,
+      "leaf_plan_deviation_m": 1.1394323635502308e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0DA",
+      "clear_width_source_m": 0.8732559327219107,
+      "leaf_plan_deviation_m": 1.138991839569668e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0DB",
+      "clear_width_source_m": 0.8732559327219249,
+      "leaf_plan_deviation_m": 1.1389029189597619e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0DC",
+      "clear_width_source_m": 0.8732559327219214,
+      "leaf_plan_deviation_m": 1.1389209871232215e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0DD",
+      "clear_width_source_m": 0.8732559327219107,
+      "leaf_plan_deviation_m": 1.1381890082152848e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0DE",
+      "clear_width_source_m": 0.8732559327219107,
+      "leaf_plan_deviation_m": 1.1382070877728188e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0DF",
+      "clear_width_source_m": 0.7739769823646157,
+      "leaf_plan_deviation_m": 1.007197160140977e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0E0",
+      "clear_width_source_m": 0.7997109565530423,
+      "leaf_plan_deviation_m": 1.0413157875069573e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0E2",
+      "clear_width_source_m": 0.9562162528396811,
+      "leaf_plan_deviation_m": 1.2506298248599386e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0E3",
+      "clear_width_source_m": 0.9562162528396811,
+      "leaf_plan_deviation_m": 1.2510977562159534e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0E4",
+      "clear_width_source_m": 0.9562162528396811,
+      "leaf_plan_deviation_m": 1.2505093960257916e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0E6",
+      "clear_width_source_m": 0.9467166470961388,
+      "leaf_plan_deviation_m": 1.2794251388931107e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0E7",
+      "clear_width_source_m": 0.9562162528396811,
+      "leaf_plan_deviation_m": 1.256002103432747e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0E9",
+      "clear_width_source_m": 0.7999077337171823,
+      "leaf_plan_deviation_m": 1.0421191537222156e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0EA",
+      "clear_width_source_m": 0.799907733717184,
+      "leaf_plan_deviation_m": 1.0423485746976672e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0EC",
+      "clear_width_source_m": 0.7999077337171929,
+      "leaf_plan_deviation_m": 1.0419525471073378e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0EE",
+      "clear_width_source_m": 0.8055911841747161,
+      "leaf_plan_deviation_m": 1.0517007188506278e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0EF",
+      "clear_width_source_m": 0.8469548057963721,
+      "leaf_plan_deviation_m": 1.1065296419032039e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E0F7",
+      "clear_width_source_m": 0.5338473737442655,
+      "leaf_plan_deviation_m": 6.9655676691852675e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E104",
+      "clear_width_source_m": 0.5215304059868799,
+      "leaf_plan_deviation_m": 6.793008056338619e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E105",
+      "clear_width_source_m": 0.5215304059868799,
+      "leaf_plan_deviation_m": 6.793896296368188e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E12B",
+      "clear_width_source_m": 0.7488102052126706,
+      "leaf_plan_deviation_m": 9.784260327863695e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E12C",
+      "clear_width_source_m": 0.8474711382212519,
+      "leaf_plan_deviation_m": 1.1042705544781992e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E255",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.820124525716327e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E2B6",
+      "clear_width_source_m": 0.8997131657421846,
+      "leaf_plan_deviation_m": 1.1776927961433273e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E396",
+      "clear_width_source_m": 0.8546229456181891,
+      "leaf_plan_deviation_m": 1.1429345230005463e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E42F",
+      "clear_width_source_m": 0.8409615521313754,
+      "leaf_plan_deviation_m": 1.0941852651427911e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E430",
+      "clear_width_source_m": 0.41172442080551264,
+      "leaf_plan_deviation_m": 5.3924335491673e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E433",
+      "clear_width_source_m": 0.899674826122304,
+      "leaf_plan_deviation_m": 1.2031462958130769e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E467",
+      "clear_width_source_m": 0.8996748261222933,
+      "leaf_plan_deviation_m": 1.2016189777026711e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "1136B7",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.837661626082793e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113776",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.833183724188238e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113777",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.806416864718308e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113909",
+      "clear_width_source_m": 0.8996748261222933,
+      "leaf_plan_deviation_m": 1.1800886758988091e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113999",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.81643603659222e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "1139B2",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.837549565381834e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113A19",
+      "clear_width_source_m": 0.8503022273658587,
+      "leaf_plan_deviation_m": 1.109747592852031e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113A36",
+      "clear_width_source_m": 0.7526691355797084,
+      "leaf_plan_deviation_m": 9.792117195565307e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113A95",
+      "clear_width_source_m": 0.8010573182441476,
+      "leaf_plan_deviation_m": 1.0444576674879626e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113A96",
+      "clear_width_source_m": 0.3921877992521843,
+      "leaf_plan_deviation_m": 5.102513240745369e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113ABA",
+      "clear_width_source_m": 0.8014797891205774,
+      "leaf_plan_deviation_m": 1.0487625568215537e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113ABB",
+      "clear_width_source_m": 0.39239463579122,
+      "leaf_plan_deviation_m": 5.1446665859670485e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "113AE2",
+      "clear_width_source_m": 0.5996515471271664,
+      "leaf_plan_deviation_m": 7.839046144490925e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "1163BC",
+      "clear_width_source_m": 0.5338473737442655,
+      "leaf_plan_deviation_m": 6.96142374746078e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116434",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.804628420051572e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116501",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.881697080983846e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116565",
+      "clear_width_source_m": 0.900977883081076,
+      "leaf_plan_deviation_m": 1.191734321040264e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116820",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.82632196815592e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116823",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.826959333409565e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116859",
+      "clear_width_source_m": 0.8410051367607991,
+      "leaf_plan_deviation_m": 1.0967344373567064e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11685A",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.393604998299493e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11687B",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.844735960723617e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "1168B5",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.0977695119411525e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "1168B6",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.385365345267087e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "1168E1",
+      "clear_width_source_m": 0.9020341420074942,
+      "leaf_plan_deviation_m": 1.2186934001301852e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116915",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.835334786764041e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116918",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.848794917519233e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116D06",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.842548150629088e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "116D09",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.850058416396118e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11C9AC",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.835417018235628e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CA0F",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.81447118329321e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CA12",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.83879125277195e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CA4B",
+      "clear_width_source_m": 0.8410051367608276,
+      "leaf_plan_deviation_m": 1.0952594810765474e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CA4C",
+      "clear_width_source_m": 0.4117457593034146,
+      "leaf_plan_deviation_m": 5.428384762897403e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CAC3",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.818819118663438e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CC62",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.834683486653312e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CD1A",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.852934996862434e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CD71",
+      "clear_width_source_m": 0.5585556099416067,
+      "leaf_plan_deviation_m": 7.302923892487897e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CDC5",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.832629494650713e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CDE3",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.822591061533399e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CDE5",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.829220572362701e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CE1B",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.86748152047615e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CEF9",
+      "clear_width_source_m": 0.9001133676643711,
+      "leaf_plan_deviation_m": 1.1970674215754687e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "11CF94",
+      "clear_width_source_m": 0.9467166470961388,
+      "leaf_plan_deviation_m": 1.2741593642336171e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "120630",
+      "clear_width_source_m": 0.952675186142983,
+      "leaf_plan_deviation_m": 1.2548233892633979e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "1285C2",
+      "clear_width_source_m": 0.8004100864293946,
+      "leaf_plan_deviation_m": 1.0483585763468383e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "160DD3",
+      "clear_width_source_m": 0.8409615521315459,
+      "leaf_plan_deviation_m": 1.0962250966863979e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "160DD4",
+      "clear_width_source_m": 0.4117244208055979,
+      "leaf_plan_deviation_m": 5.437015399336068e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "160DD7",
+      "clear_width_source_m": 0.8409822339659172,
+      "leaf_plan_deviation_m": 1.0954132340310874e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "160DD8",
+      "clear_width_source_m": 0.41173454637703344,
+      "leaf_plan_deviation_m": 5.396087465987875e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "160E8A",
+      "clear_width_source_m": 0.8409615521315459,
+      "leaf_plan_deviation_m": 1.0968620612066186e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "160E8B",
+      "clear_width_source_m": 0.4117244208056263,
+      "leaf_plan_deviation_m": 5.385243826181088e-06
+    },
+    {
+      "level": "Piso_01",
+      "handle": "165634",
+      "clear_width_source_m": 0.8671016430766372,
+      "leaf_plan_deviation_m": 1.1291089782058142e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "165635",
+      "clear_width_source_m": 0.8671016430766372,
+      "leaf_plan_deviation_m": 1.1489100865616645e-05
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E712",
+      "clear_width_source_m": 1.0825940983532405,
+      "leaf_plan_deviation_m": 4.101871409639658e-08
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E713",
+      "clear_width_source_m": 1.0825940983531837,
+      "leaf_plan_deviation_m": 3.1852471882900426e-08
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E714",
+      "clear_width_source_m": 1.0825940983531837,
+      "leaf_plan_deviation_m": 4.101894689945112e-08
+    },
+    {
+      "level": "Piso_01",
+      "handle": "10E715",
+      "clear_width_source_m": 1.0825940983531837,
+      "leaf_plan_deviation_m": 3.185247287360151e-08
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EBF5",
+      "clear_width_source_m": 0.8706782687361851,
+      "leaf_plan_deviation_m": 1.1487347730879488e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EBF6",
+      "clear_width_source_m": 0.8706782687361851,
+      "leaf_plan_deviation_m": 1.144907756525042e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EBF8",
+      "clear_width_source_m": 0.9066387895441039,
+      "leaf_plan_deviation_m": 1.2057460726380725e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EBF9",
+      "clear_width_source_m": 0.9051988238553008,
+      "leaf_plan_deviation_m": 1.186095003517301e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EBFC",
+      "clear_width_source_m": 0.9015100102160432,
+      "leaf_plan_deviation_m": 1.2235148489761959e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EBFD",
+      "clear_width_source_m": 0.9009599960014043,
+      "leaf_plan_deviation_m": 1.2077059264618949e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EBFF",
+      "clear_width_source_m": 0.801892613439577,
+      "leaf_plan_deviation_m": 1.0628867161511928e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC00",
+      "clear_width_source_m": 0.9020341432570831,
+      "leaf_plan_deviation_m": 1.1924737825690708e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC01",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0963358323259636e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC02",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.361661269741356e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC05",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0953960642155455e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC06",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.367303106928444e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC07",
+      "clear_width_source_m": 0.8370451286967864,
+      "leaf_plan_deviation_m": 1.0899155472768228e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC08",
+      "clear_width_source_m": 0.4098069881165429,
+      "leaf_plan_deviation_m": 5.349341994160513e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC09",
+      "clear_width_source_m": 0.8409638649791873,
+      "leaf_plan_deviation_m": 1.1008199027229461e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC0A",
+      "clear_width_source_m": 0.4117255531473347,
+      "leaf_plan_deviation_m": 5.374252340761281e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC0B",
+      "clear_width_source_m": 0.8409615521314322,
+      "leaf_plan_deviation_m": 1.0983954053800657e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC0C",
+      "clear_width_source_m": 0.4117244208055695,
+      "leaf_plan_deviation_m": 5.402468121503892e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC0F",
+      "clear_width_source_m": 0.8996773004457452,
+      "leaf_plan_deviation_m": 1.2040492517478798e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC10",
+      "clear_width_source_m": 0.7497331254498363,
+      "leaf_plan_deviation_m": 9.766726291377135e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC11",
+      "clear_width_source_m": 0.7497331254498363,
+      "leaf_plan_deviation_m": 9.766957538124779e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC12",
+      "clear_width_source_m": 0.8016559638328431,
+      "leaf_plan_deviation_m": 1.044413279862238e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC13",
+      "clear_width_source_m": 0.3924808887610425,
+      "leaf_plan_deviation_m": 5.160650733931757e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC14",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0986531339703938e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC15",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.3624874882972106e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC16",
+      "clear_width_source_m": 0.7740633011457021,
+      "leaf_plan_deviation_m": 1.0129047625259316e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC17",
+      "clear_width_source_m": 0.3789718608696262,
+      "leaf_plan_deviation_m": 4.961882826951138e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC18",
+      "clear_width_source_m": 0.8054301805436239,
+      "leaf_plan_deviation_m": 1.0511360685486964e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC19",
+      "clear_width_source_m": 0.3943286987890815,
+      "leaf_plan_deviation_m": 5.133511784074853e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC2A",
+      "clear_width_source_m": 0.8409845468705157,
+      "leaf_plan_deviation_m": 1.0959006791053537e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC2B",
+      "clear_width_source_m": 0.41173567874665196,
+      "leaf_plan_deviation_m": 5.4139904839741206e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC2E",
+      "clear_width_source_m": 0.8409845468705157,
+      "leaf_plan_deviation_m": 1.098340569636199e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC2F",
+      "clear_width_source_m": 0.41173567874665196,
+      "leaf_plan_deviation_m": 5.385455398473817e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC30",
+      "clear_width_source_m": 0.7738840752951432,
+      "leaf_plan_deviation_m": 1.013621845623198e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC31",
+      "clear_width_source_m": 0.3788841141000603,
+      "leaf_plan_deviation_m": 4.945157290107509e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC32",
+      "clear_width_source_m": 0.840961552131489,
+      "leaf_plan_deviation_m": 1.1006261749806614e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC33",
+      "clear_width_source_m": 0.4117244208055695,
+      "leaf_plan_deviation_m": 5.372610956100117e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC34",
+      "clear_width_source_m": 0.8410435728143852,
+      "leaf_plan_deviation_m": 1.0967201417749623e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC35",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.398604397895663e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC38",
+      "clear_width_source_m": 0.9525968747178126,
+      "leaf_plan_deviation_m": 1.2656187610423493e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC39",
+      "clear_width_source_m": 0.9562188826657234,
+      "leaf_plan_deviation_m": 1.2739018420369752e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC3A",
+      "clear_width_source_m": 0.9467166470960819,
+      "leaf_plan_deviation_m": 1.2531750201207648e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC3D",
+      "clear_width_source_m": 0.7997109565531559,
+      "leaf_plan_deviation_m": 1.0765379165421645e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC3E",
+      "clear_width_source_m": 0.9467166470960251,
+      "leaf_plan_deviation_m": 1.252379768925608e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC3F",
+      "clear_width_source_m": 0.9562188826657234,
+      "leaf_plan_deviation_m": 1.274576145316473e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC40",
+      "clear_width_source_m": 0.9525968747177558,
+      "leaf_plan_deviation_m": 1.2687333764198134e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC41",
+      "clear_width_source_m": 0.9467166470960251,
+      "leaf_plan_deviation_m": 1.252662607692499e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC42",
+      "clear_width_source_m": 0.9525968747176421,
+      "leaf_plan_deviation_m": 1.2656187571494128e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC44",
+      "clear_width_source_m": 0.9524799193222862,
+      "leaf_plan_deviation_m": 1.2429840635731846e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC48",
+      "clear_width_source_m": 0.8732583343870104,
+      "leaf_plan_deviation_m": 1.1366796234768226e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC49",
+      "clear_width_source_m": 0.8732583343870104,
+      "leaf_plan_deviation_m": 1.1366321105608677e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC4A",
+      "clear_width_source_m": 0.9996386956914876,
+      "leaf_plan_deviation_m": 1.3069893969065837e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC4E",
+      "clear_width_source_m": 0.800204643624113,
+      "leaf_plan_deviation_m": 1.042777832635394e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC4F",
+      "clear_width_source_m": 0.7737205565299519,
+      "leaf_plan_deviation_m": 1.0097569172837517e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC50",
+      "clear_width_source_m": 0.3788040573260787,
+      "leaf_plan_deviation_m": 4.96570862810403e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC51",
+      "clear_width_source_m": 0.8410822407026899,
+      "leaf_plan_deviation_m": 1.0989292680704053e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC52",
+      "clear_width_source_m": 0.4117835084439321,
+      "leaf_plan_deviation_m": 5.38784593613188e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC53",
+      "clear_width_source_m": 0.8024452676939404,
+      "leaf_plan_deviation_m": 1.0442804131464493e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC54",
+      "clear_width_source_m": 0.3928673222123962,
+      "leaf_plan_deviation_m": 5.14900622722225e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC55",
+      "clear_width_source_m": 0.9057447320049619,
+      "leaf_plan_deviation_m": 1.1795148565971623e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC56",
+      "clear_width_source_m": 0.805425464576615,
+      "leaf_plan_deviation_m": 1.0506609372076825e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC57",
+      "clear_width_source_m": 0.4449245730456255,
+      "leaf_plan_deviation_m": 5.804945351538406e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC58",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.2130559144087248e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC59",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.2127576210674734e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC5A",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.1760558074022323e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC5B",
+      "clear_width_source_m": 0.8996773004462284,
+      "leaf_plan_deviation_m": 1.170702781820098e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC5C",
+      "clear_width_source_m": 0.8466854538227722,
+      "leaf_plan_deviation_m": 1.1064170535348282e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC5D",
+      "clear_width_source_m": 0.8996773004462284,
+      "leaf_plan_deviation_m": 1.1770947166803999e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC5E",
+      "clear_width_source_m": 0.8997156401710527,
+      "leaf_plan_deviation_m": 1.1726858109718168e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC62",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0441119939519686e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC63",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0444228533188896e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC64",
+      "clear_width_source_m": 0.7999099336569895,
+      "leaf_plan_deviation_m": 1.041829799325805e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC65",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.0418584799559148e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC62",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0441119939519686e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC63",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0444228533188896e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC64",
+      "clear_width_source_m": 0.7999099336569895,
+      "leaf_plan_deviation_m": 1.041829799325805e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC65",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.0418584799559148e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC6B",
+      "clear_width_source_m": 0.799909933656993,
+      "leaf_plan_deviation_m": 1.0405779448676192e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EC6C",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.0416596126770104e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10ECBB",
+      "clear_width_source_m": 0.8996773004457452,
+      "leaf_plan_deviation_m": 1.1894696752920315e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10ECBC",
+      "clear_width_source_m": 0.8996773004457452,
+      "leaf_plan_deviation_m": 1.1970521817814259e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10ECBD",
+      "clear_width_source_m": 0.8996773004457488,
+      "leaf_plan_deviation_m": 1.1895742998528598e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10ECBE",
+      "clear_width_source_m": 0.8526484009605326,
+      "leaf_plan_deviation_m": 1.113125536904191e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10ED02",
+      "clear_width_source_m": 0.9525968747178126,
+      "leaf_plan_deviation_m": 1.272947451239997e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10ED8F",
+      "clear_width_source_m": 0.8526484009605326,
+      "leaf_plan_deviation_m": 1.1101007135464384e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EDD3",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0985836231631052e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EDD4",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.38044441653404e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EEC5",
+      "clear_width_source_m": 0.840872549905157,
+      "leaf_plan_deviation_m": 1.145563715328091e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EEC6",
+      "clear_width_source_m": 0.8998541202671486,
+      "leaf_plan_deviation_m": 1.1706772145256584e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EEC7",
+      "clear_width_source_m": 0.8001029717279309,
+      "leaf_plan_deviation_m": 1.0794479251831183e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF07",
+      "clear_width_source_m": 1.2466082558034586,
+      "leaf_plan_deviation_m": 1.673062757639875e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF08",
+      "clear_width_source_m": 1.246608255803455,
+      "leaf_plan_deviation_m": 1.672833338787843e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF09",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0955915507782866e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF0A",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.365348235372964e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF2D",
+      "clear_width_source_m": 0.9001158431938165,
+      "leaf_plan_deviation_m": 1.2092121562849007e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF3A",
+      "clear_width_source_m": 0.9001158431938734,
+      "leaf_plan_deviation_m": 1.2113829709073428e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF40",
+      "clear_width_source_m": 0.8506782687362033,
+      "leaf_plan_deviation_m": 1.1539073397991292e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF4B",
+      "clear_width_source_m": 1.246608560460487,
+      "leaf_plan_deviation_m": 1.6517763062551806e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EF4C",
+      "clear_width_source_m": 1.246608484295482,
+      "leaf_plan_deviation_m": 1.651055560369087e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EFE9",
+      "clear_width_source_m": 0.8409845468705726,
+      "leaf_plan_deviation_m": 1.0950412665066591e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EFEA",
+      "clear_width_source_m": 0.41173567874665196,
+      "leaf_plan_deviation_m": 5.396548190050333e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EFEB",
+      "clear_width_source_m": 0.8410435728143852,
+      "leaf_plan_deviation_m": 1.094171069562523e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "10EFEC",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.380424806735524e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EB25",
+      "clear_width_source_m": 0.8937945985005626,
+      "leaf_plan_deviation_m": 1.1649207645909539e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EB38",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.837661740842703e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EB91",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.80566838882389e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EB92",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.824758904684417e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11ED1A",
+      "clear_width_source_m": 0.840961552131489,
+      "leaf_plan_deviation_m": 1.0956778336043723e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11ED1B",
+      "clear_width_source_m": 0.4117244208055695,
+      "leaf_plan_deviation_m": 5.365341425214188e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11ED68",
+      "clear_width_source_m": 0.6040709740663033,
+      "leaf_plan_deviation_m": 7.91034694726541e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11ED77",
+      "clear_width_source_m": 0.6040709740663033,
+      "leaf_plan_deviation_m": 7.914296358424665e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EDEB",
+      "clear_width_source_m": 0.5996515471271664,
+      "leaf_plan_deviation_m": 7.839046043004603e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EE57",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.836117299459785e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EEE8",
+      "clear_width_source_m": 0.9525968747177558,
+      "leaf_plan_deviation_m": 1.2707597757300925e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EF13",
+      "clear_width_source_m": 0.840961552131489,
+      "leaf_plan_deviation_m": 1.0962446389978744e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EF14",
+      "clear_width_source_m": 0.4117244208055695,
+      "leaf_plan_deviation_m": 5.366987855326415e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EF45",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.810034233712258e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11EFC1",
+      "clear_width_source_m": 0.8526484009605326,
+      "leaf_plan_deviation_m": 1.1130282311951311e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11F6A1",
+      "clear_width_source_m": 0.7997109565530423,
+      "leaf_plan_deviation_m": 1.0413157785970431e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11F6A5",
+      "clear_width_source_m": 0.5468927820328986,
+      "leaf_plan_deviation_m": 7.115528934254433e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11F72C",
+      "clear_width_source_m": 0.5468927820328986,
+      "leaf_plan_deviation_m": 7.119114728383636e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11F752",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.80396034239903e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11FE7A",
+      "clear_width_source_m": 0.8055911841747161,
+      "leaf_plan_deviation_m": 1.0517007061585945e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11FE7B",
+      "clear_width_source_m": 0.5338473737442655,
+      "leaf_plan_deviation_m": 6.9655677922163965e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "11FE82",
+      "clear_width_source_m": 0.5338473737442655,
+      "leaf_plan_deviation_m": 6.961423888954042e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "12019B",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.823530140790655e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120224",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.881697148770412e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120256",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0972114587076021e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120257",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.401631557477687e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120271",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.844184950152478e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120274",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.883241669151763e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1202DC",
+      "clear_width_source_m": 0.9001158431938165,
+      "leaf_plan_deviation_m": 1.2063238837058144e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1202F3",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.826734033562402e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1203B0",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.8398448781956e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1203CD",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.835334882759097e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "12043E",
+      "clear_width_source_m": 0.8506782687362033,
+      "leaf_plan_deviation_m": 1.1540144069958311e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1204BE",
+      "clear_width_source_m": 0.4998193478457438,
+      "leaf_plan_deviation_m": 6.514672418421281e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1204BF",
+      "clear_width_source_m": 0.4998193478457438,
+      "leaf_plan_deviation_m": 6.513563544495921e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120794",
+      "clear_width_source_m": 0.6715149140410404,
+      "leaf_plan_deviation_m": 8.776948776620542e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1207CE",
+      "clear_width_source_m": 0.9524799193222862,
+      "leaf_plan_deviation_m": 1.2432329081537635e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120D91",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.809913821846804e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120E34",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.813671516666156e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120E6F",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.845603594957209e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120EC2",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.856185544871567e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120EC3",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.827044270187642e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120F5B",
+      "clear_width_source_m": 0.8996748261222933,
+      "leaf_plan_deviation_m": 1.172033018060214e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "120F99",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.818405034740309e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "121079",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.86272614718194e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1217DC",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.818819030412761e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "12182F",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.836341639866487e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "121832",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.847789789500268e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "121868",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.814471272778131e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "12186B",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.838791296116354e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1218A5",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.820352968417662e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "12190D",
+      "clear_width_source_m": 0.9066387895441039,
+      "leaf_plan_deviation_m": 1.2103025606914547e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "121A4E",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0966199957592301e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "121A4F",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.364388592964061e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "121A50",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0962475679558105e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "121A51",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.3608538263782635e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "1285A9",
+      "clear_width_source_m": 0.8004100864293946,
+      "leaf_plan_deviation_m": 1.0429821188879679e-05
+    },
+    {
+      "level": "Piso_02",
+      "handle": "133996",
+      "clear_width_source_m": 0.6715149140410404,
+      "leaf_plan_deviation_m": 8.780037369868883e-06
+    },
+    {
+      "level": "Piso_02",
+      "handle": "133FC0",
+      "clear_width_source_m": 0.9051988238553008,
+      "leaf_plan_deviation_m": 1.1908737489453587e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F35E",
+      "clear_width_source_m": 0.8961539156353524,
+      "leaf_plan_deviation_m": 1.1951822536754067e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F35F",
+      "clear_width_source_m": 0.8959221780368125,
+      "leaf_plan_deviation_m": 1.1801126220742843e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F670",
+      "clear_width_source_m": 0.8993655665187248,
+      "leaf_plan_deviation_m": 1.2127552246859757e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F671",
+      "clear_width_source_m": 0.8054619334100721,
+      "leaf_plan_deviation_m": 1.049631651241453e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F672",
+      "clear_width_source_m": 0.44724107559881077,
+      "leaf_plan_deviation_m": 5.841590694903704e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F673",
+      "clear_width_source_m": 0.8996773004457452,
+      "leaf_plan_deviation_m": 1.2040492517478798e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F676",
+      "clear_width_source_m": 0.9956303405293738,
+      "leaf_plan_deviation_m": 1.298079631198112e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F678",
+      "clear_width_source_m": 0.7740633011457021,
+      "leaf_plan_deviation_m": 1.0129047634107302e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F679",
+      "clear_width_source_m": 0.3789718608696262,
+      "leaf_plan_deviation_m": 4.933712495454038e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F68A",
+      "clear_width_source_m": 0.8409845468705157,
+      "leaf_plan_deviation_m": 1.0943160071209873e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F68B",
+      "clear_width_source_m": 0.41173567874665196,
+      "leaf_plan_deviation_m": 5.445207784390566e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F68C",
+      "clear_width_source_m": 0.8409845468705157,
+      "leaf_plan_deviation_m": 1.0958553225406594e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F68D",
+      "clear_width_source_m": 0.41173567874665196,
+      "leaf_plan_deviation_m": 5.414459889126379e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F690",
+      "clear_width_source_m": 0.8010595213456213,
+      "leaf_plan_deviation_m": 1.043365464353963e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F691",
+      "clear_width_source_m": 0.45164560035669865,
+      "leaf_plan_deviation_m": 5.97421977342894e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F692",
+      "clear_width_source_m": 0.8410435728143852,
+      "leaf_plan_deviation_m": 1.0976354258529839e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F693",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.364989870292201e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F696",
+      "clear_width_source_m": 0.9467166470960251,
+      "leaf_plan_deviation_m": 1.2531750197042499e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F699",
+      "clear_width_source_m": 0.7997109565531559,
+      "leaf_plan_deviation_m": 1.076537915464924e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F69A",
+      "clear_width_source_m": 0.9467166470960819,
+      "leaf_plan_deviation_m": 1.2523797692898284e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F69B",
+      "clear_width_source_m": 0.9467167023431102,
+      "leaf_plan_deviation_m": 1.2500538240805047e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A0",
+      "clear_width_source_m": 1.0001287146599225,
+      "leaf_plan_deviation_m": 1.3037751127190325e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A1",
+      "clear_width_source_m": 0.8002669289141409,
+      "leaf_plan_deviation_m": 1.0433239020398605e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A3",
+      "clear_width_source_m": 0.7479328413679696,
+      "leaf_plan_deviation_m": 9.79077043532747e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A4",
+      "clear_width_source_m": 0.40476741534752136,
+      "leaf_plan_deviation_m": 5.283060725621431e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A5",
+      "clear_width_source_m": 0.8410822407026899,
+      "leaf_plan_deviation_m": 1.0989292666293492e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A6",
+      "clear_width_source_m": 0.4117835084439321,
+      "leaf_plan_deviation_m": 5.387845943514392e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A7",
+      "clear_width_source_m": 0.8054158841631534,
+      "leaf_plan_deviation_m": 1.0479223940444597e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A8",
+      "clear_width_source_m": 0.3943216994572367,
+      "leaf_plan_deviation_m": 5.153757870714851e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6A9",
+      "clear_width_source_m": 0.9057447320049619,
+      "leaf_plan_deviation_m": 1.1795148600395179e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6AA",
+      "clear_width_source_m": 0.805425464576615,
+      "leaf_plan_deviation_m": 1.05209380961338e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6AB",
+      "clear_width_source_m": 0.39432638990967916,
+      "leaf_plan_deviation_m": 5.15617608617235e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6AC",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.2130559144087248e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6AD",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.2127576210674734e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6AE",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.1760558077011828e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6AF",
+      "clear_width_source_m": 0.8996773004462284,
+      "leaf_plan_deviation_m": 1.173685396242276e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6B0",
+      "clear_width_source_m": 0.8466854538227722,
+      "leaf_plan_deviation_m": 1.1064170535348282e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6B1",
+      "clear_width_source_m": 0.8996773004462284,
+      "leaf_plan_deviation_m": 1.1717510051782285e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6B2",
+      "clear_width_source_m": 0.7738446832669297,
+      "leaf_plan_deviation_m": 1.0075115315116362e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6B3",
+      "clear_width_source_m": 0.37886482824808354,
+      "leaf_plan_deviation_m": 4.942436558242535e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6B4",
+      "clear_width_source_m": 0.8004100864293946,
+      "leaf_plan_deviation_m": 1.0429821191393529e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6BE",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.0408927695616028e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F6BF",
+      "clear_width_source_m": 0.805593399745419,
+      "leaf_plan_deviation_m": 1.0486596203624814e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F72D",
+      "clear_width_source_m": 0.8999999999999986,
+      "leaf_plan_deviation_m": 1.1756476923811586e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F74A",
+      "clear_width_source_m": 0.9525968747177558,
+      "leaf_plan_deviation_m": 1.2729474504846432e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F7A6",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0985836237568692e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F7A7",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.38238195478724e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F7F5",
+      "clear_width_source_m": 0.9467166470959683,
+      "leaf_plan_deviation_m": 1.2526626077915517e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F7F6",
+      "clear_width_source_m": 0.9467166470959683,
+      "leaf_plan_deviation_m": 1.2567496055597385e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8C3",
+      "clear_width_source_m": 0.8502454738305794,
+      "leaf_plan_deviation_m": 1.1077162684896447e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8C4",
+      "clear_width_source_m": 1.0001287146599225,
+      "leaf_plan_deviation_m": 1.302080171126114e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8C9",
+      "clear_width_source_m": 1.0001287146599225,
+      "leaf_plan_deviation_m": 1.3035262699391179e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8CA",
+      "clear_width_source_m": 0.8526484009605362,
+      "leaf_plan_deviation_m": 1.1109103956085563e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8CB",
+      "clear_width_source_m": 0.9999906598995381,
+      "leaf_plan_deviation_m": 1.301314224496137e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8CE",
+      "clear_width_source_m": 0.8997156401710527,
+      "leaf_plan_deviation_m": 1.1720459281904622e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8E3",
+      "clear_width_source_m": 1.0001287146599296,
+      "leaf_plan_deviation_m": 1.3155297731579237e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8E6",
+      "clear_width_source_m": 0.8998541202671504,
+      "leaf_plan_deviation_m": 1.171031436465672e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F8EE",
+      "clear_width_source_m": 0.8998541202671504,
+      "leaf_plan_deviation_m": 1.1731845899830012e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F90A",
+      "clear_width_source_m": 1.2466082558034515,
+      "leaf_plan_deviation_m": 1.6424020921723454e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F90B",
+      "clear_width_source_m": 1.2466082558034515,
+      "leaf_plan_deviation_m": 1.6428601830528968e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F90C",
+      "clear_width_source_m": 0.8054619334100721,
+      "leaf_plan_deviation_m": 1.0494791949119522e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F90D",
+      "clear_width_source_m": 0.44724107559881077,
+      "leaf_plan_deviation_m": 5.8335929032087755e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F90E",
+      "clear_width_source_m": 0.8054619334100721,
+      "leaf_plan_deviation_m": 1.0554498881667015e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F90F",
+      "clear_width_source_m": 0.44724107559881077,
+      "leaf_plan_deviation_m": 5.841845007351304e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F910",
+      "clear_width_source_m": 0.8054619334100721,
+      "leaf_plan_deviation_m": 1.0497928904916892e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F911",
+      "clear_width_source_m": 0.44724107559881077,
+      "leaf_plan_deviation_m": 5.8304426822216725e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F950",
+      "clear_width_source_m": 0.8720429410059882,
+      "leaf_plan_deviation_m": 3.4116423782976e-07
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F960",
+      "clear_width_source_m": 0.8081958455314674,
+      "leaf_plan_deviation_m": 3.1271457415560087e-07
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F961",
+      "clear_width_source_m": 0.8081958455314674,
+      "leaf_plan_deviation_m": 5.430540499348058e-07
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F962",
+      "clear_width_source_m": 0.8081958455314674,
+      "leaf_plan_deviation_m": 5.475169464335728e-07
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F963",
+      "clear_width_source_m": 0.8488547068669452,
+      "leaf_plan_deviation_m": 2.6456285694648914e-07
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F979",
+      "clear_width_source_m": 0.8488547068669452,
+      "leaf_plan_deviation_m": 3.197513365194027e-08
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F97B",
+      "clear_width_source_m": 0.8962465195185384,
+      "leaf_plan_deviation_m": 1.4588767114401915e-07
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F989",
+      "clear_width_source_m": 0.834863187094868,
+      "leaf_plan_deviation_m": 1.0875124040919643e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F98A",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.359833470760275e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F98B",
+      "clear_width_source_m": 0.834863187094868,
+      "leaf_plan_deviation_m": 1.0878276156986649e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F98C",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.384122116133636e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F98D",
+      "clear_width_source_m": 0.8407450363677071,
+      "leaf_plan_deviation_m": 1.096981232122078e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F98E",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.401853012536128e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F98F",
+      "clear_width_source_m": 0.8407450363677071,
+      "leaf_plan_deviation_m": 1.0953602177562599e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F990",
+      "clear_width_source_m": 0.4117468917038991,
+      "leaf_plan_deviation_m": 5.372924653404602e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F991",
+      "clear_width_source_m": 1.2466082558034586,
+      "leaf_plan_deviation_m": 1.673062757639875e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10F992",
+      "clear_width_source_m": 1.246608255803455,
+      "leaf_plan_deviation_m": 1.6728333380800362e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FA50",
+      "clear_width_source_m": 0.9000002507185627,
+      "leaf_plan_deviation_m": 1.1718102057019877e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FA5C",
+      "clear_width_source_m": 0.7479328413679696,
+      "leaf_plan_deviation_m": 9.747717936393419e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FA5D",
+      "clear_width_source_m": 0.40476741534752136,
+      "leaf_plan_deviation_m": 5.284707133780242e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FA71",
+      "clear_width_source_m": 0.9001158431938734,
+      "leaf_plan_deviation_m": 1.1742097389310641e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FA73",
+      "clear_width_source_m": 0.9001158431938734,
+      "leaf_plan_deviation_m": 1.1758843937593422e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBA8",
+      "clear_width_source_m": 0.8409845468705157,
+      "leaf_plan_deviation_m": 1.0952689355020368e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBA9",
+      "clear_width_source_m": 0.41173567874665196,
+      "leaf_plan_deviation_m": 5.400250006604719e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBAA",
+      "clear_width_source_m": 0.8409845468705157,
+      "leaf_plan_deviation_m": 1.094011152034354e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBAB",
+      "clear_width_source_m": 0.41173567874665196,
+      "leaf_plan_deviation_m": 5.439495530664763e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBAE",
+      "clear_width_source_m": 0.8410435728143852,
+      "leaf_plan_deviation_m": 1.0944998251981498e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBAF",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.370162107078245e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBB0",
+      "clear_width_source_m": 0.8054619334100721,
+      "leaf_plan_deviation_m": 1.0518936398848156e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "10FBB1",
+      "clear_width_source_m": 0.44724107559881077,
+      "leaf_plan_deviation_m": 5.819641709836418e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121C52",
+      "clear_width_source_m": 0.8996748261222933,
+      "leaf_plan_deviation_m": 1.180676139227903e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121C96",
+      "clear_width_source_m": 0.9467166470960819,
+      "leaf_plan_deviation_m": 1.2571243314972754e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121CF3",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.837661785408171e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121D8D",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.827044388264484e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121D8E",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.824758908223612e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121DD4",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.836117310387007e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121E35",
+      "clear_width_source_m": 0.9455768754353358,
+      "leaf_plan_deviation_m": 1.282266710171663e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "121F08",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.812456036762499e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "12426A",
+      "clear_width_source_m": 0.8393987323456145,
+      "leaf_plan_deviation_m": 1.0948843595321058e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "12426B",
+      "clear_width_source_m": 0.4109592834821001,
+      "leaf_plan_deviation_m": 5.406306980845754e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1242A0",
+      "clear_width_source_m": 0.5996515471271664,
+      "leaf_plan_deviation_m": 7.839046051852589e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1242E5",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.823530140790655e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "126A50",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.80396034239903e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "126A8F",
+      "clear_width_source_m": 0.799909933656993,
+      "leaf_plan_deviation_m": 1.0405779448676192e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C62",
+      "clear_width_source_m": 0.800204643624113,
+      "leaf_plan_deviation_m": 1.0427778329892972e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C63",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0441119934829014e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C64",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0444228533188896e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C65",
+      "clear_width_source_m": 0.7999099336569895,
+      "leaf_plan_deviation_m": 1.041829799325805e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C66",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.0418584799559148e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C63",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0441119934829014e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C64",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0444228533188896e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C65",
+      "clear_width_source_m": 0.7999099336569895,
+      "leaf_plan_deviation_m": 1.041829799325805e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127C66",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.0418584799559148e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127CF6",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.809913765212152e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127E33",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.881697154079203e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127E84",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.819993426722314e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127EA1",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.826208984734409e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127F67",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.844736053361954e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127FA3",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.834770280776195e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "127FC0",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.835334873605839e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1281B8",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.825765042925497e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1281D9",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.86272614718194e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1281F6",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.809736584962672e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "128213",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.82475892222557e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "128230",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.805668499156875e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "12832D",
+      "clear_width_source_m": 0.9525968747177558,
+      "leaf_plan_deviation_m": 1.2686723997955134e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1283AA",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.818405043651094e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "12847E",
+      "clear_width_source_m": 0.8410435728143852,
+      "leaf_plan_deviation_m": 1.094171069562523e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "12847F",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.377897886044458e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "128695",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.820352974294288e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1286B5",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.818819013930542e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1286D1",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.838657249357081e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "1286D4",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.85391683770382e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "12870A",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.814471268889237e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "12870D",
+      "clear_width_source_m": 0.5997832174148812,
+      "leaf_plan_deviation_m": 7.838791303466014e-06
+    },
+    {
+      "level": "Piso_03",
+      "handle": "128841",
+      "clear_width_source_m": 0.8959221780368125,
+      "leaf_plan_deviation_m": 1.1831481706718262e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "128918",
+      "clear_width_source_m": 0.8961539156353524,
+      "leaf_plan_deviation_m": 1.2001541359975427e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "128AA2",
+      "clear_width_source_m": 0.8993655665187248,
+      "leaf_plan_deviation_m": 1.2109850871255596e-05
+    },
+    {
+      "level": "Piso_03",
+      "handle": "128CC2",
+      "clear_width_source_m": 0.8488547068669452,
+      "leaf_plan_deviation_m": 3.7886394466113416e-08
+    },
+    {
+      "level": "Piso_04",
+      "handle": "10FF5D",
+      "clear_width_source_m": 1.2466082558034515,
+      "leaf_plan_deviation_m": 1.6424020921723454e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "10FF61",
+      "clear_width_source_m": 1.0001287146599225,
+      "leaf_plan_deviation_m": 1.347797640900648e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "10FFB7",
+      "clear_width_source_m": 0.9499911269044787,
+      "leaf_plan_deviation_m": 1.2373688138843954e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110279",
+      "clear_width_source_m": 0.9020341431971701,
+      "leaf_plan_deviation_m": 1.1892953062010865e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11027B",
+      "clear_width_source_m": 1.0501338632462875,
+      "leaf_plan_deviation_m": 1.4056967827574346e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110286",
+      "clear_width_source_m": 0.9006782687362147,
+      "leaf_plan_deviation_m": 1.1770949139353678e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110288",
+      "clear_width_source_m": 0.9020341441976143,
+      "leaf_plan_deviation_m": 1.1924713338735743e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110289",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0948414794366995e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11028A",
+      "clear_width_source_m": 0.41174689170384227,
+      "leaf_plan_deviation_m": 5.4059762453052475e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11028B",
+      "clear_width_source_m": 0.8368814182874758,
+      "leaf_plan_deviation_m": 1.0888954406519151e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11028C",
+      "clear_width_source_m": 0.40972683751601835,
+      "leaf_plan_deviation_m": 5.351624365036979e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11028D",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0982381001191067e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11028E",
+      "clear_width_source_m": 0.41174689170384227,
+      "leaf_plan_deviation_m": 5.415462524257019e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11028F",
+      "clear_width_source_m": 0.8410264598866206,
+      "leaf_plan_deviation_m": 1.1014579612568992e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110290",
+      "clear_width_source_m": 0.4117561988432499,
+      "leaf_plan_deviation_m": 5.400008012346421e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110291",
+      "clear_width_source_m": 0.805461933410129,
+      "leaf_plan_deviation_m": 1.0514689273570735e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110292",
+      "clear_width_source_m": 0.3943442446014842,
+      "leaf_plan_deviation_m": 5.187758743897363e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110293",
+      "clear_width_source_m": 0.8370451286967864,
+      "leaf_plan_deviation_m": 1.0911345380310881e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110294",
+      "clear_width_source_m": 0.4098069881165429,
+      "leaf_plan_deviation_m": 5.361531887235557e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110299",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0942421642299898e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11029A",
+      "clear_width_source_m": 0.41174689170384227,
+      "leaf_plan_deviation_m": 5.412618337825915e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11029E",
+      "clear_width_source_m": 0.7740633011457021,
+      "leaf_plan_deviation_m": 1.0129047639725732e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11029F",
+      "clear_width_source_m": 0.37897186086956935,
+      "leaf_plan_deviation_m": 4.961882837568722e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B0",
+      "clear_width_source_m": 0.8409845468705726,
+      "leaf_plan_deviation_m": 1.0971502532098812e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B1",
+      "clear_width_source_m": 0.4117356787467088,
+      "leaf_plan_deviation_m": 5.381766991807718e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B2",
+      "clear_width_source_m": 0.8409845468705726,
+      "leaf_plan_deviation_m": 1.0982904035130517e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B3",
+      "clear_width_source_m": 0.4117356787467088,
+      "leaf_plan_deviation_m": 5.376948126837327e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B4",
+      "clear_width_source_m": 0.8409845468705726,
+      "leaf_plan_deviation_m": 1.0943494179528636e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B5",
+      "clear_width_source_m": 0.4117356787467088,
+      "leaf_plan_deviation_m": 5.386945541559247e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B6",
+      "clear_width_source_m": 0.8409845468705726,
+      "leaf_plan_deviation_m": 1.0949292696601112e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B7",
+      "clear_width_source_m": 0.4117356787467088,
+      "leaf_plan_deviation_m": 5.38801952309275e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B8",
+      "clear_width_source_m": 0.8409614887993939,
+      "leaf_plan_deviation_m": 1.0949064429609334e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102B9",
+      "clear_width_source_m": 0.4117243897989056,
+      "leaf_plan_deviation_m": 5.376495506519305e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102BA",
+      "clear_width_source_m": 0.8410435728144421,
+      "leaf_plan_deviation_m": 1.0958478105949278e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102BB",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.391944078564743e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102BC",
+      "clear_width_source_m": 0.8410435728144421,
+      "leaf_plan_deviation_m": 1.0969899071712413e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102BD",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.40815752944112e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102BE",
+      "clear_width_source_m": 0.8410435728144421,
+      "leaf_plan_deviation_m": 1.096900283755929e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102BF",
+      "clear_width_source_m": 0.41176457712197134,
+      "leaf_plan_deviation_m": 5.390678422316886e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102C2",
+      "clear_width_source_m": 0.9467166470959683,
+      "leaf_plan_deviation_m": 1.2531750153902553e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102C5",
+      "clear_width_source_m": 0.7950441500303214,
+      "leaf_plan_deviation_m": 1.0564004001030207e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102C6",
+      "clear_width_source_m": 0.9462188826659033,
+      "leaf_plan_deviation_m": 1.2574928306805204e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102C7",
+      "clear_width_source_m": 0.9492949462758133,
+      "leaf_plan_deviation_m": 1.2750834218892561e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102C8",
+      "clear_width_source_m": 0.9462188826657894,
+      "leaf_plan_deviation_m": 1.2808308769670819e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102C9",
+      "clear_width_source_m": 0.9562188826656666,
+      "leaf_plan_deviation_m": 1.286907178998151e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102CA",
+      "clear_width_source_m": 0.9467166470958546,
+      "leaf_plan_deviation_m": 1.2524245216128945e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102CB",
+      "clear_width_source_m": 0.800266928914084,
+      "leaf_plan_deviation_m": 1.0434567817989219e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102CC",
+      "clear_width_source_m": 0.8002046436241699,
+      "leaf_plan_deviation_m": 1.042777832635394e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102CD",
+      "clear_width_source_m": 0.7479328413679696,
+      "leaf_plan_deviation_m": 9.796352475205355e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102CE",
+      "clear_width_source_m": 0.3661787095179534,
+      "leaf_plan_deviation_m": 4.772616056477925e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102CF",
+      "clear_width_source_m": 0.8974338053441215,
+      "leaf_plan_deviation_m": 1.175903377717637e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D0",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.2130559258270745e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D1",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.2127576317468685e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D2",
+      "clear_width_source_m": 0.899698265081426,
+      "leaf_plan_deviation_m": 1.1760558077011828e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D3",
+      "clear_width_source_m": 0.7738446832669297,
+      "leaf_plan_deviation_m": 1.0075115292111598e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D4",
+      "clear_width_source_m": 0.37886482824808354,
+      "leaf_plan_deviation_m": 4.931215267540663e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D5",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0441119953591702e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D6",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0444228538078932e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D7",
+      "clear_width_source_m": 0.7999099336569895,
+      "leaf_plan_deviation_m": 1.0418297879074555e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D5",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0441119953591702e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D6",
+      "clear_width_source_m": 0.799713155951622,
+      "leaf_plan_deviation_m": 1.0444228538078932e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102D7",
+      "clear_width_source_m": 0.7999099336569895,
+      "leaf_plan_deviation_m": 1.0418297879074555e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102DC",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.041858468568713e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102DD",
+      "clear_width_source_m": 0.799909933656993,
+      "leaf_plan_deviation_m": 1.04057795026922e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102DE",
+      "clear_width_source_m": 0.7999099336569913,
+      "leaf_plan_deviation_m": 1.0441158381619557e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1102DF",
+      "clear_width_source_m": 0.7997109565530991,
+      "leaf_plan_deviation_m": 1.040677167044138e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110312",
+      "clear_width_source_m": 1.2524884834251786,
+      "leaf_plan_deviation_m": 1.6574529630091883e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11046A",
+      "clear_width_source_m": 1.0001274275132346,
+      "leaf_plan_deviation_m": 1.3033885088033747e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110472",
+      "clear_width_source_m": 0.8824751603287595,
+      "leaf_plan_deviation_m": 1.151138109794313e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1104D1",
+      "clear_width_source_m": 0.8410074497284086,
+      "leaf_plan_deviation_m": 1.0971914305421069e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1104D2",
+      "clear_width_source_m": 0.41174689170384227,
+      "leaf_plan_deviation_m": 5.396246136865698e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11051F",
+      "clear_width_source_m": 0.9467166470959683,
+      "leaf_plan_deviation_m": 1.2567560141559101e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1105C0",
+      "clear_width_source_m": 1.0001287146599225,
+      "leaf_plan_deviation_m": 1.3014759978789472e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1105E8",
+      "clear_width_source_m": 0.8979143708788797,
+      "leaf_plan_deviation_m": 1.1748824048887993e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1105F4",
+      "clear_width_source_m": 0.800102971727938,
+      "leaf_plan_deviation_m": 1.0663157405272652e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110632",
+      "clear_width_source_m": 1.0001287146599296,
+      "leaf_plan_deviation_m": 1.323607042368377e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11063B",
+      "clear_width_source_m": 1.099999999999909,
+      "leaf_plan_deviation_m": 1.433310369676416e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110654",
+      "clear_width_source_m": 0.8996748261222329,
+      "leaf_plan_deviation_m": 1.170327663632072e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1106E1",
+      "clear_width_source_m": 0.9525968747178695,
+      "leaf_plan_deviation_m": 1.2727587237028548e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110728",
+      "clear_width_source_m": 1.2466082558034586,
+      "leaf_plan_deviation_m": 1.6424020890433173e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110760",
+      "clear_width_source_m": 0.8962623487426526,
+      "leaf_plan_deviation_m": 1.2128400938559025e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11079E",
+      "clear_width_source_m": 0.8058227830517808,
+      "leaf_plan_deviation_m": 1.079092508763461e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11079F",
+      "clear_width_source_m": 0.3945209121427524,
+      "leaf_plan_deviation_m": 5.425905962120445e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1107A0",
+      "clear_width_source_m": 0.8058227830517808,
+      "leaf_plan_deviation_m": 1.0742077087711941e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1107A1",
+      "clear_width_source_m": 0.3945209121427524,
+      "leaf_plan_deviation_m": 5.250744655787558e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1107B0",
+      "clear_width_source_m": 0.8996748261222329,
+      "leaf_plan_deviation_m": 1.216362632746835e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1107E3",
+      "clear_width_source_m": 0.9006782687364421,
+      "leaf_plan_deviation_m": 1.2245347116884948e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11084D",
+      "clear_width_source_m": 1.2466082558034515,
+      "leaf_plan_deviation_m": 1.6428601884999505e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11084E",
+      "clear_width_source_m": 0.8998541202671504,
+      "leaf_plan_deviation_m": 1.1714078603771593e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11084F",
+      "clear_width_source_m": 0.8998541202671433,
+      "leaf_plan_deviation_m": 1.189005150201387e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110850",
+      "clear_width_source_m": 0.8998541202671433,
+      "leaf_plan_deviation_m": 1.1887058664030586e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110851",
+      "clear_width_source_m": 0.8998541202671433,
+      "leaf_plan_deviation_m": 1.1884167837910338e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "110852",
+      "clear_width_source_m": 0.8998541202671504,
+      "leaf_plan_deviation_m": 1.1737810978689345e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11090B",
+      "clear_width_source_m": 0.7740633011457021,
+      "leaf_plan_deviation_m": 1.0082298095648422e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11090C",
+      "clear_width_source_m": 0.37897186086956935,
+      "leaf_plan_deviation_m": 4.968932875915888e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "11029F",
+      "clear_width_source_m": 0.37897186086956935,
+      "leaf_plan_deviation_m": 4.961882837568722e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "128E73",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.810034650169147e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "128F3A",
+      "clear_width_source_m": 0.6056634450363845,
+      "leaf_plan_deviation_m": 7.889287088148754e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "128F3D",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.847789761170535e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1291B6",
+      "clear_width_source_m": 0.7482957162858384,
+      "leaf_plan_deviation_m": 9.74017257665572e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1291B7",
+      "clear_width_source_m": 0.7482957162858384,
+      "leaf_plan_deviation_m": 9.736201265307076e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1291CD",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.80396034239903e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "131CE3",
+      "clear_width_source_m": 0.5939029897930368,
+      "leaf_plan_deviation_m": 7.764655788151912e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "131CE6",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.854996096848581e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "131E03",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.813671438819044e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "131E81",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.810034219244647e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "131EBD",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.866695118212796e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "131F09",
+      "clear_width_source_m": 0.8729746816392776,
+      "leaf_plan_deviation_m": 1.1633949013514708e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "131F0A",
+      "clear_width_source_m": 0.42739765482128433,
+      "leaf_plan_deviation_m": 5.964809290064651e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132093",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.844122064456793e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13222C",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.835556438941495e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13224B",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.82475892222557e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132253",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.805668499156875e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13229F",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.818405015316822e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13234C",
+      "clear_width_source_m": 0.6056634450363845,
+      "leaf_plan_deviation_m": 7.90782714375323e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13234F",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.83879126407927e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13238D",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.859177827904246e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13295B",
+      "clear_width_source_m": 0.9525968747178695,
+      "leaf_plan_deviation_m": 1.2707597841792555e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1329A6",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.805218443695214e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132AEB",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.82508785341659e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132CFD",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.836840630595211e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132DE4",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.805668370972985e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132DEC",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.824758797579664e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132E3F",
+      "clear_width_source_m": 0.5996515471271096,
+      "leaf_plan_deviation_m": 7.813435146803068e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "132EFC",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.806304218523947e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1333CA",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.876181397783845e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "133406",
+      "clear_width_source_m": 0.5939029897930368,
+      "leaf_plan_deviation_m": 7.786767489172162e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "133409",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.883241620908178e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "133441",
+      "clear_width_source_m": 0.599783217414938,
+      "leaf_plan_deviation_m": 7.850251693936802e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "133521",
+      "clear_width_source_m": 0.8370451286967864,
+      "leaf_plan_deviation_m": 1.0907110994776368e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "133522",
+      "clear_width_source_m": 0.4098069881165429,
+      "leaf_plan_deviation_m": 5.348231598595236e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1335B8",
+      "clear_width_source_m": 0.8370451286967864,
+      "leaf_plan_deviation_m": 1.0951255318065376e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "1335B9",
+      "clear_width_source_m": 0.4098069881165429,
+      "leaf_plan_deviation_m": 5.41093868111807e-06
+    },
+    {
+      "level": "Piso_04",
+      "handle": "13FB16",
+      "clear_width_source_m": 0.9467166470959683,
+      "leaf_plan_deviation_m": 1.2571243293389243e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "163D2F",
+      "clear_width_source_m": 0.8988604465037575,
+      "leaf_plan_deviation_m": 1.1709388323318543e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "163D30",
+      "clear_width_source_m": 0.8988604465037575,
+      "leaf_plan_deviation_m": 1.170938832490915e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "163D31",
+      "clear_width_source_m": 0.8988604465037575,
+      "leaf_plan_deviation_m": 1.1701945527648631e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "163D32",
+      "clear_width_source_m": 0.8988604465037575,
+      "leaf_plan_deviation_m": 1.1717856905197454e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "163D33",
+      "clear_width_source_m": 0.8988604465037575,
+      "leaf_plan_deviation_m": 1.1701946158729676e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "163D34",
+      "clear_width_source_m": 0.8988604465037575,
+      "leaf_plan_deviation_m": 1.1701946608385593e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "163D35",
+      "clear_width_source_m": 0.8988604465037575,
+      "leaf_plan_deviation_m": 1.171073390552556e-05
+    },
+    {
+      "level": "Piso_04",
+      "handle": "165632",
+      "clear_width_source_m": 1.0362600597394476,
+      "leaf_plan_deviation_m": 1.429981012008059e-08
+    },
+    {
+      "level": "Piso_04",
+      "handle": "165633",
+      "clear_width_source_m": 1.0362600597395613,
+      "leaf_plan_deviation_m": 3.572787970923385e-08
+    },
+    {
+      "level": "Azotea",
+      "handle": "13ACB9",
+      "clear_width_source_m": 1.0055189233130477,
+      "leaf_plan_deviation_m": 1.3084435211775308e-05
+    },
+    {
+      "level": "Azotea",
+      "handle": "13ACBA",
+      "clear_width_source_m": 1.0055189233130477,
+      "leaf_plan_deviation_m": 1.3086902604388124e-05
+    }
+  ],
+  "floor_samples": [
+    {
+      "level": "Sotano",
+      "expected_npt": 0.0,
+      "actual_npt": 3.5762786898541066e-09
+    },
+    {
+      "level": "Piso_01",
+      "expected_npt": 3.2,
+      "actual_npt": 3.200000003576279
+    },
+    {
+      "level": "Piso_02",
+      "expected_npt": 6.4,
+      "actual_npt": 6.400000003576279
+    },
+    {
+      "level": "Piso_03",
+      "expected_npt": 9.6,
+      "actual_npt": 9.600000003576278
+    },
+    {
+      "level": "Piso_04",
+      "expected_npt": 12.8,
+      "actual_npt": 12.80000000357628
+    },
+    {
+      "level": "Azotea",
+      "expected_npt": 16.8,
+      "actual_npt": 16.80000000357628
+    }
+  ],
+  "terrain_overlap_m2": 5.872086097355082e-05,
+  "unwanted_computer_or_seat_parts": [],
+  "preservation": {
+    "Assets/UPCH/LIDCompleto/Prefabs/Edificio_LID.prefab": {
+      "changed_documents": [
+        10849,
+        24190,
+        38109,
+        50665,
+        64440
+      ],
+      "deleted_documents": 11366
+    },
+    "Assets/UPCH/Scenes/Campus.unity": {
+      "changed_documents": [
+        116461175,
+        357576547,
+        357576549
+      ],
+      "deleted_documents": 0
+    }
+  },
+  "errors": [],
+  "unity_editor_executed": false,
+  "unity_play_tested": false,
+  "external_grade_surveyed": false,
+  "limits": [
+    "No architectural sections or exterior ground NPT in the supplied plans.",
+    "Opening heights, slab thickness and exterior stair risers remain provisional.",
+    "Wall intersections and floor-bearing contacts are intentional structural contacts; this is not a no-contact test.",
+    "Room labels may repeat within one space; they are not a count of unique rooms."
+  ]
+}

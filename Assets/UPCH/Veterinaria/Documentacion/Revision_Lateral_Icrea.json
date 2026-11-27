@@ -1,0 +1,63 @@
+{
+  "revision": "R10_Lateral_Icrea_Cierres",
+  "sourcePDF": {
+    "name": "07. VETERINARIA 2025(3).pdf",
+    "sha256": "62d9c4020f69337efe58dc9378fc5729f3c63430d5f023301ac5f4b1c9478e22"
+  },
+  "sourceDWG": {
+    "name": "07. VETERINARIA 2026(2).dwg",
+    "sha256": "d0693ddd0e2417eb647161808aa1f613e5b58272cfa1605fd8a86469d1bda46f"
+  },
+  "photos": [
+    {
+      "name": "eaef1aee-98f5-4aa9-9192-6a99b19e6789.jpg",
+      "sha256": "9bafb82cbb02d86564fcbe3fdebe7be6327bc2f74a4ff261f5bea6c63d53da19"
+    },
+    {
+      "name": "image(20261122-050922).png",
+      "sha256": "97318b84f06844a01bf79c41f0e3df223d0507b5f50e04f8e27524c2479e1101"
+    },
+    {
+      "name": "image(20261122-051326).png",
+      "sha256": "f07d4840c0f79b1ea5dbd1d00089c2ff8e81a728663fff3361a2a13cd74b2ab5"
+    }
+  ],
+  "confirmed": [
+    "A-02: VEREDA NPT=-1.17; A-01 sotano=-3.55; A-02 primer piso=+0.00.",
+    "A-03/A-04: voladizo y vanos de escalera/corredor en lateral oriental.",
+    "Fotografias: concreto visto, zocalo gris y entrada bajo vano de escalera; vehiculo excluido del modelo."
+  ],
+  "interpretations": [
+    "Descanso de sotano a -1.17 para coincidir con entrada fotografiada y terreno del campus.",
+    "Se conserva total de 19 contrahuellas y contorno de caja; se redistribuye a 12/7, con huellas interpoladas. La lectura documental anterior 10/9 no se declara medida equivocada: esta version es una adaptacion fotografica pendiente de corte.",
+    "Puerta 2.15 m de alto y vano de escalera antepecho 1.10 / cabeza 2.30 m estimados.",
+    "Zocalo y pequeno empalme vertical de esquina inferidos por continuidad de fotografias."
+  ],
+  "preserved": [
+    "Ancla, NPT de pisos principales, escala, Campus.unity, malla de terreno y estado del recorte.",
+    "Perfiles CAD originales eastStairs; los cambios de interpretacion se aplican por separado.",
+    "Voladizo, patios y vanos del corredor; fachadas fuera de esta seccion."
+  ],
+  "UnityCompilation": "NOT_RUN",
+  "UnityPlay": "NOT_RUN",
+  "mustReview": [
+    "Cruzar desde la vereda a la puerta lateral sin salto ni hueco; subir a primer piso y bajar al sotano.",
+    "Confirmar el reparto real de huellas y altura del descanso con corte o medicion.",
+    "Revisar vanos abiertos, materiales y transiciones con la fachada existente."
+  ],
+  "R10": {
+    "source": "A-02/A-03/A-04 PDF y CAD cotejados; capturas marcadas del usuario 22/11/2026",
+    "corrected": [
+      "Muro A-03 continuo entre caras CAD, conservando huella de escalera.",
+      "Retirado triangulo de vidrio A-02: cruce de proyecciones, no ventana; antepecho y muro secundario conservados.",
+      "Material de concreto en caras exteriores diagonales y continuidad del zocalo.",
+      "Pavimento separado del terreno existente a la misma cota; coronaciones enterradas donde ya cubre el terreno.",
+      "Cierre inferior y del extremo del panel/celosia."
+    ],
+    "preserved": [
+      "Hipotesis R9 de 19 contrahuellas 12/7 y descanso -1.17, pendiente de corte.",
+      "NPT principales, ancla, escala, Campus.unity, terreno y estado de recorte."
+    ],
+    "verification": "Superficie libre completa del acceso dentro de Site original, volumen bajo paneles, recorridos y referencias; Play pendiente."
+  }
+}

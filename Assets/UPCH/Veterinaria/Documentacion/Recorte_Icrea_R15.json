@@ -1,0 +1,19 @@
+{
+  "revision": "R15_Recorte_Salientes_Icrea",
+  "changedMesh": "H_2_Losas_0001",
+  "removedVolume_m3": 0.165037302413225,
+  "maskXZ": [
+    18.5711,
+    -2.4341,
+    21.974,
+    -0.6531
+  ],
+  "wallSupport": "Solo huella exacta de muros; sin vuelo ni margen exterior",
+  "heightRange": [
+    3.31,
+    3.55
+  ],
+  "roofR14Preserved": true,
+  "scope": "Solo recorte de los dos salientes marcados en la captura del usuario. No se desactiva la losa del edificio.",
+  "UnityPlay": "NOT_RUN"
+}
