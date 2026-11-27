@@ -1,0 +1,34 @@
+LETREROS 3D FASPA — letras extruidas independientes
+
+INSTALAR
+Copia LetrerosFASPA y LetrerosFASPA.meta en:
+C:\Proyectos\upch-recorrido-virtual\Assets\UPCH
+
+OPCIÓN AUTOMÁTICA PARA EL EDIFICIO R3
+Selecciona Edificio_FASPA_R3 en Hierarchy.
+Menú UPCH > FASPA letreros > Colocar en FASPA R3 seleccionado.
+Se añaden dos prefabs bajo Letreros_FASPA. Su ubicación es aproximada por foto: debes revisar la separación del muro, el giro y la posición en el jardín. No modifica el edificio anterior.
+
+OPCIÓN MANUAL
+Arrastra estos prefabs por separado a la escena:
+Mural/Prefabs/Letrero_Mural_FASPA.prefab
+Jardin/Prefabs/Letrero_Administracion_Salud.prefab
+Colócalos con W y E y cambia la escala desde su raíz.
+
+EDITAR CADA LETRA
+Clic derecho en la raíz del letrero > Prefab > Unpack Completely.
+Despliega Nivel_01 > Letras para seleccionar, mover o escalar cada letra. El pedestal está separado en su categoría.
+Duplicar un material permite cambiar el color de una sola letra; editar el material compartido cambia todas las letras que lo usen.
+No es TextMeshPro: la geometría está extruida; no puedes reescribir el texto desde un campo de texto.
+
+DISEÑO
+Mural: F / A / S / P / A, cinco letras metálicas separadas, altura de letra 0.25 m, paso vertical 0.34 m; altura total 1.61 m; relieve 0.025 m más bisel.
+Jardín: ADMI / NISTRA / CION EN / SALUD, 21 letras blancas y pedestal azul de 1.90 x 0.48 x 0.32 m (ancho/fondo/alto). Altura total del letrero ~1.64 m; relieve 0.045 m más bisel.
+Tipografía aproximada: DejaVu Sans en muro y DejaVu Sans Condensed Bold en jardín. Tamaños, posiciones y grosor son SUPUESTOS visuales, no mediciones.
+Sin escudo ni logotipo UPCH en la base, porque no se dispone de una imagen vectorial oficial para este detalle.
+La placa azul detrás de FASPA en la vista es solo contexto de presentación: NO viene en el prefab mural, que se monta sobre tu muro existente.
+
+CONTROLES
+27 piezas en total. Mallas cerradas, orientación consistente y volumen positivo verificadas antes de serializar. Dos prefabs con materiales y mallas nativas independientes, sin generador necesario. Metros, +Y arriba, caras frontales hacia +Z local. Pivote de las raíces en la base.
+El importado de los prefabs y el comando C# no se ejecutaron en Unity en este entorno. Revisa Console y la alineación tras importar. La vista incluida es un render de la geometría, no una captura de Unity.
+Guardar la escena con Ctrl+S después de colocar.
