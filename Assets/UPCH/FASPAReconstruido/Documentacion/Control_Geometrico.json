@@ -1,0 +1,3203 @@
+{
+  "meshes": 1147,
+  "triangles": 23124,
+  "open_edges": 0,
+  "inverted_solids": 0,
+  "degenerate_faces": 0,
+  "duplicate_faces_within_piece": 0,
+  "tolerance_m": 0.0001,
+  "volume_threshold_m3": 1e-07,
+  "checked_positive_aabb_pairs": 1079,
+  "volumetric_intersections": 531,
+  "boolean_failures": 0,
+  "intersections": [
+    {
+      "a": "Esc_N2_Conector_lado-1_poste_00_00",
+      "b": "Esc_N2_Conector_Peldano_01",
+      "volume_m3": 5.40000000000024e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Conector_lado-1_poste_00_00",
+      "b": "Esc_N2_Conector_lado-1_pasamanos_00",
+      "volume_m3": 6.228840498441528e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Conector_lado-1_poste_00_01",
+      "b": "Esc_N2_Conector_Peldano_03",
+      "volume_m3": 5.39999999999996e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Conector_lado-1_poste_00_01",
+      "b": "Esc_N2_Conector_lado-1_pasamanos_00",
+      "volume_m3": 2.7877445681323065e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Conector_lado-1_poste_00_02",
+      "b": "Esc_N2_Conector_lado-1_pasamanos_00",
+      "volume_m3": 2.1648605182879985e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Conector_lado1_poste_00_00",
+      "b": "Esc_N2_Conector_Peldano_01",
+      "volume_m3": 5.3999999999996705e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Conector_lado1_poste_00_00",
+      "b": "Esc_N2_Conector_lado1_pasamanos_00",
+      "volume_m3": 6.228840498441361e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Conector_lado1_poste_00_01",
+      "b": "Esc_N2_Conector_Peldano_03",
+      "volume_m3": 5.3999999999999707e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Conector_lado1_poste_00_01",
+      "b": "Esc_N2_Conector_lado1_pasamanos_00",
+      "volume_m3": 2.787744568132246e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Conector_lado1_poste_00_02",
+      "b": "Esc_N2_Conector_lado1_pasamanos_00",
+      "volume_m3": 2.1648605182879887e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N3_Conector_lado-1_poste_00_00",
+      "b": "Esc_N3_Conector_Peldano_01",
+      "volume_m3": 5.400000000000093e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N3_Conector_lado-1_poste_00_00",
+      "b": "Esc_N3_Conector_lado-1_pasamanos_00",
+      "volume_m3": 6.24611347497717e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N3_Conector_lado-1_poste_00_01",
+      "b": "Esc_N3_Conector_Peldano_05",
+      "volume_m3": 5.4000000000001394e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N3_Conector_lado-1_poste_00_01",
+      "b": "Esc_N3_Conector_lado-1_pasamanos_00",
+      "volume_m3": 2.7837714315629204e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N3_Conector_lado-1_poste_00_02",
+      "b": "Esc_N3_Conector_lado-1_pasamanos_00",
+      "volume_m3": 2.1591600840648072e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N3_Conector_lado1_poste_00_00",
+      "b": "Esc_N3_Conector_Peldano_01",
+      "volume_m3": 5.400000000000183e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N3_Conector_lado1_poste_00_00",
+      "b": "Esc_N3_Conector_lado1_pasamanos_00",
+      "volume_m3": 6.246113474976708e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N3_Conector_lado1_poste_00_01",
+      "b": "Esc_N3_Conector_Peldano_05",
+      "volume_m3": 5.400000000000207e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N3_Conector_lado1_poste_00_01",
+      "b": "Esc_N3_Conector_lado1_pasamanos_00",
+      "volume_m3": 2.783771431562953e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N3_Conector_lado1_poste_00_02",
+      "b": "Esc_N3_Conector_lado1_pasamanos_00",
+      "volume_m3": 2.159160084064852e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_Peldano_07",
+      "b": "Descanso_Triangular_N1",
+      "volume_m3": 0.061919314884489936,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado-1_poste_00_00",
+      "b": "Esc_N1_Diagonal_0_Peldano_01",
+      "volume_m3": 5.160000000000416e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado-1_poste_00_00",
+      "b": "Esc_N1_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 7.1248798766352565e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado-1_poste_00_01",
+      "b": "Esc_N1_Diagonal_0_Peldano_03",
+      "volume_m3": 6.879999999999987e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado-1_poste_00_01",
+      "b": "Esc_N1_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 2.618809314076344e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado-1_poste_00_02",
+      "b": "Esc_N1_Diagonal_0_Peldano_05",
+      "volume_m3": 3.439999999999873e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado-1_poste_00_02",
+      "b": "Esc_N1_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 2.6188093140762312e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado-1_poste_00_03",
+      "b": "Esc_N1_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 1.906321326412649e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado1_poste_00_00",
+      "b": "Esc_N1_Diagonal_0_Peldano_01",
+      "volume_m3": 5.15999999999978e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado1_poste_00_00",
+      "b": "Esc_N1_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 7.124879876634137e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado1_poste_00_01",
+      "b": "Esc_N1_Diagonal_0_Peldano_03",
+      "volume_m3": 6.880000000000425e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado1_poste_00_01",
+      "b": "Esc_N1_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 2.6188093140761994e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado1_poste_00_02",
+      "b": "Esc_N1_Diagonal_0_Peldano_05",
+      "volume_m3": 3.4400000000001914e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado1_poste_00_02",
+      "b": "Esc_N1_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 2.6188093140763633e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_0_lado1_poste_00_03",
+      "b": "Esc_N1_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 1.9063213264127695e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_Peldano_01",
+      "b": "Descanso_Triangular_N1",
+      "volume_m3": 0.046962859239921356,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_Peldano_01",
+      "b": "Esc_N1_Diagonal_0_Peldano_07",
+      "volume_m3": 0.007205137905384563,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_Peldano_01",
+      "b": "Esc_N1_Diagonal_0_lado-1_poste_00_03",
+      "volume_m3": 0.00020639999999999892,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado-1_poste_00_00",
+      "b": "Esc_N1_Diagonal_1_Peldano_01",
+      "volume_m3": 5.159999999999786e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado-1_poste_00_00",
+      "b": "Esc_N1_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 7.656519899516705e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado-1_poste_00_01",
+      "b": "Esc_N1_Diagonal_1_Peldano_03",
+      "volume_m3": 3.4400000000001094e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado-1_poste_00_01",
+      "b": "Esc_N1_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 2.5443271244292218e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado-1_poste_00_02",
+      "b": "Esc_N1_Diagonal_1_Peldano_06",
+      "volume_m3": 6.880000000000385e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado-1_poste_00_02",
+      "b": "Esc_N1_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 2.5443271244291886e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado-1_poste_00_03",
+      "b": "Esc_N1_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 1.778675134477581e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado1_poste_00_00",
+      "b": "Esc_N1_Diagonal_1_Peldano_01",
+      "volume_m3": 5.1600000000005395e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado1_poste_00_00",
+      "b": "Esc_N1_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 7.656519899516888e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado1_poste_00_01",
+      "b": "Esc_N1_Diagonal_1_Peldano_03",
+      "volume_m3": 3.43999999999972e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado1_poste_00_01",
+      "b": "Esc_N1_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 2.5443271244292784e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado1_poste_00_02",
+      "b": "Esc_N1_Diagonal_1_Peldano_06",
+      "volume_m3": 6.8800000000001e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado1_poste_00_02",
+      "b": "Esc_N1_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 2.5443271244292964e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N1_Diagonal_1_lado1_poste_00_03",
+      "b": "Esc_N1_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 1.778675134477666e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_Peldano_06",
+      "b": "Descanso_Triangular_N2",
+      "volume_m3": 0.06242916585829113,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado-1_poste_00_00",
+      "b": "Esc_N2_Diagonal_0_Peldano_01",
+      "volume_m3": 4.9846153846152394e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado-1_poste_00_00",
+      "b": "Esc_N2_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 7.867488392869559e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado-1_poste_00_01",
+      "b": "Esc_N2_Diagonal_0_Peldano_03",
+      "volume_m3": 4.984615384614989e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado-1_poste_00_01",
+      "b": "Esc_N2_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 2.519042978972243e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado-1_poste_00_02",
+      "b": "Esc_N2_Diagonal_0_Peldano_05",
+      "volume_m3": 4.984615384615872e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado-1_poste_00_02",
+      "b": "Esc_N2_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 2.5190429789722845e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado-1_poste_00_03",
+      "b": "Esc_N2_Diagonal_0_lado-1_pasamanos_00",
+      "volume_m3": 1.7322941396853254e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado1_poste_00_00",
+      "b": "Esc_N2_Diagonal_0_Peldano_01",
+      "volume_m3": 4.9846153846150734e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado1_poste_00_00",
+      "b": "Esc_N2_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 7.867488392868771e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado1_poste_00_01",
+      "b": "Esc_N2_Diagonal_0_Peldano_03",
+      "volume_m3": 4.9846153846148084e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado1_poste_00_01",
+      "b": "Esc_N2_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 2.5190429789722923e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado1_poste_00_02",
+      "b": "Esc_N2_Diagonal_0_Peldano_05",
+      "volume_m3": 4.984615384618675e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado1_poste_00_02",
+      "b": "Esc_N2_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 2.5190429789722503e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_0_lado1_poste_00_03",
+      "b": "Esc_N2_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 1.7322941396855405e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_Peldano_01",
+      "b": "Descanso_Triangular_N2",
+      "volume_m3": 0.046964064635591524,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_Peldano_01",
+      "b": "Esc_N2_Diagonal_0_Peldano_06",
+      "volume_m3": 0.008893932233029797,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_Peldano_01",
+      "b": "Esc_N2_Diagonal_0_lado-1_poste_00_03",
+      "volume_m3": 0.00019938461538461364,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado-1_poste_00_00",
+      "b": "Esc_N2_Diagonal_1_Peldano_01",
+      "volume_m3": 4.984615384615237e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado-1_poste_00_00",
+      "b": "Esc_N2_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 8.20302174029896e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado-1_poste_00_01",
+      "b": "Esc_N2_Diagonal_1_Peldano_03",
+      "volume_m3": 6.646153846153855e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado-1_poste_00_01",
+      "b": "Esc_N2_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 2.483596848263882e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado-1_poste_00_02",
+      "b": "Esc_N2_Diagonal_1_Peldano_05",
+      "volume_m3": 3.3230769230770314e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado-1_poste_00_02",
+      "b": "Esc_N2_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 2.4835968482637865e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado-1_poste_00_03",
+      "b": "Esc_N2_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 1.6632946742339133e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado1_poste_00_00",
+      "b": "Esc_N2_Diagonal_1_Peldano_01",
+      "volume_m3": 4.9846153846154725e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado1_poste_00_00",
+      "b": "Esc_N2_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 8.2030217402992e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado1_poste_00_01",
+      "b": "Esc_N2_Diagonal_1_Peldano_03",
+      "volume_m3": 6.64615384615402e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado1_poste_00_01",
+      "b": "Esc_N2_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 2.4835968482638655e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado1_poste_00_02",
+      "b": "Esc_N2_Diagonal_1_Peldano_05",
+      "volume_m3": 3.323076923076613e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado1_poste_00_02",
+      "b": "Esc_N2_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 2.483596848263843e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Esc_N2_Diagonal_1_lado1_poste_00_03",
+      "b": "Esc_N2_Diagonal_1_lado1_pasamanos_00",
+      "volume_m3": 1.6632946742339086e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N01_piso_admin",
+      "b": "Esc_N1_Diagonal_0_Peldano_01",
+      "volume_m3": 0.08655860924049691,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_piso_admin",
+      "b": "Esc_N1_Diagonal_0_Peldano_02",
+      "volume_m3": 0.0865586092404966,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_piso_admin",
+      "b": "Esc_N1_Diagonal_0_Peldano_03",
+      "volume_m3": 0.08655860924049649,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_piso_admin",
+      "b": "Esc_N1_Diagonal_0_Peldano_04",
+      "volume_m3": 0.08655860924049663,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_piso_admin",
+      "b": "Esc_N1_Diagonal_0_Peldano_05",
+      "volume_m3": 0.07828151649396277,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_piso_admin",
+      "b": "Esc_N1_Diagonal_0_Peldano_06",
+      "volume_m3": 0.0695018850078517,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_piso_admin",
+      "b": "Esc_N1_Diagonal_0_Peldano_07",
+      "volume_m3": 0.07148659863624784,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_corredor_exterior",
+      "b": "Esc_N1_Diagonal_0_Peldano_05",
+      "volume_m3": 0.008277092746534015,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_corredor_exterior",
+      "b": "Esc_N1_Diagonal_0_Peldano_06",
+      "volume_m3": 0.017056724232644847,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N01_corredor_exterior",
+      "b": "Esc_N1_Diagonal_0_Peldano_07",
+      "volume_m3": 0.015072010604248377,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_izq_con_vacio",
+      "b": "Esc_N2_Diagonal_0_Peldano_01",
+      "volume_m3": 0.09192612945589002,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_izq_con_vacio",
+      "b": "Esc_N2_Diagonal_0_Peldano_02",
+      "volume_m3": 0.09365402050427016,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_izq_con_vacio",
+      "b": "Esc_N2_Diagonal_0_Peldano_03",
+      "volume_m3": 0.09538191155265058,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_izq_con_vacio",
+      "b": "Esc_N2_Diagonal_0_Peldano_04",
+      "volume_m3": 0.09710980260103261,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_izq_con_vacio",
+      "b": "Esc_N2_Diagonal_0_Peldano_05",
+      "volume_m3": 0.09883769364941386,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_izq_con_vacio",
+      "b": "Esc_N2_Diagonal_0_Peldano_06",
+      "volume_m3": 0.09661396087077136,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N2_Conector_Peldano_01",
+      "volume_m3": 0.07016137892744467,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N2_Conector_Peldano_02",
+      "volume_m3": 0.07016137892744478,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N2_Conector_Peldano_03",
+      "volume_m3": 0.0701613789274466,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N2_Conector_Peldano_04",
+      "volume_m3": 0.07016137892744445,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N2_Conector_Peldano_05",
+      "volume_m3": 0.07016137892744467,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N1_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 0.00020549375963160944,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N1_Diagonal_1_lado-1_poste_00_01",
+      "volume_m3": 5.4495065939353084e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N02_hall_der_con_vacio_00",
+      "b": "Esc_N1_Diagonal_1_lado-1_poste_00_02",
+      "volume_m3": 5.449506593934499e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N3_Conector_Peldano_01",
+      "volume_m3": 0.07050240000000045,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N3_Conector_Peldano_02",
+      "volume_m3": 0.07050239999999965,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N3_Conector_Peldano_03",
+      "volume_m3": 0.07050239999999965,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N3_Conector_Peldano_04",
+      "volume_m3": 0.07050239999999784,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N3_Conector_Peldano_05",
+      "volume_m3": 0.07050240000000023,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N3_Conector_Peldano_06",
+      "volume_m3": 0.0705024,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N3_Conector_Peldano_07",
+      "volume_m3": 0.05634048000000049,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N2_Diagonal_1_lado-1_pasamanos_00",
+      "volume_m3": 0.00010274668588862543,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N2_Diagonal_1_lado-1_poste_00_01",
+      "volume_m3": 5.4495107164565266e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N03_hall_der_con_vacio_00",
+      "b": "Esc_N2_Diagonal_1_lado-1_poste_00_02",
+      "volume_m3": 5.449510716455137e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P02_00_Pano_00",
+      "b": "Fachada_N1_S1_P01_00_Pano_00",
+      "volume_m3": 0.026243999999999944,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N1_S1_P03_00_Pano_00",
+      "b": "Fachada_N1_S1_P02_00_Pano_00",
+      "volume_m3": 0.02624399999999938,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N1_S1_P05_00_Pano_00",
+      "b": "Fachada_N1_S1_P04_00_Pano_01",
+      "volume_m3": 0.006390552105049999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N1_S1_P06_00_Pano_00",
+      "b": "Fachada_N1_S1_P05_00_Pano_03",
+      "volume_m3": 0.02592786521818848,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N1_S1_P06_00_Pano_02",
+      "b": "Esc_N1_Diagonal_0_Peldano_04",
+      "volume_m3": 0.00030504131402970657,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P06_00_Pano_02",
+      "b": "Esc_N1_Diagonal_0_Peldano_05",
+      "volume_m3": 0.05516258129086729,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P06_00_Pano_02",
+      "b": "Esc_N1_Diagonal_0_Peldano_06",
+      "volume_m3": 0.0005233460837163489,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P06_00_Pano_02",
+      "b": "Esc_N1_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 0.0003725246298120176,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P09_00_Pano_00",
+      "b": "J_N02_piso_investigacion",
+      "volume_m3": 0.24372831754973814,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P09_00_Pano_00",
+      "b": "J_N02_hall_der_con_vacio_00",
+      "volume_m3": 0.0457103455700215,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P10_00_Pano_00",
+      "b": "J_N02_piso_investigacion",
+      "volume_m3": 0.0003359486255070153,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S1_P10_00_Pano_00",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.00728999999999991,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N1_S1_P10_00_Pano_18",
+      "b": "Fachada_N1_S1_P01_00_Pano_00",
+      "volume_m3": 0.026244000000000312,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N1_S2_P01_00_Pano_00",
+      "b": "J_N01_piso_admin",
+      "volume_m3": 0.000965202797202784,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S2_P01_00_Pano_00",
+      "b": "J_N01_zocalo",
+      "volume_m3": 0.002654307692307667,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S2_P01_01_Pano_00",
+      "b": "J_N01_piso_admin",
+      "volume_m3": 0.19593491115874515,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S2_P01_01_Pano_00",
+      "b": "J_N01_zocalo",
+      "volume_m3": 0.5388210056865518,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N1_S2_P03_00_Pano_00",
+      "b": "Fachada_N1_S2_P02_00_Pano_02",
+      "volume_m3": 0.026704385938127607,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N1_S2_P04_00_Pano_00",
+      "b": "Fachada_N1_S2_P03_00_Pano_06",
+      "volume_m3": 0.02579155115551997,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P02_00_Pano_00",
+      "b": "Fachada_N2_S2_P01_00_Pano_06",
+      "volume_m3": 0.023276252717584527,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P03_00_Pano_00",
+      "b": "Fachada_N2_S2_P02_00_Pano_09",
+      "volume_m3": 0.02241584890534248,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P03_00_Pano_09",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.0062698587201445305,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P03_00_Pano_09",
+      "b": "Fachada_N1_S1_P10_00_Pano_00",
+      "volume_m3": 0.0018477174402889483,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_00",
+      "b": "J_N02_servicios",
+      "volume_m3": 0.11823254497699677,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_00",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.5940906395124432,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_00",
+      "b": "Fachada_N1_S1_P10_00_Pano_00",
+      "volume_m3": 0.006269858720144232,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_00",
+      "b": "Fachada_N2_S2_P03_00_Pano_09",
+      "volume_m3": 0.007290000000000206,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_02",
+      "b": "J_N02_servicios",
+      "volume_m3": 0.0043161838339297945,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_02",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.06534349154195943,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_04",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.09406224656488452,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S2_P04_00_Pano_06",
+      "b": "Fachada_N2_S2_P01_00_Pano_00",
+      "volume_m3": 0.007290000000000064,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N2_S3_P02_00_Pano_00",
+      "b": "J_N03_piso_AulaC",
+      "volume_m3": 0.10181988062968246,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N2_S3_P03_00_Pano_00",
+      "b": "J_N03_hall_der_con_vacio_00",
+      "volume_m3": 0.07120522434031185,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N3_S1_P02_00_Pano_00",
+      "b": "Fachada_N3_S1_P01_00_Pano_04",
+      "volume_m3": 0.02397599999999974,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P03_00_Pano_00",
+      "b": "Fachada_N3_S1_P02_00_Pano_00",
+      "volume_m3": 0.023975999999999796,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P04_00_Alfeizar_00",
+      "b": "Fachada_N3_S1_P03_00_Alfeizar_04",
+      "volume_m3": 0.0016544957252506768,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P04_00_Alfeizar_00",
+      "b": "Fachada_N3_S1_P03_00_Pano_06",
+      "volume_m3": 0.0050658028323632325,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P04_00_Dintel_01",
+      "b": "Fachada_N3_S1_P03_00_Dintel_05",
+      "volume_m3": 0.0006617982901002665,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P04_00_Dintel_01",
+      "b": "Fachada_N3_S1_P03_00_Pano_06",
+      "volume_m3": 0.0020263211329452986,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P04_00_Alfeizar_03",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 0.0025340387090491234,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P04_00_Dintel_04",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 0.0010136154836196578,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S1_P04_00_Pano_05",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 0.01564182824579375,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S2_P02_00_Pano_00",
+      "b": "Fachada_N3_S2_P01_00_Alfeizar_03",
+      "volume_m3": 0.005603153772293553,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S2_P02_00_Pano_00",
+      "b": "Fachada_N3_S2_P01_00_Dintel_04",
+      "volume_m3": 0.0016186888675514838,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S2_P02_00_Pano_00",
+      "b": "Fachada_N3_S2_P01_00_Pano_05",
+      "volume_m3": 0.00593408094431295,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S2_P03_00_Pano_00",
+      "b": "Fachada_N3_S2_P02_00_Pano_03",
+      "volume_m3": 0.022606203719624296,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S2_P04_00_Pano_00",
+      "b": "J_N03_servicios",
+      "volume_m3": 0.15068822299651438,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Fachada_N3_S2_P04_00_Pano_00",
+      "b": "Fachada_N2_S3_P02_00_Pano_00",
+      "volume_m3": 1.2275323128062625,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S2_P04_00_Pano_00",
+      "b": "Fachada_N3_S2_P01_00_Pano_00",
+      "volume_m3": 0.023165999999999128,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S2_P04_00_Pano_00",
+      "b": "Fachada_N3_S2_P03_00_Pano_09",
+      "volume_m3": 0.02316599999999924,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S3_P03_00_Pano_00",
+      "b": "Fachada_N3_S1_P02_00_Pano_00",
+      "volume_m3": 0.024092027874564177,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Fachada_N3_S3_P03_00_Pano_00",
+      "b": "Fachada_N3_S2_P04_00_Pano_00",
+      "volume_m3": 0.008169860560810009,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Muros_Interiores_N1_01_Pano_00",
+      "b": "Fachada_N1_S2_P03_00_Pano_03",
+      "volume_m3": 0.10209071019167743,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_07_Pano_00",
+      "b": "Fachada_N1_S2_P02_00_Pano_00",
+      "volume_m3": 0.003263386702292325,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_13_Pano_00",
+      "b": "Fachada_N1_S1_P10_00_Pano_06",
+      "volume_m3": 0.003676568515260711,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_13_Pano_00",
+      "b": "Fachada_N1_S1_P10_00_Alfeizar_07",
+      "volume_m3": 6.908930974560547e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_13_Pano_00",
+      "b": "Fachada_N1_S1_P10_00_Dintel_08",
+      "volume_m3": 4.913017581911094e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_18_Pano_00",
+      "b": "J_N02_hall_der_con_vacio_00",
+      "volume_m3": 0.0283537195135677,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_19_Pano_00",
+      "b": "J_N02_hall_der_con_vacio_00",
+      "volume_m3": 0.0016313655420106283,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_20_Pano_00",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.0001799929705229041,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_20_Pano_00",
+      "b": "Fachada_N2_S2_P04_00_Pano_00",
+      "volume_m3": 0.0016028482734614042,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_22_Pano_00",
+      "b": "Fachada_N1_S1_P10_00_Alfeizar_01",
+      "volume_m3": 0.0005825796334402653,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_22_Pano_00",
+      "b": "Fachada_N1_S1_P10_00_Dintel_02",
+      "volume_m3": 0.00041427885044638825,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Muros_Interiores_N1_22_Pano_00",
+      "b": "Fachada_N1_S1_P10_00_Pano_03",
+      "volume_m3": 0.00849549112317741,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N1_01_Pano_00",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.00011792441510416688,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N1_01_Pano_00",
+      "b": "Fachada_N2_S2_P04_00_Pano_00",
+      "volume_m3": 0.0010501240387455748,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N1_05_Pano_00",
+      "b": "Muros_Interiores_N1_19_Pano_00",
+      "volume_m3": 6.5218320981209615e-06,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N2_08_Pano_00",
+      "b": "Fachada_N2_S3_P02_00_Pano_00",
+      "volume_m3": 0.0011117354897424517,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N2_11_Pano_00",
+      "b": "Fachada_N2_S3_P03_00_Pano_00",
+      "volume_m3": 0.004997616621327426,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N3_11_Pano_00",
+      "b": "Fachada_N3_S2_P04_00_Pano_00",
+      "volume_m3": 0.00299958201583636,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N3_12_Pano_00",
+      "b": "Fachada_N3_S2_P04_00_Pano_00",
+      "volume_m3": 0.006768870990057926,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N3_14_Pano_00",
+      "b": "Fachada_N3_S3_P01_00_Pano_06",
+      "volume_m3": 0.0043124621258706025,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N3_14_Pano_00",
+      "b": "Fachada_N3_S3_P01_00_Alfeizar_07",
+      "volume_m3": 0.00026769379938113903,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Drywall_N3_14_Pano_00",
+      "b": "Fachada_N3_S3_P01_00_Dintel_08",
+      "volume_m3": 0.00010707751975247036,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_01_Jamba0",
+      "b": "Fachada_N3_S2_P02_00_Pano_00",
+      "volume_m3": 0.003250793120108929,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_01_Dintel",
+      "b": "Fachada_N3_S2_P02_00_Pano_00",
+      "volume_m3": 3.90056496299496e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_01_Alfeizar_Marco",
+      "b": "Fachada_N3_S2_P02_00_Pano_00",
+      "volume_m3": 3.900564962995188e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_01_Vidrio_00",
+      "b": "Fachada_N3_S2_P02_00_Pano_00",
+      "volume_m3": 0.00022385635345485095,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_05_Jamba0",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 0.0014687777220030247,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_06_Jamba1",
+      "b": "Fachada_N3_S1_P03_00_Pano_06",
+      "volume_m3": 0.003907829464285877,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_06_Dintel",
+      "b": "Fachada_N3_S1_P03_00_Pano_06",
+      "volume_m3": 8.152800906609783e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_06_Alfeizar_Marco",
+      "b": "Fachada_N3_S1_P03_00_Pano_06",
+      "volume_m3": 8.152800906609783e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N3_06_Vidrio_01",
+      "b": "Fachada_N3_S1_P03_00_Pano_06",
+      "volume_m3": 0.0008483021389646358,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N1_10_Jamba0",
+      "b": "Muros_Interiores_N1_19_Pano_00",
+      "volume_m3": 0.004016250000000065,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N1_10_Jamba1",
+      "b": "Muros_Interiores_N1_18_Pano_00",
+      "volume_m3": 0.004016250000000327,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ventana_N1_11_Jamba1",
+      "b": "Muros_Interiores_N1_18_Pano_00",
+      "volume_m3": 0.00401625000000023,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_01_Hoja_abierta",
+      "b": "Puerta_N1_01_Jamba0",
+      "volume_m3": 0.003066497700686792,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_02_Hoja_abierta",
+      "b": "Puerta_N1_02_Jamba0",
+      "volume_m3": 0.003066497473808168,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_03_Hoja_abierta",
+      "b": "Puerta_N1_03_Jamba0",
+      "volume_m3": 0.0030664976229213825,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_04_Hoja_abierta",
+      "b": "Puerta_N1_04_Jamba0",
+      "volume_m3": 0.0030664979051088117,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_05_Hoja_abierta",
+      "b": "Puerta_N1_05_Jamba0",
+      "volume_m3": 0.0030664977006868753,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_06_Hoja_abierta",
+      "b": "Muros_Interiores_N1_41_Pano_00",
+      "volume_m3": 0.0010016671279102387,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_06_Hoja_abierta",
+      "b": "Puerta_N1_06_Jamba0",
+      "volume_m3": 0.0016472547353632557,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_07_Jamba1",
+      "b": "Puerta_N1_06_Jamba1",
+      "volume_m3": 0.007093400826229055,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_07_Jamba1",
+      "b": "Puerta_N1_06_Dintel",
+      "volume_m3": 2.012290092470262e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_07_Dintel",
+      "b": "Puerta_N1_06_Jamba1",
+      "volume_m3": 2.012290376891658e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_07_Hoja_abierta",
+      "b": "Muros_Interiores_N1_43_Pano_00",
+      "volume_m3": 0.0007354625558583696,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_07_Hoja_abierta",
+      "b": "Puerta_N1_07_Jamba0",
+      "volume_m3": 0.0016635031412712176,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_08_Hoja_abierta",
+      "b": "Muros_Interiores_N1_42_Pano_00",
+      "volume_m3": 0.0012050207359321915,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_08_Hoja_abierta",
+      "b": "Puerta_N1_08_Jamba0",
+      "volume_m3": 0.0016472547353631641,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_09_Jamba1",
+      "b": "Puerta_N1_08_Jamba1",
+      "volume_m3": 0.008032363027162669,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_09_Hoja_abierta",
+      "b": "Muros_Interiores_N1_44_Pano_00",
+      "volume_m3": 0.0010473981534733457,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_09_Hoja_abierta",
+      "b": "Puerta_N1_09_Jamba0",
+      "volume_m3": 0.001663503141271281,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_10_Hoja_abierta",
+      "b": "Muros_Interiores_N1_21_Pano_00",
+      "volume_m3": 0.0015370147649892464,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_10_Hoja_abierta",
+      "b": "Puerta_N1_10_Jamba0",
+      "volume_m3": 0.0016472551008631404,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_11_Jamba1",
+      "b": "Puerta_N1_10_Jamba1",
+      "volume_m3": 0.00803223097111237,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_11_Hoja_abierta",
+      "b": "Muros_Interiores_N1_28_Pano_00",
+      "volume_m3": 0.000744201092445212,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_11_Hoja_abierta",
+      "b": "Puerta_N1_11_Jamba0",
+      "volume_m3": 0.0016635032104747938,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_12_Hoja_abierta",
+      "b": "Puerta_N1_12_Jamba0",
+      "volume_m3": 0.0030848130562985544,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_13_Jamba1",
+      "b": "Puerta_N1_12_Jamba1",
+      "volume_m3": 0.007759532686919343,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_13_Hoja_abierta",
+      "b": "Puerta_N1_13_Jamba0",
+      "volume_m3": 0.0030864980950584334,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_14_Hoja_abierta",
+      "b": "Fachada_N1_S2_P02_00_Pano_00",
+      "volume_m3": 0.010092488614282432,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_14_Hoja_abierta",
+      "b": "Puerta_N1_14_Jamba0",
+      "volume_m3": 0.001647254735363115,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_14_Hoja_Marco0",
+      "b": "Puerta_N1_14_Jamba0",
+      "volume_m3": 0.0037079999999997523,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_14_Hoja_Marco0",
+      "b": "Puerta_N1_14_Hoja_abierta",
+      "volume_m3": 0.0012978000000000473,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_14_Hoja_Marco1",
+      "b": "Puerta_N1_14_Hoja_abierta",
+      "volume_m3": 0.001297800000000203,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_15_Jamba1",
+      "b": "Puerta_N1_14_Jamba1",
+      "volume_m3": 0.008032363027162648,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_15_Hoja_abierta",
+      "b": "Fachada_N1_S2_P02_00_Pano_02",
+      "volume_m3": 0.007503254959626687,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_15_Hoja_abierta",
+      "b": "Puerta_N1_15_Jamba0",
+      "volume_m3": 0.00166350314127135,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_15_Hoja_Marco0",
+      "b": "Puerta_N1_15_Jamba0",
+      "volume_m3": 0.003704715308767465,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_15_Hoja_Marco0",
+      "b": "Puerta_N1_15_Hoja_abierta",
+      "volume_m3": 0.0012978000000000993,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_15_Hoja_Marco1",
+      "b": "Puerta_N1_15_Hoja_abierta",
+      "volume_m3": 0.00129779999999994,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_16_Jamba0",
+      "b": "Esc_N1_Diagonal_0_Peldano_06",
+      "volume_m3": 0.003947399999999783,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_16_Jamba1",
+      "b": "Descanso_Triangular_N1",
+      "volume_m3": 0.0009179999999999338,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_16_Hoja_abierta",
+      "b": "Esc_N1_Diagonal_0_Peldano_06",
+      "volume_m3": 0.011873643661245539,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_16_Hoja_abierta",
+      "b": "Esc_N1_Diagonal_0_lado1_pasamanos_00",
+      "volume_m3": 5.9463288283280084e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_16_Hoja_abierta",
+      "b": "Puerta_N1_16_Jamba0",
+      "volume_m3": 0.0030848135991376545,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_17_Jamba0",
+      "b": "Descanso_Triangular_N1",
+      "volume_m3": 0.0009180000000000171,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_17_Jamba1",
+      "b": "Descanso_Triangular_N1",
+      "volume_m3": 0.0009180000000000032,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_17_Jamba1",
+      "b": "Puerta_N1_16_Jamba1",
+      "volume_m3": 0.007616764915148776,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_17_Jamba1",
+      "b": "Puerta_N1_16_Dintel",
+      "volume_m3": 8.905509607590105e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_17_Dintel",
+      "b": "Puerta_N1_16_Jamba1",
+      "volume_m3": 8.905709499564511e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_17_Hoja_abierta",
+      "b": "Descanso_Triangular_N1",
+      "volume_m3": 0.0016425127181524057,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_17_Hoja_abierta",
+      "b": "Puerta_N1_17_Jamba0",
+      "volume_m3": 0.003086497698327404,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_18_Hoja_abierta",
+      "b": "Fachada_N1_S2_P04_00_Pano_08",
+      "volume_m3": 0.0008777134185720165,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_18_Hoja_abierta",
+      "b": "Puerta_N1_18_Jamba0",
+      "volume_m3": 0.0016472545029357093,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_18_Hoja_Marco0",
+      "b": "Puerta_N1_18_Jamba0",
+      "volume_m3": 0.003708000000000044,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_18_Hoja_Marco0",
+      "b": "Puerta_N1_18_Hoja_abierta",
+      "volume_m3": 0.0012977999999998454,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_18_Hoja_Marco1",
+      "b": "Puerta_N1_18_Hoja_abierta",
+      "volume_m3": 0.00129779999999997,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_19_Jamba1",
+      "b": "Puerta_N1_18_Jamba1",
+      "volume_m3": 0.007093400288970833,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_19_Jamba1",
+      "b": "Puerta_N1_18_Dintel",
+      "volume_m3": 2.012289737677667e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_19_Dintel",
+      "b": "Puerta_N1_18_Jamba1",
+      "volume_m3": 2.012290041704192e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_19_Hoja_abierta",
+      "b": "Fachada_N1_S2_P04_00_Pano_06",
+      "volume_m3": 0.0005657936586763767,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_19_Hoja_abierta",
+      "b": "Puerta_N1_19_Jamba0",
+      "volume_m3": 0.0016635023141076336,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_19_Hoja_Marco0",
+      "b": "Puerta_N1_19_Jamba0",
+      "volume_m3": 0.0037047157791074144,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_19_Hoja_Marco0",
+      "b": "Puerta_N1_19_Hoja_abierta",
+      "volume_m3": 0.0012977999999999835,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_19_Hoja_Marco1",
+      "b": "Puerta_N1_19_Hoja_abierta",
+      "volume_m3": 0.001297799999999724,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_20_Hoja_abierta",
+      "b": "Puerta_N1_20_Jamba0",
+      "volume_m3": 0.003086023470093347,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_21_Jamba1",
+      "b": "Puerta_N1_20_Jamba1",
+      "volume_m3": 0.007668133185374489,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_21_Jamba1",
+      "b": "Puerta_N1_20_Dintel",
+      "volume_m3": 4.914875455749883e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_21_Dintel",
+      "b": "Puerta_N1_20_Jamba1",
+      "volume_m3": 4.893300298398133e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_21_Hoja_abierta",
+      "b": "Puerta_N1_21_Jamba0",
+      "volume_m3": 0.003086024532405539,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_22_Jamba1",
+      "b": "Muros_Interiores_N1_04_Pano_00",
+      "volume_m3": 0.004695957727667925,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_22_Hoja_abierta",
+      "b": "Puerta_N1_22_Jamba0",
+      "volume_m3": 0.003068112597379679,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_23_Jamba1",
+      "b": "Muros_Interiores_N1_31_Pano_00",
+      "volume_m3": 0.0038395672107548002,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N1_23_Hoja_abierta",
+      "b": "Puerta_N1_23_Jamba0",
+      "volume_m3": 0.0030681120086711536,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_24_Hoja_abierta",
+      "b": "Puerta_N1_24_Jamba0",
+      "volume_m3": 0.003071761025512646,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_25_Hoja_abierta",
+      "b": "Puerta_N1_25_Jamba0",
+      "volume_m3": 0.0030717610255126533,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_26_Hoja_abierta",
+      "b": "Puerta_N1_26_Jamba0",
+      "volume_m3": 0.0030848147581592216,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_27_Jamba1",
+      "b": "Puerta_N1_26_Jamba1",
+      "volume_m3": 0.0070933261977600545,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_27_Jamba1",
+      "b": "Puerta_N1_26_Dintel",
+      "volume_m3": 2.0122422113355982e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_27_Dintel",
+      "b": "Puerta_N1_26_Jamba1",
+      "volume_m3": 2.012242351334101e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_27_Hoja_abierta",
+      "b": "Puerta_N1_27_Jamba0",
+      "volume_m3": 0.0030864979119248907,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N1_28_Hoja_abierta",
+      "b": "Puerta_N1_28_Jamba0",
+      "volume_m3": 0.0030664980688859117,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_01_Hoja_abierta",
+      "b": "Puerta_N2_01_Jamba0",
+      "volume_m3": 0.0030722861301089137,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_02_Jamba0",
+      "b": "J_N02_servicios",
+      "volume_m3": 0.00042522220386325034,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_02_Jamba0",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.0025245000000000137,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_02_Jamba1",
+      "b": "J_N02_servicios",
+      "volume_m3": 0.000383974765474562,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_02_Jamba1",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.0025245000000000276,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_02_Hoja_abierta",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.0023260221998695737,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_02_Hoja_abierta",
+      "b": "Puerta_N2_02_Jamba0",
+      "volume_m3": 0.0030844613498489577,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_03_Jamba0",
+      "b": "J_N02_servicios",
+      "volume_m3": 0.00042522521933858744,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_03_Jamba0",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.002524500000000011,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_03_Jamba1",
+      "b": "J_N02_servicios",
+      "volume_m3": 0.0003839747652960345,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_03_Jamba1",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.002524500000000094,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_03_Jamba1",
+      "b": "Puerta_N2_02_Jamba1",
+      "volume_m3": 0.007977620047772542,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_03_Jamba1",
+      "b": "Puerta_N2_02_Dintel",
+      "volume_m3": 4.608385181646785e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_03_Dintel",
+      "b": "Puerta_N2_02_Jamba1",
+      "volume_m3": 4.608385181658813e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_03_Hoja_abierta",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.002326028010620011,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_03_Hoja_abierta",
+      "b": "Puerta_N2_03_Jamba0",
+      "volume_m3": 0.003084460764385691,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_04_Hoja_abierta",
+      "b": "Puerta_N2_04_Jamba0",
+      "volume_m3": 0.0030665877401641027,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_05_Hoja_abierta",
+      "b": "Puerta_N2_05_Jamba0",
+      "volume_m3": 0.003066432044406167,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_06_Hoja_abierta",
+      "b": "Puerta_N2_06_Jamba0",
+      "volume_m3": 0.0030664313466805433,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_07_Hoja_abierta",
+      "b": "Puerta_N2_07_Jamba0",
+      "volume_m3": 0.0016403140953609161,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_08_Jamba1",
+      "b": "Puerta_N2_07_Jamba1",
+      "volume_m3": 0.007898048463470511,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_08_Jamba1",
+      "b": "Puerta_N2_07_Dintel",
+      "volume_m3": 1.1347373992192479e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_08_Dintel",
+      "b": "Puerta_N2_07_Jamba1",
+      "volume_m3": 1.1347373992227918e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_08_Hoja_abierta",
+      "b": "Drywall_N2_05_Pano_00",
+      "volume_m3": 5.4968779614624464e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_08_Hoja_abierta",
+      "b": "Puerta_N2_08_Jamba0",
+      "volume_m3": 0.00165444674391444,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_09_Jamba0",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.002524499999999991,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_09_Jamba1",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.002524500000000005,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_09_Hoja_abierta",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.0023190157665806013,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_09_Hoja_abierta",
+      "b": "Puerta_N2_09_Jamba0",
+      "volume_m3": 0.0030844630098527787,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_10_Jamba0",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.002524500000000019,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_10_Jamba1",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.002524500000000019,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_10_Jamba1",
+      "b": "Puerta_N2_09_Jamba1",
+      "volume_m3": 0.0070777832233973525,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_10_Hoja_abierta",
+      "b": "Fachada_N1_S1_P09_00_Pano_00",
+      "volume_m3": 0.0023190157665805536,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_10_Hoja_abierta",
+      "b": "Puerta_N2_10_Jamba0",
+      "volume_m3": 0.003084463009852958,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_11_Hoja_abierta",
+      "b": "Puerta_N2_11_Jamba0",
+      "volume_m3": 0.0030722865380916897,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_12_Hoja_abierta",
+      "b": "Puerta_N2_12_Jamba0",
+      "volume_m3": 0.003066432277717081,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_13_Hoja_abierta",
+      "b": "Puerta_N2_13_Jamba0",
+      "volume_m3": 0.003066587770115565,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_14_Jamba1",
+      "b": "Ventana_N2_04_Jamba1",
+      "volume_m3": 0.00021713176770010213,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N2_14_Hoja_abierta",
+      "b": "Puerta_N2_14_Jamba0",
+      "volume_m3": 0.0030665877701156422,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_15_Hoja_abierta",
+      "b": "Puerta_N2_15_Jamba0",
+      "volume_m3": 0.00306658777011567,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_16_Hoja_abierta",
+      "b": "Puerta_N2_16_Jamba0",
+      "volume_m3": 0.003084460390254309,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_17_Jamba1",
+      "b": "Puerta_N2_16_Jamba1",
+      "volume_m3": 0.007977630876231065,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_17_Jamba1",
+      "b": "Puerta_N2_16_Dintel",
+      "volume_m3": 4.607472772245416e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_17_Dintel",
+      "b": "Puerta_N2_16_Jamba1",
+      "volume_m3": 4.607472772242333e-07,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_17_Hoja_abierta",
+      "b": "Puerta_N2_17_Jamba0",
+      "volume_m3": 0.0030844603902545334,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N2_18_Hoja_abierta",
+      "b": "Puerta_N2_18_Jamba0",
+      "volume_m3": 0.003066432124513351,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N3_01_Hoja_abierta",
+      "b": "Puerta_N3_01_Jamba0",
+      "volume_m3": 0.003066453420402553,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N3_02_Hoja_abierta",
+      "b": "Puerta_N3_02_Jamba0",
+      "volume_m3": 0.003066550455736677,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N3_03_Hoja_abierta",
+      "b": "Puerta_N3_03_Jamba0",
+      "volume_m3": 0.003066550213925908,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N3_04_Hoja_abierta",
+      "b": "Puerta_N3_04_Jamba0",
+      "volume_m3": 0.003072078132736377,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N3_05_Hoja_abierta",
+      "b": "Puerta_N3_05_Jamba0",
+      "volume_m3": 0.003066454187041016,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N3_06_Hoja_abierta",
+      "b": "Fachada_N3_S1_P01_00_Pano_02",
+      "volume_m3": 0.06862804288933996,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N3_06_Hoja_abierta",
+      "b": "Puerta_N3_06_Jamba0",
+      "volume_m3": 0.0016222663473817991,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Puerta_N3_07_Hoja_abierta",
+      "b": "Fachada_N3_S1_P01_00_Pano_04",
+      "volume_m3": 0.06862804288934113,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Puerta_N3_07_Hoja_abierta",
+      "b": "Puerta_N3_07_Jamba0",
+      "volume_m3": 0.0016222663473818711,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Ingreso_Administracion_FOTO_Hoja_abierta",
+      "b": "Ingreso_Administracion_FOTO_Jamba0",
+      "volume_m3": 0.003064250000000017,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Ingreso_Administracion_FOTO_Hoja_Marco0",
+      "b": "Ingreso_Administracion_FOTO_Jamba0",
+      "volume_m3": 0.003337199999999905,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Ingreso_Administracion_FOTO_Hoja_Marco0",
+      "b": "Ingreso_Administracion_FOTO_Dintel",
+      "volume_m3": 1.8000000000007315e-06,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Ingreso_Administracion_FOTO_Hoja_Marco0",
+      "b": "Ingreso_Administracion_FOTO_Hoja_abierta",
+      "volume_m3": 0.0012977999999999879,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Ingreso_Administracion_FOTO_Hoja_Marco1",
+      "b": "Ingreso_Administracion_FOTO_Hoja_abierta",
+      "volume_m3": 0.0012977999999999761,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Columna_N1_11",
+      "b": "J_N01_piso_admin",
+      "volume_m3": 0.005991800546731546,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N1_11",
+      "b": "J_N01_zocalo",
+      "volume_m3": 0.016477451503511646,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N1_12",
+      "b": "J_N01_piso_admin",
+      "volume_m3": 0.013026410832368714,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N1_12",
+      "b": "J_N01_zocalo",
+      "volume_m3": 0.03582262978901391,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N1_14",
+      "b": "Esc_N2_Conector_Peldano_01",
+      "volume_m3": 0.003769384082625394,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N1_14",
+      "b": "Esc_N2_Conector_Peldano_02",
+      "volume_m3": 0.0003962240379219357,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N1_14",
+      "b": "J_N02_hall_der_con_vacio_00",
+      "volume_m3": 0.030499826553734618,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N1_16",
+      "b": "J_N02_hall_der_con_vacio_00",
+      "volume_m3": 0.013050202531129157,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_06",
+      "b": "Esc_N3_Conector_lado-1_pasamanos_00",
+      "volume_m3": 2.223606245350371e-06,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_06",
+      "b": "J_N03_hall_der_con_vacio_00",
+      "volume_m3": 0.026735211398611913,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_08",
+      "b": "J_N03_hall_der_con_vacio_00",
+      "volume_m3": 0.013594848060173238,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_14",
+      "b": "J_N03_hall_der_con_vacio_00",
+      "volume_m3": 0.014905866136438317,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_14",
+      "b": "J_N03_piso_AulaC",
+      "volume_m3": 0.006404713757777696,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_14",
+      "b": "Fachada_N3_S2_P01_00_Pano_00",
+      "volume_m3": 0.0356790549428222,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_14",
+      "b": "Fachada_N3_S2_P04_00_Pano_00",
+      "volume_m3": 0.04235948878875278,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_15",
+      "b": "J_N03_piso_AulaC",
+      "volume_m3": 0.00311052128809276,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_15",
+      "b": "Fachada_N3_S2_P03_00_Pano_09",
+      "volume_m3": 0.03179172166388981,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Columna_N2_15",
+      "b": "Fachada_N3_S2_P04_00_Pano_00",
+      "volume_m3": 0.02464141342533327,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_pasamanos_00",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 6.834375000000144e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_00",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 0.0005864999999999907,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_00",
+      "b": "Fachada_N3_S1_P04_00_Pano_05",
+      "volume_m3": 0.0005864999999999914,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.1705253582144077e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_01",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.3410507164287873e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_02",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.3410507164290176e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_03",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.341050716428818e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_04",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.3410507164288188e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_05",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.341050716428828e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_00_06",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.170525358214425e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_pasamanos_01",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.4170130409988513e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_pasamanos_01",
+      "b": "J_N3_terraza_pasamanos_poste_00_06",
+      "volume_m3": 1.1705253582144307e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.170525358214425e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_06",
+      "volume_m3": 0.001172999999999999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.1705253582144006e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_01",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164288157e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_02",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164288093e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_03",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287835e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_04",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164289817e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_05",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287713e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_06",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287737e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_07",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.341050716428715e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_08",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.34105071642872e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_09",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164286873e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_10",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287164e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_11",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287056e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_01_12",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.1705253582143313e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_pasamanos_02",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.4170130409989492e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_pasamanos_02",
+      "b": "J_N3_terraza_pasamanos_poste_01_12",
+      "volume_m3": 1.170525358214403e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_02_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.1705253582143313e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_02_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_12",
+      "volume_m3": 0.0011729999999999634,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_02_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 1.1705253582144067e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_02_01",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 2.3410507164287015e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_02_02",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 2.341050716428757e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_02_03",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 2.3410507164287327e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "J_N3_terraza_pasamanos_poste_02_04",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 1.1705253582143862e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.4170130409988513e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_06",
+      "volume_m3": 1.1705253582144307e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 0.021328457142857873,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_00",
+      "volume_m3": 1.1705253582144307e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_01",
+      "volume_m3": 2.341050716428819e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_02",
+      "volume_m3": 2.3410507164288e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_03",
+      "volume_m3": 2.3410507164288086e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_04",
+      "volume_m3": 2.3410507164290302e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_05",
+      "volume_m3": 2.3410507164287954e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_06",
+      "volume_m3": 2.3410507164287978e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_07",
+      "volume_m3": 2.3410507164287114e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_08",
+      "volume_m3": 2.341050716428712e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_09",
+      "volume_m3": 2.3410507164287036e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_10",
+      "volume_m3": 2.3410507164287046e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_11",
+      "volume_m3": 2.341050716428703e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_12",
+      "volume_m3": 1.1705253582143521e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 1.4170130409989402e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_02_00",
+      "volume_m3": 1.1705253582143521e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.170525358214425e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_06",
+      "volume_m3": 0.001172999999999999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.1705253582144006e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_00",
+      "volume_m3": 0.001172999999999999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_00",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 1.1705253582144006e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_01",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164288157e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_01",
+      "b": "J_N3_terraza_pasamanos_poste_01_01",
+      "volume_m3": 0.0011730000000000028,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_01",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164288157e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_02",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164288093e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_02",
+      "b": "J_N3_terraza_pasamanos_poste_01_02",
+      "volume_m3": 0.001173,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_02",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164288093e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_03",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287835e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_03",
+      "b": "J_N3_terraza_pasamanos_poste_01_03",
+      "volume_m3": 0.0011729999999999987,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_03",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164287835e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_04",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164289817e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_04",
+      "b": "J_N3_terraza_pasamanos_poste_01_04",
+      "volume_m3": 0.0011729999999999915,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_04",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164289817e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_05",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287713e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_05",
+      "b": "J_N3_terraza_pasamanos_poste_01_05",
+      "volume_m3": 0.00117299999999999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_05",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164287713e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_06",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287737e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_06",
+      "b": "J_N3_terraza_pasamanos_poste_01_06",
+      "volume_m3": 0.0011729999999999879,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_06",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164287737e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_07",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.341050716428715e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_07",
+      "b": "J_N3_terraza_pasamanos_poste_01_07",
+      "volume_m3": 0.001172999999999956,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_07",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.341050716428715e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_08",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.34105071642872e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_08",
+      "b": "J_N3_terraza_pasamanos_poste_01_08",
+      "volume_m3": 0.001172999999999952,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_08",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.34105071642872e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_09",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164286873e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_09",
+      "b": "J_N3_terraza_pasamanos_poste_01_09",
+      "volume_m3": 0.0011729999999999677,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_09",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164286873e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_10",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287164e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_10",
+      "b": "J_N3_terraza_pasamanos_poste_01_10",
+      "volume_m3": 0.0011729999999999686,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_10",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164287164e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_11",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 2.3410507164287056e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_11",
+      "b": "J_N3_terraza_pasamanos_poste_01_11",
+      "volume_m3": 0.001172999999999946,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_11",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 2.3410507164287056e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_12",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.1705253582143313e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_12",
+      "b": "J_N3_terraza_pasamanos_poste_01_12",
+      "volume_m3": 0.0011729999999999634,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_12",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 1.1705253582144067e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_12",
+      "b": "J_N3_terraza_pasamanos_poste_02_00",
+      "volume_m3": 0.0011729999999999634,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_0_poste_00_12",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 1.1705253582143313e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "Fachada_N3_S1_P01_00_Pano_04",
+      "volume_m3": 6.834375000000396e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "Fachada_N3_S3_P03_00_Pano_00",
+      "volume_m3": 6.801301175929604e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.4170130409989492e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_12",
+      "volume_m3": 1.170525358214403e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 0.006939152874564753,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_02_00",
+      "volume_m3": 1.170525358214403e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_02_01",
+      "volume_m3": 2.341050716428715e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_02_02",
+      "volume_m3": 2.341050716428762e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_02_03",
+      "volume_m3": 2.3410507164287476e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_02_04",
+      "volume_m3": 2.3410507164287496e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 1.4170130409989492e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_pasamanos_00",
+      "b": "Terraza_Borde_0_poste_00_12",
+      "volume_m3": 1.170525358214403e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.1705253582143313e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_12",
+      "volume_m3": 0.0011729999999999634,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 1.1705253582144067e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_poste_02_00",
+      "volume_m3": 0.0011729999999999634,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_00",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 1.1705253582143313e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_00",
+      "b": "Terraza_Borde_0_poste_00_12",
+      "volume_m3": 0.0011729999999999634,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_00",
+      "b": "Terraza_Borde_1_pasamanos_00",
+      "volume_m3": 1.1705253582144067e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_01",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 2.341050716428711e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_01",
+      "b": "J_N3_terraza_pasamanos_poste_02_01",
+      "volume_m3": 1.8137093124441473e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_01",
+      "b": "Terraza_Borde_1_pasamanos_00",
+      "volume_m3": 2.341050716428711e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_02",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 2.3410507164289875e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_02",
+      "b": "Terraza_Borde_1_pasamanos_00",
+      "volume_m3": 2.3410507164289875e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_03",
+      "b": "J_N3_terraza_pasamanos_pasamanos_02",
+      "volume_m3": 2.3410507164287378e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_03",
+      "b": "Terraza_Borde_1_pasamanos_00",
+      "volume_m3": 2.3410507164287412e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_04",
+      "b": "Terraza_Borde_1_pasamanos_00",
+      "volume_m3": 2.3410507164287354e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_05",
+      "b": "Terraza_Borde_1_pasamanos_00",
+      "volume_m3": 2.341050716428717e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_06",
+      "b": "Fachada_N3_S1_P01_00_Pano_04",
+      "volume_m3": 0.000586499999999973,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_06",
+      "b": "Fachada_N3_S1_P02_00_Pano_00",
+      "volume_m3": 0.0005864999999999903,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_06",
+      "b": "Fachada_N3_S3_P03_00_Pano_00",
+      "volume_m3": 0.0005864999999998408,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_1_poste_00_06",
+      "b": "Terraza_Borde_1_pasamanos_00",
+      "volume_m3": 1.1705253582143758e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 6.834375000000144e-05,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 0.010744494773519513,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_00",
+      "volume_m3": 1.1705253582144121e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_01",
+      "volume_m3": 2.341050716428795e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_02",
+      "volume_m3": 2.3410507164290085e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_03",
+      "volume_m3": 2.341050716428819e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_04",
+      "volume_m3": 2.34105071642882e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_05",
+      "volume_m3": 2.3410507164288306e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_06",
+      "volume_m3": 1.170525358214435e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.4170130409988379e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "J_N3_terraza_pasamanos_poste_01_00",
+      "volume_m3": 1.170525358214435e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 1.4170130409988379e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_pasamanos_00",
+      "b": "Terraza_Borde_0_poste_00_00",
+      "volume_m3": 1.170525358214435e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_00",
+      "b": "Fachada_N3_S1_P01_00_Pano_00",
+      "volume_m3": 0.0005864999999999907,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_00",
+      "b": "Fachada_N3_S1_P04_00_Pano_05",
+      "volume_m3": 0.0005864999999999914,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.1705253582144077e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_00",
+      "b": "J_N3_terraza_pasamanos_poste_00_00",
+      "volume_m3": 0.001172999999999991,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_00",
+      "b": "Terraza_Borde_3_pasamanos_00",
+      "volume_m3": 1.1705253582144077e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_01",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.3410507164287873e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_01",
+      "b": "J_N3_terraza_pasamanos_poste_00_01",
+      "volume_m3": 0.001172999999999989,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_01",
+      "b": "Terraza_Borde_3_pasamanos_00",
+      "volume_m3": 2.3410507164287873e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_02",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.3410507164290176e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_02",
+      "b": "J_N3_terraza_pasamanos_poste_00_02",
+      "volume_m3": 0.001172999999999989,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_02",
+      "b": "Terraza_Borde_3_pasamanos_00",
+      "volume_m3": 2.3410507164290176e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_03",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.341050716428818e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_03",
+      "b": "J_N3_terraza_pasamanos_poste_00_03",
+      "volume_m3": 0.0011729999999999993,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_03",
+      "b": "Terraza_Borde_3_pasamanos_00",
+      "volume_m3": 2.341050716428818e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_04",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.3410507164288188e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_04",
+      "b": "J_N3_terraza_pasamanos_poste_00_04",
+      "volume_m3": 0.001173000000000003,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_04",
+      "b": "Terraza_Borde_3_pasamanos_00",
+      "volume_m3": 2.3410507164288188e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_05",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 2.341050716428828e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_05",
+      "b": "J_N3_terraza_pasamanos_poste_00_05",
+      "volume_m3": 0.001173000000000003,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_05",
+      "b": "Terraza_Borde_3_pasamanos_00",
+      "volume_m3": 2.341050716428828e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_06",
+      "b": "J_N3_terraza_pasamanos_pasamanos_00",
+      "volume_m3": 1.170525358214425e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_06",
+      "b": "J_N3_terraza_pasamanos_poste_00_06",
+      "volume_m3": 0.001172999999999999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_06",
+      "b": "J_N3_terraza_pasamanos_pasamanos_01",
+      "volume_m3": 1.1705253582144006e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_06",
+      "b": "J_N3_terraza_pasamanos_poste_01_00",
+      "volume_m3": 0.001172999999999999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_06",
+      "b": "Terraza_Borde_0_pasamanos_00",
+      "volume_m3": 1.1705253582144006e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_06",
+      "b": "Terraza_Borde_0_poste_00_00",
+      "volume_m3": 0.001172999999999999,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Terraza_Borde_3_poste_00_06",
+      "b": "Terraza_Borde_3_pasamanos_00",
+      "volume_m3": 1.170525358214425e-05,
+      "type": "misma_categoria_revisar"
+    },
+    {
+      "a": "Ingreso_Peldano_05",
+      "b": "J_N01_piso_admin",
+      "volume_m3": 0.0006838972722252209,
+      "type": "encuentro_constructivo"
+    },
+    {
+      "a": "Ingreso_Peldano_05",
+      "b": "J_N01_zocalo",
+      "volume_m3": 0.0018807174986193703,
+      "type": "encuentro_constructivo"
+    }
+  ],
+  "failed_pairs": [],
+  "meaning": "Encuentros reales entre piezas: columnas con muros, pa\u00f1os con marcos, barandas con pelda\u00f1os y juntas. No se han eliminado por booleana global para mantener edici\u00f3n por piezas. Revisar contactos listados, no se declara ausencia de intersecciones."
+}
